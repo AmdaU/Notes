@@ -21,7 +21,7 @@
 \begin{document}
 
 
-\section{Chapitre 1}
+\section{Chapitre 0}
 
 On s'interesse à qualifier des courbes sans étudier les propriétés des fonctions. Par exemple, on veut considérer $y=x^2$ et $y^2=x$ comme identique à roatition près malgré le fait qu'elle soit définis comme deux équations assez différentes.
 
@@ -44,7 +44,52 @@ $c(s)=2 \pi-\sum_{T \text { face }} \theta_{T}(s)$
 
 \underline{La caractéristique d'Euleur} d'un polytope $P$ est la quantité
 
-$$\Chi(P) = V - E + F$$
+$$\chi(P) = V - E + F$$
 
+
+\subsection{Théorème de Gauss-Bonnet discret}
+
+$$\sum_{s \in P} c(s) = 2\pi \chi(P)$$
+
+
+\underline{Dém} On compte de le défaut d'andre total de deux manières différentes
+
+\begin{itemize}
+	\item Défault d'angle total $\sum_{s \in P} c(s)$
+	\item Dans chanque face triangulaire de $P$, la somme des angles $=\pi$. Le défault d'angle total: $2\pi V-\pi F$
+\end{itemize}
+
+Chaque arrête à 2 faces
+
+Chaque face à 3 arrêtes
+
+$$2E =3F$$
+
+On compte la carinalité des $\{(a,f)| a\in f\}$
+
+\begin{align*}
+	2\pi\chi(P) & = 2\pi(V-E+F)         \\
+	            & =2\pi(V-\frac32 F +F) \\
+	            & = 2\pi V-\pi F
+\end{align*}
+
+\underline{Ex:} En utilisant le théorème démontré plus haut. et le fait que toute triangulation d'une sphère satisfait $\chi(P)=2$ classifie les solides réguliers. (Les face sont des polygones r/guliers. Même nombre de faces à chaque sommet)
+
+
+\section{Chapitre 2}
+
+\underline{Définition: } UNe fonction vectorielle $f:(a,b) \to \mathbb{R}^3$ est $C^k$ si $f$ et ses $k$ premières dérivées existent et sont continues sur $(a,b)$. On dit que $f$ est lisse si c'est vrai pour tout $k>0$
+
+Une \underline{courbe paramétré} est une application  $C^3$
+
+$\alpha I\to \mathbb{R}^3$
+
+Ex:
+\begin{itemize}
+	\item $p \neq q \in \mathbb{R}^3$, on définit $V=q-p$ et $\alpha(t) = p+tv, \; t\in \mathbb{R}$
+	\item $\alpha(t) = (a\cos(t), a\sin(t))\quad 0\leq t\leq 2\pi$ (le cerlce de rayon $a$)
+	\item Courbe cubique sigulière: $\alpha(t) = (t^2, t^3), \quad \alpha'(t) = (2t, 3t^2) \implies \alpha'(0)=(0,0)$
+	      non-régilère en $t=0$
+\end{itemize}
 
 \end{document}

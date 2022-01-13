@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Épisode 0}
+\author{Jean-Baptiste Bertrand}
+\date{\today}
+
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+\section{Spin de l'electron : 2 confirmations}
+
+\subsection*{Problème de S-f de qqch}
+
+La théorie de Bohr n'est pas relativiste. C'est un problème si on considère que les éléctrons vont à $\sim 10^6$ m/s. Si on iclus la relativité, les niveaux d'énériges sont décallés correctement, cependant, la dégénéressance n'est pas levée comme observé expérimentalement.
+
+POur arriver à le faire, on doit considérer l'effet Zeeman.
+
+L'effet Zeeman est la levé des dégénéressance par l'application d'un champ magnétique.
+
+
+$$-l \leq m \leq l $$
+
+$$2l + 1 \text{ Projections possibles}$$
+
+Il y a toujours un nombre impair de projections.
+
+\includesvg{E0_1.svg}
+
+
+
+On suppose que la sep des niv de H est similaire à celle de l'effet Zeeman.
+
+On a donc pensé à l'ajout du nombre quantique du \textit{spin} pour explique cette levé de dégénéressance.
+
+
+$$\ket{n,l,m} \to \ket{n,l,m,m_s}$$
+
+\subsection*{Équation de dirac}
+
+$$i\hbar \del \psi = H\psi \; \psi = \psi(\vec r, t)$$
+
+
+
+
+
+\end{document}

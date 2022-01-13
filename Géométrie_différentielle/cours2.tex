@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Cours 2}
+\author{Jean-Baptiste Bertrand}
+\date{December 2021}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{svg}
+\usepackage{physics}
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+
+\underline{Courbe du jour}: Cycloïde: Trajectoire d'un point sur une roue qui tourne sans gilisser
+
+
+Paramétrisation: $\alpha(t) = \underbrace{(tr, r)}_{\text{Centre du cerlce}} + (-r\sin t, -r \cos t)$
+
+%\includesvg{cycloide.svg}
+
+\headrule
+
+\underline{Def:} La \underline{longeur d'arc} d'une courbe $\alpha: [a,b] \to \mathbb{R^3}$ est $l(\alpha) = \int_a^b ||a'(t)|| \dd t$
+
+$\tilde{a}:[\tilde{a}, \tilde{b}] \to [a,b]$ est une \underline{reparamétrisation} de $\alpha$ sèil existe $\phi [\tilde a, \tilde b]\to [a,b]\; C^3$, bijective $C^3$ ...
+
+\end{document}
