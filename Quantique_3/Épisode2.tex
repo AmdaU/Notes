@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Épisode 2}
+\author{Jean-Baptiste Bertrand}
+\date{\today}
+
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+\underline{Spineurs, bases et rerésentations}
+
+\begin{align}
+	&\text{ECOC: } X, Y, Z, S_z, (S^2): \mathcal{E}_{\vec r}\otimes \mathcal{E}_s=\mathcal{E}\; \ket{\vec r, s}\\
+	&\text{ECOC: } P_x, P_y, P_z, S_z; \ket{\vec p, s}\\
+	&\text{ECOC: } H_0, \vb L^2, L_z, S_z ; \ket{n,l,m,s}
+\end{align}
+
+Relation de fermeture dans $\mathcal{E}:$ $$1 = 1_{\vec r} \otimes 1_S = \int \dd^3 r \ket{\vec r}\bra{\vec r} \otimes \sum_\epsilon \ket{\epsilon}\bra{\epsilon}$$
+
+$$\implies 1 = \sum_\epsilon\int\dd^3r \ketbra*{\vec r\epsilon}{\vec r, \epsilon}$$
+
+Preuve très similaire pour les autres bases.
+
+$$\ket\psi = 1 \ket \psi = \sum_\epsilon \int \dd^3r \ket{\vec r, \epsilon} \underbrace{\braket*{\vec r, \epsilon}{\psi}}_{\Psi_\epsilon(\vec r)}$$
+
+Représentation matricielle:
+
+$$
+	\ket\psi = \int \dd^3 r \begin{pmatrix}
+		\psi_+(\vec r)\\
+		\psi_-(\vec r)
+	\end{pmatrix}\ket{\vec r}
+$$
+
+$$\braket*{\vec r}{\psi} = \begin{pmatrix}
+	\psi_+(\vec r)\\
+	\psi_-(\vec r) 
+\end{pmatrix} = [\psi] \; \text(Spineur!)$$ 
+
+$$
+	\bra\psi = \int \dd^3 r \begin{pmatrix}
+		\psi^*_+(\vec r) &
+		\psi^*_-(\vec r)
+	\end{pmatrix}\bra{\vec r}
+$$
+
+
+\begin{equation}
+	\ket\psi = 1\ket\psi = \sum_\epsilon\sum_{n,l,m} \ket{n,l,m,\epsilon}\overbrace{\braket*{n,l,m,\epsilon}{\psi}}^{C_{n,l,m,\epsilon}}
+\end{equation}
+
+si
+
+$$\ketbra*{\vec r}{n,l,m} = R_n,l(r)Y_l^m(\theta,\phi)$$
+
+$$\braket*{\vec r}{\psi} = \sum_{n,l,m}\sum_\epsilon \underbrace{\braket*{\vec r}{n,l,m}}_{R_n,l(r)Y_l^m(\theta,\phi)}\ket\epsilon C_{n,l,m,\epsilon} = \sum_{n,l,m}\begin{pmatrix}
+	c_{n,l,m,+}R_n,l(r)Y_l^m(\theta,\phi)\\
+	c_{n,l,m,-}R_n,l(r)Y_l^m(\theta,\phi)
+\end{pmatrix}$$
+
+\end{document}
