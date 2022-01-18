@@ -1,0 +1,168 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Cours 3}
+\author{Jean-Baptiste Bertrand}
+\date{December 2021}
+
+%\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{svg}
+\usepackage{physics}
+\usepackage{mathrsfs}  
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+courbe régulière: $\alpha' \neq 0 \forall t$\\
+
+
+\underline{longeure d'arc}
+$$\mathscr{L} = \int_a^b ||a'(t)|| \dd t$$
+
+Approximtion avec une partition
+
+$P = (t_0, t_1, ... t_n)$
+
+$$\mathscr{L}(\alpha,P) = \sum_{i=0}||\alpha(t_i)-\alpha(t_{i-1})||$$
+
+
+\underline{Prop}
+
+Si alpha est $C^1$ alors $\alpha$ est rectifiable et 
+
+$\mathscr{L}(\alpha) = sup_p \mathscr{L}(\alpha,P)$
+
+
+On a montré que pour toute partition $P$ : $\mathscr{L}(\alpha, P) \leq \int_a^b||\alpha(t)\dd t||$
+
+\underline{Lemme}: $||\int_a^b\alpha(t)\dd t|| \leq \int_a^b ||\alpha(t)\dd t$
+
+Reste à montrer que $\forall \epsilon > 0 \exists P t.q.$
+$$\mathscr{L}\alpha,P) \geq \int_a^b |\alpha(t)|\dd t -\epsilon$$
+
+Continuité uniforme de alpha prime 
+
+$\exists \delta > 0$ t.q. si 
+
+\underline{Proposition:} Une courbe paramétré $\alpha$ admetant une reparamétrisation par longeur d'arc ssi elle est régulière
+
+
+\underline{Dem} ($\implies$)
+
+Si $\alpha$ admet une reparamétrisation par longeure d'arc $\tilde \alpha$
+
+et $\tilde \alpha = \alpha \circ \varphi\; \varphi:[a,b] \to [c,d]$
+
+\begin{align*}
+	\tilde \alpha(t) =\alpha (\varphi(t))\\
+	\tilde \alpha'(t) =\alpha'(\varphi(t))\varphi'(t)\\
+	\underbrace{||\tilde \alpha'(t)||}_1 =||\alpha'(\varphi(t))|| |\varphi'(t)||\\
+	\implies ||\alpha'(\varphi(t))|| \neq 0
+\end{align*}
+
+($\Longleftarrow$)
+
+Trop long, trop loin
+
+\underline{Exemple}: Calculer la paramétrisation par longeure d'arc d'une hélice 
+
+$$\alpha(t)=(a\cos(t),a\sin(t),bt) \; (a, b >0) (t \in \mathbb{R})$$
+
+
+\begin{align*}
+	\Psi(t) &=\int_0^t || \alpha'(x)|| \dd x\\
+			&= \int_0^t(-a\sin x, a\cos x, b) \dd x\\
+			&=\int_0^t \sqrt{a^2 +b^2} \dd x\\
+			&= t\sqrt{a^2+b^2}\\
+			&\implies \Psi^{-1}(s) = \frac{s}{\sqrt{a^2+b^2}}\\
+			&\implies \tilde{\alpha}(s) = (a\cos\frac{s}{\sqrt{a^2+b^2}}, a\sin\frac{s}{\sqrt{a^2+b^2}}, b\frac{s}{\sqrt{a^2+b^2}})
+\end{align*}
+
+
+\underline{Courbe du jour:} Caténoide
+
+\underline{Repère de Frenst}
+
+Un repère adapté à la courbe.
+
+Le premier vecteur est le vecteur tangeant.
+
+Le second vecteur est le vecteur \textit{accélération}. En effet, il est toujours pependiculaire au déplacement dans le cas d'une courbe paramétré par longeure d'arc (vitesse constante)
+
+Le troisième est celui qui reste ($\cross$)
+
+\underline{Lemme:} Soient $f,g:(a,b) \to \mathbb{R}$ differentiable. Si $f(t) \circ g(t)$ est constante alors $f'(t)\circ g(t) = -f(t)\circ g('t)$
+
+\underline{Dem} 
+$(f(t) \circ g(t))'=0 \implies f'(t)\circ g(t) +f(t)\circ g('t) = 0 \blacksquare$ 
+
+Soit $\alpha$ paramétré par longueure d'arc
+
+$$T(s) := \alpha(s)$$
+
+$$k(s) := ||T'(s)|| = ||\alpha''(s)||$$ est la courbure de $\alpha$ au point $\alpha(s)$
+
+$$N(S) :=\frac{T'(s)}{k(s)}$$
+
+On dur que $\alpha$ est birégulière si $k(s) \neq 0 \forall s$ 
+
+$$B(s) := T(s)\cross N(s)$$
+
+$T,N,B$ est le \underline{repère de Frenet} de $\alpha$
+
+
+\begin{equation*}
+	||T(s)|| = 1\\
+	T(s)\cdot T(s) = 1\\
+	T(s)\cdot T'(s) = 0\\
+	\implies k(s) T(s)\cdot N(s)  = 0
+\end{equation*}
+
+
+$$T,N,B \text{ sont } \perp$$
+
+$$||B|| ||T\cross N|| = ||T||N||sin(\phi) =1$$
+Orthonormé!
+
+On a, par définition que
+
+$$T'(s) = k(s)N(s)$$
+
+$$N'(s)\cdot T(s) =-N(s)\cdot T'(s)\\N'(s)\cdot N(s) = 0 \\ N'(s)\cdot B(s) =:\tau(s)$$
+
+$\tau$:torsion
+
+\dots
+
+On obtiens les \underline{Équations de Frenet-Serra}
+
+\begin{align*}
+	T'(s) &= k(s)N(s)\\
+	N'(s) &= k(s)T(s) + \tau(s)B(s)\\
+	B'(s) & -\tau(s) N(s)
+\end{align*}
+
+$$\begin{pmatrix}
+	T'\\N'\\B'
+\end{pmatrix} = \begin{pmatrix}
+	0 & k(s) & 0 \\ k(s) &0 & \tau(s) \\0 & -\tau(s) &0
+\end{pmatrix}$$
+
+\end{document}
+

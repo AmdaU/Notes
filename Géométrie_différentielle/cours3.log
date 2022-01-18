@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.16)  12 JAN 2022 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.17)  17 JAN 2022 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/themr/OneDrive/Documents/Notes/Géométrie_différentielle/cours2.tex
-(c:/Users/themr/OneDrive/Documents/Notes/Géométrie_différentielle/cours2.tex
+**/home/amda/Documents/Notes/Géométrie_différentielle/cours3.tex
+(/home/amda/Documents/Notes/Géométrie_différentielle/cours3.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22> (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2021-11-22> (/home/amda/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(/home/amda/.miktex/texmfs/install/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count183
@@ -22,32 +22,36 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/11/29 3.67 The Babel package
+) (/home/amda/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2021/12/30 3.69 The Babel package
 \babel@savecnt=\count191
 \U@D=\dimen139
-\l@unhyphenated=\language79
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\l@unhyphenated=\language1
+ (/home/amda/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count192
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(/home/amda/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
+) (/home/amda/.miktex/texmfs/install/tex/generic/babel-french/french.ldf
 Language: french 2021/07/20 v3.5m French support from the babel system
-Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language22). Reported on input line 91.
-Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language22). Reported on input line 92.
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'French' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=nohyphenation instead on input line 87.
+
 \FB@nonchar=\count193
 Package babel Info: Making : an active character on input line 430.
 Package babel Info: Making ; an active character on input line 431.
@@ -68,10 +72,10 @@ Package babel Info: Making ? an active character on input line 433.
 \leftmarginFB=\dimen145
 \parindentFFN=\dimen146
 \FBfnindent=\dimen147
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+)) (/home/amda/.miktex/texmfs/install/tex/latex/carlisle/scalefnt.sty) (/home/amda/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
@@ -82,11 +86,11 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (/home/amda/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (/home/amda/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count266
@@ -101,10 +105,10 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen154
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks20
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/amda/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks21
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip58
 \enit@outerparindent=\dimen156
@@ -112,56 +116,56 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box50
 \enit@count@id=\count269
 \enitdp@description=\count270
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/svg\svg.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
 Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+) (/home/amda/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (/home/amda/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+) (/home/amda/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/home/amda/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/home/amda/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \c@svg@param@lastpage=\count271
 \svg@box=\box51
 \c@svg@param@currpage=\count272
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/home/amda/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
@@ -174,24 +178,24 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+)) (/home/amda/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty (/home/amda/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks23
 \pgfutil@tempdima=\dimen159
 \pgfutil@tempdimb=\dimen160
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box52
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+) (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/amda/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+)) (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks24
 \pgfkeys@temptoks=\toks25
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks26
 ))
 \pgf@x=\dimen161
@@ -214,45 +218,45 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
 \pgf@sys@id@count=\count277
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+ (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
-))) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+))) (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count278
 \pgfsyssoftpath@bigbuffer@items=\count279
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+) (/home/amda/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+)) (/home/amda/.miktex/texmfs/install/tex/latex/physics/physics.sty
 Package: physics 
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty (/home/amda/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-11-22 L3 programming layer (loader) 
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (/home/amda/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box53
 ))
 Package: xparse 2021-11-12 L3 Experimental document command parser
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/home/amda/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/home/amda/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks30
 \ex@=\dimen171
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (/home/amda/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen172
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count281
@@ -292,14 +296,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks34
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-)) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+)) (/home/amda/.miktex/texmfs/install/tex/latex/jknappen/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+) (/home/amda/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks35
 \thm@bodyfont=\toks36
@@ -310,36 +317,36 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip63
 \thm@headsep=\skip64
 \dth@everypar=\toks40
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/esint\esint.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/esint/esint.sty
 Package: esint 
-\symlargesymbolsA=\mathgroup6
-) (cours2.aux)
-\openout1 = `cours2.aux'.
+\symlargesymbolsA=\mathgroup7
+) (cours3.aux)
+\openout1 = `cours3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Info: Redefining \degres on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \degres on input line 28.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 23.
+(french.ldf)             reported on input line 28.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 23.
-LaTeX Info: Redefining \up on input line 23.
+(french.ldf)             reported on input line 28.
+LaTeX Info: Redefining \up on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -375,7 +382,7 @@ LaTeX Info: Redefining \up on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(/home/amda/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count293
 \scratchdimen=\dimen180
@@ -388,38 +395,47 @@ LaTeX Info: Redefining \up on input line 23.
 \MPnumerator=\count297
 \makeMPintoPDFobject=\count298
 \everyMPtoPDFconversion=\toks42
-) (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/home/amda/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (/home/amda/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 30.
+ (/home/amda/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+ (/home/amda/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+ (/home/amda/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 25.
- (C:\Users\themr\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+LaTeX Font Info:    Trying to load font information for U+esint on input line 30.
+ (/home/amda/.miktex/texmfs/install/tex/latex/esint/uesint.fd
 File: uesint.fd 
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
-{C:/Users/themr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (cours2.aux) ) 
+ []
+
+[1
+
+{/home/amda/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}] [2] [3] (cours3.aux) ) 
 Here is how much of TeX's memory you used:
- 9188 strings out of 478659
- 157602 string characters out of 2845919
- 495657 words of memory out of 3000000
- 27118 multiletter control sequences out of 15000+600000
- 414005 words of font info for 64 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 94i,9n,92p,384b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\themr\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk>{C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/themr/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on cours2.pdf (1 page, 129494 bytes).
+ 9254 strings out of 480594
+ 156779 string characters out of 2897747
+ 498988 words of memory out of 3000000
+ 26925 multiletter control sequences out of 15000+600000
+ 418437 words of font info for 80 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 94i,16n,92p,388b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/amda/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/amda/.miktex/texmfs/data/fonts/pk/ljfour/public/esint/dpi600/esint10.pk> </home/amda/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/amda/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </home/amda/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/amda/.miktex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on cours3.pdf (3 pages, 139835 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 177 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
