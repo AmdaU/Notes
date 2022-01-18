@@ -15,6 +15,7 @@
 \usepackage[total={19cm, 22cm}]{geometry}
 \usepackage{enumerate}
 \usepackage{enumitem}
+\usepackage{stmaryrd}
 
 %packages pour faire des math
 %\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
@@ -75,5 +76,42 @@ $$\braket*{\vec r}{\psi} = \sum_{n,l,m}\sum_\epsilon \underbrace{\braket*{\vec r
 	c_{n,l,m,+}R_n,l(r)Y_l^m(\theta,\phi)\\
 	c_{n,l,m,-}R_n,l(r)Y_l^m(\theta,\phi)
 \end{pmatrix}$$
+
+
+\underline{Norme}
+
+$$\braket{\psi} = \int \dd^3r [\psi^*][\psi]$$
+\underline{Produit interieur}
+$$\braket{\psi}{\phi} = \int \dd^3r [\psi^*][\phi]$$
+\underline{Élément de matrice}
+
+$$\bra  \Psi \mathbb{1} A \mathbb{1} \ket \Phi = \sum_{\epsilon, \epsilon'}\int\dd^3r\dd^3r' \underbrace{\braket*{\psi}{\vec r', \epsilon'}}_{\psi^*_\epsilon(\vec r')} \underbrace{\bra{\vec r', \epsilon'}A\ket{\vec r, \epsilon}}_{A_{\epsilon'\epsilon}(\vec r', \vec r)} \underbrace{\braket*{\vec r', \epsilon'}{\psi}}_{\psi_\epsilon(\vec r)} = \int\dd^3r\dd^3r' [\psi^*]\llbracket A\rrbracket [\phi]$$
+
+$$L_z \to_{\ket{\vec r}} \frac{\hbar}{i}\pdv{}{\varphi} \to_{\mathcal{E}_{\vec r}\otimes \mathcal{E}_\epsilon} = \frac{\hbar}{i}\begin{pmatrix}
+	\pdv{}{\phi} & 0 \\ 0 & \pdv{}{\phi}
+\end{pmatrix}$$
+
+
+\underline{Mesure}
+
+La quatrième postula reste valable:
+
+$$\ket\psi:\;\text{vecteur d'état}$$
+$$\mathcal{P}(\underbrace{a_n}_{\text{val dicrete d'un obs}}) = |\braket*{\varphi_n}{\psi}|^2$$
+$$\dd\mathcal{P}(\underbrace{\alpha}_{\text{val continue d'un obs}}) = |\braket*{\omega_\alpha}{\psi}|^2\dd \alpha$$
+$$\mathcal{P}(a_n) = \sum_{i=1}^{g_n}|\braket*{\varphi_n^i}{\psi}|^2$$
+
+Dans notre cas, qui est une combinaisons de discret et continue, on a:
+
+$$\dd\mathcal{P}(\vec r, \pm) = |\braket*{\vec r, \pm}{\psi}|^2\dd^3 r$$
+
+$$\mathcal{P}_\pm = \int \dd \mathcal{P} = \int \dd^3 r |\psi(\vec r)|^2$$
+
+Si $[\psi] = \begin{pmatrix}
+	\psi_+(r, \theta, \varphi)\\
+	\psi_-(r, \theta, \varphi)
+\end{pmatrix}$
+
+$$\mathcal{P}_{\vec L ^2} = \abs{\int\sum_{l',m'}Y^{m*}_la_{l',m',+}(r)Y_{l'}^{m'}\dd \Omega}^2 +  \abs{\int\sum_{l',m'}Y^{m*}_la_{l',m',-}(r)Y_{l'}^{m'}\dd \Omega}^2$$
 
 \end{document}
