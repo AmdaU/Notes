@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Épisode 3}
+\author{Jean-Baptiste Bertrand}
+\date{\today}
+
+\setlength{\parskip}{1em}
+
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{stmaryrd}
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+\underline{Projection sur n,l,m}
+
+$$\ket\psi =\mathbb{1}\ket\psi$$
+
+$$ =\sum_{n,l,m,\epsilon} \ket{n,l,m,\epsilon}\underbrace{\braket*{n,l,m,\epsilon}{\psi}}_{c_{n,l,m,\epsilon}}$$
+
+$$\braket{\vec r}{\psi} = \sum_{n,l,m,\epsilon} \underbrace{\bra{\vec r}\ket{n,l,m,\epsilon}}_{R_{n,l}(r)Y_l^m(\theta,\varphi)}\ket{\epsilon}c_{n,l,m,\epsilon}$$
+
+$$= [\psi] = \sum_{n,l,m} \begin{pmatrix}c_{n,l,m,+}R_{n,l}(r)Y_l^m(\theta,\varphi)\\c_{n,l,m,-}R_{n,l}(r)Y_l^m(\theta,\varphi)\end{pmatrix}$$
+
+$$[\psi] = \sum_{l,m} \begin{pmatrix}a_{n,l,+}(r)Y_l^m(\theta,\varphi)\\a_{n,l,-}(r)Y_l^m(\theta,\varphi)\end{pmatrix}$$
+
+$$\dd \mathcal{P}_\epsilon(l,m) = ? $$
+
+$$\boxed{\vb L^2Y_l^m=l(l+1)\hbar^2Y_l^m}$$
+$$\boxed{L_zY_l^m=m\hbar Y_l^m}$$
+
+
+$$\dd \mathcal{P}_\epsilon(l,m) = \abs{\int Y_l^{m*}\sum_{l',m'}a_{l',m',\epsilon}(r)Y^{m*}_{l'}\dd \Omega}^2 r^2 \dd r$$
+
+
+$$\boxed{\int Y_l^{m*}Y_{l'}^{m'} \dd \Omega = \delta_{ll'}\delta_{mm'}}$$
+
+$$\mathcal{P}_\epsilon(l,m) = \int r^2 \dd r \abs{a_{l,m,\epsilon}(r)}^2$$
+
+$$\mathcal{P}(l,m) = \sum_\epsilon \mathcal{P}_\epsilon(l,m)$$
+
+$$\mathcal{P}(l)\epsilon_{\abs*{m}\leq l \mathcal{P}(l,m)} = \sum_{\abs{m}\leq l}\int r^2\qty(\abs*{a_{l,m,+}(r)}^2 + \abs*{a_{l,m,-}(r)}^2)\dd r$$
+
+
+\underline{Composition du moment cinétique}
+
+Généralisation et mise en contexte
+
+$\vec P_i$ n'est pas conservé s'il y a de l'interaction. Ce n'est donc pas un bon nombre quantique.
+
+Si le système satisfait: $$\sum_i \vb P_i = \vb P_T$$
+
+Alors $$\dv{\vb P_T}{t}= 0$$. Ce qui signigie que $\vb P_T$ est un bon nombre quantique
+
+
+$$W_{so} \approx \lambda(L_z S_z + \underbrace{L_xS_x + L_yS_y}_{\frac12L_+S_- +\frac{1}{2}L_-S_+})$$
+
+$L_z(m)$ et $S_z(\epsilon)$ ne sont plus des bons nombre quantiques. Le moment cinétique peut être passsé de l'un à l'autre. Cepandant le moment cinétique total, comme toujours, est conservé. On utilise donc le spin total comme nouveau nombre quantique $$\boxed{\vb J = \vb L + \vb S}$$
+
+\begin{align*}
+	\text{ECOC: }\;
+	&\vb L^2, L_z, S_s \qquad\to\qquad \vb L^2, \vb J^2, J_z\\
+	&\qty{\ket{l,m,\epsilon}} \qquad\to\qquad \qty{\ket{l,J,m}}
+\end{align*}
+
+Un exemple simple où cette base pourrait être utilisé est la composition de deux spin.
+
+\end{document}
