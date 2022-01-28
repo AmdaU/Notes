@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Cours 7}
+\author{Jean-Baptiste Bertrand}
+\date{\today}
+
+%\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage[total={19cm, 22cm}]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{svg}
+\usepackage{physics}
+\usepackage{mathrsfs}  
+\usepackage{tcolorbox}
+
+%packages pour faire des math
+%\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\usepackage{esint}
+
+\begin{document}
+
+\maketitle
+
+\section{4 équation de Maxwell révisée}
+
+Imaginons qu'on ai un circuit comportant une capacitance. Si on fait une boucle d'Ampère autour du fil, on devrait trouver que le circulation dépende du courrant. Cepedant, si on déforme la surface de manière à ce que la boucle reste en place mais que la surface ne croise plus le fil (ce qui est possible à cause du trou laissé par la capacitance) on trouve que la cirulation devrait être nul ou $\mu_0 I =0$. Comme ni $\mu$ ni $I$ ne sont nul, l'équation de Maxwell doit être fausse!. Plus exactement il lui manque un terme en electrodynamique.
+
+
+En effet on a que $$\grad \cross \vb B = \mu_0\vb j \implies \underbrace{\grad \cdot(\grad\cross\vb B)}_{0} = \mu_o \grad \cdot \vb j\implies \dv{\rho}{t}=0$$ 
+
+Autrement dit, notre équation de Maxwell, dans son état actuel \textbf{implique} que la charge ne ne varie pas dans le temps.
+
+On pose alors $$\grad \cross \vb B = \mu_0 j + \vb u$$ 
+
+On cherche alors la forme de $\vb u$ qui est pour l'instant quelquonque
+
+\section{Temps de vol d'une charge}
+
+On veut savoir le temps caractéristique que prend un chaque pour se dissiper dans un materiaux. On ne considère par les effets de bords et on a que 
+
+$$\frac{\partial {\rho}}{\partial {t}} -\grad\cdot\vb j = -\grad\cdot (\sigma \vb E) = -\sigma \grad \cdot \vb E = \-\sigma =\frac{\rho}{\epsilon_0} \implies \rho(t) = \rho_0e^{-t\over\tau_q}$$ 
+
+avec $\tau_q = \frac{\epsilon_0}{\sigma}$ 
+
+\section{La loi d'Ohm, d'où c'est que ça viens c'taffaire là}
+
+À partir de ce qu'on a fait plus haut (?) on a que $$\frac{d {<\vb v>}}{d {t}} = - \frac{<\vb v>}{\tau} \implies m {\vb v}{t} = -\frac{m}{\tau} <>
+$$ 
+avec champ éléctrique: 
+
+\end{document}
