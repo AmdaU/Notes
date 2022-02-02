@@ -1,0 +1,59 @@
+\input{../parameters.tex}
+
+\begin{document}
+
+On peut faire un développement en série autour de $R = R_0$.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{potentiel}
+    \caption{potentiel}
+    \label{fig:potentiel}
+\end{figure}
+
+$$U(x) = U(x_0) + (x-x_0)\eval{\dv{U}{x}}_{x_0} + \frac{1}{2} (x-x_0)^2\dv[2]{U}{x}$$ 
+
+$$F_s = \sum_p c_p(u_{s+p}-u_s)$$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{force}
+    \caption{force}
+    \label{fig:force}
+\end{figure}
+
+
+$$u_s(t) = u_0 e^{-i\omega t}e^{ikx}$$ 
+
+$$m\dv[2]{u}{t} = \sum_p (U_{sp}-U_s)$$ 
+$$\dotsb$$ 
+$$-m\omega = \sum_{p>0}C_p (e^{ikpa}-1) + \sum_{p<0}C_p(e^{ikpa}-1)$$ 
+$$\dotsb$$ 
+$$-m\omega^2 = 2\sum_{p>0} c_p(\cos(kpa)-1)$$ 
+$$\omega^2 = \frac{2c}{m}(1-\cos(ka))$$ 
+$$\omega^2 = \frac{4C}{m}\sin^2\qty(\frac{ka}{2})$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{relation-de-dispertion}
+    \caption{relation de dispertion}
+    \label{fig:relation-de-dispertion}
+\end{figure}
+
+\textit{Pourquois je suis surpris d'obtenir ce résultat?} - Françis <3
+
+$$v_g \dv{\omega}{k}\quad \vb V_g =\grad \omega(\vb k)$$ 
+
+$$a_{allo}$$ 
+
+$$a_{1,2,3}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{banane}
+    \caption{banane}
+    \label{fig:banane}
+\end{figure}
+
+\end{document}

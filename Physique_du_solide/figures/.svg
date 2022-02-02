@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname=".svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 60 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="240 : 60 : 1"
+       inkscape:persp3d-origin="120 : 40 : 1"
+       id="perspective301" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5409555"
+     inkscape:cx="399.4275"
+     inkscape:cy="195.9823"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1127"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+    <sodipodi:guide
+       position="-53.216067,184.12536"
+       orientation="0,-1"
+       id="guide146" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <g
+       sodipodi:type="inkscape:box3d"
+       id="g303"
+       style="fill:#ffd42a"
+       inkscape:perspectiveID="#perspective301"
+       inkscape:corner0="3.0335909 : 0.16915404 : 0 : 1"
+       inkscape:corner7="0.76551142 : -0.060025594 : 0.97942049 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path315"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="11"
+         d="m 70.827869,207.24662 58.523581,-24.58459 v 83.49192 L 70.827869,252.96358 Z"
+         points="129.35145,182.66203 129.35145,266.15395 70.827869,252.96358 70.827869,207.24662 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path305"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="6"
+         d="m 29.750166,200.02202 v 56.81777 l 41.077703,-3.87621 v -45.71696 z"
+         points="29.750166,256.83979 70.827869,252.96358 70.827869,207.24662 29.750166,200.02202 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path313"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="13"
+         d="m 29.750166,256.83979 38.218808,25.48736 61.382476,-16.1732 -58.523581,-13.19037 z"
+         points="67.968974,282.32715 129.35145,266.15395 70.827869,252.96358 29.750166,256.83979 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path307"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="5"
+         d="m 29.750166,200.02202 38.218808,-47.50408 61.382476,30.14409 -58.523581,24.58459 z"
+         points="67.968974,152.51794 129.35145,182.66203 70.827869,207.24662 29.750166,200.02202 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path311"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="14"
+         d="m 67.968974,152.51794 v 129.80921 l 61.382476,-16.1732 v -83.49192 z"
+         points="67.968974,282.32715 129.35145,266.15395 129.35145,182.66203 67.968974,152.51794 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path309"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="3"
+         d="M 29.750166,200.02202 67.968974,152.51794 V 282.32715 L 29.750166,256.83979 Z"
+         points="67.968974,152.51794 67.968974,282.32715 29.750166,256.83979 29.750166,200.02202 " />
+    </g>
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path731"
+       cx="29.409693"
+       cy="256.47083"
+       rx="4.004971"
+       ry="4.5553012" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path733"
+       cx="68.139679"
+       cy="283.51535"
+       rx="8.5213661"
+       ry="7.5083795" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path739"
+       cx="130.28452"
+       cy="266.0213"
+       rx="3.8624094"
+       ry="4.6175828" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path747"
+       cx="129.44693"
+       cy="183.07684"
+       rx="2.2143791"
+       ry="6.0602403" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path749"
+       cx="68.467674"
+       cy="152.8112"
+       rx="7.6728072"
+       ry="3.5763071" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path751"
+       cx="30.85257"
+       cy="200.28981"
+       rx="4.2130365"
+       ry="6.2967377" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path753"
+       cx="46.432335"
+       cy="228.49525"
+       rx="5.6423011"
+       ry="4.4299893" />
+    <ellipse
+       style="fill:#ffd42a;stroke-width:0.264583"
+       id="path755"
+       cx="101.98704"
+       cy="226.81076"
+       rx="7.8194356"
+       ry="5.6774454" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path825"
+       cx="68.723289"
+       cy="224.10371"
+       rx="3.9127281"
+       ry="5.6806521" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path827"
+       cx="101.1825"
+       cy="170.22523"
+       rx="5.7488179"
+       ry="7.7567582" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path829"
+       cx="128.36932"
+       cy="221.10655"
+       rx="4.9093189"
+       ry="4.6379709" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path831"
+       cx="31.711357"
+       cy="229.57954"
+       rx="3.6180677"
+       ry="4.8890038" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path833"
+       cx="45.902504"
+       cy="181.66013"
+       rx="2.893008"
+       ry="4.5450392" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path835"
+       cx="46.71685"
+       cy="267.36957"
+       rx="4.7121472"
+       ry="4.6270299" />
+    <ellipse
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="path837"
+       cx="102.34433"
+       cy="272.48749"
+       rx="4.6512175"
+       ry="3.2534916" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="12.280513"
+       y="263.44766"
+       id="text6209"><tspan
+         sodipodi:role="line"
+         id="tspan6207"
+         style="stroke-width:0.264583"
+         x="12.280513"
+         y="263.44766">$Na^+$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="14.675768"
+       y="230.71191"
+       id="text21789"><tspan
+         sodipodi:role="line"
+         id="tspan21787"
+         style="stroke-width:0.264583"
+         x="14.675768"
+         y="230.71191">$Cl^-$</tspan></text>
+  </g>
+</svg>

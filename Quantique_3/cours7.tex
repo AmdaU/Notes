@@ -1,0 +1,86 @@
+\input{../parameters.tex}
+
+\begin{document}
+
+\section{Théorème de Wigner-Eckart}
+
+$\vb v$ est vectroiel si $[J_i, v_i]= i\hbar \epsilon_{\rm ijk}V_k$ 
+
+
+$\vb J$ est vectoriel. Si $\vb J = \vb L + \vb S$, $\vb S$, $\vb L$ le sont aussi  
+
+$$[J_i, L_j + S_j] = [J_i, L_i] + [J_i, S_i] = i\hbar\epsilon_{\rm ijk}(L_k+S_k)$$ 
+
+$$[J_x, V_x] = 0$$ 
+
+$$[J_x, v_y] = i\hbar V_z$$ 
+$$[J_x, \underbrace{V_{x}\pm iV_y}_{V_\pm}] = \mp \hbar  V_z$$ 
+
+$$ [J_z, V_z] =0$$
+
+\newcommand{\spa}{\mathcal{P}_\mathcal{E}}
+$$\spa = \sum_{\rm m}\ketbra{k,j,m}$$ 
+
+
+$$\mathcal P_{\mathcal{E}} V_{\rm z}\mathcal P_{\mathcal{E}} = \alpha P_{\mathcal{E}} J_zP_{\mathcal{E}}$$ 
+
+$$\bra{k,j,m}V_\pm\ket{k', j', m'} = \pm \frac{1}{\hbar}\bra{k,j,m} [J_z, V_pm] \ket{k',j',m'}$$ 
+
+frac{1}{2}
+
+
+\hrule
+\section{Charge}
+
+\subsection{Composition de 2 spins}
+
+$$H_1 \otimes H_1 = H_2 \oplus H_2 \oplus H_0$$ 
+
+$$\abs{j_1 - j_2} = 0 \leq H \leq j_1 + j_2 =2$$ 
+
+\begin{table}[h!]
+	\centering
+	\label{tab:label}
+
+	\begin{tabular}{ccccc}
+		$M/S$ & 2 & $1$ & 0\\
+		$+2$ & \ket{2,+2} & \\
+		$+1$ & \ket{2,+1} & \ket{1,+1}\\
+		$0$ & \ket{2,0} & \ket{1,0} & \ket{0,0}\\
+		$+1$ & \ket{2,-1} & \ket{1,-1}\\
+		$+1$ & \ket{2,-2}  \\
+		
+	\end{tabular}
+	\caption{Tableau de toutes les valeurs possible}
+\end{table}
+
+$J = 2$
+
+$$\ket{2.+2} \ket{1,+1;1,+1}$$ 
+$$\ket{2, -2}=\ket{1,-1;1,-1}$$ 
+$$J_-\ket{2, +2}=\hbar\sqrt{2(2+1) - 2(2-1)}\ket{2, +1} = (J_{1-} + J_{2-} \ket{1, +1,1,+1})= \hbar\sqrt{1(1+1) - 1(1-1)}\ket{1,0;1,+1} + \hbar\sqrt2\ket{1,+1,1,0}$$ 
+$$\ket{2, \pm 1} = \frac{1}{\sqrt{2}} (\ket{1, \pm 1, 1, 0}+ \ket{1,0,1,\pm1})$$ 
+
+
+$$J_1\ket{2,+1} = \hbar\sqrt{2(2+1)-1(1-1)}\ket{2,0} = \frac{1}{\sqrt2} (J_{1-}+ J_{2-}\qty[\ket{1,+1,1,0}+\ket{1,0;1,+1}])$$ 
+$$= \frac{\hbar}{\sqrt2} \qty[\sqrt 2 \ket{1,0,1,0} + \sqrt2\ket{1,1,1,-1} + \sqrt2 \ket{1,0,1,0} + \sqrt2\ket{1,1,1,-1}]$$ 
+$$\ket{2,0} = \frac{1}{\sqrt6} \qty(\ket{1,-1,1,1}+ \ket{1,1,1,-1}+ 2\ket{1,0,1,0})$$ 
+
+On a fini la première colone!
+
+$$\ket{1,+1} = \alpha\ket{1,+1, 1, 0} + \beta\ket{ 1,-;1,+1}$$ 
+$$J_+\ket{1,+1} =0 = \hbar \sqrt 2 \alpha \ket{1,+1,1,0} + \hbar \sqrt2\ket{1,0,1,+1}$$ 
+$$\implies \alpha = -\beta$$ 
+
+$$\ket{1,+1} = \frac{1}{\sqrt{2}} \qty(\ket{1,+1;1,0}-\ket{1,0;1,+1})$$ 
+
+$$\ket{1,-1} = \frac{1}{\sqrt{2}} \ket{1,-1;1,0}-\ket{1,0;1,-1}$$  
+
+$$J_-\ket{1,+1} = \dotsb \implies \ket{1,0} \frac{1}{\sqrt{2}} \qty(\ket{1,+1;1,-1} -\ket{1.-1; 1, +1})$$ 
+
+$$\ket{0,0}= \alpha\ket{1,0,1,0}+\beta\ket{1,+1,1,-1}+\gamma \ket{1,-1,1,+1}$$ 
+$$0 = J_-\ket{0,0} = \hbar \alpha \sqrt{2} +\dotsb \implies \alpha+\beta +\alpha+\gamma=0$$ 
+$$\implies \ket{0,0} = \frac{1}{\sqrt{3}} \qty[\ket{1010}-\ket{11;1-1} -\ket{1,-1,1,+1}]$$ 
+(On a utlisé la normalisation comme 3eme équation)
+
+\end{document}

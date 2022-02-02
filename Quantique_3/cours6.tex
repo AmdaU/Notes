@@ -1,0 +1,45 @@
+\input{../parameters.tex}
+
+\begin{document}
+\section{Théroème de composition du moment cinétique}
+Si $\vb j_1$ et $\bv J_2$ deux moments cinétiques alors les valeurs propres à $J^2$ et $J_z$ sibt telles que $$J = J_1 + J_2, J_1+J_2-1, \dotsb, \abs{J_1 - J_2}$$ 
+$$-J \leq M \leq J$$ 
+
+vecteur propres: 
+
+$$\ket{J,M}=\sum_{m_1}\sum_{m_2}\ketbra{J_1, J_2; M_1, M_2}\ket{J,M}}$$ 
+\section{Exemple, compostition d'un moment orbitale etd'un spin}
+$$\vb J_1 = \vb L; \quad \bj J_2 = \vb S$$ 
+$$L^2\ket{l,m_2}\otimes \ket{\frac12,m_2} = \hbar^2l(l+1)\ket{l,s,m_1,m_2}$$
+$$S^2\ket{l, s, m_1, m_2} = \frac{\hbar^2}{2}\frac.2\dotsb \ket{}$$ 
+$$\dotsb$$
+
+$$\vb J = \vb L + \vb S; \quad J_{\rm z}= L_{\rm z}+ S_{\rm z}$$ 
+$$J = l + \frac{1}{2} \text{ et } J = l -\frac{1}{2}$$ 
+\begin{table}[htpb]
+	\centering
+	\caption{tableau des vecteur propre}
+	\label{tab:val_propre}
+
+	\begin{tabular}{|c|c|c|c}
+		\hline
+		$m\backslash J$ & $l + \frac12$ & $l - \frac{1}{2} &\dotsb\\ \hline
+		$l+\frac{1}{2}$ & $\ket{l+\frac12, l+\frac{1}{2}}$ & &\dotsb \\\hline
+		$l-\frac{1}{2}$ & & &\dotsb
+	\end{tabular}
+\end{table}
+\section{Opérateur scalaires et vectoriels (théorème de Wigner-Eckart)}
+
+\textbf{Opérateur scalaire} Si $A$ est scalaire $\implies [A,\vec J] = 0$
+
+Ex $J^2$ 
+$$[J^2, \vec J] = [J\cdot J, \vec J] = \vec J [\vec J,\vec J] + [\vec J, \vec J] \vec J =0$$ 
+
+Si $A$ est scalaire $[A, J^2] = \vec J[A,\vec J] + \vec J[\vec J, A]=0$ 
+
+
+\textbf{Opérateur vectoriel}
+
+$\vec V$ est vectoriel $$[J_i, V_j]  = i\hbar\epsilon_{\rm ijk} J_iV_j$$ 
+
+\end{document}

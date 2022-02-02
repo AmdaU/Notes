@@ -1,0 +1,119 @@
+\input{../parameters.tex}
+
+\begin{document}
+
+\section*{Rappels}
+
+Fourmule de la courbure $\frac{\norm{\alpha'(t) \cross \alpha''(t)}}{\norm{\alpha'(t)}^3}$
+
+$$\kappa(s)=- \iff \text{ segment de droite}$$ 
+
+$$\tau =0 \iff \text{ la courbe est planaire}$$ 
+
+$$\tau(s) = 0 \quad\text{et}\quad \kappa(s)\equiv c \iff \alpha \text{ portion de cercle de rayon }$$ 
+
+Forme locale canonique (Taylor)
+
+Isométrie $x \mapsto Ax+b \quad AA^t = 1$
+
+La courbure et la torsion sont \underline{invarientes par isométries}
+
+Pour $A$ une isométrie directe $A\vec u \cross A\vec v = A (\vec u \vec v)$ 
+En général $A\vec u \cross A \vec v = \det(A) A(\vec u \cross \vec v)$
+
+\section*{Théorème fondamentale des courbes dans $\mathbb{R}^3$}
+
+Deux courbes $C$, $C^*$ dans $\mathbb{R}^3$ de courbure non-nulle diffèrent par une isométrie directe $\iff$ ellse ont la même courbure et torsion ( $\kappa = \kappa^*$ et $\tau = \tau^*$ )
+
+\underline{Dém}
+Soit $\alpha$, $\alpha^*$ des courbes paramétrées par longueures d'arc de $C,C^*$
+
+Prenons $A$, l'unique matrice orthogonale t.q. $$ \begin{aligned}AT(0) &= T^*(0)\\AN(0) &= N^*(0)\\AB(0) &= B^*(0)\end{aligned}$$ 
+
+\begin{tcolorbox}
+	Rappel: si $A$ enovie une base orhtonormée vers une base orthonormée alors $A$ est orthogonale.\\	
+	Si $A$ envoie une base positiviement orienté à une base positiviment orientée alors $\det{A} > 0$ 
+\end{tcolorbox}
+
+Soit $\vec b \in \mathbb{R}^3$ t.q. $A\cdot\alpha(0) + \vec b = \alpha^*(0)$
+
+Définissons $I(x) = Ax +\vec b$ et $\tilde \alpha(s) = I(\alpha(s)) = A\alpha(s) + b$ 
+
+reste à montrer que $\tilde \alpha(s) = \alpha^*(s) \forall s$ 
+
+On a $\tilde \alpha(0) = A\alpha(0) + \vec b = \alpha^*(0)$ 
+
+Et comme $I$ est une isométrie
+
+$$\tilde T(0) = AT(0) = T^*(0)\\\tilde N(0)=AN(0)=N^*(0)\\\tilde B(0)=AB(0)=B^*(0)$$ 
+
+Comme $\kappa$, $\tau$ sont ivarients par isométries directe
+
+$$\kappa^*(s) = \kappa(s)= \tilde \kappa(s)\\\tau^*(s) = \tau(s)= \tilde \tau(s)$$ 
+
+Définissons une fonction $f(s) = \tilde T(s)\cdot T^*(s)+\tilde N\cdot N^*+\tilde B\cdot b^*$ 
+
+$f'(s)= \text{C'est vraiment long à écrire, fuck ça, règle de chaine mdr }= 0$ 
+
+$$\implies f(s) \equiv C \text{ mais } f(0)=1+1+1=3 \implies f(s) = 3$$ 
+
+Par l'inégalité de Chauchy-Swatzsdfjhh ( $|u\cdot v| \leq \norm{u}\norm{v}$ )
+
+
+
+$\tilde T(s)\cdot T^*(s) \leq 1$
+
+$\tilde N(s)\cdot N^*(s) \leq 1$
+
+$\tilde B(s)\cdot B^*(s) \leq 1$
+
+On en conclut que les vecteur du repert de frenet tilde et étoile sont les mêmes
+
+En particulier $\tilde \alpha'(s) = \alpha^{*\prime}(s) \implies \tilde \alpha(s) = \alpha^*(s) + \vec v_{0}$ mais $\vec v_{0} = 0$ car $\tilde \alpha(0) = \alpha^*(0)$
+
+\underline{Question:} Étant donné deux donctions $\kappa(s), \tau(s)$, existe-t-il une courbe $\alpha$ ayant $\kappa,\tau$ comme courbure et torsion?
+
+Oui! (avec suffisement de régularité)
+
+Pour trouver $\alpha$, on résout le système
+$$
+\begin{matrix}
+T' &= & &\kappa T\\
+N' &= &-\kappa T & &\tau B\\
+B' &= & & \tau B
+\end{matrix}
+$$
+
+puis on intègre $T$. On sait qu'une solution existe grace au théorème d'exsitance des solutions d'éqiation différentielles.
+
+\section*{Courbes planaires}
+
+\underline{Théorème} [inégalité isopérimétrique]:
+
+Soit $C$ une courbe planaire \underline{simple} fermée de longeure $l$ et $A$ est l'aire de la région bornée par $C$. Alors $l^2-4\pi A\leq 0$
+Avec $= \iff C$ est un cercle 
+
+\begin{tcolorbox}[title=Rappel]	
+	Théroème de Greene : $$\int_{\rm C} \vb F \cdot \dd \vb r = \iint_{\rm R} rot(\vb F) \dd A$$ 
+	En particulier, $\text{aire}(R)=\int_{\rm C}=\frac{1}{2}\int_c(y x)\cdot \dd \vb r = \frac{1}{2}\int xy' - yx' \dd t$ 
+\end{tcolorbox}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{parametrisation-isoperimetrique}
+    \caption{parametrisation isoperimetrique}
+    \label{fig:parametrisation-isoperimetrique}
+\end{figure}
+
+$\alpha$ paramétrée par longeure d'arc de $C$ 
+$\bar \alpha$ paramétré du cercle
+
+Calculons
+
+$$A + \bar A = A + \pi r^2 = \int_0^l x(s)y'(s)\dd s + \int_0^l - \bar y(s)x'(s) \dd y$$ 
+
+Fuck les notes; dodo. Aussi, criss que mon shéma est laid, faut vraiment que j'aprène à utiliser inkscape
+
+
+\end{document}

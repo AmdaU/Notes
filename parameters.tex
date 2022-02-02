@@ -23,3 +23,16 @@
 %\usepackage{cancel} % hum... pas sur que je vais le garder mais rester que des fois c'est quand même sympatique...
 \usepackage{amsmath, amsfonts, amsthm, amssymb}    
 \usepackage{esint}  
+
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
