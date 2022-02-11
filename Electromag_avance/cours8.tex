@@ -1,0 +1,30 @@
+\input{../parameters}
+
+\begin{document}
+Inserer les équations de Maxwell ici
+
+On se met dans le vide donc $\rho \equiv J\equiv 0$ 
+
+
+\begin{gather}
+	\grad \cdot \vb E = \frac{\rho}{\epsilon_0} =0\\
+	\grad \cdot B = 0\\
+	\grad \cross \vb e -\dv{\vb B}{t}\\
+	\grad \cross \vb b = \mu_0\qty(\vb J + \epsilon_0 \dv{\vb E}{t})= \mu_0\epsilon_0 \dv{\vb E}{t}
+\end{gather}
+
+On veut une équation pour $\vb E$ seulement!
+
+$$\grad \cross (\grad \cross \vb E) - \pdv{t}(\grad \cross \vb B) = -\pdv{t}(\epsilon_0\mu\pdv{\vb E}{t}) = -\epsilon_0 \mu_0 \pdv[2]{\vb E}{t} $$
+
+$$\grad(\grad\cdot \vb E) - \grad^2\vb E = \epsilon_0\mu_0 \dv[2]{\vb E}{t}$$
+
+C'est une équation d'onde! Wow quel dénouement innatendu!
+
+
+On pose la constante $c$ comme nom de variable totalement alétoire dans le processus de résolution de notre équation différentielle. Oh! Mon DIEU! Il s'agit en fait... de la vitesse de la lumiére!!!!!!!!!! Pourtant celle-ci ne semble dépende que de constantes universelles fondamentales. Cela signifie donc que si je vois la lumière aller à une vitesse différente, les constante des $\espilon_0$ et $\mu_0$ doivent être différente. Cependant comme on le sait de Galillé, qui a inventé la realtivité, il suffit de changer de référentielle pour cela! Cela veut donc dire que si j'allais à vitesse $c$ je mesurais que $\epsilon\mu_0 = \infty$. C'est facsinant, les constantes fondamentales changent drastiquement d'un référentiel à l'autre! La terre doit être dans un référentiel très priviligié pour que nous n'ayons jamais remarqué ce fait incyoablement important. Je m'envais vérifier cette hypthèse expérimentalement puis passer par go pour collecter mon prix Nobel de ce pas! 
+
+\section*{Journal, entrée 192}
+Autre observation fasciante: les champ éléctrique et le champ mangétique sont tout deux perpendicualire au vecteur d'onde $k$ qui dicte la direction de propagation! Ce sont donc des ondes transverse. Fascinant. Une nouvelle découverte n'attend pas l'autre.  
+
+\end{document}

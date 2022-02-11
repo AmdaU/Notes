@@ -1,0 +1,133 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+\item Carte de Surface : $p: U \subseteq \mathbb{R}^{2} \to S \subseteq \mathbb{R}^{3}$ 
+
+	lisse\\
+	homéomorphisme entre $U$ et $p(U)$\\
+	$Dp = (p_{u}|p_{V})$ rang maximal\\
+	
+\item Surface $S \subseteq \mathbb{R}^{3}$ 
+
+	tout point est contenu dans la carte de surface
+
+\item Point régulier $p$ de $f: \mathbb{R}^{3} \to \mathbb{R}: \eval{Df}_p\neq 0$  
+
+	valeur régulière: $f(p)$\\
+	valeur critique $\iff$ non-régulière 
+\end{itemize}
+
+
+\underline{Proposition} Si $\alpha \in \mathbb{R} est une valeur régulière. alors $f^{-1}(a)$ est une surface lisse$  
+
+\underline{Dém:} Soit $\vec x \in \mathbb{R}^{3}$ t.q. $f(\vec x) =a$   
+
+Comme $a$ est une valeur régulière, $\eval{df}_{\vec x} \neq 0$
+
+$\implies$ un des dérivé partitiel est non-nulle
+
+Sans perte de généralité, disons
+
+$\eval{\dv{f}{z}}_{\vec x}\neq0$
+
+Définissons $F: \mathbb{R}^{3} <to \mathbb{R}^{3} $
+
+$$F \begin{pmatrix} x\\ y\\ z
+	
+\end{pmatrix} = \begin{pmatrix} x \\ y \\ f(x,y,z) 
+	
+\end{pmatrix}$$ 
+
+
+$$\implies Df = \begin{pmatrix} 1 & 0 &0 \\ 0 &1 & 0 \\ \dv{f}{x} & \dv{f}{y} & \dv{f}{z}
+	
+\end{pmatrix}$$ 
+
+
+$$\implies \eval{\det(DF)}_{\vec x} = \eval{\dv{f}{z}}_{\vec x} \neq 0$$ 
+
+on peut applique le thm de la fonction inverse
+
+$$\exists U, V \text{ ouverts }, U \ni \vec x, \quad V \ni F(\vec x) = (x_{0}, y_{0}, z_{0})^T$$ 
+
+t.q. $F: U \to V$ est inversible et $F^{-1}$ est lisse.
+
+Soit $W$ la projection de $V$ sir le plan $(x,y)$   
+
+$$p: W \to S\quad (x,y,z)^T \to F^{-1}(x,y,z)^T \in f^{-1}(a)$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{bingobong}
+    \caption{bingobong}
+    \label{fig:bingobong}
+\end{figure}
+
+comme $DF^{-1}\eval{}_{F(\vec x)} = (\eval{DF}_{\vec x})^{-1}$ 
+
+$Dp = $ deux premires colonnes de $DF^{-1}$ est de range maxmial $\blacksquare$  
+
+
+\underline{Exemple}
+
+$$f(x,y,z) = x^2 + y^2 +z^2$$ 
+
+$$Df = (2x, 2y, 2z)$$ 
+
+Le seul point critique est $(0,0,0)$
+
+La seule valeur critique est $f(0,0,0) =0 $ 
+
+$$f^{-1} = \{(x,y,z)^T| x^2 + y^2 - z^2 =1\}$$ 
+
+\section*{première forme fondamentale}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{exesmples-de-fonctions}
+    \caption{Exesmples de fonctions}
+    \label{fig:exesmples-de-fonctions}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{forme-fondamentale}
+    \caption{forme fondamentale}
+    \label{fig:forme-fondamentale}
+\end{figure}
+
+	\underline{Définition} Étant donnée une carte de surface lisse $p$, la \underline{première forme fondamentale} ou \underline{métrique} est $$I_{u,v}= \eval{\begin{pmatrix} p_{u}\cdot p_{u} & p_{u}\cdot p_{v}\\ p_{v}\cdot p_{u}& p_{v}\cdot p_{v}
+	
+		\end{pmatrix}}_{(u,v)}  = \begin{pmatrix} E &F \\ F & G
+	
+\end{pmatrix}$$ 
+
+\underline{Définition}: Deux surfaces $S, S^*$ sont localement isométrique s'il existe un ouvert $U \subseteq \mathbb{R}^{2} $ et des paramétristion $p, p^*$ t.q. $\eval{I}_{(u,v)} = \eval{I^*}_{(u,v)}$    
+
+\underline{Exemple}: Considérons $S$ Le plan $x,y $ paramétrisé par $p_{(u,v)} = \begin{pmatrix} u\\v\\0
+	
+\end{pmatrix}$    
+
+et le cylindre $S^*$ paramétrisé par $p^*(u,v) = (\cos(u),\sin(u), v)^T$
+
+ON a $$p_{u}= (1,0,0), p_{v}=(0,1,0), p_{u}^* =(-\sin(u), \cos(u),0), p_{v}^* = (0,0,1)$$ 
+
+			$$I = \begin{pmatrix} 1 & 0 \\ 0 & 1
+	
+\end{pmatrix} = I^*$$
+
+$\implies S$ est localement isométrique à $S^*$  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{forme-fondamentale}
+    \caption{forme fondamentale}
+    \label{fig:forme-fondamentale}
+\end{figure}
+
+\end{document}

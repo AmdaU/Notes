@@ -1,0 +1,117 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Théorie des perturbation (?)}
+
+Il fait un rappel de la théorie des perturbation, qu'on a fait au dernier cours
+
+\begin{figure}[ht]
+    \centering
+    \incfig{spectre-énérgétique}
+    \caption{spectre énérgétique}
+    \label{fig:spectre-énérgétique}
+\end{figure}
+
+\section*{Cas dégénéré}
+
+On pose:
+$$\ket{\varphi_{n,\alpha}} = \sum_{i=1}^{g_n} c^\alpha_{n,i} \ket{\varphi_n^i}$$ 
+
+On fait un chanement de base pour utilisel les ket $\alpha$ au lieu d'utiliser les ket $i$  
+
+$$H_0\ket{\varphi_n,\alpha} = E_n^0\ket{\varphi, \alpha}$$ 
+	
+$$H_0\ket{\varphi^{(1)}} + W\ket{\varphi_{n,\alpha}}= E_n^0\ket{\varphi_n^i} + E^{(1)} \ket{\varphi_{n,\alpha}}$$ 
+$$\bra{\varphi^i_n}H_0\ket{\varphi^{(1)}} + \bra{\varphi^i_n}W\ket{\varphi_{n,\alpha}}= \bra{\varphi^i_n}E_n^0\ket{\varphi_n^i} + \bra{\varphi^i_n}E^{(1)} \ket{\varphi_{n,\alpha}}$$ 
+
+
+$$\sum_{i=1}^{g_n} \bra{\varphi^i_n}\bar W \ket{\varphi_n^{i\prime}}\bra{\varphi_n^{i\prime}}\ket{\varphi_{n,\alpha}}= E^{(1)}\braket{\varphi_n^i}{\varphi_{n,\alpha}}$$ 
+
+C'est essentiellement un produit matriciel 
+
+
+$$\det(P_{\mathcal{E}}\qty(\bar W = E^(1)\mathbb{1})P_{\mathcal{E} }) = 0 \to E^{(1)} \text{ valeur propres}$$ 
+
+On va se limiter en ordre 1 en énérgie, et donc en ordre 0 en état dans le cadre du cours.
+
+L'odre 0 n'est pas trivial même à l'ordre 0 dans le cas dégénéré.
+
+\section*{Algorithme}
+
+si $$H = H_{0}+W$$
+
+si $\ket{\varphi_{n}}$ est non-dégénéré : formule
+sinon $$E_{0}= E_{n}^0 + \lambda E_\alpha^{(1)}$$ 
+
+\section*{Application: structure fine de l'atome $H$}
+
+rappel: eq dirac: $$(c\vec\alpha\cdot\vec p +\beta mc^2 + V(r))\psi = E\psi\quad V = - \frac{e^2}{r} $$ 
+
+$$H_{sf}= \frac{\vec{p}^2}{2m} + V +\underbrace{W_{mv}+W_{D}+ W_{SD}}_{\text{perturbation}}$$ 
+
+\begin{figure}[h!]
+    \centering
+    \incfig{spectre-de-l'atome-d'hydrogene}
+    \caption{spectre de l'atome d'hydrogene}
+    \label{fig:spectre-de-l'atome-d'hydrogene}
+\end{figure}
+
+$$\boxed{\ket{n=1, l=0, n=0, \pm}=\ket{\varphi_{1s}}}$$ 
+
+$$\ket{n=2, l=0, m=0, \pm} = \ket{2s}$$ 
+
+$$\ket{n=2, l=1, m\in \{1,0,-11\}, \pm} = \ket{2p}$$ 
+
+
+on définit $$E_{n}^{0}=-\frac{E_{I}}{n^{2}}\qquad E_{I}=\frac{m e^{4}}{2 \hbar^{2}}=\frac{1}{2} m c^{2} \alpha^{2}$$ 
+
+et $$\alpha=\frac{e^{2}}{\hbar c} \simeq \frac{1}{137}$$ 
+
+\underline{Niveau 1s} 
+
+$$E_{1s}= E_{1s}^0\bra{1,0,0,\pm} W_{mv}+W_{0}\ket{1,0,0,\pm}$$ 
+
+
+$$\bra{1,0,0}\otimes\bra{1,0,0}{\pm}W_0\ket{1,0,0}\otimes\ket{\pm} = \bra{1,0,0}W_0\ket{1,0,0}$$ 
+
+$$=\int \dd^3 r \bra{1,0,0} W_D\ket{\vec r}\bra{\vec r}\ket{1,0,0} = \int \dd^3 r \varphi_{1s}(r) \frac{\hbar^2e^2\pi}{2m^2c^2} \delta(\vec r) \varphi_{1s}(r) = \frac{\hbar^2e^2\pi}{2m^2c^2}\underbrace{\norm{\varphi_{1s}(0)}^2}_{\frac{1}{\pi a^2_0} } = \frac{ 1}{2} mc^2 \alpha^4$$ 
+
+$$\bra{1,0,0,\pm}\underbrace{W_{mv}}_{\frac{-\bar p^4}{8m^3c^2} }\ket{1,0,0,\pm}$$ 
+
+si $\frac{p^2}{2m} H_{0-V}\implies P^4 = (2m)^2(H_{0}-V)^2= 4m^2(H_{0}^2-H_{0}V- VH_{0}+V^2)$ 
+
+\begin{align*}\bra{1,0,0}W_{mv}\ket{1,0,0} = - \frac{1}{2mc^2} \bra{1,0,0}H_{0^2}- H_{0} V - VH_{0}+ V^2\ket{1,0,0}=\\ -\frac{1}{2mc^2} \qty(E_{1s}^2+ E_{1s}\bra{1,0,0}V\ket{1,0,0} + \bra{1,0,0}V^2\ket{1,0,0}) = -\frac{5}{8} mc^2 \alpha^4\end{align*}
+
+(On obtien le résultat après avoir intergrés sur $V$)
+
+
+Donc: $$E_{1s}= E_{1S}^0 + \qty(\frac{1}{2} - \frac{5}{8}) mc^2\alpha^2$$ 
+
+\underline{Niveau n=2} 
+
+
+$$2s: \ket{2,0,0,\pm},\quad g=2$$ 
+$$2p: \ket{1,2,(\pm1, 0),\pm},\quad g=6$$ 
+
+$$[\vb{L}^2, \vb{P}^4] = [\vb{L}^2, P^2P^2] = p^2 [L^2, P^2] + [L^2, P^2] P^2$$ 
+
+$$\vb P^2 = P_{r^2}+L^2 \implies \text{tout commute}$$ 
+
+$$\implies P^4 \text{ conserve }l$$ 
+
+$$[L^2, \vb L\cdot \vb S] = \[L^2, \vb L] \cdot \v S + \vb L [\vb L, \vb S] =0$$ 
+
+$$\implies W_{so} \text{ conserve } l$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{matrice-de-wsf}
+    \caption{matrice de Wsf}
+    \label{fig:matrice-de-wsf}
+\end{figure}
+	
+$$\bra{\pm, 2,0,0}W_D\ket{2,0,0,\pm} = \bra{2,0,0}W_d\ket{2,0,0}$$ 
+
+$$\varphi_{2s}(r) = \frac{1}{\sqrt{8\pi a_0^3}} \qty(1-\frac{r}{2a_{0}}) r^{-\frac{r}{2a_{0}} }$$ 
+\end{document}

@@ -1,0 +1,41 @@
+\input{../parameters.tex}
+
+\begin{document}
+\section*{Indice de rotation et Umalufsatz}
+
+$\alpha$ une courbe planaire
+
+On peut assigner un signe à la courbe.
+
+On définit $T$ comme d'habitude soit $T(s) \equiv \alpha'(s)$ mais $N(s):=R_{\frac{\pi}{2} }T(s)$ 
+
+Où $R_{\frac{\pi}{2} }$ est une rotation de $\frac{\pi}{2}$. ON a donc
+
+$$ T(s) = (x(s), y(s)) \implies N(s) = (-y(s), x(s))$$ 
+
+et 
+$$\kappa(s) := T'(s)\cdot N(s)$$ 
+
+Fenet-Seret dans $\mathbb{R}^2$: $$\begin{aligned} T'(s) &= \kappa(s)N(s)\\ N'(s) &=-\kappa(s)T(s)\end{aligned}$$  
+\underline{autres interprétation de $\kappa(s)$}: Dans $\mathbb{R}^2$, on peut toujours écrire $T(s) = (\cos(\theta(s)), \sin(\theta(s)))$  
+
+$$T'(s) = (-\sin(\theta(s))\theta'(s). \cos(\theta(s))\theta'(s)) = \theta'(s)M(s)$$ 
+
+On comprend donc que $\theta'(s) = \kappa(s)$ 
+
+On peut donc définir $\theta(s)$ comme $$\theta(s) = \int_0^s\kappa(t) \dd t + \theta(0) \implies \theta(s)-\theta(0) = \int_0^s \kappa(t)\dd t$$  
+
+Si $\alpha$ est une courbe \underline{fermée} ( $\alpha(s+L) = \alpha(s)$ ) alors on a que $$\theta(L) =\theta(0) = 2k\pi$$ 
+
+On appelle $\frac{1}{2\pi} \int_0^L \kappa(t) \dd t = R$ l'\underline{indice de rotaition}
+
+Exemples: 
+
+Le $R$ d'un cercle parcourus en sens anti-horaire est de $1$ alors que celui d'une cercle parcourus en sens anti-horaire est de $-1$. Celui d'un leminiscate est de $0$
+
+\section*{Théorème des tangeantes tournantes}
+
+Si $\alpha$ est une courbe \underline{fermée} \underline{simple} (sans auto-intersection) alors $R=\pm1$  
+
+
+\end{document}

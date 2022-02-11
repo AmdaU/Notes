@@ -1,0 +1,97 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{`Opérateur vectoriles}
+
+$\vec v$ est vectoriel si $[v_{\rm, i}, V_j] = i\hbar\epsilon_{\rm ijk}$ 
+
+sous-espace: $\mathcal E (k,j) = \{\ket{k,j,m}, m = -j,\dotsb,j\}$ 
+
+
+$$P_\mathcal{E} = \sum_{-j}^j \ketbra{k,j,m}$$ 
+
+$$\boxed{P_\mathcal E \vec v P_\mathcal E = \alpha P_\mathcal E \vec J P_\mathcal E}$$ 
+	
+On considère $P_{\rm \mathcal{E} }^2 \vec J \cdot \vec v$
+
+$$ = P_{\rm \mathcal{E} } \vec J P_{\rm \mathcal{E} } \vec v P_{\rm \mathcal{E} } = \alpha P_{\rm \mathcal{E} } \vec J\cdot \vec J P_{\rm \mathcal{E} } \equiv \alpha$$
+
+$$\implies <\vec J \cdot \vec v>_{\mathcal{E}(k,j)} = \alpha j(j+1)\hbar^2$$
+
+\underline{Application} Multiplet des spins et facteur de ???
+
+Atomes à plusieurs éléctrons
+
+$$\vec L = \sum_{i=1}^z \vec L_i\quad \vec S = \sum_{i=0}^{z}\vec S_i$$ 
+
+$$\vec J = \vec L + \vec S$$ 
+
+$$\mathcal{E}(k,j) \to \mathcal{E} (E_0, L, S, J) \to \{\ket{E_0, L, S, J, M}\quad J \geq M \geq -J\}$$ 
+
+champ mangétique
+
+$$H = H_0 - \gamma \sum_{i=1}^z\qty(\vec L_{\rm i}+ g\vec S_i) \cdot \vec B$$ 
+
+dans $\mathcal{E} (E_0, L, S, J) :P_{\rm \mathcal{E} }\qty[-\gamma\qty(\vec L +g\vec S)]P_{\rm \mathcal{E}} = -\gamma\alpha_L\vec J-\gamma g \alpha_s\vec J$ 
+
+On remplace $\vec L$ et $\vec S$ par $\alpha \vec J$ dans le Hamiltonien  
+
+On réécrit les $\alpha$s en fonction de produit scalaires.
+
+Les produits scalairs impliquent de calculer:
+
+$$<\vec L ^2>_\epsilon = L(L+1)\hbar^2 \quad <\vec L \cdot \vec S>_{\epsilon_0} = ?$$
+
+Si $\vec L + \vec S = \vec J \implies \vec J ^2 = \vec L^2 + \vec S^2 + 2\vec S \cdot \vec L \implies \vec L \cdot \vec S = \frac{1}{2} \qty(J^2 - L^2 - s^2)$ 
+
+
+On a finalement que $$H = H_0 - \gamma g_{\rm L}\vec J \cdot \vec B \quad \text{ dans }\mathcal{E} (E_0, L, S,J)$$  
+
+Si $\vb B$ est orienté en $z$ on trouve
+
+$$H = H_0 -\gamma g_{\rm L}J_{\rm z}B \implies H\ket{E_0, L, S, J, M} = \qty(H_0 - \gamma g_{\rm L}M\hbar B)\ket{E_0, L, S, J, M}$$  
+
+
+\section*{Théorie des parturbation}
+
+En général,
+
+$$H \ket{\psi}= E\ket{\psi}$$ 
+
+n'est pas soluble exactement.
+
+On prend $$H = \underbrace{H_{0}}_{\text{soluble}}+\underbrace{W}_{\ll H}$$ 
+
+$$H_{0} \ket{\varphi_n} = E_n^0\ket{\varphi_n} \quad \bra{\varphi_n}\ket{\varphi_n'} = \delta_{nn'}$$ 
+
+on pose $w = \lambda \bar w\quad \lambda \ll 1$
+
+On postule $$E = E_{n}^0 +\lambda E^{(1)} + \lambda^2 E^{(2)} + \dotsb$$ 
+$$\ket{\psi} = \ket{\varphi_n} + \lambda \ket{\varphi^{(1)}} +\lambda^2 \ket{\varphi^{(2)}}+ \dotsb$$ 
+
+Choix: $$\bra{\varphi_n}\ket{\psi} =1 = \underbrace{\bra{\varphi_n}\ket{\varphi_n}}_1 + 0 +0 + \dotsb$$ 
+
+
+$$\qty(H_{0}+ \lambda\bar W) \qty[\ket{\varphi_n} + \lambda \ket{\varphi^{(1)}} +\lambda^2 \ket{\varphi^{(2)}}+ \dotsb] = \qty(E_{\lambda^0}+ \lambda E ^{(1)} + \lambda^2 E^{(2)} + \dotsb)(\ket{\varphi_n} + \lambda \ket{\varphi^{(1)}} +\lambda^2 \ket{\varphi^{(2)}}+ \dotsb)$$ 
+
+
+$$O(\lambda^0): \quad H_{0}\ket{\varphi_n} = E_{n}^0\ket{\varphi_n}$$ 
+$$O(\lambda^1): \quad H_{0}\ket{\varphi^{(1)}} + \bar W \ket{\varphi_n} = E^0_n \ket{\varphi^{(1)}} + E^{(1)}\ket{\varphi} \implies \dotsb \implies E^{(1)} = \bra{\varphi_n}\bar W \ket{\varphi_n}$$ 
+
+
+$$O(\lambda^2): \quad H_0\ket{\varphi^{(2)}} + \bar W \ket{\varphi^{(1)}} = E_n^{?}? + ? + ? \implies \dotsb$$ 
+
+
+Bon, je note pas tout ça, je l'ai déjà fait une fois, pas une deuxième
+
+$$\implies \ket{\varphi^{(1)}} = \sum_{g_n}\sum_{m\neq n} \frac{\ket{\varphi_m}\bra{\varphi_m}\bar W \ket{\varphi_n}}{E^0_n-E^0_m}$$ 
+
+
+
+$$\implies E^{(2)} = \sum_{g_n} \sum_{m\neq n} \norm{\frac{\bra{\varphi_n}\bar W \ket{\varphi_n}}{E^0_n =E^0_m}}^2$$ 
+
+
+
+
+\end{document}
