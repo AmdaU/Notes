@@ -1,0 +1,153 @@
+\input{../parameters.tex}
+
+\begin{document}
+
+$$g(\omega) = \frac{2N}{\omega} (\omega_{n}^2-\omega^2)^{-\frac{1}{2}}$$ 
+
+$$\omega_{m}^2 = \frac{4c}{m} $$ 
+
+
+$$U = \int_{0}^\omega \frac{2N}{\pi} (\omega_{n}^2 - \omega^2)^{- \frac{1}{2}} \frac{\hbar\omega}{e^{i\hbar\omega}-1} = \frac{2N}{\pi} k_{B}T\int_{0}^{\omega_{m}} (x^2_m-x^2)^{- \frac{1}{2}} \frac{x}{e^x-1} \dd x$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{brache-acoustique}
+    \caption{brache acoustique}
+    \label{fig:brache-acoustique}
+\end{figure}
+
+Il a écris 1000000 équation pendant que je fasais le shéma
+
+Wtf il dessine des trucs à des endroits aléatoire au tableau
+
+\section*{Nouvelle section}
+
+Les métaux ont des éléctrons délcalissé. 
+
+Il existe deux approches pour décrire les métaux, l'approche classique et l'approche quantique. La distinction entre les deux traitement viens de la densité d'éléctrons
+
+
+
+\underline{Traitement quantique} 
+
+L'énérgie qui est importante est l'énérigie cintétique
+
+$$H = \frac{p^2}{2m} $$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{cristal-unidimentionel}
+    \caption{cristal unidimentionel}
+    \label{fig:cristal-unidimentionel}
+\end{figure}
+
+
+$$- \frac{\hbar^2}{2m} \dv[2]{x}\Psi(X) = E_{n}\Psi(x)$$ 
+
+$$\boxed{\Psi_{n}(0)=\Psi_{n}(L) = 0;\qquad \Psi_{n}(x) = A\sin(k_nx)}$$ 
+
+$$ \frac{\hbar^2}{2m} A^2 \sin(\frac{nx\pi}{L}) = E_{n}A \sin( \frac{nx\pi}{L})$$ 
+
+$$E_{n}= \frac{\hbar}{2m} \qty(\frac{n\pi}{L} )^2 \to ? \text{(Il viens de l'effacer smh)}$$ 
+
+On a deux spins possibles. Les éléctrons ont autant de chances d'avoir l'un que l'autre
+
+$$N=2n_F$$ 
+
+
+
+\headrule
+
+$$f(\epsilon) = \frac{1}{e^{\epsilon-\mu/k_BT}+1} $$ 
+
+$$f(\epsilon) \approx e^{\mu -\epsilon/k_{B}T$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{niveau-de-fermi}
+    \caption{niveau de fermi}
+    \label{fig:niveau-de-fermi}
+\end{figure}
+
+
+
+$$-\frac{\hbar^2}{2m} \grad^2 \Psi_{k}(\vec r) = \epsilon_{k}\Psi_{k}(\vec r)$$ 
+
+$$\Psi_{k}(\vec r) \Psi_{k}(x,y,x) = \Psi_{k}(x+L,y,z)$$ 
+
+$$\Psi_k(\vec r) = \Psi_{0}e^{i\vec k \cdot \vec r} $$ 
+
+$$-\frac{\hbar^2}{2m} \qty(\frac{-k^2}{2m} ) \qquad k^2 = k_{x}^2+k_{y}^2 + k_{z}^2$$ 
+
+$$\epsilon_{f}= \frac{\hbar^2k_{^2_f}}{2m} $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{sphère-de-fermi}
+    \caption{sphère de fermi}
+    \label{fig:sphère-de-fermi}
+\end{figure}
+
+$$N(\epsilon) = \frac{4{\pi}k_{f}^3}{3} \over \qty(\frac{2\pi}{L} )^3 = \frac{Vk_{f}^3}{3\pi^2}$$ 
+
+$$k_{f}= \qty(\frac{3\pi^2N}{V})^{1/3}$$ 
+
+$$\epsilon_{f}= \frac{\hbar^2}{2m} \qty(\frac{3\pi^2N}{V} )^{2/3}$$ 
+
+$$T_{f}= \frac{\espilon_{f}}{k_{B}} \sim 10^4K$$ 
+
+\headrule
+
+On définit la densité (tout cours?)
+
+$$D(\epsilon) = \dv{N}{\epsilon}$$ 
+
+$$N(\epsilon) = \frac{V}{3\pi^2} \frac{\qty(2m\espilon)^{3/2}}{\hbar^3}$$ 
+
+
+$$\dv{N}{\epsilon} = \frac{V}{3\pi^2\hbar^3} \frac{3}{2} \qty(2m)^{\frac{3}{2}}\espion^{1/2} = \frac{3N}{2E} $$ 
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{fonction-dentsitée}
+    \caption{fonction dentsitée}
+    \label{fig:fonction-dentsitée}
+\end{figure}
+
+
+$$\Delta U = U(T) = U(0)\approx \Delta N_{\text{excitées}}k_{B}T$$ 
+
+
+$$\Delta N_{\rm excités} = D(\epsilon_f)\Delta \epsilon = \frac{3N}{2K_{B}T_{f}} k_{B}T = \frac{3NT}{2T_{f}} $$ 
+
+$$\Delta U = \frac{3NT^2}{2T_{F}} k_B$$ 
+
+$$c = \dv{T}\Delta U = 3NK_{B} \frac{T}{T_F}$$ 
+
+Le facteur $T_{f}$ est important car il change complètement l'ordre de grandeur des prédictions!
+
+
+$$U = \int_{0}^\infty \dd\epsilon \epsilon D(\epsilon) f(\epsilon)$$ 
+
+Il faut faire des tours de passe passe. Premier tour de passe passe: 
+
+$$\epsilon_{f}N = \int_{0}^\infty \espilon_{f}D(\epsilon)f(\epsilon) \dd \epsilon$$ 
+
+$$\pdv{T}(U-\epsilon_{f}N) = \pdv{U}{T} = C_e$$ 
+
+$$C_{e}= \int_{0}^\infty (\epsilon-\epsilon_{f})D(\espilon) \pdv{f(\epsilon)}{T} \dd \espilon$$ 
+
+$$ \pdv{f}{T} = \frac{(-1)e^{\epsilon-\mu/k_{B} T}}{\qty(E^\dots + 1)^2} \frac{(-1)(\epsilon-\mu)}{k_BT^2}$$ 
+
+La il réecrit l'intégrale avec la dérivée pis il évalue $D$ à $\epsilon_{f} $pour une certaine raison  
+
+Oh, c'est une approximation finalement, la fonction est très piqué alors c'est essentiellement un delta en $\epsilon_f$ 
+
+
+
+
+
+\end{document}

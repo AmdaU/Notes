@@ -1,0 +1,190 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+Première forme fondamentale
+
+$$I = \cols{p_{u}\cdot p_{u} & p_{u}\cdot p_{v}\\ p_{v}\cdot p_{u}& p_{v}\cdot p_{v}}$$ 
+
+La première forme fondamentale est une forme bilinéaire symétique définie positive (produit scalaire) sur $T_{x} S$: l'espace tangeant au point $x\in S$.
+
+C'est $X,Y \in T_{x}S$ 
+
+$$I_{x}(X.Y) = X\cdot Y$$ 
+
+Dans la base $p_{u},p_{v}$ la matrice de $I$ est  
+$$I = \cols{p_{u}\cdot p_{u} & p_{u}\cdot p_{v}\\ p_{v}\cdot p_{u}& p_{v}\cdot p_{v}}$$ 
+
+Autrement dit, si  $X= ap_{u}+bp_{v}\quad Y = cp_{u}dp_{v}$ 
+
+$$I_{x}(X,Y) =\cols{a & b} \cols{p_{u}\cdot p_{u} & p_{u}\cdot p_{v}\\ p_{v}\cdot p_{u}& p_{v}\cdot p_{v}} \cols{c\\d}$$ 
+
+\underline{Rappels (encore)} 
+
+$$f: \mathbb{R}^n \to \mathbb{R}^n$$ 
+
+$$\eval{Df}_x = \cols{\dv{f_1}{x_1} & \dotsb & \dv{f_1}{x_n}\\ \vdots & \ddots & \vdots \\ \dv{f_n}{x_1} & \dotsb &\dv{f_n}{x_n}}$$ 
+
+
+$$\eval{D_vf}_x = \eval{Df}_x \cdot v$$
+
+est la \underline{dérivée directionnelle} de $f$ dams la direction $v$.
+
+$$lim_{t\to o} \frac{f(x + tv) - f(x)}{t}$$ 
+
+
+Rèlge de chaîne:
+
+$$D(g \circ f)\eval{\;}_x= \eval{Dg}_{f(x)} \cdot \eval{Df}_x$$ 
+
+
+\begin{tcolorbox}[title=Remarge]
+	Soit un chemain $\gamma:(-\epsilon, \epsilon) \to \mathbb{R}^3$ t.q. $\gamma(0)=x; \quad \gamma'(0)= v$  	
+$$f: \mathbb{R} \to \mathbb{R}$$ 
+$$\eval{D(f\circ \gamma)}_0 = \eval{Df}_{\gamma(0)} \cdot \eval{D\gamma}_0 = \eval{Df}_{\gamma(0)} \gamma'(0) = \eval{Df}_x \cdot v = \eval{D_{v}f}_x$$ 
+
+Dérivée directionelle de $f$ dans la direction $v$. Dépend \underline{uniqument} de $gamma(0)$ et  $\gamma'(0)$     
+
+\end{tcolorbox}
+
+
+Si $p:U\to S$ est une carte locale de surface et que $\gamma$ est un chemin dans $U$, alors $p \circ \gamma$i est un chemain dans $S$.   
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{chemin-dans-une-surface}
+    \caption{chemin dans une surface}
+    \label{fig:chemin-dans-une-surface}
+\end{figure}
+
+
+\underline{Définition} 
+
+Soit $f: S\to \mathbb{R}$. ON dit que $f$ est différentiable en $x\in S$ si pour une carte $p: U \to S$ t.q. $p(u_?,v_?) =x$, $f\circ p$ est différentialble en $(u_{0},v_{0})$     
+Dans ce cas la \underline{dérivée} de $f$ est $x_{i}$ nortée $\eval{df}_x$ est définie par
+
+$$\eval{df}_x: T_{x}S \to \mathbb{R}\qquad X\to D_x\eval{f}_x$$ 
+
+
+La composistion $F=f\circ p$, s'appelle \underline{l'expression de $f$ en coordonnées locales}  
+
+Sans la base $p_{u},p_{v}$ de $T_{x}S$ la dérivé $d\eval{f}_x$ a pour matrice:
+
+$$\eval{Df}_{u_{0}, v_{0}} = \eval{\cols{\pdv{F}{u} & \pdv{F}{v}}}_{(u_{0}v_{0})}$$ 
+
+$$\gamma(t) = (u_{0}v_{0}\circ t(a,b)$$ 
+alors $$\eval{D(p\circ \gamma)}_? = D\eval{p}_?\cdot\eval{D\gamma}_? = \eval{Df}_? \cdot \cols{a\\ b} = \eval{(p_u|p_v) \cols{a\\b}}_{u_{0}, v_{0}}$$ 
+
+
+Si $X =a p_{u}+ bp_{v}$ 
+
+$$\eval{Df}_x = D\eval{\qty(f \circ p \circ\gamma)}_0 = D\eval{\qty(F\circ \gamma)}_0 = \eval{Df}_{\gamma(0)} D\eval{\gamma}_0 = D\eval{F}_{(u_{0},v_{0}) \cdot \cols{a\\b}}$$ 
+
+Donc, la matrice de $\eval{df}_x$ dans la base $p_{u}, p_{v}$ est bien $\eval{DF}_x$.   
+
+
+\underline{Exemple} 
+
+
+$$p(\theta, z) = \cols{\cos\theta\\\sin\theta\\z}$$ 
+
+$$f: S \to \mathbb{R}$$ 
+$$f(x) = x\cdot x = \norm{x}^2$$ 
+
+
+En coordonnées localess $f(x)$ est donnée par $F = f\circ p$   
+$$I = \cols{p_{u}\cdot p_{u} & p_{u}\cdot p_{v}\\ p_{v}\cdot p_{u}& p_{v}\cdot p_{v}}$$ 
+
+
+$$f(p(0,z)) = \cos^2\theta + \sin^2\theta +z^2 = 1+z^2$$ 
+
+
+$$DF = \cols{\dv{F}{\theta}, dv{F}{z}} = \cols{0 & 2z}$$ 
+
+
+est la matrice de $df$ en coordonnées locales
+
+
+\underline{Définition}  
+
+Soit $S$, $S^*$ deux surfaces et $f: S\to S^*$   
+
+On dit que $f$ est dérivable/différentiable en $x \in S$ si, pour des cartes $p$ de $S$, $p^*$ de $S^*$, la composition 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{le-même-dessin-que-d'habithude}
+    \caption{Le même dessin que d'habithude}
+    \label{fig:le-même-dessin-que-d'habithude}
+\end{figure}
+
+On appelle $F = p \circ g \circ p$, l'expression en coordonées locales de $f$
+
+La dérivée de $f$ est $\eval{df}_{x} T_{x} S \to T_{f(x)} S^*$ dont la matrice ?? les bases $p_{u} p_{v}$ de $T_{x} S$ et $p^*, p^*$ de $T_{f(x)}S^*$ est $\eval{DF}_{f(x)?} $  
+
+
+
+\section*{Application de Gauss}
+
+
+Étant donné une surface $S$ un choix ? de vecteurs unitaires normales s'appelles une \underline{orientation} sur $S$   
+	
+\underline{L'application de Gauss} est la fonction $$n: S \to S^2$$ qui associe à un point $x\in S$ le vecteur normal en $x$. (défini sur une surface orientée)   
+
+par exemple, si $ S = S^2$, $n:S^2 \to S^2$ est l'identitié.
+
+Si $S$ est un plan $n$ est constant?
+
+Si $S$ est un cylinde, l'image de $S$ est un grand cercle
+
+\begin{figure}[ht]
+    \centering
+    \incfig{grand-cercle-à-shpère}
+    \caption{grand cercle à shpère}
+    \label{fig:grand-cercle-à-shpère}
+\end{figure}
+
+Si on a plutôt une scelle:
+
+\begin{figure}[ht]
+    \centering
+    \incfig{scelle-vers-shpère}
+    \caption{Scelle vers shpère}
+    \label{fig:scelle-vers-shpère}
+\end{figure}
+
+\underline{Définition} \underline{L'opérateur de forme} (shape operator) d'une surface $S$ est $\mathcal{S}_x(s) = - dn(x)$   
+$$\mathcal{S} : T_{x} S \to T_{n(x)} S$$ 
+
+\underline{"Demonstaraion"} 
+
+
+\underline{Déf} \underline{La seonde forme fondamentale}  de $S$ est 
+
+\newcommand{\rom}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+
+$$\rom 2_x (X, Y) = \mathcal{S}(X)\cdot Y$$ 
+
+$$(X< y \in T_{x} S)$$ 
+
+
+\underline{Prop:} $\rom 2_x$ est une forme bilinéaire symétrique
+
+\underline{Dém:} $\rom2_x$ est bilinéaire car le produit scalaire est bilinéaire et $\mathcal{S} = - dn$ est linéaire
+
+Calculons $\rom 2_x$ sur $p_{u,} p_{v} $
+
+ON sait que $\eval{p_u}_{u,v} = n(?) = 0 $ 
+
+On prend $\dv{v}$ de chaque côté
+
+Fuck, je vais noter la conclusion quand on ferra le prochain rappel	
+
+\end{document}
+

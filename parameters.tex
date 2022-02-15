@@ -30,9 +30,19 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 
+\usepackage{mathrsfs}
+
 \newcommand{\incfig}[2][1]{%
     \def\svgwidth{#1\columnwidth}
     \import{./figures/}{#2.pdf_tex}
 }
+
+\newcommand{\cols}[1]{
+\begin{pmatrix}
+	#1
+\end{pmatrix}
+}
+
+\newcommand{\avg}[1]{\left\langle #1 \right\rangle}
 
 \pdfsuppresswarningpagegroup=1
