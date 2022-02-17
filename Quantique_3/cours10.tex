@@ -1,0 +1,55 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{ $H_{sf}$ ? }
+
+$$H_{\rm sf}\chi = E\chi$$ 
+
+Atome H:
+$$H_{\rm sf} = \frac{p^2}{2m} + V \underbrace{-\frac{\vb{p}^4}{8m^3r^2}}_{W_{mv} } + \underbrace{\frac{\hbar^2e^2\pi}{2m^2c^2} \delta(\vb r)}_{W_{D} } + \underbrace{\frac{e^2}{2m^2c^2r^3} \vb L \cdot \vb S}_{W_{so} }$$ 
+
+
+\underline{Théorie des perturbations stationnaires} 
+
+$$E_{n}^0 = -\frac{E_{I}}{n^2}; E_{I} = \frac{me^4}{2\hbar^2} = \frac{1}{2} mc^2 \alpha^2$$ 
+
+$$\alpha = \frac{e^2}{c\hbar} \approx \frac{1}{137} $$ 
+
+$$\text{1S: } E_{1s} = E_{1s}^0 + \bra{1S}W_{mv} + W_{D} \ket{1S} = E_{1S}^0 - \frac{1}{8} mc^2\alpha^2$$ 
+
+$$\text{1S:} E_{2S}^0 + \ket{2S}W_{mv} + W_{D} \ket{2S} = - \frac{5}{128} mc^2\alpha^4$$ 
+
+
+$$\text{dim} \mathcal{E}_{n=2} = 8 \to (W_{sf} )_{\mathcal{E}_{n=2}} \text{à diagonaliser}$$ 
+
+$$(W_{sf})_{\mathcal{E}_{n=2}} = \cols{2\times2 & 0 \\ 0 & 6\times6}$$ 
+
+
+On a que $$[\vb{L}, W_{mv}] =0 \text{ car } [\vb{L}, \vb{P}^4] =0$$ 
+
+$W_{mv}$ est donc un opérateur scalaire
+
+
+$$\bra{2,1,m} W_{mv} \ket{2,1,m} = \bra{2,1,m} - \frac{1}{2} \frac{\qty(H_0-V)^2}{mc^2} \ket{2,1,m}$$ 
+
+
+$$= - \frac{1}{2mc^2} \qty(E_{2}^{(0)2}+2 e^2 E_{2}^0 \avg{\frac{1}{R}}_{2p} + e^2 \avg{\frac{1}{R^2} }_{2P} ) = -\frac{7}{384} mc^2\alpha^4$$ 
+
+
+$$\bra{2,1,m} W_{so} \ket{2,1,m} = \bra{2,1,m} \frac{e^2}{2m^2C^2r^3} \vb{L}\cdot \vb{S} \ket{2,1,m}$$ 
+
+Les éléments de la matrice ne seront pas tous diagonaux cette fois dans le sous-espace d'interet car $\vb{S}\cdot \vb{L} $ ne commuter pas avec avec $\vb{L}$ 
+
+$$= \frac{e^2}{2m^2c^2} \int \frac{r^2}{r^3} \dd r R_{21} R_{21} \bra{1,m} \vb{L}\cdot \vb{S} \ket{1,m}$$ 
+
+$$= \frac{e^2}{2m^2c^2} \int \frac{\dd r}{r} \left( \frac{1}{24a_{0}^3} \right) \left( \frac{r}{a_{0}}  \right)^2 e^{\frac{r}{a_0} } \avg{\vb{L}\cdot\vb{S}}$$ 
+
+$$= \xi_{2P} \avg{\vb{L}\cdot \vb{S}}$$ 
+
+$$\avg{L \cdot S} = \avg{\vb{J}^2 -\vb{L^2} -\vb{S}^2}= h^{2}\left[\frac{1}{2} J(J+1)-\frac{11}{8}\right]$$ 
+
+
+
+
+\end{document}

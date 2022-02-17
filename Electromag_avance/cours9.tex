@@ -1,0 +1,124 @@
+\input{../parameters}
+
+\begin{document}
+	
+\underline{ONdes guidées} 
+
+On a un tube infini de métal parfait
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{onde-dans-un-cep-cynlindrique}
+    \caption{Onde dans un CEP cynlindrique}
+    \label{fig:onde-dans-un-cep-cynlindrique}
+\end{figure}
+
+On cherche une solution de la forme 
+
+$$\begin{cases}
+	\vb{E}(x,y,z) = \vb{E}_0 (x,y) e^{i(kz-\omega t)}\\
+	\vb{B}(x,y,z) = \vb{B}_0 (x,y) e^{(kz-\omega t	)}
+\end{cases}$$ 
+
+l'onde ne peut pas être TEM 
+
+$E_{z}  = B_{z} = 0 $ 
+
+$$\implies \grad \cdot \vb{E} = \dv{E_x}{x}+ \dv{E_y}{y} = 0$$ 
+
+$$\implies \grad \times \vb{ E} = i\omega B_{z} = 0$$ 
+
+$$\implies dv{E_y}{x} = \dv{E_x}{y} = 0$$ 
+
+C'est donc identique à un problème d'éléctrostatiqueo
+
+On ne peut donc pas avoir d'onde transverse. On peut avoir des ondes 
+
+$$\begin{cases}
+	TE & E_{z} =0\\
+	TM & B_{z} =0 
+\end{cases}$$ 
+
+\underline{Remarque} 
+
+On ne peut donc pas avoir d'onde transverse dans un conducteur seul, il en faut au moins deux
+
+\underline{Cas d'une onde TE ($E_{z}  =0$)} 
+
+$$\nabla^2B_{z} = \frac{1}{c^2} \dv{B_z}{t} = 0 \text{ à l'interieur}$$ 
+
+$$\dv[2]{B_z}{x} + \dv[2]{B_z}{y} - k^2 B_{z} + \frac{\omega^2}{c^2} B_{z} = 0$$ 
+
+On cherche une solution sous la forme $B_z(x,y) = X(x)Y(y)$ pour le cas d'un guide d'onde rectangulaire 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{guide-d'onde-rectangulaire}
+    \caption{guide d'onde rectangulaire}
+    \label{fig:guide-d'onde-rectangulaire}
+\end{figure}
+
+
+$$X"Y + X Y" + \left( \frac{\omega^2}{c^2} -k^2 \right)XY =0 $$ 
+
+$$\frac{X"}{X} + \frac{Y"}{Y}  + \left( \frac{\omega^2}{c^2} -k^2 \right) = 0 $$ 
+
+$$\frac{X"}{X} = - \left( \frac{\omega^2}{c^2} -k^2  \right)- \frac{Y"}{Y} = -k_{z}^2 \text{ On le pose} $$ 
+
+$$X = \alpha \sin k_{z} x+\beta \cos k_{z} x$$ 
+
+de mmême $$\frac{Y"}{Y} = -k_{z}^2$$ 
+
+avec $-k_{x}^2 -k_{y}^2 + \frac{\omega^2}{c^2} -k^2 = 0$ 
+
+Conditions aux limites $\vb{E} = 0$ et $\vb{B}=0$ à l'extérieur du cylindre  
+
+
+On a aussi que $E_{\parallel}$ et $B_{\perp} $ sont continus 
+
+Donc, en $y\in\{0,b\}$ $E_{x} =B_{x} =0$  et en $X\in\{0,a\}$ $E_{y} = B_{x} = 0$ 
+
+
+Il nous reste à relier $E_{x}, E_{y} B_{x} B_{y}$ à $E_{z},B_{z} $  
+
+On veut donc se servir des autre équations de Maxwell. En particulier on veut se servir du rotationel car il mélange les composantes
+
+
+$$\grad \times  \vb{ E} = - \dv{\vb{B}}{t} = i\omega \vb{B} $$ 
+
+$$\implies i\omega \cols{B_{x}\\ B_{y} \\B_{z} } = \cols{ikE_{y} \\ikE_{x} \\ \dv{E_y}{x} - \dv{E_x}{y}}$$ 
+
+$$B_{x} = -\frac{k}{\omega} E_{y}, \quad B_{y} = \frac{k}{\omega} E_x$$ 
+
+
+$$\grad \times \vb{B} = \frac{1}{c^2} dv{\vb{E}}{t} = -\frac{i\omega}{c^2} \vb{E}$$ 
+
+
+$$\implies -\frac{i\omega}{c^2} \cols{E_{x} \\ E_{y} \\0 } = \cols{\dv{B_z}{y} - ikB_{y}\\ ikB_{x} - \dv{B_z}{x}\\ \dv{B_y}{x} - \dv{B_x}{y}}$$ 
+
+
+$$\dv{B_{z} }{y} = ikB_{y} = -\frac{i\omega}{c^2} E_{x} = \left( -\frac{i\omega}{c^2}  \right) \frac{\omega}{k} B_y$$ 
+
+$$\dv{B_z}{y} = B_{y} \left[ -i \frac{\omega^2}{kc^2} + ik \right] = ikB_{y} \left[ 1- \frac{\omega^2}{k^2c^2}  \right] $$ 
+
+
+$$- \dv{B_z}{x} +i k b_{x} -i \frac{omega^2}{kc^2} B_{x} = ikB_{x} \left[ 1 - \frac{\omega^2}{k^2c^2} \right] $$ 
+$$B_y(x,0) = 0 \forall x$$ 
+
+
+$$\implies \dv{B_x}{y}(x,0) = 0\qquad B_{z} = X(x)Y(y) e^{i(kz-\omega t)}$$ 
+
+
+$$X(x)Y'(0) =0 \forall x\implies Y'(0) =0$$  
+
+
+de même $B_z(x,b) = 0 \implies Y'(b)=0$ 
+
+
+
+
+
+
+
+\end{document}

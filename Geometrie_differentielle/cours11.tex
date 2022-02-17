@@ -1,0 +1,91 @@
+\input{../parameters}
+
+
+\begin{document}
+
+\underline{Rappels} 
+
+La \underline{dérivé} d'une application $f: S \to \mathbb{R}$ est l'application linéaire $\eval{df}_{x}:T_{x} S \to \mathbb{R} $ de matrice $D(f\circ p)$ dans la base $p_{u}, p_{v} $ 
+
+
+
+Par une application $f: S \to S^*$ 
+
+$$\eval{df}_{x} T_{x} S \to T_{f(x)} S^*$$
+
+est donné par la matrice $D\circ p^{-1} \circ f \circ p$ dans la base $p_{u}, p_{v} $ de $T_xS$ et $p_{u}^* p_{v}^*$ 
+
+Application de Gauss $n: S \to S^2$ vecteur normal uniraite pour $p$ fixée, n = $\frac{p_{u}\cross p_{v}}{\norm{ p_{u}\cross p_v}}$ 
+
+
+
+Opérateur de formce: $\mathcal{S}_x: T_{x} S \to T_{x} S$ 
+
+
+$$\mathcal{S}_x(x) = -dn_{x} (X)$$ 
+
+seconde forme fondamentale
+
+$$II_x(X,Y) = \mathcal{S}_x(X) \cdot Y = I( \mathcal{S}_x(X), Y)$$ 
+
+
+\underline{Exemple:} 
+
+
+$$p(u,v) = \cols{u\\v\\u^2 + v^2}$$ 
+
+$$p_{u} = \cols{1\\0\\2u} \qquad p_{v}  \cols{0\\1\\2v}$$ 
+
+
+
+$$p_{u} p_{v} = \cols{-2u\\ -2v \\1 }$$ 
+
+$$\norm{p_{u} \times p_{v}} = \sqrt{4u^2+4v^2+1}$$ 
+
+$$n = \frac{1}{\sqrt{4u^24v^2+1}} \cols{-2u\\ -2v\\ 1}$$ 
+
+
+
+On a montré, dans la démonstration que $II$ est symétrique,  que $$II_{x} = \cols{p_{uu} \cdot n & p_{uv} \cdot n\\ p_{vu} \cdot n & p_{vv} \cdot n} = \cols{2&0\\0&2} \frac{1}{\sqrt{4u^2+4v^2+1}}$$ 
+
+
+
+
+\underline{Résumé intra} 
+
+\renewcommand{\labelenumi}{\Roman{enumi}}
+
+
+\begin{enumerate}
+	\item Coubrebes dans $\mathbb{R}^{2} et \mathbb{R}^{3}$\begin{itemize}
+		\item Longeur d'arc $\to l(\gamma)=\int_{a}^b \norm{\gamma'(t)} \dd t$ 
+		\item Paramétrisation par longueur d'arc
+			$$\Psi(t) = \int_{a}^t \norm{\gamma'(t)}\dd t$$ $\gamma(s) = (\gamma\circ\psi^{-1})(s)$ 
+		\item Courbure, torsion, repère de Frenet
+		\item Formules de Frenet-Serret $$\begin{matrix} T'(s)= & & \kappa(s)N(s) & \\ N'(s) = &\kappa T & & \tau B \\ B'(s) = & & -\tau N &	
+		\end{matrix}$$ 
+		\item Théorème fondamentale des courbes dans $\mathbb{R}^{3}$ - isométrie de $\mathbb{R}^{3} $  + isométrie discrète 
+		\item courbures signées d'une coube dans $\mathbb{R}^{2} $ 
+		\item Indice de rotation $$R(\gamma) = \frac{1}{2\pi} \int_{0}^L\kappa(s) \dd s$$ 
+		\item Umlaufsatz
+	\end{itemize} 
+\item \underline{Surfaces dans $\mathbb{R}^{3}$ } \begin{itemize}
+	\item Cartes de surfaces (paramétrisation)
+	\item Surfaces lisses 
+	\item Plan tangent $T_{p(u,v)} S = \avg{p_{u}, p_{v}}$ (engendré par) 
+	\item \underline{Théorème des valeurs régulières} $$f:\mathbb{R}^{3} \to \mathbb{R}$$ $$f(x,y,x) = x$$ est une surface lisse si c est une valeur régulière $\iff$ tout les points de $f^{-1}(c)$ sont réguliers ( $df \neq 0$ )   
+	\item Première forme fondamentale $$X,Y\in T_{x} S$$ $$I_{x} (X,Y) = X \cdot Y$$  donné par la matrice $$I = \cols{p_{u} \cdot p_{u} & p_{u} \cdot p_{v} \\ p_{v} \cdot p_{u} & p_{v} \cdot p_{v} }$$ dans la base $p_{u} p_{v}$ 
+	\item Surfaces localement isométrique (même première forme fondamenetale)
+\end{itemize} 
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+	
+\end{document}

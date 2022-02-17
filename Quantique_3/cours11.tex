@@ -1,0 +1,91 @@
+\input{../parameters.tex}
+
+\begin{document}
+
+\section*{Méthode variationnelles}
+
+
+Approche approximative à $H \ket{\varphi_n} = E_{n} \ket{\varphi_n}$ 
+
+
+En générale, cette équation des difficile à solutionner.
+
+
+$H$ n'est pas toujours décomposable en $H_{0} + W$ 
+
+$$W \sim H_{0}, W > H_{0} \implies \text{ La théorie des perturbation n'est pas utile}$$ 
+
+
+$$\text{Intuition phyisque + considération} \implies \text{ ket d'essai} \ket{\psi_{\alpha} } \text{ pour le fondamentale}$$ 
+
+${\alpha}$ est un esemble de paramètre variationnels.
+
+Comme le ket d'essai n'est pas nécéssairement normalisé de base (puisqu'on le postule) on doit d'abord le normaliser.
+
+
+Si le ket d'essai est une fonction de $\alpha$, alors l'énergie de cette état aussi.
+
+
+$$\frac{\bra{\psi_\alpha}H\ket{\psi_\alpha}}{\braket{\psi_{\alpha} }} = \avg{H}(\alpha)$$ 
+
+
+On peut alors trouver l'état fondamentale en minimisant l'énérgie de notre ket.
+
+
+$$\eval{\dv{\avg{H}}{\alpha}}_{\alpha_{0} } =0 $$ 
+
+On alors que $\ket{\alpha_{0} }$ est un état fondamental.
+
+
+On a, par définition de l'état fondamentale que 
+$$\avg{H} \geq E_{0} \text{ où } = \iff \ket{\psi_\alpha} = \ket{\Psi_0}$$ 
+
+
+\underline{Théorème de Ritz} 
+
+Pour le ket d'essai $\ket{\psi}$ où $\avg{H}$ est un extremum 
+
+
+$$H \underbrace{\ket{\psi}}_{\text{État propre de }H} = \underbrace{\avg{H}}_{\text{Valeur propre}} \ket{\psi}$$ 
+Cela suggère que l'équation de Shrödinger peut être trouvé par principe variationnel.
+
+
+\underline{Exemple: oscillateur harmonique 1D} 
+
+$$H = \frac{p^2}{2m} + \frac{1}{2} kx^2$$ 
+
+les énérgies sont donnnes par $E_{n} = \hbar\omega\left( n + \frac{1}{2}  \right) $ 
+
+On sait que la fonction d'onde de l'état fondamentale doit être maximale en $0$ et qu'elle doit s'annuler à l'infini. On postule donc que la solution est une gaussienne, 
+
+$$\braket{x}{\varphi_E} = e^{-\alpha x^2}$$ 
+
+On part de 
+
+$$\frac{\bra{\varphi_E}H\ket{\varphi_E}}{\braket{\varphi_E}} = \avg{H}(\alpha)$$ 
+
+$$\int \varphi_E(\alpha) \qty(- \frac{\hbar^2}{2m} \dv[2]{x} + \frac{1}{2} k x^2)\varphi_E(\alpha) \dd x$$ 
+
+$$\dotsb$$ 
+
+
+$$\avg{H}_E(\alpha) = \frac{\hbat^2}{2^{3/2}} \sqrt{\pi} \sqrt{\alpha} + \frac{K}{42^{3/2}} frac \sqrt{\pi} \alpha^{3/2}}$$ 
+
+
+$$\eval{\frac{\del\avg{H}}{\del\alpha}}_{\alpha_{0} } = 0 \implies \alpha_{0} = \frac{1}{2\hbar} \sqrt{km}$$ 
+
+
+$$\avg{H}_E (\alpha_{0}) = \frac{\hbar}{2m} \alpha_{0} + \frac{k}{8} \frac{1}{\alpha_{0}} = \frac{1}{2} \hbar\omega$$ 
+
+
+On trouve donc la bonne énérgie est la bonne fonction d'onde.
+
+
+Si on aurait pris une aute fonction d'onde d'essai, on aurrait trouvé une fonction d'onde propre à l'Hamiltonien associée à une énérgie plus élevée.	
+
+
+
+
+
+	
+\end{document}
