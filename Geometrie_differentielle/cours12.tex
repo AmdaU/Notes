@@ -1,0 +1,162 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+Application de Gauss: 
+
+\begin{itemize}
+	\item $$n: S \to S^2$$ 
+	\item opérateur de forme $\mathcal{S}_x T_{x} S \to T_{x} S\quad \mathcal{S}_(x)(X) = =dn(X)$ 
+	\item Seconde forme fondamentale $II_{x} T_{x} S??????$ $$II_{x} (X,Y) = \mathcal{S}_x(X)\cdot \vb{Y}$$ 
+\end{itemize}
+
+En pratique, pour calculer $II$ on utilise que sa matrice dans la base $p_{u},p_{v} $ est $M_{II} = \cols{p_{uu} \cdot n & p_{uv} \cdot n \\ p_{uv} \cdot n & p_{vv} \cdot n}$ 
+
+Comment trouve-t-on la matrice de $\mathcal{S} $ maintenant?
+
+\underline{Proposition:} Dans la base $p_{u},p_v$  
+
+$$M_{\mathcal{S}} = M_{I}^{-1} M_{II} $$ 
+
+Si $M_{\mathcal{S}}$ est la matrice de $\mathcal{S} $ et $\mathcal{S}(ap_{u} + bp_{v}) = cp_{u} + dp_{v}$ alors $$M_{\mathcal{S} } \cdot \cols{a\\b} = \cols{c\\d}$$.
+
+
+
+On sait que $II(X,Y) = \mathcal{S}(X) \cdot y = I(S(X), Y)$ 
+
+$$\cols{a&b} M_{II} \cols{c\\d} = \qty(M_{S?} \cdot \cols{a\\b})^T M_{I} \cols{c\\d} = \cols{a&b} M_{\mathcal{S} }^tM_{I} \cols{c\\d}$$ 
+
+$$M_{II} = M_{\mathcal{S} }^T M_{I}  $$ 
+$$M_{cal S}^T=M_{II} M_{I}^{-1} $$ 
+$$M_{\mathcal{S} } = M_{I}^{-1} M_II $$ 
+En général, on a que $M_{\mathcal{S} } $ n'est pas symétrique bien que les deux autres le sois 
+
+
+\section*{Interprétation de la seconde forme fondamentale}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{interprétation-de-la-seconde-forme-fondamentale}
+    \caption{Interprétation de la seconde forme fondamentale}
+    \label{fig:interprétation-de-la-seconde-forme-fondamentale}
+\end{figure}
+
+$\alpha$: Courbe planaire d'intersection entre le plan engedré par $X \in T_{x} S$ et $n(x)$ et la surface $S$ paramétré par longeur d'arc et $\alpha(0) =x$     
+
+$$T(0) = \alpha'(0)= X$$ 
+$$N(0) = \pm n(x)$$ 
+$$N(s) = \pm n(\alpha(s))$$ 
+
+$$N'(o) = -\kappa(0) T(0) + \underbrace{\tau(0)B(0)}_0 = -\kappa(0) X$$ 
+$$\kappa(0) = -N'(0) = \eval{(n(\alpha(s)))'}_{0} \cdot X ? =\pm dn(X) \cdot X = \pm \mathcal{S}(X) \cdot X = \om II(X,X)$$ 
+(Il y a des étapes rajoutées à posteriori que je vois mal... demander à quelqu'un peut-être...)
+
+$II(X,X)$ est la \underline{courbure sectionnelle} de $S$ dans la direction $X$     
+
+
+\begin{tcolorbox}[title=Parenthèse d'algèbre linéaire]
+	La nortion de matrice symétique dépend de la base:
+	$$\text{matrice symétrique: } M^T = M$$ 
+	Si $M$ est la matrice de l'application $T: V\mapsto V$ 
+	$T$ est auto-adjoint si: 
+	$$T(u)\cdot V = u\cdot T(v) \forall u,v \in V$$ 
+	Un opérateur est auto-adjoint pour un produit scalaire donné. C'est la généralisation de matrice symétrique sans base
+\end{tcolorbox}
+
+L'application de $\mathcal{S} $ est auto-adjointe par $I$:
+$$I(\mathcal{S}(X),Y) = I(X, \mathcal{S}(Y))$$ 
+
+Dans la base $p_{u,} p_v$ la matrice de $S$ n'est pas symétrique mais dans une base orthogonale, elle le serait. 
+
+Un opérateur auto-adjoint est toujours \underline{diagonalisable} et ses valeur propres sont \underline{réels}.
+
+$\implies S$ est diagonalisable et a 2 valeurs propres réelles $k_{1}, k_{2} $. On appelle $k_{1}, k_{2}$ les \underline{courbures principales} de $S$ en $x$. Les vecteur propres associés sont les directions principales. Elles s'interprètent comme les courbures sectionneles \underline{max} et \underline{min}.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{courbures-principales}
+    \caption{Courbures principales}
+    \label{fig:courbures-principales}
+\end{figure}
+
+Le \underline{déterminant} de $\mathcal{S} =k_{1} k_{2} $ s'apelle la \underline{Courbure de Gauss} et sa trace $= k_1+k_2$ s'appelle la \underline{sourbure moyenne}      
+
+
+\underline{Exemple}: Surface avec un point de selle $p(u,v) = \cols{u\\v\\uv}$  
+
+
+$$p_{u} = \cols{1\\0\\v} \qquad \cols{0\\1\\u}$$ 
+
+
+$$p_{uu} =\cols{0\\0\\0}\qquad p_{uv} =\cols{0\\0\\1} \qquad p_{vv} = \cols{0\\0\\0}$$ 
+
+
+$$p_{u} \times  p_{v} =\cols{-v\\-u\\1}$$ 
+
+$$M_{I} = \cols{1+v^2 & uv\\ uv&1+u^2}$$ 
+
+$$n(p(u,v)) = \frac{1}{\sqrt{1+u^2+v^2}} \cols{-v\\-u\\1}$$ 
+
+$$M_{II} = \cols{0 & \frac{1}{\sqrt{1+u^2+v^2}}\\\frac{1}{\sqrt{1+u^2+v^2}} &0 }$$ 
+$$M_{\mathcal{S} } = m_{I}^{-1}M_{II} = \frac{1}{(1+u^2)(1+v^2)-u^2v^2}\cols{1+u^2 &-uv\\-uv &1+v^2}\cols{0 &\frac{1}{\sqrt{\dotsb}} \\ \frac{1}{\sqrt{\dotsb}} &0 } $$ 
+au poiny $u=v=0 \quad p(u,v) = (0,0,0)$  
+
+$$\eval{M_{\mathcal{S} }}_0 = \cols{0&1\\1&0}$$
+ses vecteur propres sont $\cols{1\\1}, \cols{-1\\1}$ avec valeurs propres associées 1,-1. La courbure de Gausse est $-1$  
+
+
+\underline{Exercices}:
+\begin{itemize}
+\item Si $S$ est le graph d'une fonction $f$ t.q. $f(0,0) = 0 \quad \eval{\grad f}_{(0,0)} =0$ Alors $\eval{M_{\mathcal{S} } }_{(0,0)} = H_{(0,0)} $  $$p_{x,y} = \cols{x\\y\\f(x,y)}\quad H_{0,0} = \cols{\dv[2]{f}{x}\\\dotsb}$$ 
+\item Calculer la courbure de Gauss pour \begin{enumerate}
+	\item $S^2$ $$p(\theta, \varphi) = \cols{\sin\varphi\cos\theta\\\sin\theta\sin\theta\\\cos\varphi}$$  
+	\item La pseudo-sphère (surface  de révolution d'une tractrice) $$p(\theta, \varphi) = \cols{\sech\varphi\cos\theta\\\sech\varphi\sin\theta\\\varphi-\tanh\varphi}$$ 
+\end{enumerate}	
+\end{itemize}
+
+
+\section*{Symbole de Chistoffel et Théorema Egregium}
+
+Une quantité sur une surface est \underline{intrinsèque} si elle est invariente par isométrie locale. $\iff$ Dépendent uniquement de la première forme fondamentale (et ses dérivées). 
+
+
+L'opérateur de forme et $II$ dépendent d'autre chose que seulement la première forme fondamentale. Par exemple un cylindre est à une isométrie près d'un plan mais ces deux surface n'ont clairement pas le même $\mathcal{S}$ et $II$. C-à-d qu'en faisant des tranformations localement rigique on présèrve la première forme fondamentale mais on modifie les courbures/direction principales. La courbures de Gauss par contre, bien qu'elle ai été définie par une approche "extrinsèque", est intrinsèque!   
+
+Pour le démontrer on veut essayer de définir la courbure de Gauss en passant seulement par la première forme fondamentale. Pour se faire, il va falloir définir les symbols de Christoffel
+
+\underline{Symbols de Christoffel} 
+
+En tout point de $S$, les vecteurs $p_{u} p_{v},n $  forment une base de $\mathbb{R}^{3} $. Les coefficients $L,M,K$ de $II$ donnet les coordonnées en $n$ des dériviées secondes $p_{uu}, p_{uv}, p_{vv} $      
+
+$$p_{uu} = (\Gamma_{uu}^u)p_{u} + (\Gamma_{uu}^v)p_{v} + Ln $$ 
+$$p_{uv} = (\Gamma_{uv}^u)p_{u} + (\Gamma_{uv}^v)p_{v} +Mn$$ 
+$$p_{vv} = (\Gamma_{vv}^u)p_{u} (\Gamma_{vv}^v)p_{v} + N n$$  
+
+$\Gamma_{ij}^k=$ Coordonnées en $p_u$ de $p_{ij}\quad i,j,k\in\{u,v\}$  
+
+
+Les $\Gamma_{ij}^k$ s'appellent \underline{symbols de Christofel}  
+
+\underline{Exemple}: Calculons $\Gamma_{ij}^k$ pour $S^2$  
+
+$$p(\theta,\varphi)=\cols{\sin\varphi\cos\theta\\\sin\theta\sin\theta\\\cos\varphi}$$ 
+
+$$p_{\theta} = \cols{-\sin\theta\sin\varphi\\\cos\theta\sin\varphi\\ 0}$$ 
+$$p_{\varphi} = \cols{\cos\theta\cos\varphi\\\sin\theta\cos\varphi\\-\sin\varphi}}$$
+$$n(\theta,\varphi) = p(\theta,\varphi)$$ 
+$$p_{\theta\theta} = \cols{-\cos\theta\sin\varphi\\-\sin\theta\sin\varphi\\0}$$  
+$$p_{\theta\varphi} = \cols{\sin\theta\sin\varphi\\\cos\theta\cos\varphi\\0}$$ 
+p_{\varphi\varphi} = \cols{-\cos\theta\sin\varphi\\-\sin\theta\sin\varphi,-\cos\varphi}
+
+$$p_{\theta\theta\cdot} n = -\sin^2\varphi$$ 
+$$p_{\theta\varphi\cdot} n= 0$$ 
+$$p_{\varphi\varphi} \cdot n = -1$$ 
+
+$$p_{\theta\theta} = 0p_{\theta} + \sin\varphi\cos\varphi p_{\varphi} -\sin^2\varphi n$$ 
+$$p_{\theta\varphi} = \cotan\varphip_{\theta} + 0p_{\varphi} + 0n$$ 
+$$p_{\varphi\varphi} = 0p_{\theta} + 0p_{\varphi} -n$$ 
+
+\end{document}
