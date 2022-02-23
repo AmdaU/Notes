@@ -1,0 +1,65 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+	\item $M_{I} = \cols{E & F \\ G & G}$	
+	\item $M_{II} =\cols{L & M\\ M &N}$
+	\item $M_{\mathcal{S} = M_{I}^{-1}\cdot M_{II} } $
+	\item $\mathcal{S}$ est diagonalisable
+	\item $k_{1},k_{2} \to$ \underline{courbure principale} 
+	\item $\det(\mathcal{S} ) \to $ courbure gaussienne
+	\item $\tr(\mathcal{S} )\to$ Courbure moyennne
+	\item Symbol de Christoffel
+\end{itemize}
+	
+Tentons d'exprimer $\Gamma_{ij}^k$ en termes de $E,F,G$ 
+
+$$p_{uu} p_{u} = \Gamma_{uu}^u E + \Gamma_{uu}^v F = \frac{E_{u}}{2} $$ 
+$$p_{uu}p_{v} = \Gammma_{uu}^u F + \Gamma_{uu}^v G = F_{u} \frac{E_{v}}{2} $$ 
+$$p_{uv} p_{u} = \Gamma_{uv}^u E + \Gamma_{uv}^v F = \frac{E_{v}}{2} $$ 
+$$p_{uv} p_{v} = \Gamma_{uv}^u F + \Gamma_{uv}^v G= \frac{G_{u}}{2} $$ 
+$$p_{vv} p_{u} \Gamma_{vv}^u E + \Gamma_{vv}^v F + F_{v} - \frac{G_{u}}{2} $$ 
+$$p_{vv} p_{v} = \Gamma_{vv}^u F + \Gamma_{vv}^v G = \frac{G_{v}}{2}  $$ 
+
+Pour obtenir les équations de Gauss-Codazzi, on compare $p_{uuv}$ et $p_{uvu} $  $$p_{uuv} = \left( \Gamma_{uu}^u \right)_v p_{u}  + \Gamma_{uu}^up_{uv} + \left( \Gamma_{uu}^v \right)_v p_{v} + \Gamma_{uu}^vp_{vv} + L_{v} n + L n_{v} $$ 
+
+$$= \left( \Gamma_{uu}^u \right)_v p_{u} + \Gamma_{uu}^u(\Gamma_{uu}^u \left( \Gamma_{uv}^u p_{u} + \Gamma_{uu}^v + \Gamma_{uu}^v p_{v} +M_n \right)  + \left( \Gamma_{uu}^v \right)_v p_{v} + \Gamma_{uu}^v\left(\Gamma_{vv}^u p+u + \Gamma_{vv}^v p_{v} + N_{n}   \right) +L_{v} n + L (bp_{u} + dp_{v} ) $$ 
+
+
+$$\boxed{D_{n} = \cols{a & | & b\\ c&| &d } = -M_{I}^{-1}M_{II}\\ \implies n_{u} = ap_{u} + cp_{v} \\ n_{v} = bp_{u}+dp_{v} }$$ 
+	
+
+$$=\left( \left( \Gamma_{uu}^u \right)_v + \Gamma_{uu}^u\Gamma_{uv}^u + \Gamma_{uu}^v\Gamma_{vv}^u + Lb \right) p_{u} + \left( \left( \Gamma_{uu}^v \right)_v + \Gamma_{uu}^u\Gamma_{uv}^v + \Gamma_{uv}^v\Gamma_{vv}^? + Ld \right) p_{v} + \left( \Gamma_{uu}^u M + \Gamma_{uu}^v N + L_v \right) n$$ 
+
+De la même manière
+$$p_{uvu} = \left( \left( \Gamma_{uv}^u \right)_u + \Gamma_{uv}^u \Gamma_{uu}^u + \Gamma_{uv}^v\Gamma_{uv}^u + Ma \right) p_{u} + \left( \left( \Gamma_{uv}^v \right)_u + \Gamma_{uv}^u\Gamma_{uu}^v + \Gamma_{uv}^v\Gamma_{uv}^v + Mc \right) p_{v} + \left( \Gamma_{uv}^u + \Gamma_{iv}^v M + M_u \right) n$$ 
+
+$$p_{uuv} = p_{uvu} $$ 
+On compare les coefficients de $p_{v} $ 
+$$Mc - Ld = \left( \Gamma_{uu}^v \right)_v - \left( \Gamma_{uv}^v \right)_u = \Gamma_{uv}^u \Gamma_{uu}^v =\Gamma_{uv}^v\Gamma_{uv}^v + \Gamma+uu^u\Gamma_{uv}^v + \Gamma_{uu}^v \Gamma_{vv}^v$$ 
+
+$$Mc -Ld = -\cols{E & F\\F & G}^{-1}\cols{L&M\\M&N} = \frac{-1}{EG-F^2} \cols{Gl-MF & GM -F? \\ EM-FL & EN - ??$}$$ 
+
+$$MC = Ld = M \left( \frac{FL-EM}{EF-G^2}  \right) -L \left( \frac{FM-EN}{EF-G^2}  \right) = \frac{E-M^2+LN}{EF-G^2} = E\cdot k$$ 
+
+$$E\cdot k = \Gamma_{uu}^u\Gamma_{uv}^v + \Gamma_{uu}^v\Gamma_{vv}^v-\Gamma_{uv}^u\Gamma_{uu}^v - \left( \Gamma_{uv}^v \right)^2 + \left( \Gamma_{uu}^v \right)_v - \left( \Gamma_{uv}^v \right)_u $$ 
+
+$k$ est intrinsèque (Peut être calculé avec $E,F,G$ et leurs 2 premières dérivées
+
+On peut aussi obtenir des équation similaire avec
+
+$$F\cdot k\qquad F\cdot K \qquad g\cdot k$$ 
+
+
+\underline{Équations de Cedazzi} 
+
+$$L_{v} = M_{u} = L\Gamma_{uv}^u + M \left( \Gamma_{uv}^v - \Gamma_{uu}^u \right) - N \Gamma_{uu}^v$$ 
+$$M_{v} - N_{u} = L \Gamma_{vv}^u + M \left( \Gamma_{vv}^v-\Gamma_{uv}^u \right) -N\Gamma_{uv}^v$$ 
+
+Comme la courbure est une propriété intrinsèque, Si un surface possède un surface de Gauss nul (comme une pizza). On peut forcer sa courbure dans une direction à être nul en la faisant courber dans un autre direction. Si la courbe imposé est \textit{vers le haut}. Il n'y aura aucune courbure vers le bas et la aliments ne tomberons pas.
+
+
+\end{document}
