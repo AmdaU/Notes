@@ -1,0 +1,82 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Modèle de Drude}
+
+La probabilité de collision d'un éléctron est donnée par $\frac{1}{\tau}$ (par unité de temps) 
+
+$\mathcal{P}(t)$ est la probailité qu'il n'y ai \underline{pas} de colision entre $0$ et $t$
+
+$$\mathcal{P} (t+dt) = \mathcal{P} (t) \qty(1- \frac{dt}{\tau} )$$ 
+
+
+$$d \mathcal{P} = \mathcal{P}(t+dt) - \mathcal{P} (t)= -\mathcal{P} (t) \frac{dt}{\tau} $$ 
+
+
+$$\implies \mathcal{P} (t) = c e^{-t/\tau}$$ 
+
+
+Calcul du temps moyen entre deux collisions
+
+$$ \avg{t} = \int_{0}^\infty \frac{te^{-t/\tau}}{\tau} dt = \tau \int_{0}^\infty ? - \int_{0}^\infty - e^{-u} du = \tau $$ 
+
+On s'interesse maintenant à la quantitée de mouvement 
+
+
+$$	\vb{p}(t+dt) = \frac{dt}{\tau} \vb{F} dt + \left( 1-\frac{dt}{\tau}  \right) \left( \vb{p}(t) + \vb{F} dt \right) = \vb{p}(t) - \frac{dt}{\tau} \vb{p}(t) + \vb{F}dt
+$$
+$$\dv{\vb{p}}{t} = - \frac{\vb{p}(t)}{\tau} + \vb{F}$$ 
+
+
+
+La force sur les éléctrons, si on ne considère qu'un champ éléctrique est 
+
+$$\vb{F} = -e\vb{E}$$ 
+
+donc 
+
+$$\frac{d\vb{p}}{t} - \frac{\vb{p}}{\tau} - e\vb{E} = 0$$ 
+
+$$\vb{j} = ne\vb{v}$$ 
+
+$$e\vb{E}=  \frac{m\vb{v}}{\tau} = \frac{m}{\tau} \frac{\vb{j}}{ne} $$ 
+
+$$\vb{E} = \frac{m}{ne^2\tau} \vb{j} = \rho \vb{j}$$ 
+
+$$\vb{j} = \underbrace{\frac{ne^2\tau}{m}}_{\sigma} \vb{E}$$ 
+
+
+On considère mainteant la force de Lorentz
+
+$$\vb{F} = -e\left( \vb{E} + \vb{v} \times \vb{B} \right) $$ 
+
+On considère que $\vb{v}$ est dans le plan $x,y$ et $\vb{B}$ est en $\vb{z}$ donc
+
+$$\frac{d\vb{p}}{dt} = - \frac{\vb{p}}{\tau} = -e \vb{E}v_{y}B\hat x + ev_{x} B \hat y$$  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{force-de-lorentz-dans-une-plaque-conductrice}
+    \caption{Force de Lorentz dans une plaque conductrice}
+    \label{fig:force-de-lorentz-dans-une-plaque-conductrice}
+\end{figure}
+
+$$\dotsb$$ 
+$$R_{H} = \frac{E_{y}}{j_{x}B} = - \frac{1}{ne}  $$ 
+
+$$\frac{1}{\tau} = \frac{1}{\tau_{\rm déf}} + \frac{1}{\tau_{\rm rés}} $$ 
+
+
+$$\sigma = \frac{ne^2\tau}{m} = \frac{1}{\rho} $$ 
+
+$$\rho = \rho_{déf} +\rho_{res} + \rho_{e-e}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{résistance-en-fonction-de-la-température}
+    \caption{résistance en fonction de la température}
+    \label{fig:résistance-en-fonction-de-la-température}
+\end{figure}
+
+\end{document}
