@@ -1,0 +1,150 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+Les symbols de Christoffel sont \underline{intrinsèques}
+
+$$\cols{\Gamma_{uu}^{u}\\ \Gamma_{uu}^u}= \cols{E & F\\ F &G}^{-1}\cols{E_u/2\\F_u/2}$$
+
+$$\cols{\Gamma_{uv}^u\\ \Gamma_{uv}^v} = \cols{E & F\\ F & G}^{-1}\cols{E_{v}/2\\ G_{u} /2}$$ 
+
+$$\cols{\Gamma_{vv}^u\\ \Gamma_{vv}^u}=\cols{E &F\\F&G}^{-1}\cols{F_v-G_u/2\\G_v/2}$$ 
+
+
+$$M_{\mathcal{S}} = M_I^{-1} \cdot M_{II} $$ 
+
+$$M_{I} = \cols{E&F\\F&G} = (p_u|p_v)^t(p_u|p_v)$$ 
+
+$$M_{II} = \cols{L & M\\M&N} = \cols{p_{uu} \cdot n & p_{uv} \cdot n \\ p_{vu} \cdot n & p_{vv} \cdot n}$$ 
+
+
+Les équations de Gauss-Cedazzi (que je ne réécrirais pas ici!)
+
+
+\section*{Théorème fondamentale des surfaces dans $\mathbb{R}^{3} $  }
+
+Soit $p,p^*:U\to \mathbb{R}^{3}$ deux cartes de surfaces. Alors $I=I^*$ et $II=II^*$ ssi $\exists$ une isométrie directe $T: \mathbb{R}^{3} \to \mathbb{R}^{3}$ t.q. $p^* = T \circ p$   
+
+
+$(\Longleftarrow)$ 
+
+
+Écrivons $T(\vec x) =  A \vec{x} + \vec b$ 
+
+$$p_{u}^* = (T\circ p)_u = (Ap + b)_u $$ 
+$$p_{v}^* = Ap_{v} $$ 
+
+Comme $A$ est orthogonale, $$Ap_{u} \times Ap_{v} = A(p_{u} \times p_{v} )$$   
+
+$$n^* = \frac{p_{u}^* \times p_{v}^*}{\norm{p_{u}^* \times p_{v}^*}} = \frac{A(p_{u} \times p_{v} )}{\norm{A(p_{u} \times  p_v)}} = \frac{A(p_{u} \times  p_v)}{\norm{p_{u} \times  p_{v} }} = A \cdot n$$ 
+
+
+$$E^* = p_{u}^*\cdotp_{u}^* = Ap_{u} \cdot Ap_{u} = p_{u} \cdot p_{u} =E$$ 
+même chose pour $F$ et $G$ $\implies I = I^*$
+
+On a
+ $$\begin{aligned}
+	 p_{uu}^* &= (Ap_u)_u = Ap_uu\\
+	 p_{uv}^* &= Ap_{uv} \\
+	 p_{vv}^* = Ap_vv
+ \end{aligned}$$ 
+
+
+ $\implies L^* = n^*\cdot p_{uu}^* = (An)\cdot (Ap_uu) =n\cdot p_{uu} = L$, de même pour $M$ et $N$   
+
+
+ $$\implies II = II^*$$ 
+
+$(\implies)$ 
+
+Fixons $u_{0} \in U$ 
+
+Soit $T$ l'isométrie $A\vb{x}+ \vb{b}$ de $\mathbb{R}^{3} $ t.q. $T(p(u_{0} )) = p^*(u_0) $  
+$$\begin{aligned}
+	\eval{A\cdot p_{u} }_{u_0} &=\eval{p_{u}^*}_{u_0}\\
+	\eval{A\cdot p_v}_{u_o} &= \eval{p_{v}^*}_{u_0}\\
+	\eval{A\cdot n}_{u_{0} } &= \eval{n^*}_{u_0} 
+\end{aligned}$$ 
+
+
+\begin{tcolorbox}
+	Si $e,f,g$ $e^*, f^*, g^*$ sont deux bases de $\mathbb{R}^{3} $ avec les mêmes produits scalaires entre les vecteur de base, alors $\exists A$ orthogonale t.q. $A: e \to e^*, \dotsb$     
+\end{tcolorbox}
+
+Définissons $\tilde{p} = T \circ p$ et montrons que $\tilde{p} = p^*$
+
+Soint $\vb{u} \in U$ quelquonque et $\gamme: [0,1] \to U$ un chemin t.q. $\gamma(0) = \vb{u}_{0}  $ et $\gamma(1) = \vb{u}$ 
+
+
+Considérons la la famille de bases de $\mathbb{R}^{3} $ donné par 
+$$\eval{\tilde p_{u} }_{\gamma(t)} \qquad \eval{\tilde p_v}_{\gamma(t)} \qquad \eval{\tilde n}_{\gamma(t)} $$ 
+
+$$\tilde E (t) = \left(\eval{\tilde p_{u} }_{\gamma(t)} | \eval{\tilde p_v}_{\gamma(t)} | \eval{\tilde n}_{\gamma(t)} \right)$$ 
+
+$$\tilde E(t)^t \tilde E(t) = \cols{E &F &0\\ F & G &0\\ 0&0&1}$$ 
+
+De même, si 
+
+$$\tilde E^* (t) = \left(\eval{\tilde p_{u}^* }_{\gamma(t)} | \eval{\tilde p_v^*}_{\gamma(t)} | \eval{\tilde n^*}_{\gamma(t)} \right)$$ 
+
+$$\tilde E(t)^t^* \tilde E(t)^* = \cols{E &F &0\\ F & G &0\\ 0&0&1}$$ 
+	
+
+$$\dv{t}(\eval{\tilde p_u}_{\gamma(t)}) = \eval{\tilde p_{uv} }_{\gamma(t)}\gamma_1'(t) + \eval{\tilde p_{uv} }_{\gamma(t)}\gamma_2'(t) = (\Gamma_{uu}^u \tilde p_{u} + \Gamma_{uv}^v \tilde p_{v} + L \tilde n) \gamma_1'(t) + (\gamma_{uv}^u \tilde p_{u} + \Gamma_{uv}^v \tilde p_{v} + M\tilde n)\gamma_2'(t) = \dotsb$$ 
+
+
+Nottons que les coefficients dépendent seulement de $E,F,G,L,M,N$ 
+
+$$\implies \dv{t} \tilde E (t) = \tilde E(t) \cdot M(t)$$ 
+
+$$\dv{t} E^*(t) = E^*(t)M(t) $$ 
+
+
+\underline{Lemme}: 
+
+Soient $B(t) = (e_1|e_2|e_3)$ et $B^*(t) = (e_{1}^*|e_{2}^*|e_{3}^*)$ deux familles de de bases dans $\mathbb{R}^{3} $ t.q.
+
+$B^tB= B^{*t}B^*\forall t $ 
+$B'(t) = B(t)M(t)$ 
+$B^*'(t) = B^*(t) M(t)$ 
+
+$$B(0)= B^*(0) ??? \quad B = B^*$$ 
+
+
+Par le lemme appliqueé à $\tilde E (t), E(t) \implies \tilde E (t) = E^* (t) \forall t$ 
+
+$$\eval{\tilde p_{u/v} }_{\gamma(t)} =\eval{p_{u/v}^*}_{\gamma(t)}  $$ 
+
+$$\dotsb \blacksquare$$ 
+
+\underline{Démonstration du lemme}  
+
+(La matrice $G = B^*B $ s'appelle la matrice de Gram)
+
+Comme $G\cdot G^{-1} = I$ 
+
+$$\dv{t}G \cdot ^{-1} + G \cdot \dv{t} \left( G^{-1} \right) = 0 $$ 
+
+$$\dv{t}(G^{-1}) = - G^{-1}\dv{t}GG^{-1}$$ 
+$$\dv{t} G = \dv{t}(B^*B) (B^t)'B + B^tB' = (B^{*t})'B + (B^*t)B^*'$$ 
+$
+
+Calculons la dérivée de $$(B^*)^t G^{-1}B$$ par rapport à $t$ 
+
+$$(B^*^tG^{-1}B)' = (B^*tG^{-1})'B + B\dotsb$$ 
+
+Fuck that, c'est le cambodge
+
+\underline{Dérivées covariantes et parallélisme} 
+
+Dans $\mathbb{R}^{2}$ et $\mathbb{R}^{3} $, on dit que 2 vecteurs sont parallèles. si, quand on translate au point de base ils sont multiples/égaux. 
+
+Sur une surface, les plans tangeants à des points distincs sont différents. 
+
+
+\underline{Définition}: Soit $X$ un champ de vecteur sur une surface $S$ $(X_{p} \in T_{p} S) \forall p\in S$  et $V \in T_{pS$.} La \underline{dérivée covariante} de $X$ dans la direction $V$ est $\nabla_{v} X:=\pi_{T_{p\cric} S}^\perp(D_{V} X)$    
+
+
+\end{document}
