@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="mécanique-clasique-versus-quantique.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect27541"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect27537"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6964"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6960"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="415.83956"
+     inkscape:cy="272.03048"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1127"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="39.513676"
+       y="209.77245"
+       id="text4609"><tspan
+         sodipodi:role="line"
+         id="tspan4607"
+         style="stroke-width:0.264583"
+         x="39.513676"
+         y="209.77245">Mécanique classique</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="144.22162"
+       y="207.53944"
+       id="text5999"><tspan
+         sodipodi:role="line"
+         id="tspan5997"
+         style="stroke-width:0.264583"
+         x="144.22162"
+         y="207.53944">Mécnaique quantique</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 13.222823,257.74521 c 8.686732,-6.30288 17.373419,-12.60573 23.117565,-18.21027 5.744145,-5.60455 8.545734,-10.51071 14.646632,-14.07459 6.100897,-3.56389 15.500433,-5.78517 24.899961,-8.00645"
+       id="path6958"
+       inkscape:path-effect="#path-effect6960"
+       inkscape:original-d="m 13.222823,257.74521 c 8.68695,-6.30258 17.373636,-12.60543 26.060055,-18.90854 2.801966,-4.9061 5.603557,-9.81226 8.404941,-14.71879 9.400173,-2.2211 18.799707,-4.44239 28.199162,-6.66398" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.362322,264.95428 c 10.396408,-6.25676 20.792736,-12.51347 27.978708,-18.67193 7.185973,-6.15847 11.161551,-12.21856 16.992967,-15.79397 5.831415,-3.5754 13.518012,-4.66586 21.204545,-5.75631"
+       id="path6962"
+       inkscape:path-effect="#path-effect6964"
+       inkscape:original-d="m 19.362322,264.95428 c 10.396593,-6.25645 20.792921,-12.51316 31.188985,-18.77013 3.976002,-6.06007 7.951581,-12.12016 11.926975,-18.18064 7.687172,-1.09024 15.37377,-2.18069 23.06026,-3.27144" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="7.7676001"
+       y="250.53336"
+       id="text11214"><tspan
+         sodipodi:role="line"
+         id="tspan11212"
+         style="stroke-width:0.264583"
+         x="7.7676001"
+         y="250.53336">$\vb{r}_1(t)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="26.10936"
+       y="266.78491"
+       id="text17752"><tspan
+         sodipodi:role="line"
+         id="tspan17750"
+         style="stroke-width:0.264583"
+         x="26.10936"
+         y="266.78491">$\vb{r}_2(t)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="10.382139"
+       y="228.7415"
+       id="text23150"><tspan
+         sodipodi:role="line"
+         id="tspan23148"
+         style="stroke-width:0.264583"
+         x="10.382139"
+         y="228.7415">Trajectoires</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="10.382139"
+         y="234.03316"
+         id="tspan27232">définies</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 113.20929,261.79259 c 1.6145,-0.1597 3.22877,-0.31938 7.89616,-0.47455 4.66739,-0.15518 12.38756,-0.30586 19.58821,-5.62509 7.20064,-5.31923 13.88163,-15.80665 20.19186,-15.85525 6.31023,-0.0486 12.2491,10.34114 20.26686,15.43937 8.01776,5.09822 18.11379,4.90505 28.20977,4.71188"
+       id="path27535"
+       inkscape:path-effect="#path-effect27537"
+       inkscape:original-d="m 113.20929,261.79259 c 1.61453,-0.15941 3.2288,-0.31909 4.84281,-0.47903 7.72075,-0.15043 15.44092,-0.30112 23.16099,-0.45207 6.68152,-10.48757 13.36251,-20.97499 20.04336,-31.46288 5.93938,10.39043 11.87826,20.78018 17.81699,31.16987 10.09671,-0.19291 20.19274,-0.38609 30.28871,-0.57953" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 230.01027,256.99217 c -6.88248,0.99889 -13.76519,1.99782 -21.24559,-1.31165 -7.48039,-3.30947 -15.55819,-10.92733 -24.7651,-10.77497 -9.20691,0.15236 -19.5421,8.07506 -29.44806,11.63452 -9.90596,3.55946 -19.38234,2.75552 -28.85919,1.95153"
+       id="path27539"
+       inkscape:path-effect="#path-effect27541"
+       inkscape:original-d="m 230.01027,256.99217 c -6.88244,0.99919 -13.76515,1.99812 -20.64812,2.99678 -8.07787,-7.61789 -16.15567,-15.23575 -24.2339,-22.85402 -10.33535,7.92328 -20.67055,15.84597 -31.00622,23.76856 -9.47649,-0.80372 -18.95287,-1.60766 -28.4297,-2.41189" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="146.56413"
+       y="222.10947"
+       id="text29019"><tspan
+         sodipodi:role="line"
+         id="tspan29017"
+         style="stroke-width:0.264583"
+         x="146.56413"
+         y="222.10947">Pas de trajectoire</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="146.56413"
+         y="227.40112"
+         id="tspan29021" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="146.56413"
+         y="232.69279"
+         id="tspan29023">Recouvrement</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="142.3927"
+       y="276.97693"
+       id="text34175"><tspan
+         sodipodi:role="line"
+         id="tspan34173"
+         style="stroke-width:0.264583"
+         x="142.3927"
+         y="276.97693">Dégénéressance d'échange</tspan></text>
+  </g>
+</svg>
