@@ -1,0 +1,81 @@
+\input{../parameters}
+
+\begin{document}
+
+On reviens sur le guide d'onde rectangulaire
+
+\begin{figure}[ht]
+    \centering
+    \incfig{guide-donde-rectangulaire}
+    \caption{guide donde rectangulaire}
+    \label{fig:guide-donde-rectangulaire}
+\end{figure}
+
+Modes:
+$$\begin{cases}
+	\text{TE} & E_{z} =0 \\
+	\text{TM } & B_{z} =0 
+\end{cases}$$ 
+
+
+$$B_{z}(x,y,z) = B_{0} \cos k_{x} x \cos k_{y} y e^{ikz} $$ 
+avec $$k^2 = \frac{\omega^2}{c^2} -k_{x}^2 -k_{y}^2 = \frac{\omega^2-\omega_{?}^2}{c^2} \qquad k_{x} = \frac{n\pi}{a} \qquad k_{y} \frac{n\pi}{b} $$ 
+
+ex: $n=0, n=1$
+
+
+$$B_z(x,y,z) = B_{0} \cos k_{y} y e^{ikz}$$ 
+$$B_z(x,y,0)=B_{0} \cos \frac{y\pi}{b} $$ 
+
+
+Dans le cas d'un métal non-parfait, il y aurat des pertes du au courrants. On s'interesse maintenant à calculer ces courrants.
+
+Comme $\grad \cdot j + \frac{\partial\rho}{\partial t} = 0$ On peut obenir la charge facilement à partir du courrant (à constante près) mais pas l'inverse 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{graphique-du-champ-magnétique}
+    \caption{Graphique du champ magnétique}
+    \label{fig:graphique-du-champ-magnétique}
+\end{figure}
+
+discontinuités de $B_{z} \to j_z$ 
+
+en $y=b$: $j_{s}$ suivant $\hat x$   
+
+$$B_z(y = b^+)-B_z(y=b^-) = \mu_{0} j$$ 
+
+$\implies j_{s} = \frac{B_{0}}{\mu_{0}} $ 
+
+en $x=0$ $$\vb{j_s} = \frac{B_{0}}{\mu_{0}} \cos\frac{y\pi}{b} \hat y$$  
+
+Comme on est en 2D: on a 
+
+$$\grad \cdot \vb{j_s} + \pdv{\rho}{t} = 0$$ 
+
+En $y = 0, y = b$, on a $J_{s} = cte \implies \sigma=0$  
+
+En $x = 0$ on a $$\grad \cdot \vb{j} = \frac{B_{0}}{mu_0} \frac{\pi}{b} \sin \frac{y\pi}{b} =i\omega\sigma$$  
+
+
+\underline{Autre approche: Discontinuité de $E$ } 
+
+en $x=a$: $$E_{x} \propto \pdv{B_z}{y} \qquad \text{OK}$$ 
+
+\underline{Remarque: Impédance} 
+
+Quel est l'unité de $\frac{E}{H}$ ? 
+
+$$= \frac{Vm^{-1}}{Am^{-1}} = \Omega$$ 
+
+l'impédance est alors donné par
+
+$$Z = \frac{E_{x}}{H_y} = \mu_{0} \frac{E_{x}}{B_y}= \mu_{0} \frac \omega k$$ 
+
+$$k^2 = \frac{\omega^2-\omega_{?}^2}{c^2} $$ 
+
+Dans le vide $k = \frac{omega}{c} $,  $Z = Z_{0} =\sqrt{\frac{\mu_{0}}{\epsilon_0} }= \mu_{0} c = 377\Omega$ (Exactement? WOW!) 
+
+
+
+\end{document}
