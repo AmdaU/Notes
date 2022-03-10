@@ -1,0 +1,85 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels:}
+
+Théorème fondamentale des surfaces dans $\mathbb{R}^{3}$:
+$$I^* = I \wedge II = II^* \iff p^*=T\cdot p, T|T \text{ est une isométrie directe}$$ 
+
+Champ de vecteurs sur $S$
+
+$$x:S \to \mathbb{R}^{3} | X(x) \in T_{x}S$$ 
+
+$x$ serait la vitesse d'un fluide sur la surface 
+
+\underline{Dérivé couvariante} $$\grad_{v}: X = \pi_{T_{x} s} D_{v} X = D_{v} X -(D_{v} x \cdot u) u$$ 
+
+
+\begin{tcolorbox}[title=Rappels sur les dérivées directionnelles]
+	Soit $f: \mathbb{R}^{3} \to \mathbb{R}^{n} $ on peut définir sa dérivées directionelle dans la directiondu vecteur $v$ $$D_{v} f:= \lim_{t\to0} \frac{f(x+tv)-f(x)}{t}  $$. 
+
+On peut l'évaluer enutilisant un chemin: $$D_{v} f = \eval{\frac{d}{dt}}_{t=0} f(\gamma(t)) \qquad \text{ avec } \gamma(0)=x, \gamma'(0)=v$$ 
+
+Si $f$ est définie sur une surface $s$, on utilise un chemin de la forme $\gamma(t)=p(u(t),v(t))$   
+
+Les vecteur tangants à $\gamma(t)$ sont $\frac{d}{dt} \gamma(t) = u'p_{u} + v'p_{v} $ 
+
+Si on connaît la fonctions en coordonnées locales ($f(u,v)$), on a: $$D(u'p_{u} + v' p_{v})(f) = \eval{\frac{d}{dt} }_{t=0} f(u(t), v(t))$$ 
+
+\end{tcolorbox}
+
+Un champ de vecteur sur $S$ est intrinsèque. Si $X$ set un champ de vecteurs sur $S$, on peut l'écrire comme $$X - f(u,v)p_{u} + g(u,v)p_{v} $$  
+$$\begin{aligned}
+	Du'p_{u} v' p_{v} X &= u'(f(u,v)p_{u} + g(u,v)p_{v} )_u + v'(f(u,v) p_{u} +g(u,v)p_{v} )_v\\
+			&= u'(f_{u} p_{u} + fp_{uu} +g_{u} p_{v} +g p_{uv}) +v'(f_{v} p_{u} + f p_{uv} + g_{u} p_{u} g p_uu)
+\end{aligned}$$ 
+
+Les termes $p_{uu}, p_{uv} \text{ et } p_{vv}$ ont des composantes en $u$. $\implies$ La dérivée directionnelle n'est pas un champ de vecteur sur $S$ mais la dérivée covariante oui!
+
+
+\underline{Lien avec les symbols de cristoffel}: $p_{u}$ et $p_{v}$ sont des champs de vecteurs sur $S$
+
+Exemple:
+
+\begin{figure}[ht]
+    \centering
+    \incfig{champ-de-vecteur}
+    \caption{Champ de vecteur}
+    \label{fig:champ-de-vecteur}
+\end{figure}
+
+Sue chaque point on peut calculer la dérivé covariante de $p_{u}$ par rapport à $p_v$
+
+$$\grad p_{u} p_{u} = \pi_{T_xS}^\perp (Dp_{u} p_{u}) = \pi_{T_xS}^\perp(\Gamma_{uu}^u p_{u} + \Gamma_{uu}^v p_{v} + Lu = \Gamma_{uu}^u p_{u} + \Gamma_{uu}^v p_v$$ 
+
+
+On peut alors trouver les quantitées intrinsèques (ignornent les isométries locales)
+
+$$\grad p_{u} p_{v} = \Gamma_{uv}^u p_{u} + \Gamma_{uv}^v p_{v}\\ \grad p_{v} p_{u} = \Gamma_{uv}^u p_{u} + \Gamma_{uv}^u p_{v}\\ \grad p_{v} p_{u} =\Gamma_{vu}^up_{u} + \Gamma_{vv}^u p_v$$ 
+
+Propriétes de la dérivé couvariante
+
+\begin{enumerate}
+	\item Linéarité 1: $$\grad_{v} (x_{1} + x_{2}) = \grad_{v} X_{1} + \grad_{v} x_{1} + \grad_{v} x_{2} $$ 
+	\item Règles de Leibnitz: $$\grad_{v} (fX) = (D_vf)X + f\grad_{v} X \qquad f: S\to \mathbb{R}$$ 
+	\item linéarité 2: $$\grad_{av_1+bv_2} X = a \grad_{v_1}X + b\grad_{v_2} X $$ 
+\end{enumerate}
+
+\underline{Démonstation de la deuxième propriété:} 
+
+$$\begin{aligned}
+	\grad_{v} (fx) &= D_{v} (fx) -(D_{v} (fx)\cdot u)n\\ &=(D_{v} f)x +f(D_{v} x) - ((D_{v} f)\underbrace{x\cdot n}_0) + f(D_{u} x)\cdot n) n \\ &= D_{v} fx + f(D_{v} s = [(D_vx)\cdot n]n)\\&= D_{v} fx + f\grad_{v} x
+\end{aligned}$$ 
+
+
+En utilisant les trois propriétées on calculs:
+
+$$\begin{aligned}
+	\grad p_{u} (fp_{u} + g p_{v} ) = \grad p_{u} (f p_{u} ) + \grad_{p_u} (gp_v) \\ &= (Dp_{u} f)p_{u} + (DP_{u} g) p_{v} + f \grad_{p_{u}}  p_{u} + g \grad_{p_u} p_{v} \\ &= (f_{u} + f \Gamma_{uu}^u + g\Gamma_{uv}^u) p_{u} + (g_{u} + \Gamma_{uu}^v + g \Gamma_{uv}^u)p_v
+\end{aligned}$$ 
+
+On fait la même chose pour $\grad_{p_v}$ et avec la propriété 3 on peut calculer $\grad_{v} x$ pour n'importe que $v,x$. 
+
+
+\end{document}
