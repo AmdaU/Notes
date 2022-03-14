@@ -1,0 +1,85 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Raypnnement}
+
+\subsection*{Potentiels}
+
+\underline{Statique} $$\grad \times E =0 \implies E = -\grad V$$ 
+$$\grad \cdot E = - \frac{\rho}{\epsilon_0} \implies \grad^2 B = \frac{\rho}{\epsilon_0} =0$$ 
+$$V(P) = \frac{1}{4\pi\epsilon_0} \int \frac{\rho(M)d\tau}{PM} $$ 
+
+$$\grad \cdot \vb{B} = 0 \implies \vb{B} = \grad \times  \vb{A}$$ 
+
+$$\grad x \vb{B} = \mu_{0} j = \grad(\grad \cdot \vb{A}) - \grad^2 A$$ 
+
+$\vb{A}$ n'est pas définis de manière unique. On a un choix de gauge sur la valeur du gradient
+
+$$\grad \cdot \vb{A} = 0 \quad \text{jauge de Coulomb}$$ 
+
+$$\grad^2 \vb{A} + \mu \vb{j} = \vb{0}$$ 
+
+\begin{tcolorbox}[title=Remarque]
+	\underline{La condition $\grad \cdot A = 0$ n'est pas trop forte } 
+	$$\vb{A}' = \vb{A} + \grad \varphi  $$ 
+	$$\grad \times \vb{A}' = \grad \times (\vb{A} + \grad \varphi) = \grad \times \vb{A}$$ 
+	Le résultat physique reste le même peut importe le gradient!
+\end{tcolorbox}
+
+\underline{dynamique} $$\grad \cdot B =0 \implies \grad \times A $$ 
+
+$$\grad \times B = \grad (\grad \cdot \vb{A}) - \grad^2 \vb{A}$$ 
+
+$$\mu \vb{j} + \epsilon\mu \frac{d\vb{E}}{dt} $$ 
+
+$$\grad \times  \vb{E} = - \frac{d \vb{E}}{dt} = -\grad \times \frac{dB}{dt} $$ 
+
+$$\grad \times \qty(\vb{E} + \pdv{B}{t}) =  0 \implies \vb{E} = \pdv{\vb{B}}{t}= -\grad V$$ 
+
+
+$$\begin{cases}\grad \times \vb{B} = \mu_0 \vb{j} + \epsilon \mu_{0} \left( -\grad \pdv{V}{t} \right) -\grad \left( \grad \cdot \vb{A} \right) -\grad^2 \vb{A}\\\grad \cdot E = \frac{\rho}{\epsilon_0} = - \grad^2 V-\grad \pdv{\vb{B}}{t}\end{cases}$$ 
+
+On veut annuler le terme en $V$ car c'est celui-là qui mélange les deux composantes 
+
+$$\mu_{0} j = \epsilon_{0} \mu \dv[2]{A}{t} + \grad^2 \vb{A} = \grad \qty[\grad \cdot A + \pdv{V}{t}]$$ 
+
+$$\frac{\rho}{\epsilon_0} + \grad^2 B = \pdv{t}(\grad \cdot A)$$ 
+
+\underline{Gauge de Lorentz} 
+$$\grad \cdot A + \pdv{V}{t} = 0$$ 
+
+$$\begin{cases}
+	\grad^2 \vb{A} - \epsilon\mu \pdv[2]{\vb{A}}{t} = -\mu_0 \vb{j}\\
+	\grad^2 V -\frac{1}{c^2} \pdv[2]{V}{t} = -\frac{\rho}{\epsilon_0} 
+\end{cases}$$ 
+
+Si on modifie maintenant le potentiel vecteur, on trouver
+
+$$\vb{A}' = \vb{A} + \grad\varphi \implies \vb{B}' = B$$ 
+
+Cepdant, cela change $\vb{E}$, à moins que $V$ change aussi. On veut que $\vb{E}= \vb{E}'$   
+$$\begin{aligned} \vb{E}' &= -\grad V' - \pdv{\vb{A}'}{t}\\
+	&= \grad V' - \pdv{\vb{A}}{t} -\grad \pdv{\varphi}{t}	
+\end{aligned}$$ 
+$$$$ 
+On doit donc avoir $$\vb{E}' = - \grad \underbrace{\left( V' +\pdv{\varphi}{t} \right)}_{V} -\pdv{\vb{A}}{t} $$ 
+
+On a donc que $V'$ doit être différent de $V$. $V$ et $\vb{A}$ ne sont plus indépendant!    
+
+
+\subsection*{Potentiels retardées}
+
+Quand on travail en dynamique le potentiel ne s'applique plus instantanément. L'information voyage à la vitesse de la lumière
+
+$$V(P,t) = \frac{1}{4\pi\epsilon_0} \int \frac{\rho(M,t-\frac{PM}{c} )}{PM} \dd \tau$$ 
+
+$$\vb{A}(P,t) = \frac{\mu_{0}}{4\pi} \int \frac{\vb{j}(M,t - \frac{PM}{c}}{PM} \dd \tau$$ 
+
+On appelle la quantité $t - \frac{PM}{c}$ le temps retardé.
+
+Cette forme d'équation ne s'applique pas sur $\vb{E}$ et $\vb{B}$
+
+
+
+\end{document}

@@ -1,0 +1,128 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+	\item \underline{propriétés} 
+		\begin{itemize}
+			\item $$\grad_{v}(X+Y) = \grad_{v} (X) + \grad_{v} (Y)$$
+			\item $$\grad_v(fX) - (D_{v} f)X + (f) \grad_{v} X$$
+			\item $$\grad_{v_1+v_2} X = a \grad_{v_1} X + b\grad_{v_2} X$$
+		\end{itemize}
+	\item \underline{Coordonnées} 
+		\begin{itemize}
+			\item$$\grad_{p_u} p_{u} = \Gamma_{uu}^u p_{u} + \Gamma_{uu}^v p_u$$
+			\item $$\grad_{p_u} p_{v} = \grad_{pv} p_{u} = \Gamma_{uv}^u + \Gamma_{uv}^v p_{v}$$ 
+			\item $$\grad_{p_v} = \Gamma_{vv}^u p_{u} + \Gamma_{vv}^v p_{v}$$ 
+		\end{itemize}. Pour $X=fp_{u} gp_{v} $ $$\grad_{p_u} X = (f_{u} + f\Gamma_{uu}^u + g\Gamma_{uv}^u) p_{i} + \left( g_{u} + f\Gamma_{uv}^v + \Gamma_{vv}^v \right) p_v$$ $$\grad_{p_v} X = \left( f_{v} +f \Gamma_{uv}^u + g\Gamma_{vv}^u \right) p_{u} + \left( g_{v} +f\Gamma_{uv}^v + g\Gamma_{uv}^v + g\Gamma_{vv}^v \right) p_{u} $$  
+\end{itemize}
+
+
+\underline{Proposotion:} Soit $\alpha$ un chemin sur $S$ avec $\alpha(0)=x_0$ et $\alpha(1)=x$. Soit $X_{0} \in T_{x_0} S$. Alors il existe un unique champ de vecteurs \underline{sur $\alpha$ } t.q. $\grad_{alpha'} X \equiv 0$    
+
+\underline{Démonstration}: On écrit $\alpha(t) = p(u(t),v(t))\implies \alpha'= u'p_{u} +v'p_{v} $ et $X = f(t)p_{u} +g(t) p_{v} $   
+
+$$\grad_{\alpha'} X = \pi_{T_{\alpha'(t)}}^\perp(D_{\alpha'} X) S = \pi_{T_{\alpha'(t)}S} \left( f'p_{u} f(p_{uu} u' p_{uv} v') + g' p_{v} +g(p_{uv} u' p_{vv} v') \right) $$ 
+$$= \left( f'+f(\Gamma_{uu}^u u' + \Gamma_{uv}^u v') + g(\Gamma_{uv}^u u' + \Gamma_{vv}^u v) \right)  p_{u} + \left( g' + f(\Gamma_{uu}^v u' + \Gamma_{uv}^v v') + g(\Gamma_{uv}^v u' + \Gamma_{vv}^v v' \right) p_{v} =0$$ 
+
+On réécrit :
+
+\begin{equation*}
+	\cols{f'\\g'} = -\cols{\Gamma_{uu}^u u' + \Gamma_{uv}^u v' & \Gamma_{uv}^u u' + \Gamma_{vv}^u v'\\ \Gamma_uu^v u' + \Gamma_{uv}^v v' & \Gamma_{uv}^v u' + \Gamma_{vv}^v v'}\cols{f\\g}\tag{*}\label{eq:transp} 
+\end{equation*}
+C'est un système d'équation différentielles ordinaires linéaires d'ordre 1
+
+$\implies \exists!$ solutions étant donné $f(0),g(0), g'(0), f'(0)$  
+
+Comme l'équation \eqref{eq:transp} dépend seulement de $\Gamma_{ij}^k$, le trasnport est parallèle est \underline{intrinsèque}   
+$\blacksquare$
+
+\underline{Exemple}: Calculons le trasnport parallèle d'un vecteur le long d'un cercle de latitude sur la sphère. Sur $S^2$ $$p(\theta, \varphi) = \cols{\cos\theta\sin\varphi\\\sin\theta\sin\varphi\\\cos\theta}$$   
+
+$$I_{(\theta,\varphi)} = \cols{\sin^2\varphi & 0 \\ 0 &1}$$ 
+
+$$\Gamma_{\theta\varphi}^\varphi = -\sin\varphi\cos\varphi$$ 
+$$\Gamma_{\theta\varphi}^\theta = \cot\varphi$$
+
+On prend le cercle de Lattitude $\varphi_{0}$: $\theta(t) = t,\quad \varphi(t)=\varphi_{0} $avec $0\leq t \leq 2\pi$    
+
+$$\cols{f'\\g'} = \cols{\cot\varphi\varphi'& \cot\varphi\theta'\\\sin\varphi\cos\varphi&0}\cols{f\\g}$$ 
+
+$$f'= \cot\varphi_{0} g$$ 
+$$g' = \sin\varphi_{0}\cos\varphi_{0} f $$ 
+
+
+$$\implies f" = -\cot\varphi_{0} g' = -\cot\varphi_{0} (\sin\varphi_0\cos\varphi_0) f = \cos^2\varphi_{0} f$$ 
+
+$$\implies f(t) = c_{1} \cos((\cos\varphi)t) + c_{2} \sin((\cos\varphi_0)t)$$ 
+
+$$1 = f(0) =c_1$$ 
+$$0 = g(0) - \frac{f'(0)}{\cot\varphi_0} = \frac{c_{2}\cos\varphi_{0}}{-\cos\varphi_{0}} = -c_{2\sin\varphi_0} \implies c_{2} = 0$$ 
+
+$$\implies f(t) = \cos((\cos\varphi_{0} )t)$$
+$$g(t) = \frac{-\cos(\varphi_0)\sin(\cos\varphi)t)}{-\cot\varphi} = \sin\varphi_{0} \sin(\cos(\varphi_0)t)$$ 
+
+transport parallèle:
+
+$$X(t)=\cos(kt)p_{\theta} + \sin\varphi_0\sin(kt)p_{\varphi} \qquad k = \cos\varphi_{0} $$ 
+
+$$\norm{X(t)}^2 =\cos^2(kt)p_{\theta} p_{\theta} + 2\sin\varphi_{0} \cos^2(kt) p_{\theta} p_{\varphi} + \sin^2 \varphi_{0}\sin^2(kt)p_{\varphi} p_{\varphi} =  \cos^2(kt)\sin^2\varphi_{0} + \sin^2\varphi_{0}\sin^2(kt) = \sin^2(\varphi_0)$$
+
+On remaque que la norme ne dépend pas de $t$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{transport-parallèle-sur-une-shpère}
+    \caption{Transport parallèle sur une shpère}
+    \label{fig:transport-parallèle-sur-une-shpère}
+\end{figure}
+
+
+\underline{Proposition}: Le trasnport parallelèle présèrve les longeurs et les angles
+
+\underline{Démonstration}: Soit $\alpha(t) = p(u(t), v(t))$ et $X(t), Y(t)$ deux champs de vecteurs parallèles le long de $\alpha$.
+$$\grad_{\alpha'} X = \grad_{\alpha'} Y = 0$$ 
+
+Posons $f(t) = X(T) \cdot Y(t)$ 
+$$f'(t) = X'(t) \cdot Y(t) + X(t) \cdot Y'(t) = D_{\alpha'} (X) \cdot Y + X D_{\alpha'} (Y) = \grad_{\alpha'} (X) \cdot Y + X \cdot \grad_{\alpha} (Y) = 0$$ 
+
+$\implies f(t)$ est une constante
+$\implies$ longeures et angles constants $\blacksquare$  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{trois-angles-de-90}
+    \caption{Trois angles de 90}
+    \label{fig:trois-angles-de-90}
+\end{figure}
+
+\underline{Définition}: UNe chemin $\alpha(t)$ sur une surface $S$ est une \underline{géodésique} si $\grad_{\alpha'(t)} \alpha' = 0 \forall t$    
+
+En coordonnées, pour $\alpha(t) = (u(t), v(t))$ l'équation géodésique s'écrit $$\Grad_\alpha;(u'p_{u} + v'p_v) = u"p_{u} + u'\grad_{u'} p_{u} + v" p_{v} + v\grad_{\alpha'} p_v$$   
+
+$$=u"p_{u} + u'(u'(\Gamma_{uu}^up_{u} + \Gamma_{uu}^v) + v'(\Gamma_{uv}^u p_{u} + \Gamma_{uv}^v p_{v} )) + v"p_{v} + v'(u(\Gamma_{uv}^up_{u} + \Gamma_{uv}^v p_{v}) + v'(\Gamma_{vv}^u p_{u} \Gamma_{vv}^u)p_u) = 0$$ 
+
+$$\iff\begin{aligned}
+	u" + (u')^2\Gamma_{uu}^u + 2u'v'\Gamma_{uv}^u + (v')^2\Gamma_{vv}^u &=0\\
+	v" + (u')^2 \Gamma_{uu}^v + 2u'v'\Gamma_{uv}^v + (v')^2\Gamma_{vv}^v &= 0
+\end{aligned}$$ 
+
+$$\iff \begin{aligned}
+	u" + (u' v') \cols{\Gamma_{uu}^u & \Gamma_{uv}^u\\ \Gamma_{uv}^u & \Gamma_{vv}^u} \cols{u'\\v'} &= 0\\
+	v" + (u'v')\cols{\Gamma_{uu}^v &\Gamma_{uv}^v \\ \Gamma_{vu}^v & Gamma_{vv}^v}\cols{u' \\ v'} = 0
+\end{aligned}$$ 
+
+Les géodésiques sont uniques étant donné un point et vecteur tangeant initiaux
+
+\underline{Exercice}: Trouvez les géodésiques du \underline{plan} en coordonées polaires $$p(r,\theta) = \cols{r\cos\theta\\r\sin\theta\\0}$$    
+
+
+\begin{tcolorbox}[title=Fun fact]
+	On ne sait pas si $$\pi^{\pi^{\pi^\pi}}$$ est un entier ou non!
+\end{tcolorbox}
+
+
+\end{document}

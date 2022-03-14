@@ -1,0 +1,93 @@
+\input{../parameters}G
+
+\begin{document}
+
+Il écris pleins de chiffres 
+
+$$E_{f} = \frac{\hbar^2}{2m}\left( 3\pi^2 n \right)^{3/2} = \dotsb = 0.4 {\rm meV}$$ 
+
+$$n=\frac{\rho}{m} = \dotsb = 1.6E22/{\rm cm^3} $$ 
+
+$$T_{F} = 5 {\rm K}$$ 
+
+
+
+\section*{La structure de bande!}
+
+Jusqu'à maintenant on à traité les éléctrons comme un gaz de particules libes, on à jamais vraiment considéré les effet de leur environement. On va maintenant s'intéresser au fait qu'il sont dans un réseau periodique.
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{relation-de-dispersion}
+    \caption{relation de dispersion}
+    \label{fig:relation-de-dispersion}
+\end{figure}
+
+On a levé de dégénéressance!!! ????
+
+
+$$\Psi_{k}^a = e^{i\vb{k}\cdot r} u_{k}^\alpha(\vb{r})\qquad u_{k}^\alpha(\vb{r}) = u_{k}^\alpha(\vb{r} + \vb{R})$$ 
+
+Le $\alpha$ sert à parler de la bande dans laquelle ont se trouve.
+
+On va s'intéresser à l'effet de la periodicité sur le Hamiltonnien du système
+
+$$H = \underbrace{H_{0}}_{\frac{p^2}{2m} } + V$$ 
+
+La solution à l'hamiltonien non perturbé est:
+
+$$H_{0} \ket{k} = \epilon_{k}^0 \ket{k}\quad \epsilon_{k}^0 = \frac{\hbar^2k^2}{2m} $$ 
+
+
+$$\bra{k}V\ket{k} \text{n'est pas important apparement}$$ 
+
+
+Puisuqe le potentiel est periodique, il admet un décomposition de Fourrier et donc:
+
+$$\bra{k'}V\ket{k} = \begin{cases}
+	0 & \vb{k}'-\vb{k} \neq \vb{G}\\
+	V_{\vb{G}} & \vb{k}' - \vb{k} = \vb{G}
+\end{cases}$$ 
+
+$$\Psi_{k} = \sum_{G} A_{\vb{G}+\vb{k}} e^{i(\vb{k} + \vb{G}) \cdot \vb{r}} = e^{i\vb{k} \cdot \vb{r}} \left( \sum_{G} A_{\vb{G} + \vb{k}} e^{i \vb{G}\cdot r} \right) $$ 
+
+Il y a deux conséquences au théorème de Bloch:
+\begin{itemize}
+	\item Tout les excitation peuvent être décritent dans la première zone de Brilloin
+	\item ?????
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{zonne-de-brilloin-repliée}
+    \caption{Zonne de brilloin repliée}
+    \label{fig:zonne-de-brilloin-repliée}
+\end{figure}
+
+Correction de l'énérgie 
+$$\epsilon_{k} = \epsilon_{k}^0 + \underbrace{\bra{k}V\ket{k}}_{\text{même} V_{0} \forall k}+ \sum_{k\neq k'} \frac{|\bra{k'}V\ket{k}|^2}{\epsilon_{k}^0-\epsilon_{k}^0 }  $$ 
+
+Il y a un dégénéressance du au fait que la relation de dispertion est symétique : $\pm k$ donne la même énérige. On doit donc utiliser la théorie des perturbations dégénéré.
+
+$$\ket{\Psi} = \phi_{k} \ket{k} + \phi_{k+G} \ket{k+G}$$ 
+
+$$\sum_{m} H_{nm} \phi_{m} = E \phi_m$$ 
+
+$$\bra{k}H\ket{k} = E_{k}^0 + V_{0}$$ 
+
+$$\bra{k+G}H \ket{k+g} = E_{k+G}^0 + V_0$$ 
+
+$$\bra{k+G}H\ket{k} = V_{\vb{G}}$$ 
+
+$$\bra{k}H\ket{k+G} = V_{-\vb{G}} = V_{\vb{G}}^*$$ 
+
+
+La représentation matricielle est alors
+
+$$\cols{E_{k}^0 +V_0 & V_{G}^* \\ V_{G} & E_{k+G} +V_0}$$
+
+Ses valeurs propres sont $$E_{\pm} = E_{k} + V_{0} \pm |V_{\vb{G}}| $$ 
+
+	
+\end{document}
