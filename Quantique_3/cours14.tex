@@ -1,0 +1,112 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Molécules}
+
+La plupart des molécules sont des systèmes à plusieurs éléctrons (Sauf $H_{2}^+$)
+
+On va s'interesser à l'orinige des molécules.
+
+Ex: $H_{2}$\begin{itemize}
+	\item méthode des liaisons de valance
+	\item méthode de LCAO-MO
+\end{itemize}
+
+On va commencer par regarder quelques ordres de grandeurs. Premièrement quand vous prenez une molécule de $H_{2}$ vous avec deux protons et deux éléctrons, les éléctons sont $\sim 10^3$ fois plus léger que les éléctrons ($M \gg m$). 
+
+\underline{Énérigie caracthéristique éléctronique} 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{molécule-avec-des-éléctrons-confinées}
+    \caption{Molécule avec des éléctrons confinées}
+    \label{fig:molécule-avec-des-éléctrons-confinées}
+\end{figure}
+$$\Delta z \sim a \qquad \Delta p_{z} \Delta z \sim \hbar \qquad \Delta p_{z} \sim \frac{\hbar}{a} $$ 
+
+$$E_{w} \sim \Delta E \sim \frac{3}{2} \frac{\Delta p_{z}^2}{2m} \sim \frac{\hbar^2}{ma^2} $$ 
+$$A \sim 1 \text{\AA} - 10 \text{\AA} \qquad E_{e} \sim 1 eV$$ 
+
+\underline{Énérgie vibrationelle} 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{énérgie-vibrationelle}
+    \caption{Énérgie vibrationelle}
+    \label{fig:énérgie-vibrationelle}
+\end{figure}
+
+On utilise $E_{e} \sim k_{0} a^2 \sim \frac{\hbar^2}{ma^2} $ 
+
+$$k_{0} = \frac{E_{e}}{a^2} =\frac{\hbar^2}{2ma^2} $$ 
+
+La j'ai pas vraiment le temps de retranscrire mais on arrive au fait que l'ordre de grandeur de la vitesse des noyeaux est très petit ( $v_{n} \sim 10^{-4} v_e$). Les éléctrons voient des noyeaux statiques!
+
+\underline{Énérgie rotationelle} 
+
+La molécule à un moment d'inertie qui s'écrit $$\Sum_{i} m_{i} r_{i}^2$$ 
+
+On peut voir l'énérgie de rotation comme celle d'un rotateur rigide.
+
+$$E_{\rm{rot}} \sim \frac{\vb{L}}{2I} \sim \frac{\hbar^2}{Ma^2} \sim \underbrace{\frac{\hbar^2}{ma^2}}_{E_e} \frac{m}{M} \sim 10^{-4} E_{e} \quad \text{(ordre de l'infrarouge)}$$ 
+
+
+\underline{Hamiltonien su système} 
+
+$$H = \underbrace{\sum_{i} \frac{p_{i}^2}{2m}}_{T_e} + \underbrace{\sum_{j} \frac{p_{j}^2}{2M_j}}_{T_{n}}  + \frac{1}{2} \sum_{i\neq i'} \frac{e^2}{|\vb{r}_i - \vb{r}_i'|}0 \sum_{ij} \frac{z_{j}e^2}{|\vb{r}_i-\vb{R}_j|} + \frac{1}{2} \sum_{jj'} \frac{z_{j} z_{j'} e^2}{|\vb{R}_j \vb{R}_{j'} |}  $$ 
+
+Approximation de Bhor-Oppenheimer ou diabatique: On traite $T_{n}$ comme une perturbation
+
+\begin{tcolorbox}[title=Parenthèse notation]
+	$$R = \vb{R}_1 \dotsb$$
+	$$r = \vb{r}_1 \dotsb$$ 
+\end{tcolorbox}
+
+$$\Psi(r,R) = \sum_{n} \Phi_n(R)\psi_n(r,R)$$ 
+
+$$\boxed{H_{e^-} \psi_{m} (r,R) \sim \epsilon_{n} (R) \psi_n(r,R)}$$ 
+
+L'énérige ne dépend que de la position (fixe) des noyeaux. $\epsilon_{n} (R_0)$ minimale pour le $R_{0}$ d'équilibre 
+
+\underline{Molécule de $H_2$ } 
+
+Méthode de H???-London:
+
+\begin{figure}[ht]
+    \centering
+    \incfig{méthode-de-h-l}
+    \caption{Méthode de H-L}
+    \label{fig:méthode-de-h-l}
+\end{figure}
+
+Quand les deux atomes se rapproche, il y a un recouvrement des paquets d'ondes. Il faut doncutiliser la théorie des particules identiques! Il faut donc Antisymétrisé la fonction d'onde décrivant les éléctrons!
+
+\underline{Fonction d'essai}
+
+$$\psi \sim \varphi_{1S} (\vb{r}_1 - \vb{R}_1) \varphi(\vb{r_2}-\vb{R_2}) \ket{\epsilon_{1}, \epsilon_{2} }$$ 
+
+
+ $$\psi_{+}^s (\vb{r}, R) = \frac{\left[ \varphi_{1S} (\vb{r}_1-\vb{R}_1) \varphi_{1S} (\vb{r}_2 -\vb{R}_2 + \varphi_{1S}(\vb{r}_1 - R_{2} ) \varphi_{1S} (\vb{r}_2 - \vb{R}_1) \right] }{\sqrt{2+2S^2}} \frac{\left[ \ket{\uparrow\downarrow} - \ket{\downarrow \uparrow} \right] }{\sqrt{2}}$$ 
+
+ $$\Psi_{-}^t(\vb{r},R) = \frac{\left[ \varphi_{1S}(\vb{r}_1 - \vb{R}_1) \varphi_{1S} (\vb{r}_2-\vb{R_2}) - \varphi_{1S} (\vb{r}_1 -\vb{R}_2) \varphi_{1S} (\vb{r}_2 - \vb{R}_2 \right] }{\sqrt{2-2S^2}}\ket{\uparrow\uparrow} \quad (\pi = 1)$$ 
+
+ $$\psi_{1} (\vb{r},R) = " \ket{\downarrow\downarrow} (\pi =-1)$$ 
+
+ $$\psi_{+}^t = " \frac{\ket{\uparrow\downarrow}+\ket{\downarrow\uparrow}}{\sqrt{2}} (\pi = 0)$$ 
+
+$$S = \int \dd^3 r \varphi_{1S} (\vb{r} - \vb{R}_1) \varphi_{1S} (\vb{r} \vb{R}_2) = \text{intégrale de recouvrement}$$ 
+
+
+$$\bra{\psi_\pm}H_e(R) \ket{\psi_\pm} = \epsilon_{\pm} (R)$$ 
+
+$$=2 E_{1S} + \frac{J(R)}{1\pm S^2} \pm \frac{K(R)}{1\pm S^2} $$ 
+
+$$2 E_{1S} = \sum_{i=1,2} \int \varphi_{1S} (\vb{r}_1 - \vb{R}_1) \left( \frac{p_{i}^2}{2m} - \frac{2e^2}{|\vb{r}_1 - \vb{R}_2 |} \right) \varphi_{1S} (\vb{r}_1-\vb{R}_1) \dd^3 r_{i} \times \int \dd^3r_{i} \varphi_{1S}^2(?)$$ 
+
+$$J(r) = \int \dd^3 r_{1} \dd^3 r_{2} \varphi_{1S} (\vb{r}_1 - \vb{R}_1)\varphi(\vb{r}_2 - \vb{R}_2) \left\{ \frac{-e^2}{|1-2|} - \frac{e^2}{|2-1|} - \frac{e^2}{|1-2|} +\frac e^2 |1-2\ \dotsb \right\} $$ 
+
+$$K(R) = \int \dd^3r_{1} \dd^3 r_{2} \varphi(\vb{r}_1-\vb{R}_1) \varphi(\vb{r_2}-\vb{R}_2) \left[ \quad \right] \varphi()\varphi()$$ 
+
+\end{document}
