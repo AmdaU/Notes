@@ -1,0 +1,75 @@
+\input{../parameters}
+
+\usepackage{tensor}
+\usepackage{mhchem}
+
+\begin{document}
+
+\section*{Molécules diatomiques}
+
+\underline{méthode de liaison de valance}
+
+fonction d'onde d'essai: $$\psi_{1S}(\vb{r}_1 - \vb{R}_1) \varphi_{1S} (\vb{r}_2 - \vb{R}_2) \ket{\epsilon_{1}=\uparrow\downarrow, \epsilon_{2} = \uparrow\downarrow}$$ 
+
+$$\bra{\psi_{\pm}^{S_1+}}H_{e} \ket{\psi_{\pm}^{S_1t} } = 2 E_{1S} + \frac{J(R)}{1\pm S^2} \pm \frac{K(R)}{1\pm S^2}$$ 
+
+$$J(R) > 0 \qquad K(R) < 0$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{enérgie-des-différents-états}
+    \caption{Enérgie des différents états}
+    \label{fig:enérgie-des-différents-états}
+\end{figure}
+
+\underline{Classification des états modéculaire} 
+
+$$L_{z} = L_{1z} + L_{2z}\quad \text{: Bon nombre quantique}$$ 
+
+$$[L_{z}, H] =0$$
+
+(La molécule est invariante sous rotation autour de l'axe des $z$ )
+
+$$L_{z} \ket{\psi} = \pm \hbar \Lambda \ket{\psi}$$ 
+
+$\Lambda$ est la valeur absolue de la projection du spin en $z$  
+$$\begin{matrix} \Lambda & 0 &1 &2\\ &\Sigma&\Pi & \Delta
+\end{matrix}$$  
+
+Pour $H_2$ (fondamental H-L)
+
+$$\psi_{+}^S \to \tensor[^1]{\Sigma}{_g} \quad \text{geralde, pair}$$ 
+$$\psi_{1}^t \to \tensor[^3]{\Sigma}{_u} \quad\text{ungerald, impair}$$ 
+
+
+\underline{ $H_2$: Fonction d'onde d'essai pour l'orbitale moléculaire $\sigma_g$ } 
+
+$$\psi_{1s\sigma_g\epsilon} (\vb{r}) = \frac{\varphi_{1S} (\vb{r}- \vb{R}_1 \varphi_{1S} (\vb{r}- \vb{R_2})}{\sqrt{2(1+S)}}\ket{\epsilon}$$ 
+
+$$\Psi_{1s\sigma_{\mu}^*\epsilon} = [\quad - \quad] \ket{\epsilon}$$ 
+
+$$L_{z}\psi_{S1\lambda\epsilon} = \pm \lambda \psi_{1S\lambda\epsilon} $$ 
+
+$$\begin{matrix}
+	\lambda & 0 & 1 &2 \\
+		& \sigma & \pi & \delta	
+\end{matrix}$$ 
+
+$$H[1S^1] + H[1S^1] \to H_2[(1S\simga_g)^2]$$ 
+
+	$$He[1S^2] + He[1S^2] \to He_{2}[(1s\sigma_g)^2,(1S\simga_{u}^*)^2]$
+
+\begin{figure}[ht]
+    \centering
+    \incfig{niveaux-hélium}
+    \caption{niveaux hélium}
+    \label{fig:niveaux-hélium}
+\end{figure}
+
+$$Li[1S^2, 2S^1] + Li[1S^2, 2S^1] \to Li_{2}[(1S\sigma_g)^2, (1S\sigma_u^*)^2, (2S\simga_g)^2]$$ 
+
+$Li_2$ exsiste
+$\mc{Be_2}$ n'existe pas
+
+	
+\end{document}

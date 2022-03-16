@@ -1,0 +1,52 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Formule d'échange}
+
+2 particules 
+2 états $\psi_{a} \psi_{b} $ 
+$$\bra{\psi_a}\ket{\psi_b}$$ 
+
+$$\psi_s(x_{1},x_{2} ) = S \psi_{a} + \psi_{b} $$ 
+
+$$\avg{\Delta x^2}_s = \frac{1}{2} \int \dd x_{1} \dd x_{2} (x_{1} -x_2)^2 \left[ \psi_a(x_1)^*\psi_b(x_{2} )^* + s\psi)a(x_{2})^* \psi_{b} (x_1)^* \right] \times \left[ \psi_{a} (x_1)\psi_b(x_2) + s\psi_a(x)2)\psi_b(x_1) \right]  $$ 
+
+
+$$ = \frac{1}{2} \int \dd x_{1} \dd x_{2} (x_{1} - x_{2} )^2 \left[ |\psi_a(x_1)|^2 |\psi_b(x_2)|^2 + |\psi_a(x_2)|^2 |\psi_b(x_1)|^2 + s \left( \psi_b(x_1)^*\psi_a(x_1)\psi_a(x^2)^*\psi_b(x_2) + \psi_a(x_1)^*\psi_b(x_1)\psi_b(x_2)^*\psi_a(x_2) \right)  \right] $$ 
+
+$$= \avg{\Delta x^2}_d - 2s \abs{\avg{x}_{ab}}^2$$ 
+
+Premier terme: $= \int \dd x_{1} \dd x_{2} (x_{1} - x_2)^2 |\psi_a(x_1)|^2 |\psi_b(x_2)|^2$ 
+
+Donc:
+
+$$\begin{cases}
+	\text{bosons}: &\avg{\Delta x^2}_{\text{bosons}} = \avg{\Delta_{x}^2}_d - 2 \abs{\avg{x}_{ab}}^2\\
+	\text{fermions}: & \avg{\Delta x^2}_{\text{fermions}} = \avg{\Delta_{x}^2}_d + 2 \abs{\avg{x}_{ab}}^2
+\end{cases}$$ 
+
+
+\underline{Méthode variationnelle} 
+
+$$H = \frac{p^2}{2m} + \frac{1}{2} k x^2$$ 
+
+$$\psi_{E} (x) = \begin{cases} a^{- \frac{1}{2} } \cos(\pi x / 2a) & \abs{x} < a\\
+	0 & \text{sinon}
+\end{cases}$$ 
+
+$$E(a) = \bra{\varphi_E}H\ket{\varphi_E}$$ 
+
+$$E(a) = \int \dd x -\frac{\hbar^2}{2m} \varphi_{E} (x) \partial^n \varphi_E(x) + \int \dd x \frac{1}{2} k x^2 \varphi_E(x)^2$$ 
+
+
+$$E(a) = \frac{hbar^2}{2km} \int \dd x (\partial_{x} \varphi_E)^2 + V(a)$$ 
+
+$$E(a) = \frac{\hbar^2\pi^2}{8ma^2} + ka^2 \left( \frac{1}{6} - \frac{1}{pi^2}   \right) $$ 
+
+
+$$E(a_0) = \frac{1}{2} \hbar \omega \left( \frac{\pi^2-6}{3}  \right)^2$$ 
+
+Ce qui est plus grand que la véritable valeur, soit $\frac{1}{2} \hbar \omega$ 
+
+\end{document}
