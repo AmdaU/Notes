@@ -1,0 +1,82 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+	\item \underline{Transport parallèl}: $X$ est \underline{parallèle} le long de $\alpha$ si $\grad_{\alpha'} X \equiv 0$    
+	\item Étant donné $X_{0} \in T_{\alpha(0)} S \exists! X$ définis sur $\alpha$ et parallèle  
+	\item \underline{Géodésique}: $\alpha$ géodésique si $\grad_{\alpha'} \alpha' = 0$ ( $\alpha'$ est parallèle le long de $\alpha$)    
+	\item Vitesse constante car parallèle implique longeur constante
+	\item En cooddonnées $$\alpha(r) = p(u(t), v(t))$$  $$u" + (u' \quad v') \cols{\Gamma_{uu}^u & \Gamma_{uv}^u \\ \Gamma_{uv}^u &\Gamma_{uv}^u}\cols{u' \\ v'} = 0$$ $$v" + (u' \quad v') \cols{\Gamma_{uu}^v & \Gamma_{uv}^v \\ \Gamma_{vu}^v & \Gamma_{vv}^v}\cols{u'\\v'} =0$$  
+\end{itemize}
+
+\underline{Théorème de Clairaut}: Si $\alpha$ est une géodésique sur une surface de révolution alors $\exists C$ constante t.q. pour tout point de $\alpha$, \begin{equation}
+	r\cos \varphi = C \tag{**} \label{eq:revol}
+\end{equation}   
+
+Où $r$ est la distance à l'axe et $\varphi$ est l'angle entre $\alpha'(t)$ et le parallèl par $\alpha(t)$. Inversement, tout courbe $\alpha$ à vitesse constante qui satisfait \eqref{eq:revol} et n'est pas parallèle est une géodésique.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{surface-de-révolution}
+    \caption{Surface de révolution}
+    \label{fig:surface-de-révolution}
+\end{figure}
+
+$$p(s\theta) = \cols{\cos\theta x(s) \\ \sin\theta x(s) \\ z(s)}$$ 
+
+$$I_{s\theta} = \cols{1 &0 \\ 0 & x^2}$$ 
+
+Les seuls symbols de Chritoffel non-nuls sont $$\Gamma_{s\thata}^\theta = \frac{x'(s)}{x(s)} \qquad \Gamma_{\theta\theta}^s = - x(s) x'(s)$$ 
+
+Les équations géodésiques sont 
+
+\begin{align}
+	S" + (-x(s) x'(s))\theta'^2 = 0\\
+	\theta" + 2 \frac{x'(s)}{x(s)} s'\theta' =0
+\end{align}
+
+
+$$(2) \iff \frac{\theta"}{\theta'} = -2 \frac{x'(s)}{x(s)} s' \implies \ln\theta' = -2\ln(x(s)) + C \implies \theta' = \frac{C}{x^2} \implies x^2 \theta' = C  $$ 
+
+Si $\alpha(t) = p(s(t),\theta(t))$ est une géodésique, alors $x^2 \theta' = c$. $\alpha$ à une vitesse constante 
+
+$$\cos\varphi = \frac{\alpha' \cdot p_{\theta} }{\sqrt{\alpha'\cdot \alpha'}\sqrt{p_{\theta}\cdot p_{\theta} }} = \frac{(s'p_{s} + \theta' p_{\theta}) \cdot p_\theta}{v\cdot x} - \frac{\theta'x}{v'} $$ 
+
+$$\cos\varphi = \frac{\theta'x}{v} = \frac{c}{xv} \impluies x\cos\varphi = \frac{c}{v} = c'$$ 
+
+Pour l'autre directions, supposons que $\alpha$ est à vitesse constante $v$ est que $r\cos\varphi = c$   
+
+$$r\cos\varphi = x \left( \frac{\theta'x^2}{v\cdot x}  \right)  = \frac{theta'x^2}{v} = C \implies \theta'x^2 = Cv \implies text{l'équation 2 est satisfaite} $$ 
+
+Il ne reste qu'à montrer que (1) est satisfaite $$v^2 = \alpha'\cdot \alpha' = s'^2 + x(s)^2\theta'^2 \implies - = 2s's"+ 2s(s)x'(s)s'\theta'^2 + x(s)^2(2\theta'\theta")$$ 
+
+$$0 = s's" + x x' s' \theta'^2 + x^2 \theta'\qty(-2 \frac{x'}{x} s'\theta') = s'(s" - x x'\theta'^2)$$ 
+
+Si $\alpha$ n'est pas parallèle $s'\neq 0$ alors $s" x x'\theta'^2 = 0 $ $\implies$ (1) est satifaite fonc $\alpha$ est une géodésique $\blacksquare$     
+
+\underline{Application} : $$r\cos\varphi = \rm{const}$$  
+
+Initiallement $\cos\varphi =1$ 
+
+$\implies \rm{const} =r_{0} \forall t>0 r>r_{0} \text{ car }\cos\varphi <1$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{exemple-d'application}
+    \caption{Exemple d'application}
+    \label{fig:exemple-d'application}
+\end{figure}
+
+\section*{Courbure géodésique \& et courbures normales}
+
+
+$\alpha$ paramétré par longeur d'arc sur une surface $S$ $$ T = \alpha'$$
+
+$$\dotsb$$
+
+(Il a effacé le tableau :( )
+	
+\end{document}
