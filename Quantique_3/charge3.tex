@@ -1,0 +1,76 @@
+\input{../parameters}
+
+\begin{document}
+
+$$H = \frac{p^2}{2m} - \frac{e^2}{r} $$ 
+
+$$e^2 = \frac{q^24\pi}{\epsilon_{0}} $$ 
+
+$$R(r) = a_{0}^{-3/2} f(p)$$ 
+
+$$f(\rho)= \frac{1}{\rho^2+b^2}, \rho = \frac{r}{a_{0}} $$ 
+
+$$p\sim \frac{\hbar}{a_{0}b} \qquad r \sim a_{0} b $$ 
+
+
+$$E(b) =^? = \alpha_{1} \frac{\hbar^2}{ma_{0}^2b^2} -\alpha_{2} \frac{e^2}{a_{0}b}  $$ 
+
+$$\Psi(r, \theta, \varphi) = \frac{1}{\sqrt{4\pi}} \mathcal{N}  R(r)$$ 
+
+$$\braket{\Psi}{\Psi} = \mathcal{N}^2 \int_{0}^\infty R^2(r) r^2 \dd x$$ 
+
+$$= \mathcal{N}^2 \int_{0}^\infty \frac{r^2}{\left( \left( \frac{r}{a_{0}}  \right)^2 + b^2 \right)^2} \dd r$$ 
+
+$$\boxed{r  = b \tilde r}$$ 
+
+$$= \mathcal{N}^2 \underbrace{\int_{0}^\infty \frac{b^3 \tilde r^3 \dd \tilde r}{b^4 \left( \left( \frac{\tilde r}{a_0} \right)^2  \right)^2}}_{{\rm cste} \times \frac{1}{b} }  = \mathcal{N}^2 \frac{1}{?b} $$ 
+
+$$E(b) = \bra{\Psi} H \ket{\Psi} = \frac{\hbar^2}{4ma_{0}^2b^2} - \frac{2e^2}{\pi a_{0} b} $$ 
+$$\pdv{E}{b} = -2 \frac{\hbar^2}{4ma_{0}^2b^2} + \frac{2e^2}{\pi a_{0} b^2} =0  $$ 
+
+$$\frac{i}{b_{0}} = \frac{4e^2ma_{0}}{\pi\hbar^2}$$  
+
+$$E(b_{0} ) = - 4me^4 = \text{Il a tout effacé :)}$$ 
+
+
+\section*{Particules identiques}
+
+$$\varphi_{n} (x) = \sqrt{\frac{2}{a} } \sin(\frac{nx\pi}{a} )$$ 
+
+$$E_{n} = \frac{\hbar{}k_{n}^2}{2m} $$ 
+
+$$k_{n} = \frac{n\pi}{a} $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{puit-de-potentiel}
+    \caption{Puit de potentiel}
+    \label{fig:puit-de-potentiel}
+\end{figure}
+
+$$\ket{\Psi_{b} } = \ket{\varphi_1} \otimes \ket{\varphi_1}$$ 
+
+$$\ket{\Psi_f} = \frac{1}{\sqrt{2}} \left[ \ket{\varphi_1} \otimes \ket{\varphi_2} -\ket{\varphi_2} \otimes \ket{\varphi_1} \right] $$ 
+
+\underline{Hamiltonien total}  
+
+$$H = H_{1} + H_2$$ 
+
+$$E_{b} = \bra{\Psi_b} H \ket{\Psi_{b} } = \bra{\varphi_1} H_1\ket{\varphi_1}\braket{\varphi_1} +\braket{\varphi_1}\bra{\varphi_1}H\ket{\varphi_1} = 2 E_1$$ 
+
+$$E_{f} = \frac{1}{2} \left( \bra{\varphi_1}\bra{\varphi_2} -\bra{\varphi_2}\bra{\varphi_1} \right) (H_{1} + H_{2} ) \left( \ket{\varphi_1} \ket{\varphi_2} + \ket{\varphi_2}\ket{\varphi_1} \right)  = \frac{1}{2} \left( E_{1} + E_{2} +E_{2} +E_{1}  \right) \text{ Il a encore effacé le tableau :(} $$ 
+
+\underline{Ajout d'une perturbation $W = <alpha <delta(x_{1} - x_{2} )$ }  
+
+
+$$\Psi_f(x_{1}, x_{2}) = -\Psi_{f} (x_{2} ,x_{1} )\implies \Psi_f(x_{1} ,x_1) =0$$ 
+
+
+$$E_{b}^{(1)} = \bra{\Psi_b} W \ket{\Psi_b} = \int\dd x_{1} \dd x_{2} \Psi_{b} (x_{1} ,x_{2} )^* \alpha \delta(x_{1} -x_{2} ) \Psi_{b} (x_{1} x_{2} )$$ 
+
+$$=\alpha \int \dd x_{1} \abs{\psi_{b} (x_{1}, x_{1} )}^2 = \frac{3\alpha}{2a} $$ 
+ 
+
+
+	
+\end{document}

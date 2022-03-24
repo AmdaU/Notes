@@ -1,0 +1,145 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Théorie des perturbation dépendante du temps}
+
+$$H = H_{0} + W(t)$$ 
+
+$$W(t) = \begin{cases}
+	0 & t<0\\
+	W(t), t \geq 0
+\end{cases}$$ 
+
+$$H_{0} \ket{\varphi_{n} } = E_{n} \ket{\varphi_{n} } \qquad \text{connu}$$ 
+
+$$\ket{psi(t<0)} = \ket{\varphi_{i} } \qquad (E_{i})$$ 
+
+Grâce à la perturbation, l'état vas se prommener dans l'espace des états. Le vecteur d'état va avoir un recouvrement non-nul avec d'autre vecteur d'état. On peut voir ça comme un enchevêtrement.
+
+$$\mathcal{P}_{i\to f} = \abs{\bra{\varphi_f}\ket{\psi(t)}}^2 $$
+
+Où $\psi(t)$ est régie par l'équation de Shrödinger.
+
+
+$$i\hbar \frac{d}{dt} \ket{\psi(t)} = H(t) \ket{\psi(t)}$$ 
+\underline{Exemples} 
+\begin{itemize}
+	
+	
+	\item	\underline{Effet photoéléctrique} voir \ref{fig:effet-photoéléctrique} 
+
+	\item\underline{Diffusion par un pontentiel} 
+	
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \incfig{effet-photoéléctrique}
+    \caption{Effet photoéléctrique}
+    \label{fig:effet-photoéléctrique}
+\end{figure}
+
+\vspace{1cm}
+
+\underline{Equation de Shrödinger et opérateur d'évolution} 
+
+
+$$i\hbar \dv{t} \ket{\varphi(t)} = H(t) \ket{\varphi(t)}$$ 
+
+$$\ket{\varphi (t + \dd t)} = \underbrace{\left( \mathds{1} - \frac{i}{\hbar} \dd t  H(t) \dd t \right)}_{\equiv U(dt) \text{opérateur d'évolution}}  \ket{\varphi(t)}$$ 
+
+$$U(t + \dd t) \ket{\psi(0)} = U(\dd t) \ket{\psi (t)}$$ 
+
+$$U(t +\dd t) = U(\dd t) U(t)$$ 
+
+
+$$U(t + \dd t) = \left( \mathds{1} - \frac{i}{\hbar} H(t) \dd t \right) U(t)$$ 
+
+$$\frac{U(t+\dd{}t)-U(t)}{\dd{}t} = \dv{U}{t} = - \frac{i}{\hbar} U(t)$$ 
+
+$$\boxed{i\hbar \dv{U}{t} = H(t)U(t)}$$ 
+
+
+$$U^\dagger(\dd t) U(\dd t) = \mathds{1} \qquad \text{(unitaire)}$$ 
+
+
+\underline{Représentation d'interaction} 
+
+
+$$U_I(t) \equiv U_{0}^\dagger (t) U(t)$$ 
+
+$$U_0(t) = e^{\frac{H_{0}t}{\hbar} }$$ 
+
+
+$$i \hbar \dv{U_I}{t} = i\hbar \dv{U_{0}^+}{t} U(t) + i\hbar U_{u}^+ \underbrace{\dv{U}{t}}_{H(t)U(t)} $$ 
+
+
+$$= ?????????????? \text{Résolution de merde}$$ 
+
+$$= -H_{0} U_{0}^\dagger U(t) + U_{0}^+ (H_{0} +W)$$ 
+
+$$i\hbar \dv{U_I}{t} = U_{0}^\dagger W(t) U(t) = U_{0}^\dagger W(t) U_{0} \dotsb$$ 
+
+$$i\hbar \dv{U_I}{t} = \underbrace{U_{0}^\dagger(t) W(t) U_0(t)}_{W_{I} (t)} \; U_{I} (t)$$ 
+
+
+$$\mathcal{P}_{i \to f} = \abs{\bra{\varphi_f}\underbrace{U(t)}_{U_0(t) U_I(t)} \ket{\psi(0)}}^2$$ 
+
+
+
+
+
+$$\eval{U_{0}^\dagger U(t)}_{t=0} = \mathds{1}$$ 
+
+
+$$U_{0}^{(\dagger)} = e^{(\dagger)- \frac{H_{?t}}{\hbar} }$$ 
+
+
+$$\int \dd U_{I} (t) = -\frac{1}{i\hbar}  \int_{0}^t W_{I} (t') U_{I} (t') \dd t'$$ 
+
+
+$$U_{I} (t) = \mathds{1} - \frac{i}{\hbar} \int_{0}^t W_{i} (t') U_I(t') \dd t'$$ 
+
+
+Ordre 0: $W_{I} =0$ 
+
+$$U_{I}^(\dagger) = \mathds{1}$$ 
+
+Ordre 1: $U_{I}^(?)(t) $ 
+
+$$U_{I} (T) = \underbrace{\mathds{1}}_{U_{I}^{(0)}}  - \underbrace{\frac{i}{hbar} \int_{0}^t W_{I} (t) \dd t'}_{U_{I}^(1) (t)} $$ 
+
+Ordre 2:
+
+$$ U_{I} (t) \mathds{1} - \frac{i}{\hbar} \int_{0}^t W_{I} (t') \left[ \mathds{1} \frac{i}{\hbar} \int_{0}^{t'} W_{I} (t") \dd t" \right] \dd t'$$ 
+
+$$ U_{I} (t) = \mathds{1} - \frac{i}{\hbar} \int_{0}^t W_{I} (t') \dd t' + \underbrace{\frac{i^2}{\hbar^2} \int_{0}^t\int_{0}^{t'} W_{I} (t') W_{I} (t") \dd t' \dd t}_{U_{I}^(1) (t)}   + \dotsb$$ 
+
+$$U_{I}^{(n)} = \left( \frac{i}{\hbar} \right)^n \int_{0}^t \dotsb \int_{0}^{t_n} W_{I} (t_1) \dotsb W_{I} (t_n) \dd t_{1} \dotsb \dd t_{n}  $$ 
+
+
+$$\begin{aligned}
+	\mathcal{P}_{i\to f} & =\abs{\bra{\varphi_f} \ket{\psi(t)}}^2\\
+	&= \abs{\bra{\varphi_f} U(t) \ket{\psi (t)}}^2\\
+	&= \abs{\bra{\varphi_f} U_{0} \left( \mathds{1} \sum_{n} U_{I}^{(n)} \right) \ket{\pSi(t)}}^2 \\ &= \abs{\text{impossble de lire le reste, la qualité viens de baisser}}
+\end{aligned}$$ 
+
+
+Ordre 1:
+$$ \mathcal{P}_{i\to f} (t) = \frac{1}{\hbar^2} \abs{\bra{\varphi_f} \int_{0}^t  W_{I}(t) \dd t \ket{\varphi_{i} }}^2 $$ 
+
+$$= \frac{1}{\hbar^2} \abs{\int_{0}^t U_}^2$$ 
+
+{\big Fuck Teams, bitrate de 2 $\rm \mu$b/s}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{représentation-schématique}
+    \caption{Représentation schématique}
+    \label{fig:représentation-schématique}
+\end{figure}
+
+
+	
+\end{document}
