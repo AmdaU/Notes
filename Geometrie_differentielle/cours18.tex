@@ -1,0 +1,130 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+
+\item \underline{Théorème de Clairaut}: Pour une surface de révolution les géodésiques satisfont \begin{equation*}
+	r\cos\varphi =C \tag{*} \label{eq:thm_clairaut}
+\end{equation*}. Inversement, toutes courbes à vitesse constante qui n'est pas un parallèle et qui satisfait \eqref{eq:thm_clairaut} est une géodésique
+
+\item courbue géodésique $$\alpha'=T \quad \alpha'' =T' = \underbrace{\kappa_{g}}_{\text{Courbure géodésique}}  T \times  n + \underbrace{k_{n}}_{\text{courbure normale}} n $$ $k_{g} = 0 \implies \alpha$ est une géodésique 
+\end{itemize}
+	
+
+\begin{figure}[ht]
+    \centering
+    \incfig{courbure-géodésique}
+    \caption{Courbure géodésique}
+    \label{fig:courbure-géodésique}
+\end{figure}
+
+
+\underline{Exercice 1}: Calcul de courbure géodésique du parallèle $\varphi = \varphi_{0} $ sur la shpère
+
+$$P(\theta, \varphi) = \cols{\sin\varphi\cos\theta\\\sin\varphi\cos\theta\\\cos\varphi} $$ 
+
+$$\alpha(s) = \cols{\sin\varphi_{0} \cos(\frac{s}{\sin\varphi_{0} } )\\\sin\varphi_{0} \cos(\frac{s}{\sin\varphi_{0}} ) \\\cos\varphi_{0} }$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{parallèle-sur-la-shpère}
+    \caption{parallèle sur la shpère}
+    \label{fig:parallèle-sur-la-shpère}
+\end{figure}
+
+$$\alpha' = T = \cols{-\sin(\frac{s}{\sin\varphi_{0}}) \\ \cos(\frac{s}{\sin\varphi_{0} }) \\0} $$ 
+
+$$n = \alpha(s) \to \text{on considère la sphère unité} $$ 
+
+$T \times n = \cols{\cos\varphi_{0} \cos(\frac{s}{\sin\varphi_{0}} )\\\cos( \frac{s}{\sin\varphi_0}) -\sin\varphi_0 }$ 
+
+$$T' = \frac{1}{\sin\varphi_0} \cols{-\cos(\frac{s}{\sin\varphi_0}) \\ -\sin(\frac{s}{\sin\varphi_0}) \\ 0}  = \alpha''$$ 
+
+$$k_g = T' \cdot ( T \times n ) = -\cos \varphi_0 (\cos^2\qty(\frac{s}{\sin\varphi_0}) \sin^2\qty(\frac{s}{\varphi_0} ) \frac{1}{\sin\varphi_0} = -\cot\varphi_0 $$ 
+
+\underline{Exercice 2}: $$\kappa^2(s) = \kappa_g^2(s)+ \kappa_n^2 (s) \quad \text{où } \norm{T'(s)} = \frac{1}{\sin\varphi_0} =\csc\varphi_0 $$  
+
+$$\kappa (s)^2 = \norm{T'(s)}^2 \quad \norm{T'(s)}^2 = k_g^2 (t \times n) \cdot ( T \times n) + k_n^2 n \cdot n = k_g^2 (s) + k_u^2(s) $$ 
+
+Pour le parallèle $\varphi = \varphi_0 , \quad \kappa(s) = \norm{T'(s)} = \frac{1}{\sin\varphi_0} =\csc\varphi_0 $. Aussi $\kappa_n = T' \cdot n = -1$ et $\kappa^2(s) = \kappa_g^2 + \kappa_n^2$  
+
+
+\underline{Exercice 3}: Montrer qu'un cercle de lattitude (parallèle) $s$ constante sur une surface de révolution ssi $x'(s) = 0$  
+
+\underline{Équations géodésiques} 
+
+\begin{align}
+	s' +\theta^{\prime2}(s)(-x(s)x'(s)) = 0 \tag{*} \\
+	\theta'' + 2 \frac{x'(s)}{x(s)} \theta' s' =0 \tag{**}
+\end{align} 
+
+Cercles de lattitude $\implies s= \rm{cste} \implies s' =0 $ donc
+
+\begin{align}
+	(*) \implies \theta'^2(-x(s)x'(s)) = 0 \tag{A}\\
+	(**) \implies \theta'' = 0 \tag{B}
+\end{align}
+
+$$(B) \ \theta'' = 0 \implies \theta'=c$$
+donc
+$$(A)\ \implies  -c^2(x(s)x's) = 0$$
+donc $$x'(s) = 0$$ 
+
+
+\underline{Relativité Générale} 
+
+Considérons la première forme fondamenetale (métrique) $$M_I = \cols{1 +g^2u^2& gu \\ gu &1} = \cols{E &F \\F &G}$$ On a $$\cols{\Gamma_{uu}^u \\ \Gamma_{uu}^v} = \cols{E &F \\F &G}^{-1} \cols{\frac{Eu}{2} \\ \frac{Fu}{2} -\frac{E}{2} } = \cols{0\\g}$$   
+
+$$\cols{\Gamma_{uv}^u \\ \Gamma_{uv}^v} = \cols{0 \\ 0} \quad \cols{\Gamma_{vv}^u \\ \Gamma_{vv}^v} = \cols{0\\0 }$$ 
+
+
+$$u'' + \cols{u' & v'}\cols{\Gamma_{uu}^v & \Gamma_{uv}^v \\ \Gamma_{uv}^v & \Gamma_{vv}^u } \cols{u'\\ v'} =0 \implies \quad u'' = 0 \quad u = at + b$$ 
+
+$$v'' + \cols{u' v'}\cols{\Gamma_{uu}^v & \Gamma_{uv}^v \\ \Gamma_{uv}^v & \Gamma_{vv}^v} \cols{u' \\ v'} = 0 \implies v'' + (u')^2g = 0 \quad v'' + a^2g =0 \quad u(t) =at+b \quad v)t) = - \frac{a^2g}{2} t^2 + ct $$ 
+
+Ce sont des équation cinématiques!
+
+$$u'(t) = 1 =a$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{graphique-de-la-vitesse-en-fonction-du-temps}
+    \caption{Graphique de la vitesse en fonction du temps}
+    \label{fig:graphique-de-la-vitesse-en-fonction-du-temps}
+\end{figure}
+
+
+\underline{Théorème de Gauss Bonet} 
+
+\begin{tcolorbox}[title=Rappel: Gauss Bonet discret]
+	Pour tout polyèdre $p$ trinagulé dans $\mathbb{R}^{3} $ $$\sum_{\text{sommets de }p} c(s) = 2\pi \chi(p)$$ où $$c(s) = 2\pi - \sum \theta \quad \chi(p) = V-E+F$$   
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Rappel: L'intégrale d'une fonction sur une surface $S$ avec $f:s\to \mathbb{R}$ ]
+	 $$\int_{p(u)} f \cdot  \dd s = \int_u (f\circ p) \norm{p_u \times  p_v} \dd u \dd v $$ 
+\end{tcolorbox}
+
+\underline{Proposition}: L'aire d'une surface est intrinsèque $$\norm{p_u \times  p_v} = \left( EG - F^2 \right)^{\frac{1}{2} }$$  
+
+\underline{Démonstration}: Dans la base $p_{u} \ p_v \ n $, la matrice du produit scalaire est $$\cols{p_u & | & p_v & | & n}^t \cdot \cols{p_u & | & p_v &|& n} = \cols{E & F & 0\\ F & G &0 \\ 0 & 0 & 1}$$  
+
+Le volume d'un parallépipède est donné par $$\det(p_u | p_v |n)^2 = EG-F^2$$ 
+
+$$\implies \abs{\det(p_{u} | p_v | n)} = (EG -F^2)^{\frac{1}{2} }$$ 
+
+Ce volume est également égal à l'aire de la base fois la hauteur $$= \norm{p_u \times  p_v } \cdot 1 = \norm{p_u \times p_v}  $$ 
+$$\int_u \norm{p_u \wedge p_v}\dd u \dd v = \int_{p(u)} \dd S $$ 
+
+\underline{Lemme}: Si $F= 0$, la courbure de Gauss s'écrit $$h = \frac{-1}{2\sqrt{EG}} \left( \left( \frac{E_v}{\sqrt{EG}}  \right)_v + \left( \frac{G_u}{\sqrt{EG}}  \right)_u  \right) ;  $$  
+
+\underline{Proposition}: Au voisinage de tout point d'une sruface avec $k_1 \neq k_2 \exists$ une paramétrisation orthogonale ( $F=0$ ). Dans la suite, on suppose $F=0$.
+
+Étant donnée une base de $T_{p(u,v)}$, $e_1 (u,v)$, $e_2 (u,v)$ à chaque point de la sruface l'holonomie d'une courbe est $(\nabla_{\alpha'} e_{1)} \cdot  e_2$  
+
+\underline{Propostition} : Dans un paramétrisation $\perp$ pour $$e_1 = \frac{p_u}{\sqrt{E}} \quad e_2 = \frac{p_v}{\sqrt{G},} (\nabla_a \cdot e_1 ) \cdot e_1 =\frac{1}{2\sqrt{EG}} \cdot (-u'E_v + v' Gu) $$    
+
+
+\end{document}

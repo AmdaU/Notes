@@ -1,0 +1,75 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels}: 
+
+\begin{itemize}
+\item Parmamétrisation orthogonale $F=0 \quad (p_u \perp p_v)$ 
+\item $e_1 = \frac{p_v}{\sqrt{E}} \quad e_2 = \frac{p_u}{\sqrt{G}}$. $e_1 (u,v) $ et $e_2 (u,v)$ forment une base othonormée de $T_{p(u,v)}$   
+\end{itemize}
+
+Étant donnée une courbe $\alpha$ dans $S$, on définit $$\varphi_{12} = (\nabla_{\alpha} \cdot e_{1}) \cdot e_2 \text{ (mesure de la rotation du repère le long de } \alpha)  $$    
+
+\begin{tcolorbox}[title=Remarque]
+	 $$\varphi_{21} = (\nabla_{\alpha} e_{2}) \cdot e_1 = - \varphi_{12}$$ car \begin{align*}
+	 	0 = D_{\alpha'} (e_1 \cdot  e_2 ) \\ &= D_{\alpha'} (e_1 ) \cdot e_2 + D_{\alpha'} (e_2 ) \cdot  e_2  \\ \nabla_{\alpha'} (e_1 ) \cdot  e_2 + \nabla_{\alpha'}(e_2 ) \cdot e_1 &= \varphi_{12} + \varphi_{21} 
+	 \end{align*} Car la composante en $n$ disparait avec le produit scalaire 
+
+	 De manière semblable, on montre que $\varphi_{11} = \varphi_{22} =0$ 
+\end{tcolorbox}
+
+
+\underline{Proposition}: Pour un chemin $\alpha(t) = p(u(t), v(t))$, $$\varphi_{12} = \frac{1}{2\sqrt{EG}} (-u' E_v + VG_u)$$  
+
+\underline{Démonstation}: \begin{align*}
+	\varphi_{12} &= (\nabla_{\alpha'} \cdot e_{1}) \cdot  e_2= \left( \nabla_{\alpha'} \frac{p_u}{\sqrt{E}}  \right) \cdot  \frac{p_v}{\sqrt{G}}\\ &= \left( p_u \cdot  D_{\alpha} \frac{1}{\sqrt{E}} + \frac{1}{\sqrt{E} \nabla_{alpha'} \cdot  p_u}  \right) \cdot \frac{p_V}{\sqrt{G}}\\ &= \frac{1}{\sqrt{EG}} \left( \nabla_{\alpha'}\cdot  p_u \right) \cdot p_v\\ &= \frac{1}{\sqrt{EG}} \left( u \cdot \nabla_{p_u} p_u + v' \nabla_{p_v} p_v \right) \cdot p_v \\ &= \frac{1}{\sqrt{EG}} \left( u' p_{uu} \cdot p_v + v' p_{uv} \cdot p_v  \right)
+\end{align*}
+
+\underline{paralléllisme}
+
+$$p_{uu} \cdot p_{v}: \quad 0 = F_u = (p_u \cdot  p_{v})_u = p_{uu} \cdot p_v + p_v \cdot p_{vv} \iff p_{uu} \cdot p_v = -p_u \cdot  p_{vv} = - \frac{E_v}{2}  $$ 
+$$P_{vu} \cdot p_v : \quad " \ " \iff p_{uv} \cdot p_v = \frac{G_u}{2} $$ 
+
+donc $\varphi_{12} = \frac{1}{\sqrt{EG}} \left( ?' p_{uu} \cdot p_v + v' p_{uv} \cdot p_v   \right) = \frac{1}{2\sqrt{EG}} = (-u'E_v + v' G_u ) $ 
+
+\underline{Proposition}: 
+
+Si $\alpha(s)$ est une courbe fermée qui entoure la région $R$ (à gauche selon règle de la main droite) alors $$\int_0^L \varphi_{12} \dd S = - \iint \kappa (u,v) \dd S$$  
+
+\begin{tcolorbox}[title=Rappel: Théroème de G??]
+	$$\int_{\dd{}R} \cols{f(u,v) \\ g(u,v)} \cdot  \dd \vb{r} =\iint_R \grad \times  \cols{f(u,v) \\ g(u,v) }\dd u \dd v$$ 
+\end{tcolorbox}
+
+
+$R$ paramétré par $\alpha(t) = p(u(t),v(t))$
+
+$$\int_o^L \cols{f\\g} \cdot  \cols{u' \\ v'} \dd S = \iint_R (g_u -f_{u}) \dd u\dd v $$ 
+
+\underline{Démonstration de la propriété} 
+
+\begin{align*}
+	&\quad \int_0^L \frac{1}{2\sqrt{EG}} (-u' E_v + v' G_{u}) \dd S \\
+	&= \int_0^L \frac{1}{2\sqrt{EG}} \cols{-E_v \\G_u} \cdot \cols{u' \\ v'} \dd S \\ 
+	&= \int_0^L \frac{1}{2\sqrt{EG}} \cols{-E_v \\ G_u} \cdot d \vb{r} \\
+	&= \iint_R \left( \left( \frac{G_u}{2\sqrt{EG}}  \right)_u - \left( \frac{-E_v}{2\sqrt{EG}} \right)   \right) \dd u \dd v \\
+	&= \iint_R \frac{1}{2\sqrt{EG}}  \left( \left( \frac{G_u}{2\sqrt{EG}}  \right)_u - \left( \frac{-E_v}{2\sqrt{EG}} \right)   \right) \underbrace{\sqrt{EG} \dd u \dd v}_{\dd S}  \\
+	&= - \iint_R \kappa(u,v) \dd S \\
+\end{align*}
+
+\underline{Proposition}: $$\int_o^L \varphi_{12} \dd S = - \iint_R \kappa(u,v) \dd S$$ 
+
+On veut exprimer le terme de gauche différement.
+
+$k_g = \varphi_{12} + \theta'$ pour une courbe $\alpha'(s) = p(u(s), v(s))$ paramétré par longeur d'arc et ou $\theta $ est défini par $\alpha'(s) = T(s) = \cos\theta e_1 + \sin \theta e_2$. $ \alpha$ est une géodésique 
+
+\underline{Démonstration}: 
+$$k_g = T' \cdot  (m \times  T)$$
+
+comme $T = \cos\theta e_1 + \sin\theta e_2$ $n \times  T = -\sin\theta e_1 \cos\theta e_2$  
+
+$$k_g = (\cos\theta e_1 + \sin\theta e_{2)} \cdot (-\sin\theta e_1 + \cos \theta e_{2}) = \left[ -sin\theta\theta' e_1 + \cos\theta\nabla_{alpha'} e_1 + \cos\theta\theta' e_2 + \sin\theta\nabla_{\alpha'} e_2 \right] \cdot (-\sin\theta e_1 + cos\theta e_2) $$ 
+
+$$=\sin^2\theta\theta' + \cos^2\theta\theta' + \left( \sin^2 \theta + \cos^2\theta \right) \varphi_{21} = \theta' + \varphi_{12} $$ 
+	
+\end{document}
