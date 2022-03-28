@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="théorème-de-gauss-bonnet-sur-la-sphère-unitée.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12426">
+      <stop
+         style="stop-color:#e20000;stop-opacity:1;"
+         offset="0"
+         id="stop12422" />
+      <stop
+         style="stop-color:#e20000;stop-opacity:0;"
+         offset="1"
+         id="stop12424" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect11983"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1008"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect891"
+       is_visible="true"
+       lpeversion="1" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12426"
+       id="radialGradient12428"
+       cx="117.03101"
+       cy="205.23869"
+       fx="117.03101"
+       fy="205.23869"
+       r="45.674298"
+       gradientTransform="matrix(1,0,0,0.34701097,0,134.01861)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="457.07154"
+     inkscape:cy="336.89541"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1127"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:object-paths="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.354674px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71.467242,274.65148 c -5.646017,-8.51952 -8.841091,-18.64363 -9.108158,-28.86069 -0.267067,-10.21706 2.394731,-20.49427 7.587953,-29.29712 5.193223,-8.80285 12.901201,-16.10307 21.973039,-20.81066 9.071834,-4.70759 19.478414,-6.80744 29.665904,-5.98601 9.66369,0.7792 19.10345,4.17849 27.04532,9.73913 7.94187,5.56063 14.36518,13.26814 18.40304,22.08231 4.03786,8.81417 5.67976,18.71208 4.70412,28.35791 -0.97563,9.64584 -4.56627,19.01449 -10.28733,26.84159"
+       id="path889"
+       inkscape:path-effect="#path-effect891"
+       inkscape:original-d="m 71.467242,274.65148 c 16.706593,-28.3178 33.412838,-56.63596 50.118738,-84.95448 16.7059,-28.31852 26.57711,58.01432 39.86515,87.02094" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71.563949,213.92192 c 14.302953,4.60345 29.318651,6.98507 44.344091,7.03334 15.79655,0.0507 31.5985,-2.47958 46.58937,-7.46026"
+       id="path1006"
+       inkscape:path-effect="#path-effect1008"
+       inkscape:original-d="m 71.563949,213.92192 c 14.78163,2.34471 29.562991,4.68916 44.344091,7.03334 14.7811,2.34419 31.05984,-4.97324 46.58937,-7.46026" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="110.2619"
+       y="230.0824"
+       id="text4862"><tspan
+         sodipodi:role="line"
+         id="tspan4860"
+         style="stroke-width:0.264583"
+         x="110.2619"
+         y="230.0824">$\varphi_0$</tspan></text>
+    <path
+       style="fill:url(#radialGradient12428);stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 162.49741,213.495 c -15.41254,5.12074 -31.68259,7.65004 -47.92231,7.44986 -14.58008,-0.17972 -29.131154,-2.55565 -43.011151,-7.02294 5.321685,-7.97808 12.776714,-14.51877 21.379365,-18.75723 8.602656,-4.23846 18.331466,-6.16412 27.900076,-5.52237 16.52375,1.10822 32.33521,10.16246 41.65402,23.85268 z"
+       id="path11981"
+       inkscape:path-effect="#path-effect11983"
+       inkscape:original-d="m 162.49741,213.495 c 0,0 -33.58553,9.79057 -47.92231,7.44986 -14.33679,-2.34072 -43.011151,-7.02294 -43.011151,-7.02294 0,0 25.448367,-20.55444 49.279441,-24.2796 18.09217,-2.82808 41.65402,23.85268 41.65402,23.85268 z"
+       sodipodi:nodetypes="cscsc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="106.53143"
+       y="204.10449"
+       id="text16166"><tspan
+         sodipodi:role="line"
+         id="tspan16164"
+         style="stroke-width:0.264583"
+         x="106.53143"
+         y="204.10449">$R$</tspan></text>
+  </g>
+</svg>

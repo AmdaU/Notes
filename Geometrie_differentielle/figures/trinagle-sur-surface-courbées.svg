@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="trinagle-sur-surface-courbées.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2504"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1047"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="425.69434"
+     inkscape:cy="112.39514"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1127"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;fill-opacity:0.267525;stroke:#000000;stroke-width:0.479;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path878"
+       sodipodi:type="arc"
+       sodipodi:cx="67.733749"
+       sodipodi:cy="235.83098"
+       sodipodi:rx="42.077133"
+       sodipodi:ry="42.041874"
+       sodipodi:start="0"
+       sodipodi:end="6.2830457"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 109.81088,235.83098 A 42.077133,42.041874 0 0 1 67.735218,277.87285 42.077133,42.041874 0 0 1 25.656616,235.83391 42.077133,42.041874 0 0 1 67.729343,193.7891 42.077133,42.041874 0 0 1 109.81088,235.82511" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 25.656616,235.83098 c 11.919783,6.99623 25.607825,10.95195 39.422104,11.39263 15.584229,0.49714 31.28626,-3.504 44.73216,-11.3985"
+       id="path1045"
+       inkscape:path-effect="#path-effect1047"
+       inkscape:original-d="m 25.656616,235.83098 c 13.140965,3.7978 26.281666,7.59535 39.422104,11.39263 13.140436,3.79728 29.821706,-7.59874 44.73216,-11.3985" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 66.759123,198.05716 c 0,0 -13.876238,4.57114 -19.996723,14.88772 -7.290768,12.28919 -7.830654,20.39921 -7.830654,20.39921 0,0 12.327689,4.46944 21.038569,4.50329 13.857352,0.0539 21.486619,-2.55588 20.803311,-5.34347 0,0 -0.184254,-12.17875 -2.083682,-16.19837 -6.043229,-12.78886 -11.930821,-18.24838 -11.930821,-18.24838 z"
+       id="path1049"
+       sodipodi:nodetypes="cscscsc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.05919,193.82237 c 1.30743,1.81711 18.3108,21.74292 19.04623,42.58036 0.73544,20.83744 -24.00195,40.5536 -24.00195,40.5536"
+       id="path2295"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 214.74236,191.44841 c 0,0 -13.8253,25.54977 -14.26045,43.22609 -0.43514,17.67632 15.95219,43.75101 15.95219,43.75101"
+       id="path2297"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.10542,236.40273 c 3.68203,4.18056 9.31209,6.569 14.87698,6.31124 5.72006,-0.26494 11.24478,-3.32821 14.49951,-8.03947"
+       id="path2502"
+       inkscape:path-effect="#path-effect2504"
+       inkscape:original-d="m 171.10542,236.40273 c 4.93679,2.13758 9.91825,4.20776 14.87698,6.31124 4.95873,2.10348 9.6666,-5.35938 14.49951,-8.03947" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 172.75493,216.24171 c 0,0 8.86473,4.31761 13.30134,4.12396 4.43661,-0.19365 11.46688,-3.64246 11.46688,-3.64246 0,0 -4.98343,5.23364 -6.63681,8.8938 -1.65337,3.66017 -1.939,12.96868 -1.939,12.96868 0,0 -2.33956,-7.22964 -5.02006,-11.73776 -3.01068,-5.06343 -11.17235,-10.60622 -11.17235,-10.60622 z"
+       id="path2506"
+       sodipodi:nodetypes="cscscsc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="32.446915"
+       y="287.89331"
+       id="text8045"><tspan
+         sodipodi:role="line"
+         id="tspan8043"
+         style="stroke-width:0.264583"
+         x="32.446915"
+         y="287.89331">courbure positive</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="161.80815"
+       y="283.60156"
+       id="text9699"><tspan
+         sodipodi:role="line"
+         id="tspan9697"
+         style="stroke-width:0.264583"
+         x="161.80815"
+         y="283.60156">courbure négative</tspan></text>
+  </g>
+</svg>

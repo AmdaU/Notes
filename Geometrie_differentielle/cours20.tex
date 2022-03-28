@@ -1,0 +1,155 @@
+\input{../parameters}
+
+\begin{document}
+
+\underline{Rappels}
+
+\begin{itemize}
+
+	\item Paramétisation orthogonale: $p_u p_v =0 = F$ 
+	\item Intégrale de surface $f: S \to \mathbb{R}$ $$\iint_{p(u)} f(x) \dd S := \iint_u f(u,v) \norm{p_u \times  p_v } \dd u\dd v = \iint_U f(u,v) \sqrt{EG-F^2}\dd u \dd v$$ 
+	\item $$\varphi_{12} := (\grad_{\alpha'} e_{1)} \cdot e_2$$ où $e_1 = \frac{p_u}{\sqrt{E}} ,\ e_2 = \frac{p_v}{\sqrt{G}} $  "Rotation de $e_{1}\ e_2 $ le lond de $\alpha$ "  
+	\item $\alpha$ courbe fermée borant $R$ $$\implies \int_{\alpha} \varphi_{12} \dd s = - \iint_R \kappa \dd S $$   
+	\item Si $\alpha'(s) = T(s) = \cos \theta e_{1} + \sin \theta e_2$ alors $\underbrace{k_g}_{\text{Courbure de $\alpha$ intrinsèque à la surface} }  = \underbrace{\varphi_{12}}_{\text{Rotation du repère $e_{1},\ e_2$ } }  + \underbrace{\theta'}_{\text{rotation de $\alpha'$ dans le repère $e_1 , \ e_2$ } }  $  
+	
+\end{itemize}
+
+
+\underline{"Umlanfsatz" sur une surface} : Si $\alpha$ est une courbe simple fermée contractible sur $S$ alors $$\int_0^L \theta' \dd s = 2\pi$$  
+
+
+\underline{Contractible}P qui peut être "remplie" par/borne un disque 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{contractible-vs-non-contractible}
+    \caption{Contractible vs non-contractible}
+    \label{fig:contractible-vs-non-contractible}
+\end{figure}
+
+\underline{"Dém"}: La quantité $\int_0^L$ est toujours une mutiple de $2 \pi$ (On commence et finit par le même vecteur). C'est une fonction continue de la courbe $\alpha$    
+
+\underline{Version "avec des coins"} 
+
+Si $\alpha$ est lisse par morceaux $$\int_0^L = 2\pi = \sum \epsilon_k$$ avec $\epsilon_k$ les angles exterieurs de $\alpha$    
+
+\begin{figure}[ht]
+    \centering
+    \incfig{umlanfsatz-sur-une-surface-avec-des-coins}
+    \caption{Umlanfsatz sur une surface avec des coins}
+    \label{fig:umlanfsatz-sur-une-surface-avec-des-coins}
+\end{figure}
+	
+$\epsilon_k$: l'angle entre le vecteur tangeant entrant et le vecteur sortant au sommet de $k$
+
+\underline{Théorème de Gauss-Bonnet local} : Soit $\alpha$ une courbe lisse par morceaux fermées, simples ???, contractible, bornant $R$ dans la surface $S$. Alors 
+
+$$\iint_R \kappa \dd S + \int_{\alpha} \kappa_g \dd s  + \sum \epsilon_k = 2\pi$$ 
+
+\underline{Démonstration}: On a montré $$\iint_R \kappa \dd S = -S_{\alpha} \varphi_{12} \dd s = -\int_{\alpha} \kappa_g -\theta' \dd s = -\int_{\alpha} \kappa_g + \int \theta' \dd s = -\kappa_g \dd S + 2\pi -\sum \epsilon_k \qquad \blacksquare$$  
+
+\underline{Exemple}: Dans le plan ou sur un cylindre:
+
+$$\implies \int_{\alpha} \kappa_g \dd s + \sum \epsilon_k = 2\pi$$ 
+
+Si $$ \kappa_g = 0 \text{(cotées sont des géodésiques)} $$
+
+$$\sum \epsilon_f = 2\pi$$ 
+
+
+Si $\alpha$ est lisse $$\int_{\alpha} \kappa_g \dd s = 2\pi$$ : Umlasfstax  
+
+
+\underline{Exemple 2}: Sur $S^2$ $\kappa = 1$
+
+Cercle de lattitude $\varphi_0$
+$$k_g = \cot \varphi_0	$$ 
+
+$$\iint_R \kappa \dd S = \int_0^{2\pi} \int_0^{\vaprhi_0} \cos \varphi \dd \varphi \dd \theta = \dotsb = 2\pi$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{théorème-de-gauss-bonnet-sur-la-sphère-unitée}
+    \caption{Théorème de Gauss-Bonnet sur la sphère unitée}
+    \label{fig:théorème-de-gauss-bonnet-sur-la-sphère-unitée}
+\end{figure}
+
+Cela doit être vrai pour n'importe quel surface qu'on a déformé continuement. ( $\alpha$ reste contractible )
+
+\begin{figure}[ht]
+    \centering
+    \incfig{sphère-avec-un-pustule}
+    \caption{sphère avec un pustule}
+    \label{fig:sphère-avec-un-pustule}
+\end{figure}
+
+\underline{Corrolaire}: si $\theta_1 , \ \theta_2 ,\ \theta_3$ sont les angles intérieurs d'un triangle géodésique $T$ dans $S_1$ alors $$\int_T \kappa \dd s = -\pi + \sum_i^3  \theta_i$$ 
+
+\underline{Démonstration}:
+
+Comme les côtés sont géodésiques $k_g = 0$ sur les côtées.
+
+$$\implies \iint_T \kappa \dd S + \epsilon_1 +\epsilon_2 +\epsilon_3 = 2\pi$$ 
+
+$$\implies \iint_T \kappa \dd S + 3\pi -\theta_1 -\theta_2 -\theta_3 = 2\pi$$
+
+$$\implies \iint_T \kappa \dd S = \theta_1 + \theta_2 +\theta_3 - \pi \qquad \blacksquare$$ 
+
+Courbure positive: $$\sum_i^3 \theta_i = \pi \iint_T \kappa \dd S > \pi$$ 
+
+Courbure négative $$\sum_i^3 \theta_i = \pi \iint_T \kappa \dd S - \pi$$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{trinagle-sur-surface-courbées}
+    \caption{Trinagle sur surface courbées}
+    \label{fig:trinagle-sur-surface-courbées}
+\end{figure}
+
+\underline{Caractéristique d'Euleur d'une surface}:
+
+Une trinangulation d'une surface est formée par une collection de triangles (image d'un triangle dans le plan par $p$)
+
+\begin{itemize}
+	\item 2 triangles se rencontrent en un coté ou rien
+	\item Les trinagles recouvrent la sruface
+	\item Chaque triangle a au plus 1 côté sur le bord de la surface
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{triangulation}
+    \caption{Triangulation d'une surface}
+    \label{fig:triangulation}
+\end{figure}
+
+La caractéristique d'Euleur d'une triangulation $T$ d'une surface $S$ est $\chi(s,\tau) = V-E+F$
+
+Par exemple, la caracthéristique d'Euleur d'un triangle est $\chi(\Delta) = 3-3+1 =1$ 
+
+\underline{Théorème de Gauss-Bonnet (Global)}
+
+$$\iint_S \kappa \dd S + \int_{\partial S} \kappa_g \dd s + \sum \epsilon_k = 2\pi \chi(s)$$ 
+
+\underline{Corollaire}: Pour une surface sans bord ( $\partial S = $\o )  
+
+$$\iint_S \kappa \dd S = 2\pi \chi(s)$$ 
+
+\underline{Démonstration}: Pour chaque triangle $\triangle$ de la triangulation $\tau$, on applique le théorème local $$\iint_{\triangle} \kappa \dd S = \int_{\partial S} \kappa_g \dd s+ \sum \epsilon_k^\triangle = 2\pi $$ et on fait la somme sur les $F$ triangles $$\iint_S \kappa \dd S + \underbrace{\sum_{\triangle\in\tau} \int_{\partial\tau} \kappa_g \dd s}_{\text{S'annullent en paires} }   + \sum_{\triangle\in\tau} \sum_k^3 \epsilon_k^\triangle = 2 \pi F$$  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{circulation-des-triangles}
+    \caption{Circulation des triangles}
+    \label{fig:circulation-des-triangles}
+\end{figure}
+
+
+$$\iint_S \kappa \dd S + \int_{\partial S} \kappa_g \dd s \sum_{\triangle} \sum_k e_k^triangle =2 \pi F $$
+
+On calcul la somme...
+
+Je vois pas très bien pis le cours est fini
+
+\end{document}
