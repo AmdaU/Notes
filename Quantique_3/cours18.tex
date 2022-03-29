@@ -1,0 +1,63 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Théorie des perturbation dépendante du temps}
+
+$$H = H_0 + W(t)$$ 
+$$W(t) = \begin{cases}
+	0 & t<0\\
+	W(t) & t\geq 0
+\end{cases}$$ 
+
+$$H\ket{\varphi_n} = E_n \ket{\varphi_n}$$ 
+
+$$p_{i\to f}(t)  = \abs{\bra{}{\varphi)f}\ket{\psi(t)}}^2 = \norm{\bra{\varphi_f U_{I(t)} \ket{\varphi_i}}}^2 $$ 
+
+$$ \dv{U_I}{t} = W_I (T) U_I$$ 
+
+$$W_I (t) = U_o^\dagger w(t) U_0$$ 
+
+$$U_I (t) = \mathds{1} + \sum_{n=1}^{\infty} U_I^{(n)} (t)$$ 
+
+$$U_I^{(n)} (t) = \left( \frac{1}{i\hbar}  \right)^n \int_0^t \dd t_1 \dotsb \int_9^{t_{n-1} } \dd t_n \dd t_n W_I (t_{1)} \dotsb W_I (t_n ) $$ 
+
+
+$$\mathcal{P}_{i \to f} = \abs{\bra{\vaphi_f} \sum_n U_I^{(n)} (t) \ket{\varphi_1}}^2$$ 
+
+Perturbation oscillantes:
+$$W(t) = \frac{W}{2} e^{-i\omega t} + \frac{W^\dagger}{2} e^{i\omega t}$$ 
+
+$$\partial \mathcal{P} (\vb{P}_I ,t) = \int_{D_f} \abs{\braket{P, \Omega}{\psi(t)} }^2 p^2 \dd p \dd\Omega$$ 
+
+On a au premier ordre $$\ket{\psi(t)} = \frac{1}{i\hbar} int_0^t W_{I}(t') $$  
+
+On peut réécrire la probabilité comme 
+
+$$\partial P(\vb{p}_f ,t) = \frac{1}{hbar^2} \int_{Df} \abs{\bra{p, \Omega} \int_0^t e^{i(\omega_{fi}-\omega) t'} \dd t' \frac{W^\dagger}{2} \ket{\varphi_i}}^2 \rho(E) \dd E \dd \Omega$$ 
+
+$$= 1 \frac{1}{4\hbar^2} \int_{Df} \abs{\bra{p,\Omega} E \ket{\varphi_i}}^2$$ 
+
+$$\partial \mathcal{P} (\vb{p}_f,t) = \frac{\pi{}t}{2\hbar} \int_{Df} = \abs{\bra{p_{f,} \Omega_{f}} E \ket{\varphi)i} }  \partial (E_f -E_i -\hbar\omega) \rho (E_f ) \dd E_f \dd\Omega_f $$ 
+
+$$= \frac{\pi{}t}{2\hbar} \abs{\bra{p_{f,\Omega_f}W} \ket{\varphi_i}}^2 \rho(E_i + \hbar\omega) \dd\Omega_f $$ 
+
+Taux de transition:
+$$\frac{\partial \mathcal{P} }{\partial t \partial \Omega_f} = \frac{\pi{}t}{2\hbar} \abs{\bra{p_{f,\Omega_f}W} \ket{\varphi_i}}^2 \rho(E_i + \hbar\omega) $$ 
+
+\underline{Effet photoéléctrique}
+
+$$H =\frac{(\vb{P} -q\vb{A})^2}{2m} + V(R) = \frac{\vb{p}^2}{2m} \frac{q}{m} \vb{P} \cdot \vb{A} + \underbrace{\mathcal{O}(A^2)}_{\approx 0} + V(R)  $$ 
+
+$$\partial \mathcal{P}_{1S\to C} (\vb{p}_f ,t) = \frac{\pi{}t}{2\hbar} \int_{Df} \rho(E_f)  \abs{\bra{\vb{p}_f} W\ket{\varphi_{1S} }}^3 \partial (E_f E_i -\hbar \omega) \dd E_f \dd \Omega_f$$ 
+
+
+$$\bra{\vb{p}_f}W \ket{\varphi_{1S} } = - \frac{q\vb{A}_0}{m} \bra{\vb{p}_f} e^{i \vb{k} \cdot \vb{R}} \vb{P} \ket{\varphi_{1S} } $$ 
+
+$$\braket{\vb{r}}{\varphi_{1S} } = \frac{1}{\sqrt{\pi{}a_0^3}} e^{- \frac{r}{a_0} }$$ 
+(Prend des values appréciable $r < a_0$ 
+
+$$\bra{\vb{p}_f} W \ket{\varphi_{1S}} = - \int \frac{q \vb{A}_0}{m} \bra{\vb{p}_f}\ket{\vb{r}} \bra{\vb{r}} e^{i \vb{k} \cdot  \vb{r}} \vb{P} \ket{\varphi_{1S} } \dd^3 r$$ 
+$$$$ 
+
+\end{document}
