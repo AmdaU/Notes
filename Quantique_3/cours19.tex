@@ -1,0 +1,76 @@
+\input{../parameters}
+
+\begin{document}
+
+\section*{Effet photoéléctrique}
+
+Application de la règle d'or de Fermi!
+
+$$\partial \mathcal{P}_{1S\to \vb{p}_f} (\vb{p}_f, t) = \frac{\pi{}t}{2\hbar} \int_{Df} \rho(E_f ) \norm{\bra{\vb{P}_f}W\ket{\varphi_{1S}}}^2 \partial (E_f - E_i - \hbar \omega) \dd E_f \dd \Omega $$ 
+
+$$W = -\frac{q}{(c)m} e^{i \vb{k} \cdot  \vb{R}} \vb{A}_0 \cdot \vb{p}$$ 
+
+$$kr \sim ka_0 \ll 1 \to \text{Approximation diploaire} $$ 
+
+$$\bra{\vb{p}_f}{W}\ket{\varphi_{1S} } = \int \dd r^3 \frac{e^{i \vb{p}_f \cdot \vb{r}}}{\left( 2\pi\hbar \right)^{3/2} } \bra{\vb{r}} \vb{D} \cdot  \vb{E} \ket{\varphi_{1S} }$$ 
+
+$$\vb{r} \cdot  \vb{E} = xE_X+ yE_{y} + ZE_z = rE_0 \left( \cos\theta\cos\theta_0 + \sin\theta\sin\theta_0\cos(\varphi-\varphi_0) \right) $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{identification-des-vecteurs-et-angles}
+    \caption{Identification des vecteurs et angles}
+    \label{fig:identification-des-vecteurs-et-angles}
+\end{figure}
+
+
+$$\bra{\vb{p_{{f}}}W\ket{\varphi_1S} } = -\frac{12qE_0}{\hbar^{2/3}\pi(2a_{0)}^{3/2}} \times \frac{15k_{f}a_{0}^5}{[1+k_f^2a_0^2]^3}\cos\theta_0 $$ 
+
+$$\dotsb$$ 
+
+\begin{equation*}
+	\boxed{\frac{\partial\mathcal{P}}{\partial t \partial \Omega_f}  = \frac{256a_0^3}{4\pi\hbar} \underbrace{\frac{E_0^2q^2}{e^2} }_{E_0^2} \left( \frac{\omega}{\omega_0} -1 \right)^{3/2} \left( \frac{\omega}{\omega_0}  \right)^6 \cos^2\theta_0   }
+\end{equation*}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{transition-de-l'effet-photoéléctrique}
+    \caption{Transition de l'effet photoéléctrique}
+    \label{fig:transition-de-l'effet-photoéléctrique}
+\end{figure}
+
+On remarque que l'expression est imaginaire pour $\omega < \omega_0$ 
+
+
+\section*{Théorie de la diffusion (élastique)}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diffusion}
+    \caption{Diffusion}
+    \label{fig:diffusion}
+\end{figure}
+
+
+$$\dd n \propto F_i \dd \Omega$$ 
+
+$$\dd n = \simga(\theta, \varphi) F_i \dd\Omega$$ 
+
+$$\sigma(\theta, \varphi): \text{Section efficace de diffusion} $$ 
+
+$\left[ \simga \right] = $ surface (barr = $10^{-24}\rm{cm}^2$  
+
+Considérations physiques
+
+\begin{figure}[ht]
+    \centering
+    \incfig{onde-plane-icidente}
+    \caption{Onde plane icidente}
+    \label{fig:onde-plane-icidente}
+\end{figure}
+
+
+$$\dotsb$$ 
+
+\end{document}

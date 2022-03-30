@@ -1,0 +1,47 @@
+\input{../parameters}
+
+\begin{document}
+
+\section{Perturbation dépendante du temps}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{puit-de-potentiel-2-2}
+    \caption{Puit de potentiel 2 2}
+    \label{fig:puit-de-potentiel-2-2}
+\end{figure}
+
+
+$$\varphi_n (x) = \sqrt{\frac{2}{a} } \sin \frac{\pi{}nx}{a} \quad (n \geq 1)$$ 
+
+$$W(t) = \begin{cases}
+	0 & t<0\\
+	qE_0 x e^{-t/\tau} & t \geq 0
+\end{cases}$$ 
+
+$$\mathcal{P}_{1\to2} (t\to \infty) = ? $$ 
+
+$$\mathcal{P}_{1\to2} (t) = \frac{1}{\hbar^2} \abs{\int_0^t \bra{\varphi_{{2}}} W(s) \ket{\varphi_{1}} e^{i(E_{2-E_1)s/\hbar}} \dd s}^2 $$ 
+
+$$= 1 \frac{1}{\hbat^2} \abs{\int_0^t e^{-\left( \frac{1}{\tau} - i\omega_{12}  \right) s} \dd s}^2 \norm{\bra{\varphi_2}qE_0X\ket{\varphi_i}}^2  $$ 
+
+$$\frac{(qE_0)^2}{\hbar^2} \frac{1}{\omega_{12}^2 + \frac{1}{\tau^2} } \abs{\int_0^a x \frac{2}{a} \sin(\frac{2\pi{}x}{a} \sin( \frac{\pi{}x}{a} ) \dd x)}^2  $$ 
+
+$$\cos(a \pm b) = \cos a\cos b \mp \sin a \sin b$$ 
+
+$$\cos (a-b) = \cos(a+b) = 2\sin a \sin b$$ 
+
+$$\int_u x \cos(ax) \dd x = [\cos(ax)] - \int\cos(ax) \dd x$$ 
+
+
+$$= \frac{256}{81\pi^4} \left( \frac{q E_0 a}{\hbar}^2 \right)^2 \frac{1}{\omega_{12}^2+\frac{1}{\tau^2}}  $$ 
+
+
+On suppose une perturbation stationnaire $W= qE_0 X$ 
+
+$$\ket{\varphi_1^{(1)}} = \ket{\varphi_{1}} - \sum_{p\neq 1} \frac{\bra{\varphi_p}W\ket{\varphi_i}}{E_i-E_f} \ket{\varphi_p} $$ 
+
+$$\mathcal{P}_{1\to2} = \norm{\braket{\varphi_{2}}{\varphi_1^{1}}}^2 = \abs{\frac{\bra{\varphi_2}W\ket{\varphi_1}}{E_1 -E_{2}}}^2 = \frac{(qE_{0})^2}{\hbar^2} \frac{}{}$$ 
+
+
+\end{document}
