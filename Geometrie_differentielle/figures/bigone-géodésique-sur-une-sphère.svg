@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="bigone-géodésique-sur-une-sphère.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="marker3004"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path3002" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2729" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2726" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1075"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1071"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1067"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="439.97535"
+     inkscape:cy="302.20021"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1127"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-others="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;fill-opacity:0.267525;stroke:#000000;stroke-width:0.340157;stroke-opacity:1"
+       id="path878"
+       sodipodi:type="arc"
+       sodipodi:cx="112.49376"
+       sodipodi:cy="236.34331"
+       sodipodi:rx="55.259354"
+       sodipodi:ry="53.744873"
+       sodipodi:start="0"
+       sodipodi:end="6.2830457"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 167.75311,236.34331 a 55.259354,53.744873 0 0 1 -55.25742,53.74487 55.259354,53.744873 0 0 1 -55.261284,-53.74112 55.259354,53.744873 0 0 1 55.253564,-53.74863 55.259354,53.744873 0 0 1 55.26514,53.73737" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 57.234404,236.34331 c 17.084461,8.88637 36.338123,13.56507 55.595416,13.50986 19.03386,-0.0546 38.03824,-4.73181 54.92329,-13.51737"
+       id="path1065"
+       inkscape:path-effect="#path-effect1067"
+       inkscape:original-d="m 57.234404,236.34331 c 18.53207,4.50355 37.063875,9.00683 55.595416,13.50986 18.53154,4.50302 36.61579,-9.01132 54.92329,-13.51737" />
+    <path
+       style="fill:#e89a00;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.29320225;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Lstart);marker-mid:url(#Arrow1Lend)"
+       d="m 112.49376,182.59843 c 13.61067,16.16895 20.72707,37.65541 19.45897,58.75226 -1.06768,17.76261 -7.99939,35.12396 -19.45897,48.73749"
+       id="path1069"
+       inkscape:path-effect="#path-effect1071"
+       inkscape:original-d="m 112.49376,182.59843 c 6.48659,19.58436 12.97291,39.16844 19.45897,58.75226 6.48607,19.58383 -12.97238,32.49193 -19.45897,48.73749" />
+    <path
+       style="fill:#e89a00;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.29320225;marker-mid:url(#marker3004)"
+       d="m 112.49376,182.59843 c -11.73064,17.41016 -17.530978,38.74006 -16.232656,59.69324 1.052916,16.99267 6.719306,33.67717 16.232656,47.79651"
+       id="path1073"
+       inkscape:path-effect="#path-effect1075"
+       inkscape:original-d="m 112.49376,182.59843 c -5.45543,20.02124 -10.82151,39.79576 -16.232656,59.69324 -5.41115,19.89748 10.822036,31.8646 16.232656,47.79651" />
+  </g>
+</svg>
