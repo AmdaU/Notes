@@ -1,0 +1,147 @@
+\input{../parameters}
+
+\begin{document}
+\underline{Rappels}
+
+\begin{itemize}
+	\item Gauss-Bonnet: $$\iint_S \kappa \dd S + \int_{\partial S} \kappa_g \dd s + \sum\epsilon_k = 2\pi \chi(S) $$ $$\chi(S) = V-E+F$$  Ex: 
+\begin{figure}[ht]
+    \centering
+    \incfig{exemple-de-chi}
+    \caption{Exemple de chi}
+    \label{fig:exemple-de-chi}
+\end{figure}
+
+Pour calculer $$\iint_S \kappa \dd S = \iint_u \left( \frac{LN-M^2}{EG-F^2}  \right) \sqrt{EG -F^2} \dd u \dd v$$  
+\end{itemize}
+
+\underline{Exemple}: Dans une surface avec $\kappa \leq 0$, il n'y a pas de bigones géodésiques.
+
+Dans une surface topologiquement équivalente à un cylindre avec $\kappa < 0$, il y a au plus une géodésique simple fermée 
+
+\underline{Démonstration}
+Supposons qu'il y a deux tels géodésiques sur la surface appellées $\alpha_1$ et $\alpha_2$ .
+
+Pour chaqune, il y a deux possibilité. Soit une géodésique simple fermée borne un dique (1), soit elle sépare le cylindre en deux (2).
+
+(1) est impossible car 
+$$\iint_R \kappa \dd S + \int \underbrace{\kappa_{g}}_{0} \dd s = 2 \pi \chi(R)  \implies 0> 2\pi \chi(r) = 2\pi \lightning$$ 
+
+(2) est la seule possibilité. Si $\alpha_{12} $ sont deux coubes distinces.
+\begin{figure}[ht]
+    \centering
+    \incfig{cas-(2)}
+    \caption{cas (2)}
+    \label{fig:cas-(2)}
+\end{figure}
+
+Dans le cas $b)$, les coubres ne peuvent s'intersecter en un nombre impaires de points par unicité des géodésiques. Si elle s'intersectenet en un nombre impaires de points, on a des bigones géodésiques, ce qui est impossible sur une telle surface ( $\kappa <0$ ).
+
+Cas a)
+
+$$\iint_R \kappa \dd S + \int_{\partial S} \underbrace{\kappa_g}_{0}  \dd s = 2\pi \chi(R)$$ 
+$$0> 2\pi\chi(R) = 0 \lightning$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{triangulation-d'un-cylindre}
+    \caption{Triangulation d'un cylindre}
+    \label{fig:triangulation-d'un-cylindre}
+\end{figure}
+
+\begin{tcolorbox}[title=Rappel]
+	 Si $T$ est un triangle géodésique, $$\iint \kappa \dd S = \theta_1 + \theta_2 +\theta_3 - \pi$$  
+
+\end{tcolorbox}
+
+Sur la sphère de rayon $1$, $\equiv 1$  
+\underline{Proposition}: Pour une triangle géodésique de la sphère, Aire($T$) $= \sum \theta_i - \pi$ Ex: $\text{Aire}(R) = \frac{4\pi}{8} = \pi 2 $ $$\theta_1 + \theta_2 + \theta_3 - \pi = 3 \frac{\pi}{2} -\pi = \frac{\pi}{2} $$   
+
+
+
+
+\section*{Introduction à la géométrie hyperbolique}
+
+Ceci ce veux être une introduction \textit{historique} à la géométrie non-euclidienne
+
+Peut-on contruire un surface de courbure constante négative?
+
+Ou! : la \underline{pseudosphère} (Surface de révolution de la tractrice.
+
+Cette propriété n'as pas toute les propriétés qu'on aimerait que la surface universelle de coubure négative ait. Elle à des désavantage par rapport au plan ou à la sphère. En effet la surface n'est pas \underline{complète}. Par là, on entend qu'il existe des géodésiques de longeures fini qui ne se prolongent pas. (On peut tomber en bas de la surface)
+
+
+La sphère à l'avantage d'être homogène. On aimerait avoir une surface de courbure négative constante qui est homogène églament. On ne veut pas qu'il y ait un bord. Ce problème ne peut pas être reglé à moins de changer notre définition d'une surface.
+
+Un théorèmde de Hilbert dit qu'il n'existe \underline{aucune} surface  complète dans $\mathbb{R}^{3}$ de courbure constante négative. On aimerait quand même avoir une telle surface. Un des raison qui nous pousse à la vouloir et que par exmple, sur shpère la somme des angle des trinangle est toujours égale?  à $\pi$. On voudait avoir une surface sur laquelle l'aire des triangle est toujours inférieut à $\pi$.
+
+
+Imaginons une surface de paramétrisation $P$ avec le domainre $U = \left\{ (x,y) \in \mathbb{R}^{2} | y > 0 \right\} $ et t.q. la première forme fondamentale est $M_I = \cols{ \frac{1}{y^2} & 0 \\ 0 & \frac{1}{y^2} }$. Calculons $\Gamma_{ij}^k$ pour cette surface   
+
+
+$$\Gamma_{xx}^x = M_i^{-1} \cols{E_{x}/2 \\ F_x - E_y /2} = \cols{0\\ \frac{1}{y^2} }$$ 
+
+$$\cols{\Gamma_{xy}^x \\ \Gamma_{xy}^y} = M_I^{-1}\cols{E_{y}/2 \\ G_x /2} = \cols{-\frac{1}{y} \\0}$$ 
+
+$$\cols{\Gamma_{yy}^x \\ \Gamma_{yy}^y} = M_I^{-1} \cols{F_y - G_x /2 \\ G_y /2} = \cols{0 - \frac{1}{y} }$$ 
+
+$$\implies \Gamma_{xx}^y = \frac{1}{y} \qquad \Gamma_{xy}^x = \Gamma_{yy}^y = - \frac{1}{y} \qquad \text{les autres termes sont tous nuls} $$
+
+Selon la première équation de Gauss
+
+$$E \cdot \kappa = \dotsb$$ 
+
+$$\implies \frac{1}{y^2} \cdot \kappa = - \frac{1}{y^2} \implies \kappa = -1$$ 
+
+
+Pour calculer les distances de cette \textit{sruface}, on utilise $I$ $$l(\gamma) = \int_a^b \sqrt{\frac{1}{y^2} x'^2 + \frac{1}{y^2} y'^2} \dd t = \int_a^b \frac{\sqrt{x'^2+y'^2}}{y} \dd t$$   
+
+$$\boxed{p(\gamma(t))' = x'p_x + y' p_y}$$
+
+Comme on divise par $y$, les chemins à petit $y$ devienne long rapidement.
+
+Calculons les géodésique de cette surface
+
+$$x'' + \cols{x' & y'} \cols{\Gamma_{xx}^x & \Gamma_{xy}^x \\ \Gamma_{xy}^x & \Gamma_{yy}^x }  \cols{x'\\ y'} = 0$$ 
+
+$$y'' + \cols{x' & y'} \cols{\Gamma_{xx}^y & \Gamma_{xy}^y \\ \Gamma_{xy}^y & \Gamma_{yy}^y }  \cols{x'\\ y'} = 0$$ 
+
+$$\implies x'' + 2x'y' \left( - \frac{1}{y}  \right)  =0$$ 
+
+$$y'' + x'^2 \left( \frac{1}{y}  \right) -y'^2 \left( \frac{1}{y}  \right) =0$$ 
+
+
+\begin{equation}
+	\begin{cases}
+	x'' = \frac{2}{y} x'y' =0 \tag{1, 2}\\
+	y'' + \frac{1}{y} \left( x'^2 - y'^2 \right) =0
+\end{cases}
+\end{equation} 
+
+\underline{Proposition}: Les géodésique de cette surface sont les demi-droite verticales et les demi-cercles centré sur l'axe $x$.
+
+\underline{Démonstration}: 
+
+On va commencer par régler le cas des demis-droite verticale
+
+Si $x(t)$ est constant $x'=0$ et $x''=0$ (1) est satisfait!. (2)
+
+\begin{gather*}
+	y'' + \frac{1}{y} (-y'^2) = 0\\
+	y'' = \frac{y'^2}{y} \\
+	\frac{y''}{y'} = \frac{y'}{y} \\
+	\ln y'  = \ln y + C\\
+	y' = C_1 y\\
+	y = C_2 e^{c_1 t} 
+\end{gather*}
+
+Donne une demi-droite verticale $\gamma(t) = (x_{0} C_2 e^{C_2 t}$ 
+
+\underline{Exercice}: Vérifier que cette demi-droite est paramétré à vitesse constante.
+
+Si $x(t)$ n'est pas constante, on utilise $x$ comme paramètre: on écrit $t = t(x)$ $y = y(t(x))$   
+
+
+$$\dotsb$$ 
+
+\end{document}
