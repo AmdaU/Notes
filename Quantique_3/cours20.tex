@@ -1,0 +1,100 @@
+\input{../parameters}
+\begin{document}
+
+\underline{Diffusion élastique}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diffusion}
+    \caption{diffusion}
+    \label{fig:diffusion}
+\end{figure}
+
+
+$$\dd n = F_i \dd \underbrace{\sigma(\theta, \varphi)}_{\text{section efficasse} } \Omega$$ 
+
+Les unitées de la section efficasse sont $$\left[ \sigma \right]  = \text{surface (ban = $10^{-24} \rm{cm}^2$)} $$ 
+
+L'énérgie est conservé $$\frac{\hbar^2k^2}{2m} = E_k$$ 
+
+
+\underline{Argument physiques pour l'amplitude de diffusion} 
+
+$$u_r \sim \left( e^{ikz} + f_l (\theta,\varphi) \frac{e^{e^{ikr}}}{r}  \right) $$ 
+
+$$\sigma(\theta, \varphi) \iff^? f_k (\theta, \varphi) $$ 
+
+
+Courrant de probabilité de incident ($i$) et diffusé ($d$) $$\vb{J}_{i,d} = \frac{1}{\mu} \Re \left[ \varphi_{i,d}^*(\vb{r}) \frac{\hbar}{i} \grad \varphi_{i,d}  \right] $$   
+
+$$\abs{\vb{J}_i} = \frac{\abs{A}^2 i\hbar k}{\mu}  $$ 
+
+Si $\varphi=A e^{ikz}$ 
+
+$$\vb{J}_d = \frac{i}{\mu} \frac{\abs{A}^2}{2\mu} \abs{f_k (\theta , \varphi)}^2 \left[ \frac{e^{-ikr}}{r} \frac{\hbar{}ki}{i} \frac{e^{ikr}}{r} - \cancel{\frac{e^{-ikr}}{r} \frac{hbar}{i} \frac{e^{ikr}}{r^2}}  + \text{c.c.} \right] \hat r $$ 
+
+$$\left( \vb{J}_d \right)_r = \frac{\abs{A}^2\hbar k}{\mu} \frac{1}{r^2} \abs{f_{k(\theta,\varphi)}}^2$$ 
+
+$$\implies \dd n = C \frac{\abs{A}^2\hbar{}k}{\mu} \frac{1}{\cancel{r^2}} \abs{f_k }^2 \cancel{r^2} \dd \Omega$$ 
+
+$$\sigma(\theta \varphi) = \abs{f_{k(\theta, \varphi)}^2 $$ 
+
+$$f_k (\theta, \varphi)\to\begin{cases}
+	\text{Théorie des perturbations }\to \text{approximation (règle d'or de Fermi) de Born}\\ \text{déphassages (ondes partielles)}   
+\end{cases}$$ 
+
+\subsection*{Théorie des perturbation (Approximation de Born)}
+
+$$\norm{\vb{P}_i} = \norm{\vb{P}_f} \qq{Élastique}$$ 
+
+$$\partial \mathcal{P}_{i\to f} = \int_{DF}  \dd^3 P_F \abs{\bra{\vb{P}_i}\ket{\psi(t)}}^2 $$ 
+$$\partail \mathcal{P}_{i \to f} (t)  =\underbrace{\int_{Df} P_f^2 \dd P_f \dd \Omega}_{\int \rho(E_{F)} \dd E_f \dd \Omega}  \abs{\bra{\vb{P}_f}\ket{Psi(t)}}^2$$ 
+
+$$\boxed{\rho(E_f ) \dd E_f \dd\Omega}$$ 
+
+
+
+$$\partial \mathcal{P}_{i\to f} \approx \int_{Df} \rho(E_{f)} \dd E_f \dd \Omega \times  \frac{1}{\hbar^2} \abs{\int_0^t e^{i\omega_{fi} t'} W_{fi} (t') \dd t'}^2$$ 
+
+$$W(t) = \frac{W}{2} e^{i\omega t} + \frac{W^\dagger}{2} e^{-i\omega t}$$ 
+
+
+
+$$\abs{\bra{P_{f}} \ket{\psi(t)}}^2 = \frac{\abs{\bra{\vb{P}_f}W\ket{\vb{P}_i}}^2}{4\hbar^2} \abs{e^{i\left( \omega_{fi} -\omega \right) \frac{t}{2} } \frac{\partial m \left( \omega_{fi} -\omega \right) \frac{t}{2}  }{\left( \omega_{fi} -\omega \right)/2} +e^{i \left( \omega_{fi} + \omega \right)\frac{t}{2} } \frac{\partial m \left( \omega_{fi} + \omega \right) \frac{t}{2} }{\left( \omega_{fi} + \omega \right)/2}  }^2$$ 
+
+
+$$= \frac{\bra{\vb{P}_f}W \ket{\vb{P_i}}}{\hbar^2} \frac{\partial m^2 \omega_{fi} \frac{t}{2} }{\left( \omega_fi \right)^2/2^2}  $$ 
+
+
+$$\dotsb??????$$ 
+
+
+$$\bra{\vb{P_{f}}} V(\vb{R}) \ket{\vb{P_{i}}} = \int \bra{\vb{P}_f}\ket{\vb{r}}\bra{\vb{r}}V(\vb{r}) \ket{\vb{P}_i} \dd^3 r = \int \frac{e^{i \vb{P}_f \cdot \vb{r} /\hbar}}{\left( 2\pi\hbar \right)^{3/2}} V(\vb{r}) \frac{e^{i \vb{P_i \cdot \vb{R}}/\hbar}}{\left( 2\pi\hbar \right)^{2/3}} \dd^3 r    $$ 
+
+
+$$\int \frac{e^{-i \frac{P_f - P_i}{\hbar} \cdot \vb{r}}}{\left( 2\pi \hbar \right)^3} V(\vb{r}) \dd^3 r = \frac{1}{(2\pi\hbar)^3} \int \dd^3 r e^{-i \vb{q} \cdot \vb{r}} V( \vb{r}) \qq{Tansformé de fourier du potentiel} $$ 
+
+$$\frac{\vb{P}_f-\vb{P}_i}{\hbar} = \vb{K_{f}}- \vb{K}_i \equiv \vb{q}$$ 
+
+$$\sigma(\theta, \varphi) = \frac{\# ?? \text{diffusées/temps}  \partial\Omega }{\# \text{??? incidents/temps ???} } $$ 
+
+
+$$\vb{J}_i = \frac{1}{\mu(2\pi\hbar)^3} \hbar k \hat z = \frac{1}{(2\pi\hbar)^3} \underbrace{\frac{\sqrt{2\muE}}{\mu}}_{\frac{\sqrt{2}\sqrt{E}}{\sqrt{\mu}} }  \hat z$$ 
+
+$$ \boxed{\frac{\partial\mathcal{P}_{i\to{}f}(t)}{\partial t \partial \Omega}/\abs{\vb{J}_i} = \sigma(\theta \varphi) = \frac{\mu^2}{(2\pi)^2\hbar^4} \abs{\int \dd^3 r e^{-i\vb{q} \cdot \vb{r}} V(\vb{r})}^2} $$ 
+
+
+
+$$\vb{q}^2 = \dotsb 4K^2 \sin^2 \frac{\theta}{2} $$ 
+
+\underline{Diffusion nucléons-nucléons (pos de Yukawa)} 
+
+si $\sigma(\theta \varphi) = \norm{f_k (\theta, \varphi)}^2    $  
+
+
+
+
+
+\end{document}
+
+

@@ -54,7 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{diffusion.pdf}}%
-    \put(0.03644272,0.11781769){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Flux: $\quad F_i$ (#part/surface  temps)\end{tabular}}}}%
+    \put(0.03644272,0.11781769){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Flux: $\quad F_i$ (\#part/surface  temps)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{diffusion.pdf}}%
     \put(0.74907099,0.09443296){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(\vb{R})\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{diffusion.pdf}}%
