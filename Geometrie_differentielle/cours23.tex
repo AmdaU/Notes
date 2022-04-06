@@ -1,0 +1,73 @@
+\input{../parameters}
+\begin{document}
+
+\underline{Rappels} 
+
+\begin{itemize}
+	\item Le plan hyperbolique $$U = \left\{ (u,v) | v > 0 \right\} $$ muni de la métrique $$M_I = \cols{\frac{1}{v^2} & 0 \\ 0 & \frac{1}{v^2} }$$ Courbure gaussiene : $\kappa_g \equiv 1$ Symbol de Chrsitoffel $\Gamma_{uu}^{v}=\frac{1}{v} \;\Gamma_{vv}^{v}=\Gamma_{uv}^{u}=-\frac{1}{v} $ Les autres sont nuls   
+\end{itemize}
+
+\underline{Proposition}: Les géodésiques de $\mathbb{H}^{2} $ sont des demis-droites verticales et les demi-cercles centrées sur l'axe $u$ .
+
+\underline{Démonstration}: $x$ constant: good (demi-droite vecticale)
+Sinon: 
+
+$$\begin{cases}
+	u'' - \frac{2}{v} u'v' = 0 \\ v'' + \frac{1}{v} (u'^2 v'^2) = 0	
+\end{cases}$$ 
+
+
+On réécrit en termes de $\dv{v}{u},\,\dv[2]{v}{u}$ 
+
+$$\dv{u} \left( v(t(u)) \right)  = \dv{v}{t} \dv{t}{u} = \dv{v}{t} \left( \dv{u}{t} \right)^{-1}$$ 
+
+$$\begin{aligned}
+	\dv[2]{v}{u} &= \dv{u}\left( \dv{v}{t}?\dv{t}{u} \right) \\ &= \dv{v}{u} \left( \dv{t}{u} \right)^2 + \dv{v}{t}\dv[2]{t}{u} \\ &= \dv{v}{u} \left( \dv{u}{t} \right)^{-2} + \dv{v}{t} = \dotsb = \frac{-\qty(u'^2+v'^2)}{vu'^2}  \\ 
+\end{aligned}$$
+$$\dv[2]{v}{u} = \frac{- \left( u'^2 + v'^2 \right) }{vu'^2} =- \frac{1}{v} - \frac{1}{v} \left( \frac{v'}{u'}  \right)^2 = - \frac{1}{v} \left(  1 + \left( dv v u \right)^2 \right)   $$ 
+
+$$v \dv{2}{vu} + \left( \dv{v}{u}  \right)^2 =-1$$ 
+
+$$\dv{u} \left( v \dv{v}{u}  \right)  = -1$$ 
+
+$$v \dv{v}{u} = -u +C$$ 
+
+$$\int v \dd v = \int -u \dd u + C \dd u$$ 
+
+$$\frac{v^2}{2} = - \frac{u^2}{2}  + Cu + C'$$ 
+
+$$v^2 + u^2 -2Cu = 2 C'$$ 
+
+$$v^2 + (u-C)^2 = 2c' + c^2$$ 
+
+
+Équation d'un cercle de rayon $\sqrt{2C'+C^2}$ et centré en $(C,0)$  
+
+
+$$\blacksquare$$ 
+
+Maintenant qu'on connait les lignes droite de notre nouvelles géométrie, on peut essayer de trouver des propriété analogues avec la géométries qui nous est familiaire, soit la géométrie Euclidienne.
+
+Le plan hyperbolique satisfait aux axiômes d'Euclides saut le cinquième.
+
+Celui-ci s'énonce: 
+
+\begin{tcolorbox}[title=Cinquieme postuat]
+	 Étant donné une droite $\ell$ et un point $p \notin \ell $ il existe une \underline{unique} droite $\ell'$ par $p$ parallèle à $\ell$ 
+\end{tcolorbox}
+
+Dans la géométrie Hyperbolique par contre, il existe une \underline{infinité} de tels droites!
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{comparaison-entre-5ieme-postulat-euclidien-et-hyperbolique}
+    \caption{Comparaison entre 5ieme postulat euclidien et hyperbolique}
+    \label{fig:comparaison-entre-5ieme-postulat-euclidien-et-hyperbolique}
+\end{figure}
+
+Tout les triangles hyperboliques on un aire inferieur à $\pi$ 
+
+Gauss-Bonnet: $$\theta_1 + \theta_2 + \theta_3  = \pi -\rm{Aire}(t)$$ 
+:)
+\end{document}
