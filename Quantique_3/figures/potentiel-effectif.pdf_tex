@@ -1,6 +1,6 @@
-%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20, custom), www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04, custom), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'pico.pdf' (pdf, eps, ps)
+%% Accompanies image file 'potentiel-effectif.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,6 +53,9 @@
   \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{pico.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{potentiel-effectif.pdf}}%
+    \put(0.89345271,0.05763753){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0.02865432,0.44066124){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{\rm eff}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{potentiel-effectif.pdf}}%
   \end{picture}%
 \endgroup%

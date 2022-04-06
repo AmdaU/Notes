@@ -1,0 +1,90 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Diffusion élastique}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/Diffusion}
+	\caption{}
+	\label{fig:}
+\end{figure}
+
+$$\dd n  =F_i \simga(\theta. \varphi)\dd \Omega$$ 
+
+$$u_{\vb{k}}(r) \sim \\left( e^{ikz} + f(\theta \varphi) \frac{e^{ikr}}{r}  \right) $$ 
+
+$$\simga(\theta, \varphi) = \abs{f_k (\theta \varphi)}^{2}$$ 
+
+\underline{Première approche: Approximation de Born} 
+
+$$\simga( \theta, \varphi) = \frac{\mu^2}{(2\pi)^2\hbar^4} \abs{\dd r^3 e^{-i \vb{q} \cdot \vb{r}} v(\vb{r})}^{2}$$ 
+
+
+\underline{Deuxième approche: Méthode des déphasages ou d'ondes partielles} 
+
+Pour des $V(\vb{r})$ central $(V(\vb{r}) ⁼ V(r))$ on a que la base $\left\{ H, \vb{L}^2, L_z \right\} $ forme un E.C.O.C   
+
+tandis que $ \left\{ \varphi_{k,l,m}  \right\} $ forme une fase de fonctions propres (ondes partielles)
+
+$$\varphi_{k,l,m} = R_{kl} (r) Y_l^m (\theta, \varphi)$$ 
+
+En pricipe en devrait décomposer sur trois incdie mais on n'elève $k$ parce que c'est élastique et $m$ je sais plus pourquoi.
+
+$$v_k (\vb{r}) = \sum_{\ell} C_{k,\ell} \varphi_{klm} (\vb{r}) $$ 
+
+
+Loin du potentiel $\varphi_{klm} \to \varphi_{klm}^{(0)}$: Ondes sphérique libres.
+
+
+
+Ces derniéres fonctions d'ondes ( $\varphi_{klm}^{(0)} $ sont des fonction propres de $H_0 = \frac{\vb{p}^2}{2m} $  
+
+
+$$H_0 \ket{\varphi_{klm}^{(0)}} = E_k \ket{\varphi_{klm}^{(0)}}$$ 
+
+$$E_k = \frac{\hbar^2k^2}{2\mu} $$ 
+
+$$\bra{\vb{r}}H_0 \ket{\varphi_{klm}^{(0)}} = E_k \bra{\vb{r}} \ket{\varphi_{klm}^{(0)}}$$ 
+
+$$\boxed{- \frac{\hbar^2}{2\mu} \grad^2 \varphi_{klm}^{(0)} = E_k \varphi_{klm}^{(0)}}$$ 
+
+$$- \frac{\hbar^2}{2\mu} \left[ \frac{1}{r} \pdv[2]{r} r \frac{1}{r^2} \left( \pdv[2]{\theta} + \frac{1}{?} \pdv{\theta} + \frac{1}{\sin^2\theta} \pdv[2]{\varphi}\right)  \right] \varphi_{klm}^{(0)} = \frac{\hbar^2k^2}{2\mu} \varphi_{klm}^{(0)}$$ 
+
+$$\left[ -\frac{\hbar^2}{2\mu} \frac{1}{r} \pdv[2]{r} r + \frac{\hbar^2}{2\mu r^2} l(l+1) \right]R_{kl}^{(0)} (r) = \frac{\hbar^2k^2}{2\mu} R_{kl}^{(0)} $$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{potentiel-effectif}
+    \caption{Potentiel effectif}
+    \label{fig:potentiel-effectif}
+\end{figure}
+
+$$-\frac{\hbar^2}{2\mu} \pdv[2]{u_{kl}^{(0)}}{r} + \frac{\hbar^2}{2\mur^2} l(l+1) u_{kl}^{(0)}  $$ 
+
+Lorsqu'on fait tendre le rayon vers l'infini, on trouve
+
+$$- \frac{\hbar^2}{2\mu} \pdv[2]{u_{kl}^{(0)}}{r} \approx \frac{\hbar^2k^2}{2\mu} u_{kl}^{(0)}    $$ 
+
+Les solution de cette équation différentielle sont bel est bien des ondes sphériques!
+
+Dans le cas $r \to 0$
+
+$$u_{kl}^{(0)} (r) \sim r^s$$ 
+
+$$s(s-1) = l(l+1)$$ 
+
+$$s_1 = l+1 \implies r^{l+1} \qq{régulière a l'origine)$$ 
+
+$$s_1 = -l \implies r^{-l}$$ 
+
+$$r^2 \dv[2]{R_{kl}^{(0)}}{r} + 2r \dv{R_{kl}^{(0)}}{r} + k^2 r^2 R_{kl}^{(0)} - l(l+1) R_{kl}^{(0)} =0  $$ 
+
+C'est une équation à point régulier sigulier! Il est pertinant de faire un changement de variable.
+
+$$\rho^2 \dv{R_{kl} (\rho)}{\rho} + 2\rho \dv{R_{kl}^{(0)}}{\rho} + \rho^2 R_{kl}^{(0)} - l(l+1) R ^{(0)} = 0 $$ 
+
+
+\end{document}
