@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="wowowowowowowowo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect29133"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path924" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path927" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="456.06588"
+     inkscape:cy="274.54462"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1171"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.21634px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 24.773006,186.95161 v 53.81231 H 206.69277"
+       id="path922" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="5.8112335"
+       y="201.68246"
+       id="text10996"><tspan
+         sodipodi:role="line"
+         id="tspan10994"
+         style="stroke-width:0.264583"
+         x="5.8112335"
+         y="201.68246">$R_H$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="205.89619"
+       y="247.1002"
+       id="text20459"><tspan
+         sodipodi:role="line"
+         id="tspan20457"
+         style="stroke-width:0.264583"
+         x="205.89619"
+         y="247.1002">$T$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 24.773006,240.76392 v 44.67949"
+       id="path24949" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 48.694959,293.6104 c 0.380874,-5.78009 0.761764,-11.56043 3.125686,-14.742 2.363923,-3.18157 6.71046,-3.76407 22.467269,-4.50341 15.756809,-0.73935 42.922676,-1.63551 57.906126,-3.32147 14.98344,-1.68596 17.78405,-4.1616 19.51485,-10.74847 1.73079,-6.58687 2.39174,-17.28477 4.85084,-23.43494 2.45911,-6.15017 6.71603,-7.75205 17.28595,-8.70422 10.56992,-0.95216 27.45198,-1.25461 44.3341,-1.55706"
+       id="path29131"
+       inkscape:path-effect="#path-effect29133"
+       inkscape:original-d="m 48.694959,293.6104 c 0.381153,-5.78007 0.762044,-11.56041 1.142671,-17.34102 4.346978,-0.58225 8.693515,-1.16475 13.039876,-1.74753 27.167226,-0.89593 54.333094,-1.7921 81.499244,-2.68854 2.80098,-2.47547 5.60159,-4.95111 8.40198,-7.42706 0.66124,-10.69805 1.32218,-21.39595 1.98287,-32.09431 4.25736,-1.60168 8.51428,-3.20356 12.77101,-4.80574 16.88299,-0.3022 33.76505,-0.60465 50.64717,-0.90737" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="135.98454"
+       y="210.63756"
+       id="text29687"><tspan
+         sodipodi:role="line"
+         id="tspan29685"
+         style="stroke-width:0.264583"
+         x="135.98454"
+         y="210.63756">La pente nous informe sur l'énérgie du gap</tspan></text>
+  </g>
+</svg>
