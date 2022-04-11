@@ -1,0 +1,45 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Un cas avec deux conducteur (genre un coax mais pas nécessairement )}
+
+$$\begin{cases}
+	V(z,t) = V_+ e^{i\left( kz -\omega t \right) } + V_- e^{-i\left( kz + \omega t \right) }\\ 
+	I(z,t) = - \frac{V_+}{Z_0} e^{i\left( kz-\omega t \right) } + \frac{V_-}{Z_0} e^{-i\left( kz +\omega t \right) }
+\end{cases}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{onde-qui-se-propage-dans-un-machin}
+    \caption{Onde qui se propage dans un machin}
+    \label{fig:onde-qui-se-propage-dans-un-machin}
+\end{figure}
+
+$$V_- (z=l, \omega) = \Gamma(\omega) V_+ (z=l, \omega) $$ 
+
+$$V(z=l,\omega) = Z(\omega) I(z=l, \omega)$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{circuit-éléctrique}
+    \caption{Circuit éléctrique}
+    \label{fig:circuit-éléctrique}
+\end{figure}
+
+$$Z \left( \frac{-V_+ + V_-}{Z_0}  \right) = V_+ V_- $$ 
+
+$$V_- (Z_0 -Z) = V_+ (+Z + Z_0) $$ 
+
+$$\Gamma = \frac{V_-}{V_+} = \frac{-Z + Z_0 }{Z_0 + Z } $$ 
+
+$$\boxed{\Gamma = \frac{Z-Z_0}{Z+Z_0} }$$ 
+
+$$\implies \text{si } Z = Z_0 \text{ alors } \Gamma =0  $$ 
+
+$$Z = \infty \implies \text{circuit ouvert} \implies \Gamma =1 \wedge  I=0 $$ 
+
+
+
+
+
+\end{document}
