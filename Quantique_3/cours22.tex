@@ -1,0 +1,58 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Diffusion}
+
+
+$$\dd n = F_i \simga(\theta, \varphi)\dd \Omega$$ 
+
+
+$$\varphi_{klm}^{(0)} \quad \text{fonctions propres en absence de $V$ } \quad \left\{ H_0, \vb{L}^2, L_z\right\} $$ 
+
+$$-\frac{\hbar^2}{2\mu} \grad^2 \varphi^{(0)} = E_k \varphi^{(0)}$$ 
+
+On le récrit en coordonnées sphériques:
+
+$$\dotsb$$ 
+
+On fait le changement de variable $\rho = kr$ 
+
+On obtiens équation de Bessel sphérique, $\rho = 0$ est un point régulier singulier.
+
+
+On trouve un équation indicielle.
+
+$$R_{kl}^{(0)} (kr) = \sqrt{\frac{2k^2}{\pi}} J_l(Kr)$$ 
+
+$$\varphi_{klm}^{(0)} ( \vb{r}) = \sqrt{\frac{2k^2}{\pi} }J_{l(kr} Y_l^m $$ 
+
+les $\varphi_{klm}^{(0)}$ sont orthonormées 
+$$J_l (kr) \to_{\rho\to\infty} = \frac{1}{\rho} \sin \left( \rho - l \frac{\pi}{2}  \right) $$ 
+
+$$\varphi_{klm}^{(0)} (r\to \infty, \theta, \varphi) \to \sqrt{\frac{2k^2}{\pi} } \frac{1}{kr} \sin(kr -\frac{l\pi}{2} )$$ 
+
+Le $\sin$ est une somme d'exponentielle
+
+$$\dotsb$$ 
+
+
+
+\section*{Exemple: Sphère dure}
+
+$$V(\vb{r})\begin{cases}
+	\infty & \abs{r} \leq r_0\\
+	0 & \abs{r} > r_0 
+\end{cases}$$ 
+
+Dans la limite des ??????????????? $$kr_0 \ll 1$$ 
+
+\begin{tcolorbox}[title=Parenthèse sur une formule]
+	$$\vb{L} = \vb{r} \times \vb{p} = b\hbar k$$  
+	$$\abs{\vb{L}} = \hbar\sqrt{l \left( l+1 \right) }$$ 
+	$$ka \ge \sqrt{k(l+1)}$$ 
+	La seule valeur qui va être pertinente à la diffusion est $l=0$, les autre sont négligeables 
+\end{tcolorbox}
+
+
+
+\end{document}
