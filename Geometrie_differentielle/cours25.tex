@@ -1,0 +1,82 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Révision}
+
+\underline{Différentes dérivée} 
+
+$$f: S \to \mathbb{R}^n$$ 
+
+Dérivé directionnelle de $f$ au point $x$ dans la direction $\vb{v}$: $D_x f(\vb{v})$    
+
+\begin{figure}[ht]
+    \centering
+    \incfig{dérivée-directionnelle}
+    \caption{Dérivée directionnelle}
+    \label{fig:dérivée-directionnelle}
+\end{figure}
+
+$$D_x f(\vb{v}) := \eval{\dv{{}}{t}}_{t=0} f(\gamma(t)) $$ 
+
+Indépendant du choix de $\gamma$ 
+
+\begin{tcolorbox}[title=Raccourcit de notation, colframe=orange]
+Si le chemin $\gamma(t)$ est fixé au départ, on note souvent $f(\gamma(t)) = f(t)$. Dans ce cas $$D_x f(\vb{v}) = \eval{\dv{{}}{t} }_{t=0} f(t) = f'(t) $$   
+\end{tcolorbox}
+
+Si on écrit $$f(p(u,v)) = f(u,v)$$ 
+
+La matrice de $D_x f$ dans la base $p_u ,\, p_v $ est $$\cols{\dv{f_1}{u} & \dv{f_1}{v} \\ \dv{f_2}{u} & \dv{f_2}{v} \\\vdots & \vdots\\ \dv{f_n}{u} & \dv{f_n}{v} }$$  
+
+C'est-à-dire $$D_x f(a p_u + b p_v ) =  \cols{\dv{f_1}{u} & \dv{f_1}{v} \\ \dv{f_2}{u} & \dv{f_2}{v} \\\vdots & \vdots\\ \dv{f_n}{u} & \dv{f_n}{v} } \cols{a \\b}$$ 
+
+\underline{Exemple} 
+
+$$p(\theta, \varphi) = \cols{\cos\theta\sin\varphi\\ \sin\theta\sin\varphi\\\cos\varphi}$$ 
+
+$$f(\theta, \varphi) = 5\theta -\theta^2 + 8\varphi -\varphi^2$$ 
+
+Pour trouver le max/min de $f$ sur $$S^2$$,
+
+$$Df = (5-2\theta, 4-2\varphi) = 0 \implies \theta= \frac{5}{2} \quad \varphi= \frac{4}{2} = 2$$ 
+
+\underline{Projection de Mercader} 
+
+$$\begin{aligned}
+	M: &C &\to S^2\\
+	   &\cols{x\\y\\z} &\mapsto \cols{\sqrt{1-z^2}x \\ \sqrt{1-z^2} y \\z}
+\end{aligned}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{projection-de-mercate}
+    \caption{Projection de Mercate}
+    \label{fig:projection-de-mercate}
+\end{figure}
+
+$$C: \cols{\cos\theta\\\sin\theta\\z}$$ 
+
+$$M (\theta, z) = \cols{\sqrt{1-z^2}\cos\theta\\\sqrt{1-z^2} \\ z} = p(\theta, \arccos(z))$$ 
+
+\underline{Champs de vecteur} 
+
+Champ de vecteur $F$ sur $S$  
+$$F: S \to \mathbb{R}^{3} | F(x) \in T_x S$$ 
+
+Dérivé directionnelle: Comme pour une fonction quelconque $$D_x F(\vb{v})$$ 
+
+% \begin{figure}[ht]
+%     \centering
+%     \incfig{champ-de-vecteur-sur-une-sphere}
+%     \caption{Champ de vecteur sur une sphere}
+%     \label{fig:champ-de-vecteur-sur-une-sphere}
+% \end{figure}
+
+Dérivée \underline{covariante} 
+
+$$\nabla_{\vb{v}} F = D_x F(\vb{v}) - \left( D_x F(\vb{v}) \cdot \vb{n})  \right)\vb{n} $$ 
+
+(Projection orthogonale sur $T_x S$) 
+
+
+\end{document}
