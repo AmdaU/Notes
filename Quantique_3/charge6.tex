@@ -1,0 +1,87 @@
+\input{../parameters}
+\begin{document}
+
+\section*{ \underline{Méthode des variations} }
+
+$$-\dv[2]{\psi}{x} -(\lambda - \abs{x}) \psi = 0  $$ 
+
+$$\psi_{E}(x) =\begin{cases}
+	c(a-\abs{x}) & \abs{x}<a\\
+	0 & \text{sinon} 
+\end{cases}$$ 
+
+$$\int \abs{\psi}^{2} \dd^d n=1$$ 
+
+$$\psi \sim L^{-1/2}$$ 
+
+$$c \sim L^{-1/2} \implies \lambda \propto \alpha^{-3/2}$$ 
+
+$$H = - \dv[2]{{}}{x} + \abs{x} $$ 
+
+$$E(\alpha) = C_1 \alpha^{-2} + C_2 \alpha$$ 
+
+$$\dv{\abs{x}}{x} = \Theta(x) - \Theta(-x) $$ 
+
+$$\dv[2]{\abs{x}}{x} = \delta (x) + \delta(-x) = 2\delta(x) $$ 
+
+Il ne reste qu'a trouver les coefficients $C_1 , C_2$ 
+
+On fait l'intégrale $$\frac{1}{\ket{\psi}\bra{\psi}} t_{-a}-aa^{a} -\psi(s) [2][\psipsx}{x} + \abs{x} \psi^2 \d  x = E(\alpha) $$
+
+On peut ensuite minimiser le résultat par rapport à $\alpha$ 
+
+\section*{ \underline{Particules identiques} }
+
+$$E_n = \hbar \omega \left( n + \frac{1}{2}  \right) $$ 
+
+$$\ket{\varphi_n^{(1)} \epsilon^{(1)}}\ket{\varphi_m^{(2)} \epsilon^{(2)}}$$ 
+
+État fondamental:
+
+$$\ket{\varphi_0^{(1)}, \epsilon^{(1)}, \varphi_0^{(2)}\bar\epsilon^{(2)}}$$ 
+
+$$\ket{\psi} = \frac{1}{\sqrt{2}} \left[ \ket{\varphi_0^{(1)}, \epsilon^{(1)}, \varphi_0^{(2)}, \bar\epsilon^{(2)}} - \ket{\varphi_0^{(1)}\bar\epsilon^{(1)}, \varphi_0^{(2)}\epsilon^{(2)}} \right] $$ 
+
+
+$$\bra{\psi}H\ket{\psi} = 2\hbar\omega \frac{1}{2} $$ 
+
+
+\section*{ \underline{Diffusion de potentiel:} }
+Approximation de born et potentiel central!
+
+$V (\vb{r}) = v(r)$ 
+$$\text{Q:} f_k (\theta, \varphi) = ? $$ 
+
+$$f_k (\theta, \varphi) = \frac{\mu}{2\pi\hbar^2} \int V(\vb{r}) e^{-i \vb{q} \cdot \vb{r}} \dd^3 r$$ 
+
+$$\vb{q} = \vb{k}_f -\vb{k}_i$$ 
+
+$$\sigma(\theta, \varphi) = \abs{f_k (\theta, \varphi)}^{2}$$ 
+
+On a donc,
+
+$$\begin{aligned}
+	f_k (\theta, \varphi) &= \frac{\mu}{2\pi\hbar^2} \int \sin\tilde\theta \dd \tilde \theta \dd \tilde\varphi r^2 \dd r V(r) e^{-iqr \cos \tilde\theta}\\ &= \frac{\mu}{\hbar^2} \int_0^\infty\int_{-1}^{1}r2V(r) e^{-iqr} \dd u\dd r = \frac{\mu}{\hbar^2} \int_0^{\infty}\dd r r^2 V(r) \left[ \frac{e^{-iqr} - e^{iqr}}{-2iqur}  \right] 2  \\ &= \frac{2\mu}{\hbar^2q} \int_0^{\infty}\dd r r V(r) \sin(qr) = \\ &= \frac{2\mu}{\hbar^2\sin(\theta/2)} \int_0^{\infty}\dd r r V(r) \sint(kr\sin(\theta/2) 
+\end{aligned}$$ 
+
+\begin{tcolorbox}[title=Intégrale commune]
+	 	$$I_1 = \int_0^{\infty}\dd r r e^{-\alpha r^2 + \beta r} $$
+On peut obtenir le résultat de cette intégrale à partir d'une intégrale connue:
+		$$I_0 =\int_0^{\infty}\dd r e^{-\alpha r^2 + \beta r} = \frac{1}{2} \sqrt{\frac{\pi}{\alpha} }e^{\frac{\beta^2}{4\alpha} }$$ 
+
+$$I_1 = \dv{I_0}{\beta} = \frac{\beta}{4\alpha} = \sqrt{\frac{\pi}{\alpha} } e^{\beta^2/4\alpha} $$ 
+
+\end{tcolorbox}
+
+$$f_k (\theta) = \frac{\mu}{\hbar^2 k \sin(\theta/2) 2i}\int_0^{\infty} \dd r r V_0 e^{-r^2/a^2} \left[ e^{iqr} - e^{-iqr} \right] $$ 
+
+$$\dotsb$$ 
+
+
+
+
+
+
+
+
+\end{document}
