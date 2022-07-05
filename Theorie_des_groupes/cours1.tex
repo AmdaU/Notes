@@ -1,0 +1,94 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Introduction à la théorie des groupes et applications à la supracondicivité}
+
+
+\section*{Concept Généraux}
+
+\underline{Définition: Groupe}
+
+Un \bf{groupe} est une ensemble $\left\{ a,b,c \right\}$ muni d'une { \it multiplication} respectant les règles suivantes
+
+\begin{itemize}
+	\item Si $a, b \in G$, alors $a*b \in G$\\
+	\item $(a*b)*c = a*(b*c)$
+\end{itemize}
+
+Un ensemble de matrice peut définir un groupe, car la multiplication matriciel repecte les bonne propriétés. Les matrices doivent êtres non-nuls pour respecter la condition d'existence d'un inverse.
+\[
+	GL(N) \quad \det(A) \neq 0 \quad \text{corp: }\mathbb{R}
+\]
+est le groupe le plus grand qui existe
+
+
+\subsection*{Groupes ponctuelles communs}
+
+Il y a deux notation principales pour différentier les groupes
+Schönfhes et l'autre
+
+il y a $C_n, D_n, C_{nv}, C_{nh}, D_{nh} ... $
+
+$a$ et $b$ sont conjugés $(a \sim b)$ s'il existe $c\in G | b  =c^{-1}ac$
+$a$ et $b$ décrivent alors le {\it même genre} de transformation car relié par un changement de base
+
+La relation de conjugasion est une relation d'équivalence:
+
+(reflexive: $a\sim a$, symétrique $a\sim b \to b\sim a$, transitive: $a\sim b & b\sim c \implies a\sim c$)
+
+\section*{Représentation}
+
+$$\mathcal{R}: G \to GL(d) \qquad a\to R(a) \qquad R(ab) = R(a)R(b)$$
+L'espace vectoriel sur lequel agit $R(a)$: module V de la représentation
+
+Deux représentation sont équivalent si elle ne diffèrent que par un changement de base
+
+Représentation unitaire \[
+	\implies R^{-1}(a) = R^{\dagger}(a) \forall a \in G
+
+\]
+Toute représentation d'un groupe fini est équivalente à une  représentation unitaire
+
+Représentation réductible: $\exists$ base $| R(A)= R^{(1)}(a) \oplus R^{(2)}(a), \forall a \in G$
+
+On s'interresse au représentations irréductible car elle sont plus {\it fondamentale}
+
+\begin{tcolorbox}[title=Exemple: $C_4$ et base des vecteurs x,y]
+
+	$$g: C_4 \quad R(g):\; \cols{0 & -1 \\ 1 &0} \dotsb $$
+	 
+	Les fonction de degré $m$ forment une repreésentation
+\end{tcolorbox}
+
+
+{\bf Lemme 1}: Si $R, R'$ sont deux représentation irréductibles (R.I.) inéquivalentes, alors il n'y a pas de matrice $H$ non-nulle telle que que $HR'(a) = R(a)H \forall a \in G$
+
+
+{\bf Lemme 2}: Si $R$ est une R.I et $H$ une matrice non-nulle telle que $H R(A) = R(a)H \forall a \in G$ alors $H$ est un multiple de l'identité : $H = \lambda I$
+
+Conséquence: soit une représentation réductible $R =R_1 \osum  R_2 \dotsb$
+
+\section*{Caractères}
+
+Relation d'orthogonalité
+\[
+	\frac{n_\nu}{g} \sum_{a\in G} R_{ik}^{(\nu)*} (a) R_{jl}^{(\mu)}(a) = \delta_{\mu\nu}\delta_{ij}\delta_{kl}
+\]
+
+corollaire : $\sum_\mu^r n_\mu^2 \leq g$ où $r$ est le nimbre de représentation distincte. En fait $=$ 
+
+Def: caractère d'une classe dans une représentation
+
+$\chi(a) = \tr R(a)$
+
+
+les vecteurs de caractères sont orthogonauxé..
+
+\[
+	\sum_i^K \frac{g_i}{g} \chi_i^{(\nu)*}\chi_i^{(\mu)} = \delta_{\mu\nu}\\
+	\sum_\mu^K \frac{g_i}{g} \chi_i^{(\mu)*}\chi_i^{(\mu)} = \delta_{ij}
+\]
+
+
+
+\end{document}
