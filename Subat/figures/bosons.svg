@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="bosons.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.9887478"
+     inkscape:cx="451.54042"
+     inkscape:cy="231.04991"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="74.014442"
+       y="225.17207"
+       id="text62"><tspan
+         sodipodi:role="line"
+         id="tspan60"
+         style="stroke-width:0.264583"
+         x="74.014442"
+         y="225.17207">spin 1</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.209705"
+       id="rect116"
+       width="69.054359"
+       height="52.658905"
+       x="92.871216"
+       y="196.50414" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="101.41827"
+       y="202.79921"
+       id="text120"><tspan
+         sodipodi:role="line"
+         id="tspan118"
+         style="stroke-width:0.264583"
+         x="101.41827"
+         y="202.79921">$\gamma$      Photon        [EM] </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="237.8389"
+       y="198.72871"
+       id="text174"><tspan
+         sodipodi:role="line"
+         id="tspan172"
+         style="stroke-width:0.264583"
+         x="237.8389"
+         y="198.72871">hot</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="101.35321"
+       y="218.05969"
+       id="text178"><tspan
+         sodipodi:role="line"
+         id="tspan176"
+         style="stroke-width:0.264583"
+         x="101.35321"
+         y="218.05969">$W^+$, $Z$                            [faible]</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="102.64527"
+       y="236.77188"
+       id="text182"><tspan
+         sodipodi:role="line"
+         id="tspan180"
+         style="stroke-width:0.264583"
+         x="102.64527"
+         y="236.77188">$g$               gluons             [forte]</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="100.06888"
+       y="254.88509"
+       id="text344"><tspan
+         sodipodi:role="line"
+         id="tspan342"
+         style="stroke-width:0.264583"
+         x="100.06888"
+         y="254.88509">H                  Higgs                      sping 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.264583"
+       x="99.440483"
+       y="269.10657"
+       id="text348"><tspan
+         sodipodi:role="line"
+         id="tspan346"
+         style="stroke-width:0.264583"
+         x="99.440483"
+         y="269.10657">Graviton (Xd)</tspan></text>
+  </g>
+</svg>
