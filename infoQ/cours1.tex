@@ -1,0 +1,146 @@
+\input{../parameters}
+\begin{document}
+
+2022-08-30
+
+{\Huge{Informatique quantique}}
+
+\section*{Introduction}
+
+\begin{tcolorbox}[title=Logiciels]
+	\begin{itemize}
+		\item quisquit
+		\item ?
+	\end{itemize} 
+\end{tcolorbox}
+
+Infomatique quantique en trois ligne
+
+\begin{itemize}
+	\item bits $(0,1) \to \ket{0} \ket{1}$ 
+	\item ?
+	\item ?
+\end{itemize}
+
+
+Parallélisme quantique: $n$ qbits $\implies 2^n$ états. On peut donc faire des calculs sur un superposition d'états très très grand. ex: 300 qbits:$200^{300} \gg \text{nombre d'atome sur terre} $  
+
+\section*{Applications}
+
+Les ordinateurs quantique sont aussi vraiment utiles pour simuler des phénomènes qui sont fondamentalement quantique comme des simulation de molécules. 
+
+L'optimisation est fort puissante grace au parallélisme.
+
+L'intelligence artificielle.
+
+
+\begin{tcolorbox}[title=Communication Quantique]
+	On peut envoyer de l'information quantique grace à des satellite. 
+	 
+\end{tcolorbox}
+
+\section*{Architectures}
+
+Il existe beaucoup de types d'ordinateurs quantique différents.
+
+\begin{itemize}
+	\item les qbits supraconducteurs: les cicuit microondes sont très connus.
+	\item les ions pièges
+	\item les qbits de spins
+	\item qbits topologiques
+	\item qbits photoniques
+\end{itemize}
+
+On ne sait pas quel approche et la meilleur. Differentes companies et différents chercheurs ont différents approches. La plus utilisé et celle des qbits microondes.
+
+\section*{Supprématie Quantique}
+
+Google a annocé quelque année avoir atteint la suprématie quantique (impossible à faire avec des ordinateurs quantique)
+
+ils ont utilisé de l'ordre de 50 qbits. S'il auraient vraiment utilisé tout ces qbits au maximum de leur puissance ça aurait été le cas. Cependant leurs calculs était bruité et il été démontré que les calculs spécifique aurait thecniquement été possible sur des ordinateur classique bien que moyennant des coût très élévés. La véritable suprématie quantique n'est qu'une question de temps.
+
+\section*{Motivations}
+
+Le but et d'éventuellement de réaliser des calculs difficiles et à grande échelle.
+
+\begin{tcolorbox}[title=Communication quantique]
+	La communications quantique est beaucoup plus facile à réaliser étant donné qu'on a pas besoin d'effecteur de calculs.
+
+	Certaines companies offres déjà des services de ce type, notamment pour la distribution de clefs d'encryption
+
+	 
+\end{tcolorbox}
+
+
+\section*{Les exigences contradictoire du calculs quantique}
+
+On veut connecter les différents qbits ensemble pour qu'il y ai de l'intrication/interaction mais les connecter mêne au bruit et la déchoérence.
+
+La plupart des qbits sont bon pour une seule de ces deux chose: soit garder l'information mais par la partager, soit l'inverse.
+
+
+\section*{Qbits supraconducteur}
+
+L'information est encodé en métant un pair de cooper d'un côté ou de l'autre.
+
+Il faut ce qu'on appelle un élément non-linéaire pour interagir avec les qbits. Une JJ par exemple
+
+\pagebreak
+\section*{Temps de vie des qbits}
+
+
+$$T_1 \text{Temps de relaxation} $$ 
+$$T_2 : \frac{\ket{0}+\ket{1}}{\sqrt{2}} \to \frac{\ket{0}-\ket{1}}{\sqrt{2}}  $$ 
+
+
+\begin{tcolorbox}[title=Sphère de Bloch]
+	$$\bra{\psi} \sigma_x \ket{\psi} = \sin\theta\cos\varphi$$ 
+	$$\bra{\psi}\sigma_y \ket{\psi} = \sin\theta \sin\varphi $$ 
+	$$\bra{\psi}\sigma_z \ket{\psi} = \cos\theta$$ 
+
+	$$X^2=Y^2=Z^{2}= \mathds{1}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{roche-papier-ciseaux}
+    \caption{roche papier ciseaux}
+    \label{fig:roche-papier-ciseaux}
+\end{figure}
+
+$$XY = iZ$$ 
+	 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=Exemple de Calcul de racine carrée]
+	 On peut prendre une racine en utilisant l'univers et la relation parbolique d'un crayon qui tombe (par exemple). C'est donc une utlisation physique de la mécanique classique pour faire des calculs.
+\end{tcolorbox}
+
+
+\section*{Jeux classiques et quantiques}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{situation}
+    \caption{situation}
+    \label{fig:situation}
+\end{figure}
+
+Les trois participants se font soit poser la question x ou y. Ils répondent par 1 ou -1. La multiplication des trois réponse doit donner -1. 
+
+
+Les trois participants doivent préparer un qbits dans GHZ
+
+$$\ket{GHZ} = \frac{\ket{000}-\ket{111}}{\sqrt{2}} $$ 
+
+quand on a la question X, on mesure $\sigma_x$, idem pour $y$  
+
+On a que 
+$$\ket{0} = \frac{\ket{+}+\ket{-}}{\sqrt{2}} \quad \ket{1}= \frac{\ket{+}-\ket{-}}{\sqrt{2}} $$ 
+
+
+En exprimant les état $\ket{000} = \ket{0}\ket{0}\ket{0}$ et $\ket{111}=\ket{1}\ket{1}\ket{1}$ dans les base $ \{ \ket{+}, \ket{-} \}$  et faisant la multiplication au long, on trouve que $\ket{GHZ} = \frac{1}{2} \left( \ket{++-} + \ket{+-+} + \ket{-++} \right) $. Donc, dans tout les cas la mutiplication donne -1
+
+
+
+\end{document}
