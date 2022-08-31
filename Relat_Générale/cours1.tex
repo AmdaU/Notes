@@ -1,0 +1,118 @@
+\input{../parameters}
+\begin{document}
+
+{\Huge Relativité générale}
+
+\section*{Rappels sur la relativité restrainte (vecteurs et tenseurs)}
+
+* On prend comme exemple une espace euclidien de dimension 2 mais la théorie est générale
+
+
+$$\vb{A} = A^{1}\vb{e}_2 + A^{2}\vb{e}_2 + A^3\vb{e}_3 = A^{i}\vb{e}_i$$ 
+
+les $A^{i}$ sont les composantes \textit{contravariantes } 
+
+
+Changement de base: $\left\{ \vb{e}_1, \vb{e}_2, \vb{e}_3 \right\} $  
+
+$$\vb{e}_i = \Lambda_{i}^{j} \vb{e}_j' = \Lambda_i^{1}\vb{e}_1' + A_i^{2}\vb{e}_2' +A_i^{3}\vb{e}_3' $$ 
+
+$$\vb{e}_i' = (\Lambda^{-1})_i^{j}\vb{e}_j$$ 
+
+$$\vb{A} = A^j\vb{e}_j = \underbrace{A^{j}\Lambda_j^{i}}_{A^{i\prime}}e_i' $$ 
+
+$$\boxed{A'i = \Lambda_j^{i}A^{j}}$$ 
+
+\subsection*{Base duale}
+
+
+ayant une base $B$ On peut définir une base duale $\tilde B = \left\{ \vb{e}^1, \vb{e}^2, \vb{e}^3 \right\} | \vb{e}^i \cdot \vb{e}^j = \delta^i_j  $  
+
+$$\vb{A} = \underbrace{A^{i}}_{contravariante} \vb{e}_i = \underbrace{A_j}_{covariantes}  \vb{e}^j$$ 
+
+
+$$\vb{A} \cdot \vb{e}^i = A^i$$ 
+$$\vb{A} \cdot \vb{e}_i = A_i $$ 
+
+
+On veut démontrer que $\vb{e}^{\prime i} = A_{j}^{i} \vb{e}^j $ 
+
+
+\underline{Tenseurs:} 
+
+
+base : $\vb{e}_i \otimes \vb{e}_j$
+
+$$\vb{T}= T^{ij}\vb{e}_j \otimes \vb{e}_j$$
+
+Il y a des représentation covarientes contravarites et mixtes au tenseurs.
+
+
+$$T^{\prime ij}  = \Lambda_k^{i}\Lambda_l^{j}T^{kl}$$ 
+$$T_j^{\prime i} = \Lambda_k^{i} (\Lambda^{-1})_j^{l}T_l^k$$ 
+
+
+$$T_i^{i} = tr(T) = \cdot =tr (T') $$ 
+
+
+\subsection*{Tenseur Métrique}
+
+
+$$\vb{e}_i = g_{ij} \vb{e}^j \iff \vb{e}_i \cdot \vb{e}_j = g_{ik} \underbrace{\vb{e}^k \cdot \vb{e}_j}_{\delta_j^k}= g_ij $$ 
+
+de même: $$\vb{e}^i \cdot \vb{e}^j = g^{ij}\vb{e}^j$$ 
+
+$$\vb{A} \vb{B} = A^{i}\vb{e}_i B^{j}\vb{e}_j = g_{ij} A^{i}B^i$$ 
+
+$$A^{i}=\vb{A}\vb{e}^i = \vb{A} \cdot  (g^{ij}\vb{e}_j) = g^{ij}A_j$$ 
+
+
+\begin{tcolorbox}[title=]
+	 $$A^{i}= g^{ij}A_j$$ 
+	 $$A_i = g_{iij} A^j$$ 
+$$g_{ik} g^{kj}= \delta_i^{j}$$ 
+\end{tcolorbox}
+
+\section*{Espace-Temps (1908)}
+
+Un concept définis par Minkowski après avoir lu les papier de Einstein de 1905. Ce dernier n'aimait pas du tout ce concept. 
+
+\begin{tcolorbox}[title=Quadrivecteur]
+$$x^{i}= (ct, x, y, z)$$ 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=Transformation de Lorentz]
+$$x^{\prime{}i} = \Lambda_j^{i} x^j$$
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Intervalle]
+$$	S^{2}= \cancelto{1}{c^2}t^{2}- x^{2}-y^{2}-z^2$$ 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=unitées Géométriques]
+	$$G= 1 \qquad c= 1$$ 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=Transformation de Lorentz]
+	 $$\Lambda^{T}g\Lambda =g$$ 
+\end{tcolorbox}
+
+On a 16 variables dans une matrice 4x4. On a une contrainte sur 10 d'entres elles. Il reste donc 6 degrés de libertés. Celles ci représente l'alignement des axes et la vitesse.
+
+\underline{Rapidité} 
+
+
+$$\tanh{\psi} = v$$
+
+$$\Lambda = \cols{-x\sinh{\psi} & t\cosh{\psi} &0 &0\\x\cosh\psi &- t\sinh\psi & 0 &0\\ 0 & 0 &1 &0 \\ 0& 0 &0 &1}$$ 
+
+\underline{Quadrigradient} 
+
+$$\partial_i = \pdv{x^i}$$
+
+$$\boxed{\partial_{i'} = (\Lambda^{-1})_i^{j}}$$ 
+
+\end{document}
