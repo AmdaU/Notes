@@ -1,0 +1,164 @@
+\input{../parameters}
+\begin{document}
+
+\underline{{ \Huge Photonique et optique quantique}} 
+
+
+2022-08-31
+
+\begin{tcolorbox}[title=Références]
+\begin{itemize}
+	\item D. Steck : quantum optics note
+	\item G. Milbur : Quantum optics
+	\item Aspect Fabres: Introduction to Quantum Optics
+\end{itemize}
+	 
+\end{tcolorbox}
+
+\section*{Contenu du cours}
+
+\begin{itemize}
+	\item Interaction lumière-matière
+	\item Les degrées de liberté internes
+		\begin{itemize}
+			\item LASER
+			\item \underline{LDOS} local density of optical states
+			\item Source de photon unique (cryptographie quantique)
+		\end{itemize}
+	\item Propriété des émetteurs à deux niveaux
+		\begin{itemize}
+			\item matière classique
+		\end{itemize}
+	\item effet d'optique non-linéaire.
+		\begin{itemize}
+			\item SPDC (source de pair de photons)
+		\end{itemize}
+	\item Effet mecaniques
+		\begin{itemize}
+			\item Refroidissement doppler	
+			\item Pince optique
+			\item optomécanique
+		\end{itemize}
+\end{itemize}
+
+\section*{Table des Matière}
+
+\bf{Chapitre 1}: Physique des LASER
+
+\bf{Chapitre 2}: émetteurs à 2 niveaux
+
+Chapitre 3: Source de photon unique
+
+Chapitre 4: Cryptographique quantique et clef quantique
+
+Chapitre 5: Modèle de Jaynes-Cummings et mesure dispersive
+
+Chapitre 6: Mesure quantique et non démolition (QND)
+
+Chapitre 7: Optomécanique
+
+
+\section{Physique des LASER}
+
+
+\subsection{Histoire}
+
+L'emission des atomes est introduit en 1926 en s'inspirant de la radioactivité. 
+
+$$\frac{d {N_k}}{d {t}} = - A_k N_k$$
+
+$$N_k(t) = N_k(u) e^{-A_k t}$$ 
+
+
+On s'imagine le sytéme a deux niveau (atome) comme pouvant soit se désexiter ou pas avec 50\% de chance après une temps $\Delta t$. Ce modèle mène directement à la décroissance exponentielle.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{probabilites}
+    \caption{probabilites}
+    \label{fig:probabilites}
+\end{figure}
+
+L'état 1 est l'état desecité et comprende $n_1$ atomes, similaire pour $E_2$  
+
+Processus d'absorption
+
+$$\pdv{n_{2}{t}} = +I_j B_{12} n_1$$ 
+
+$B_{12} $ Coefficient de Einstein 
+$$I_v = \frac{1}{4\pi} \iint i_{V(k')} \dd k' \underbrace{\psi(\nu)}_{\text{chevauchement frequence phot et at} } \dd\nu$$ 
+
+
+Taux d'absorption doit dépendre des photons incidents (densité, mode, fréquence)
+
+$$\dv{n_{2}}{t} = -A_{21} n_2 + I_{\nu} B_{12} n_1$$ 
+$$\dv{n_2 }{t} = A_{21} n_2 - U\nu B_{12} n_1$$ 
+
+$A,B$ sont des constantes 
+
+Que ce passe-t-il à l'équilibre thermodynamique local.
+
+État stationnaire $$\frac{d {n_2}}{d {t}} = - \frac{d {n_2}}{d {t}} =0$$ 
+
+Éqilibre thermodynamique: $$\frac{n_2}{n_1} = \frac{g_2}{g_1} e^{-\frac{E_2-E_1}{kT} }$$ 
+
+
+\underline{Rayonnement du corps noir} 
+
+$$I_{\nu} = \frac{2h\nu^{3}}{c^{2}} \frac{1}{e^{h\mu/kT}-1}  $$ 
+
+$$A_{21} n_2 + I_{\nu} B_{12} n_1 =0 \iff \frac{n_2}{n_1} \frac{A_{21}}{ B_{12}} = I_{\nu} $$ 
+
+$$\implies \frac{g_1}{g_2} e^{\Delta E/ kT } \frac{A_{21}}{B_{12}} = \frac{2\hbar\nu^{3}}{c^2} \frac{1}{e^{\hbar\nu/kT} -1} $$ 
+
+Ce résultat n'a aucun sens. Le problème est qu'il manque l'émission stimulée. 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{emission-stimulée}
+    \caption{emission stimulée}
+    \label{fig:emission-stimulée}
+\end{figure}
+
+Nouvelle équation
+$$ - A_{21} n_2 + I_{\nu} B_{12} n_1 -I_{\nu} B_{21} n_2$$ 
+
+Équilibre thermodynamique local
+
+$$A_{21} n_2 = I_{\nu} B_{12} n_1 - I+\nu B_{21} N_2 \iff I_{\nu} = \frac{A_{21} n_{2}}{{B_12} n_1 -B_{21} n_{2}}= \frac{A_{21}}{B_{12}} \frac{1}{\frac{n_1}{n_2} - \frac{B_{12}}{B_{21}} }  $$ 
+
+$$\frac{n_2}{n_1} = \frac{g_2}{g_1} e^{-\Delta E /kT}$$ 
+
+$$\frac{A_{21}}{B_{12}} \frac{1}{\frac{g_1}{g_2} e^{-\Delta/ kt} - \frac{B_{21} }{b_12} }  = \frac{2(\Delta{}E)^3}{h^2c^2} \frac{1}{e^{\Delta E/kt}-1} $$ 
+
+
+Puisque c'est vrai pour toute température, on doit avoir que $$g_2 B_{21} = g_1 B_{12} $$ 
+
+On peut écrire 
+
+$$\pdv{n_{2}{t}} = -A_{21} n_2 + I_{\nu} B_{21} \Delta n$$
+
+Si $\Delta n > 0$ on a pas que des perte et on peut avoir un laser. On appelle ça une inversion des population. 
+\setcounter{subsection}{4}
+
+\subsection{Équation de taux et inversion de population}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{bop}
+    \caption{bop}
+    \label{fig:bop}
+\end{figure}
+
+
+On prende $$g_1 = g_2 \implies B_{21} = B_{12} =B$$ 
+
+$$pdv{n_{2}}{{t}} = A_{21} n_2 - I_{\mu} B \Delta n$$ 
+
+\underline{Inversion de population:} $n_2 > n_1 \quad (\Delta n > 0)$  
+
+On s'intéresse au nombre de photons stimulés
+
+
+\end{document}
