@@ -1,0 +1,177 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-02
+
+\section*{Emission spontanée + Absorbtion + Émission spontannées}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{rebop}
+    \caption{rebop}
+    \label{fig:rebop}
+\end{figure}
+
+$$\dv{n_{2}{t}} = -A_{21} n_2 -I_{\nu} B_{12} \Delta n$$ 
+
+\setcounter{subsection}{4}
+\setcounter{section}{1}
+
+\subsection{Inversion de population}
+    
+Comment obtenir $\Delta n >0$ 
+
+Equilibre thermodynamique local : $n_2 = e^{-\Delta E /kT}n_1 \leq n_1 \implies \Delta n \leq 0$ 
+
+État stationnaire: $n_2 = \frac{Bh\nu{}n_{p}{A_{21}+Bh\nu} n_p}  n_1 < n_1 \implies \Delta n \leq 0$  
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagramme-énérgétique-typique-d'un-laser}
+    \caption{Diagramme énérgétique typique d'un laser}
+    \label{fig:diagramme-énérgétique-typique-d'un-laser}
+\end{figure}
+
+On veut une cavité qui correspond au mode du photo $\gamma_{21}$ pour que les photons resent  et maximisent le processus d'émission spontané.
+
+
+
+\begin{align*}
+    \dv{n_{3}{t}} &= \gamma_{\omega} \left( n_0 -n_3 \right) -\gamma_{32} n3\\ \dv{n_{2}{t}} &= \gamma_{32} n_3 - \gamma_{31} n_2 + Bh \nu n_p (n_1 - n_2 ) \\ \dv{n_1 }{t} &= \gamma_{21} n_2 -\gamma_{10} n_1 - B h\nu n_p (n_1 -n_2 )\\ \dv{n_0 }{t} &= \gamma_{10} n_1 - \gamma_{\omega} (n_0 -n_3)
+\end{align*}
+
+
+\section{Émetteurs à deux niveaux}
+
+\begin{tcolorbox}[title=Objectifs]
+    \begin{itemize}
+     \item Montrer comment certains modèles classiques peuvent donner des predictions exacte dans l'interaction atom/lumière (dans certaines limites)
+         \begin{itemize}
+             \item Indice de réfraction (nuage d'atome)
+                \item radiation d'un atome
+                \item effets mécaniques de la lumière
+                \item refroidissement d'atome (ralentire le centre de masse)
+                \item (Emission collective)
+         \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+
+
+
+\subsection{Oscillateur harmonique}
+
+$$m \ddot x + m\omega_0^{2}x=0 $$ 
+
+$$ m = \frac{m_{e} m_n }{n_e + m_{n}} \approx n_e  $$ 
+
+$$\vb{E}(r,t) = \vb{E}^+ (\vb{r}) e^{i\omega t} + \vb{E}(\vb{r}) e^{-i\omega t} \qquad \vb{E}^+ = \left( \vb{E}^- \right)^*  $$ 
+
+
+$$m \ddot x + m\omega_0^{2}x=q \vb{E}(\vb{r},t) $$ 
+
+$$\dotsb$$ 
+
+$$\boxed{x_0^{+}= \frac{eE^+/m}{\omega^{2}-\omega_0^{2}} }$$ 
+
+Moment dipolaire élécrique
+
+$$d \sim 1 \text{[e \AA]} $$ 
+
+$$\vb{d}^+ = -ex^+$$ 
+$$ = -\frac{e^{2}}{m} \frac{E^+}{\omega^2-\omega_0^2} $$ 
+
+
+La desnité de polarisation est donc $$\vb{P} = N d^{+}= \hat\epsilon \frac{Ne^{2}}{m} \frac{\vb{E}_0^+}{\omega_0^2} e^{-i \omega t} $$ 
+
+$$\chi = \frac{\vb{P}}{\vb{E}} = \frac{Ne^{2}}{m} \frac{1}{\omega_0^{2}- \omega^2} = \frac{N}{\epsilon_0} \alpha(\omega)$$ 
+
+\subsection{Modèle de Loretz}
+
+On ajoute de la dissipation
+
+$$x_0^{+}= \frac{e}{m} \frac{E_0^{+}}{\omega^{2}-\omega_0^{2}+i\gamma\omega} $$ 
+
+$$\alpha(\omega) = \frac{e^{2}}{m} \frac{1}{\omega_0^{2}-\omega^{2}-i\gamma\omega} $$ 
+
+
+indice de réfraction : $$\tilde n (\oemga) = \sqrt{1 +\chi(\omega)} \approx 1 + \frac{\chi(\omega)}{2}$$ 
+
+$$\tilde n (\omega = 1 + \frac{Ne^{2}}{2m\epsilon_0} \frac{(\omega_0 -\omega)}{\left( \omega_0^{2}-\omega^2 \right)^2 +\gamma^2\omega^2} +i \frac{Ne^{2}}{2m\epsilon_0} \frac{\gamma \omega}{\left( \omega_0^{2}-\omega^2 \right) + \gamma^2\omega^2} $$ 
+
+
+coefficient d'absorption $a(\omega)$ : $$\dv{I}{z} = -a(\omega)I$$  
+$$a(\omega) \equiv 2k_0 \Im \left[ \tilde n (\omega) \right] $$ 
+$$n (\omega) \equiv \Re \left[ \tilde n (\omega) \right] $$ 
+
+\underline{retard de phase} 
+
+$$\delta = tan^{-1} \left( \frac{\gamma\omega}{\omega_0^{2}-\omega^2}  \right) $$ 
+
+\begin{tcolorbox}[title=]
+    Le modèle de Lorentz et valide à \texit{à basse puissance} 
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{indice-de-réfraction-complexe}
+    \caption{indice de réfraction complexe}
+    \label{fig:indice-de-réfraction-complexe}
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{delta}
+    \caption{delta}
+    \label{fig:delta}
+\end{figure}
+\clearpage
+
+
+
+\pagebreak
+
+\subsection{Limite de l'approche classique}
+
+Reproduit beaucoup d'effets à faible intensité.
+
+
+Le coefficient d'absorption correct?
+
+
+$$a(\omega) = \sigma(\omega) N$$ 
+
+
+$$\sigma_c = \eval{\frac{e^2}{m\epsilon_0 c\gamma}}_{\omega=\omega_0}  $$ 
+
+
+Avec un traitement quantique, on obtiens
+
+$$\sigma_q = \frac{2\pi{}c^{2}}{\omega_{12}^{2}} $$ 
+
+Définissons un terme de correction $$f_{12} = \frac{\sigma_{q}}{\sigma_{c}} =  \dotsb \frac{g_2}{g_1}  $$ 
+
+
+Pour des amplitude très faibles, on trouve le comportement de l'oscillateur harmonique 
+
+$$\chi (\omega) \to - \frac{N e^2}{m \epsilon_0 \omega^{0}} \implies \sum_{i} f_{1i} = 1 $$ 
+
+\textit{fudge factor}
+
+
+\subsection{Modèle quantique}
+
+
+Modèle simple de l'atome + approche pertubatice pour calculer la probabilité de transition $1 \to 2$ 
+
+Entrevoir les oscillations de Rabi
+
+
+
+
+
+\end{document}
