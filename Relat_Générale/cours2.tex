@@ -1,0 +1,145 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-02
+
+\section*{Espace-temps}
+
+\begin{figure}[H!]
+    \centering
+    \incfig{espace-temps}
+    \caption{Espace-temps}
+    \label{fig:espace-temps}
+\end{figure}
+
+
+\begin{figure}[H!]
+    \centering
+    \incfig{minkowski-2d}
+    \caption{Minkowski 2D}
+    \label{fig:minkowski-2d}
+\end{figure}
+
+
+$$\dd s^{2}= g_{ij} \dd x^{i}\dd x^{j}= \dd \tau^{2}$$ 
+
+\begin{tcolorbox}[title=Temps propre]
+	 Temps qui s'écoule dans le référentielle de l'objet $$\implies x(\tau)$$ 
+\end{tcolorbox}
+
+Si on connais $x^{i} (t)$, alors que vaut le temps propre?
+
+\begin{align*}
+	d\tau &= \sqrt{g_{ij} \dd x^{i}\dd x^{j}}\\
+				&= \sqrt{\dd t^{2}- \dd \vb{r}^2 }\\
+        &= \dd t \sqrt{1 - \qty(\pdv{\vb{r}}{t})^2}\\
+    &= \dd t \sqrt{1 -\vb{v}^2}\\
+    &= \frac{\dd t}{\gamma} 
+\end{align*} 
+
+\section*{Action}
+
+
+$$S = -m \int_{A}^{B}\dd \tau = -m \int_{A}^{B}\dd t \sqrt{1 -\vb{v}^2}$$ 
+$$\approx -m \int_{A}^{B}\dd t \left( 1- \frac{1}{2} \vb{v} \right) $$ 
+$$= -m \int_{A}^{B}\dd t \frac{1}{2} m \vb{v}^2$$ 
+
+\underline{Lagrangien:}
+
+$$L = -m \sqrt{1-\vb{v}^2} $$ 
+
+$$\vb{p} = \pdv{L}{\vb{v}} = \frac{m\vb{v}}{\sqrt{1-\vb{v}^2}} $$ 
+
+\underline{Hamiltonien} 
+
+$$\vb{p}\cdot \vb{v}=L = H$$ 
+
+
+\underline{Hamiltonien} 
+
+
+\begin{align*}
+    H &= \vb{p}\cdot \vb{v}-L = \vb{p}\cdot \vb{v}+m\sqrt{1-\vb{v}^2}\\ &= \frac{m}{\sqrt{1-\vb{v}^2}} \left\{ \vb{v}^2 +1 - \vb{v}^2 \right\}\\ &= \frac{m}{\sqrt{1-\vb{v}^2}}\\ &= \sqrt{\vb{p}^2 +m^2} 
+\end{align*}
+
+$$H^{2}= \frac{m^{2}}{1-\vb{v}^2} \quad \vb{p}^2 =\frac{m^2v^{2}}{1-\vb{v}^2}  $$ 
+
+
+\section*{Éléctromagnétisme}
+
+\underline{4-vecteur potentiel:}
+
+$$A^i = (\Phi, \vb{A}), \quad A_i = (\Phi, -\vb{A})$$ 
+
+
+$$S = \underbrace{S_0 }_{ -m\int \dd \tau  } - e \int_{A}^{B} \underbrace{A_i \dd x^i}_{\text{invarient} } (\vb{E}^2 - \vb{B}^2)  $$ 
+
+
+\begin{tcolorbox}[title=Tensuer de Faraday  ]
+    $$F_{ij} = \partail_i A_j - \partial_j A_i $$ 
+    $$F^i_i =0 \quad F_{ij} F^{ij} \text{: invarient} $$ 
+    $$\vb{E}= - \vb{v}A_0 - \pdv{\vb{A}}{t} \quad \vb{B} = \grad \times \vb{A}$$ 
+\end{tcolorbox}
+
+
+$\to$ principe de moindre action: 
+
+$$\boxed{ m\ddot x^i  = e F_j^{i} \dot x^{2}}$$ 
+
+$$\boxed{m \dot u^{i}=eF_j^{i}u^{j}}$$ 
+
+
+\section*{Chapitre 2: géométrie différentielle}
+
+\begin{tcolorbox}[title=Théorème du plongement]
+    Nash
+    
+    Ne vaut que pour des espace euclidien (pas pour l'espace-temps donc) mais le théorème se généralise
+
+    On définit un point $\vb{x} \in \mathbb{R}^{3} $ comme un point de la surface. Où $\mathbb{R}^{3} $ est \textit{l'espace hôte}  
+
+    $$\vb{X} (x^{i})  \quad i \in \{1,\dotsb, d\} $$ 
+
+    Par exemple, la sphère: $$\vb{X}= (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$
+    $$x^{1}=\theta \quad x^{2}=\phi$$ 
+
+    {\bf{Il n'existe pas de vecteur position}}
+     
+    Il est impossible en général de représenter un variété différentiel avec une seule \texit{carte}
+
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{atlas}
+    \caption{Atlas}
+    \label{fig:atlas}
+\end{figure}
+
+\begin{tcolorbox}[title=Espace tangeant]
+    $$\vb{e}_i = \pdv{\vb{X}}{x^{i}} = \pdv{\vb{X}}{x^{\prime{}j}} \pdv{x^{\prime{}j}}{x^i} =\vb{e}'_j \underbrace{\pdv{x^{\prime{}j}}{x^i}}_{\Lambda^j}   $$ 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Truc mémotechnique]
+     Quand on divise par un indice inferieur il deviens suppérieur et inversement
+\end{tcolorbox}
+
+tenseur métrique
+
+$$g_{ij} = \vb{e}_i \cdot \vb{e}_j = \pdv{\vb{X}}{x^i} \cdot \pdv{\vb{X}}{x^j} = \partial_i \vb{X} \cdot \partial_j \vb{X}$$ 
+
+
+$$\dd s^{2}= \dd \vb{X}\dd \vb{X} = \left( \partial_i \vb{X} \dd x^i \right) \cdot \left( \partial_j \vb{X} \dd x^{j} \right) = g_{ij} \dd x^{i}\dd x_j = g_{ij} (x) \dd x^{1}\dd x^2 $$ 
+
+fonction: $\phi(x)$ 
+
+$$\partial_{i\phi} = \pdv{\phi}{x^i} $$ 
+
+$$\partial'_i = \pdv{\phi}{x^{\prime{}i}} = \dotsb$$ 
+
+$$\partial_i \phi = \partial'_j \phi \pdv{x^{\prime{}j}}{x^i} $$ 
+(vecteur covarient)
+
+
+
+\end{document}
