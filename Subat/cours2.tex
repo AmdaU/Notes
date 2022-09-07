@@ -1,0 +1,155 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Action je crois}
+
+
+
+$$ S = \int_{t_{i}}^{t_{f}} \dd t \frac{1}{2} m \vb{v}^2 (T) \quad \text{non-relativiste} $$ 
+
+
+
+$$\to -m \int_{A}^{V}\dd \tau = -m \int_{A}^{B}\dd t \sqrt{1 - \vb{v}^2} = -m \int_{A}^{B}\dd t \{ 1 - \frac{1}{2} \vb{v}^ + \frac{12}{\vb{v}^2} - \dotsb \}  = -m(t_B -T_a ) + \frac{1}{2} \int_{A}^{B}\dd \tau m \vb{v}^2 - \dotsb$$ 
+
+
+$L=-m \sqrt{1-\vb{v}^2}$ 
+
+$$\vb{p}= \pdv{L}{\vb{v}} = \frac{m\vb{v}}{\sqrt{1-\vb{v}^2} } $$ 
+$$H = \vb{p} \dd \vb{v} - L = \frac{m\vb{v}^2}{\sqrt{1-v^2}}+ m\sqrt{1-v^2}= \frac{m}{\sqrt{1-\vb{v}^2}  } = \sqrt{\vb{p}^2 + m^2} $$ 
+
+
+\underline{4-impulsion} 
+
+$p^{\mu}= \left( E, \vb{p} \right) = m u^\mu $ 
+
+$$u^{\mu}= \dv{x^{\mu}}{\tau} = \left( \dv{t}{\tau} , \dv{\vb{r}}{\tau}  \right)  = \left( \frac{1}{\sqrt{1-v^2}} , \frac{\vb{v}}{\sqrt{1-v^2}}  \right) $$ 
+
+
+Invarient associé au quadri-vecteur
+
+$$p^{\mu}p_{mu} = p^{2}= E^{2}- \vb{p}^2 = m^{2} \cancelto{1}{u^2} = m^2$$ 
+$$p^{2}=m^2$$ 
+
+$$\vb{v} = \frac{\vb{p}}{E}$$ 
+
+masse nulle $\to$ $p^{2}=0 \to T = \abs{\vb{p}} $  
+
+
+$$p_{\pi} = (m_{\pi} , \vb{0})$$ 
+$$p_{\pi} = p_{\mu} + p_\nu$$ 
+
+$p_{\nu} = p_{\pi} - p_{\mu} $ 
+
+$$p_{\nu}^{2}= p_{\pi}^2+p_{\mu}^{2} - 2 p_{\pi} p_{\mu} $$ 
+
+$$0 = m_{\pi}^{2}+m_{\mu}^{2}-2m_{\pi} E_\mu$$ 
+
+$$E_{\mu} = \frac{m_{\pi}^2+m_{\mu}^2}{2 m_\pi} $$ 
+
+$$E_{nu} = m_{\pi}- E_{\mu} = \frac{m_{\pi}^{2}- m_{\mu}^2}{m_{\pi}} = \abs{\vb{p}_\nu} = \abs{\vb{p}_\nu }   $$ 
+
+$$\abs{\vb{v}_\mu}  = \frac{m_{\pi}^{2} - m_{\mu}^2}{m_{\pi}^{2}- m_{\mu}^2} $$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{photon-incident}
+    \caption{proton incident}
+    \label{fig:photon-incident}
+\end{figure}
+
+Énérgie de seuil? (Plus d'Énérgie cinétique à la fin)
+
+
+$$E = \sum_{i=3}^{N} m_i $$  
+
+$$p_1^{\mu} + p_2^{\mu}= \sum_{i=3}^{N} p_i^{\mu}$$ 
+
+$$\left( p_1^{\mu} + p_2^{\mu} \right)^2 = \left[ \sum_{i=3}^{N} p_i^{\mu} \right]^2 = \left( \sum_{i=3}^{N} m_i \right)^2  $$ 
+
+au \underline{seuil} $p_i = (m_{i}, \vb{0})$  
+
+$$E_p = \frac{M^2_{\text{tot}} - 2m_p^{2}}{2m_p} $$ 
+
+L'énérige requise va comme le carré des masses.
+
+
+
+\begin{tcolorbox}[title=Unités naturelles]
+    $$\hbar c = 197 \text{MeV$\cdot$fm}$$ 
+    
+    $$\frac{\hbar c}{m_e c^2} = \frac{197 {\rm MeV fm}}{0,511 {\rm MeV}} = 400 {\rm fm} \quad \text{longueur d'onde de Compton} $$  
+
+Constante de structure fine
+$$\alpha = \frac{e^{2}}{4\pi\hbar{}c} \sim \frac{1}{137} $$ 
+\begin{tcolorbox}[title=Heaviside-Lorentz]
+    $$\epsilon_0 =1 \qquad \mu_0 = 1$$ 
+     \end{tcolorbox}
+
+$$\frac{\alpha\hbar}{m_e c} = \frac{e^{2}}{4\pi m_e c^2} = \text{ rayon classique de l'éléctron}   $$ 
+
+$$\frac{\hbar}{m_{e{}}\alpha{}c} = \frac{4\pi\hbar c \hbar}{e^{2}m_e c} = \frac{4\pi\hbar^{2}}{m_e e^{2}} = \text{ rayon de bohr }     $$ 
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=onde plane]
+
+    $$\psi(\vb{r}) = \frac{1}{\sqrt{\nu}} e^{i \vb{p} \cdot \vb{r}}$$ 
+
+Condition au limite périodiques à l'univers (une boîte bien sûr)
+
+$$e^{i p_x L_{x}} = 1$$ 
+$$\vb{p} = 2\pi \left( \frac{n_x}{L_x} , \frac{n_y}{L_y} , \frac{n_z}{L_z}  \right) $$ 
+
+où $n \in \mathbb{Z}$ 
+
+$$\Delta p_x = \frac{2\pi}{L_x} \leftrightarrow \Delta n_x =1$$ 
+
+$$\Delta p_x \Delta p_{y} \Delta p_z = \frac{\left( 2\pi \right)^3}{L_x L_y L_{z}} = \frac{(2\pi)^3}{\nu}  $$ 
+
+$$\sum_{\vb{p}} f_{\vb{p}} = \nu \int \frac{ \dd  P}{(2\pi)^3} f_\vb{p} $$ 
+
+$$\bra{\vb{p}'}\ket{\vb{p}}= \delta_{\vb{p}\vb{p}'} \& \sum_{\vb{p}} \ket{\vb{p}}\bra{\vb{p}} = \mathds{1}$$ 
+
+$$\bra{\vb{r}}\ket{\vb{p}} = \frac{1}{\sqrt{\nu}} e^{i \vb{p} \cdot \vb{r}}$$ 
+
+$$\delta_{\vb{p}\vb{p}'} \to \frac{(2\pi)^3}{\nu} \delta(\vb{p}-\vb{p}') $$ 
+
+
+$$ \text{Normalisation continue} \begin{cases}
+ \bra{\vb{p}'} \ket{\vb{p}} = (2\pi)^3 \delta (\vb{p}-\vb{p}'')\\
+ \int \frac{ \dd^{3}P}{(2\pi)^3} \bra{\vb{p}}\ket{\vb{p}} = \mathds{1} 
+\end{cases}
+$$ 
+On a le problème que $ \dd^{3}P$ n'est pas invarient de Lorentz 
+
+
+$ \dd^{3}p \dd p^{0}$ en revanche l'est 
+
+$$ \dd^{3}\gamma \dd  t = \dd^{4}x = \dd ^4 x' $$ 
+Le Jacobien $$J=1$$ 
+
+$$\int \frac{ \dd ^3 P }{(2\pi)^3} \to \int \frac{ \dd ^4}{(2\pi)^3} \delta (p^2-m)\theta(p^0)  $$ 
+
+$$\int \frac{ \dd ^4 P }{(2\pi)^3} \delta \left( (p^{0}- E_{\vb{p}} ) (p^{0}+ E_{\vb{p}} )  \right) \Theta(p^0) $$ 
+
+\begin{tcolorbox}[title=]
+    $$E_{\vb{p}} = \sqrt{\vb{p}^2+m^{2}}$$ 
+    
+    $$\delta(\beta x) = \frac{1}{\abs{\beta}} \delta(x) $$  
+\end{tcolorbox}
+
+$$\int \frac{ \dd ^4 P}{(2\pi^3) 2E_p } \delta(p^{0}-E_p ) = \int \frac{ \dd ^3 P  }{(2\pi)^3 2 E_p }   $$ 
+$$ \text{Normalisation relativiste} 
+\text{} \begin{cases}
+    \int \frac{ \dd ^3 P}{(2\pi)^3 2 E_{p}} \bra{\vb{p}}\ket{\vb{p}} = \mathds{1}\\
+    \bra{\vb{p}}\ket{\vb{p}'} = 2E_{\vb{p}} \delta(\vb{p}-\vb{p}'(2\pi )^2)
+\end{cases}
+$$
+\end{tcolorbox}
+
+
+
+
+
+\end{document}
