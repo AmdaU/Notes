@@ -1,0 +1,252 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-06
+
+
+\setcounter{section}{1}
+\setcounter{subsection}{1}
+
+\underline{\subsection{Les États de Bells}} 
+
+Les états de Bell (aussi appelés états EPR) sont une base à deux qbits. Il représente les états intriquées.
+
+\begin{align*}
+	\begin{rcases}
+		\ket{\psi^{\pm}} &= \frac{1}{\sqrt{2}} \left( \ket{00} + \ket{11} \right) \\ \ket{\Psi^{\pm}} &= \frac{1}{\sqrt{2}} \left( \ket{ 01 } + \ket{10} \right)  
+	\end{rcases} \text{État propres de $X_A X_B$ et $Z_A Z_B$  } 
+\end{align*}
+
+\begin{tcolorbox}[title=Rappel]
+	$$\ket{0} = \frac{1}{\sqrt{2}} \left( \ket{+} + \ket{-} \right) \quad \ket{1} = \frac{1}{\sqrt{2}} \left( \ket{+} - \ket{-} \right) $$ 
+	(Ce sont donc des états propres de $\sigma_z$ )
+\end{tcolorbox}
+
+En effets, si je comprends bien $\ket{0}$ et $\ket{1}$ sont des états propres de $\sigma_z$ et $\ket{0} = \sigma_x \ket{1} = \sigma_x^{2}\ket{0}$, donc $\sigma_x$ ne fait que changer le signe de $\ket{\Psi}$ et $\ket{\Phi}$   
+	
+
+\begin{tcolorbox}[title=]
+	On peut qualifier les états de Bells par rapport à l'action de $XX$ et $ZZ$ $$\begin{matrix} ZZ\backslash XX & +1 & -1 \\ +1 & \ket{\Psi^+} & \ket{\Psi^-} \\ -1 & \ket{\Psi^+} & \ket{\Psi^-}
+	 	
+	 \end{matrix}$$ 
+\end{tcolorbox}
+
+
+Alice et Bob peuvent faire passer l'état d'un à l'aute en faisant un ou l'autre une mesure (transformation locale). Ex:
+
+$$\ket{\Phi^+} = X_A I_B \ket{\Psi^+} = I_A X_B \ket{\Psi^+}$$ 
+
+Les état de Bell, étant des états intriqués, ne peuvent pas s'écrire comme le produit tensoriel de deux états.
+
+L'information contenue dans les états de Bell est contenue dans l'intrication et non dans l'état des qbits individuellement. 
+
+
+$$\bra{\Phi^+} Z_a \ket{\Phi^+} =\bra{\Phi^-} \ket{\Phi^-} =0$$ 
+$$\bra{\Phi^+} X_a \ket{\Phi^+} =\bra{\Phi^-} \ket{\Psi^+} =0$$ 
+$$\bra{\Psi^+} Y_A \ket{\Psi^+} =0$$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{bell-bloch-boule}
+    \caption{Bell bloch boule}
+    \label{fig:bell-bloch-boule}
+\end{figure}
+
+(les valeurs de X,Y et Z sont complètement aléatoires...)
+
+On ne peut pas assigner d'état pur à l'état du qbit d'Alice (ou Bob). On a besoin d'une matrice densité ( $\rho$  )
+
+\subsection{Encodage dense}
+
+A veut envoyer un message à B. Les deux sont liés par un canal quantique.
+
+A envoie à B un qbit.
+Dans ce sénario, un seul bit peut être envoyé. A priori Bob ne connais pas la base dans lequel le qbit est encodé
+
+Dans ce sénario on obtiens qu'un bit \textcolor{red}{meme pas non?}
+
+Peut-on faire mieux si on prend en compte de l'inrication?
+
+
+On suppose que Bob et Alice se partage un état de Bell ( $\ket{\Psi^+}$  ). (Chacun un qbits)
+
+Alice applique une transformation sur son qbits (qui est dans un état de bell). Si elle veut envoyer (00) , elle va appliquer $\mathds{1}$ à $\ket{\Psi^+}$ . Si elle veut envoyer (10) $X_A \ket{\Psi^+}$. (01): $Z_a \ket{\Psi^+}$. (11): $Z_A X_A \ket{\Phi^+} = \ket{\Psi^-}$ 
+Alice envoie ensuite la moitié de sa paire à Bob.
+
+Bob peut ensuite mesurer les qbits dans la base de la paire et obtenir 2 bits d'information.
+
+L'information a le bonus d'être encrypté. Si on intercepte le 2eme qbits seulement, il ne gagne aucune information.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{canal-quantique}
+    \caption{canal quantique}
+    \label{fig:canal-quantique}
+\end{figure}
+
+$$\boxed{e + q \geq 2c}$$ 
+
+\subsection{Cryptographie Quantique (Elert ''91, Bennet, Brassard '84)}
+
+Cryptographique classique: $\{ 0,1 \} \mathbb{Z}_2$ 
+
+$$\oplus \text{: addition }\mod 2 \qquad \abs{\otimes}=0 \qquad 2b = 0$$ 
+
+\underline{One-time pad} 
+
+Si A et B partagent une chaîne de bits aléatoires secrète (une clé $c \in \mathbb{Z}_2^n $ ), ils peuvent échanger un message indéchiffrable 
+
+A:
+
+$\vb{c}= (c_1 , c_2 , \dotsb , c_n )$ $\otimes$ $\vb{I} = (i_1 , i_{2}, \dotsb i_n )$ $=$ $\vb{m}=(m_1 , m_2 , \dotsb m_n )$ 
+
+
+B:
+
+$\vb{m}=(m_1 , m_2 , \dotsb m_n )$ 
+\otimes 
+$\vb{c}= (c_1 , c_2 , \dotsb , c_n )$ 
+$=$
+$\vb{I} = (i_1 , i_{2}, \dotsb i_n )$
+
+Sans connaître la clef, le message $\vb{m}$ est totalement aléatoire et ne contiens donc aucune information.
+
+
+\underline{cryptographie quantique}
+
+Supposons que Alice et Bob partagent un grand nombre de $\ket{\Phi^+} = \frac{1}{\sqrt{2}} \left( \ket{00} + \ket{11} \right) $. Pour chaque paire, A et B mesurent aléatoirement $X$ ou $Z$.
+
+Il annoncent publiquement quel mesurent chacun a fait sur quel qbits mais pas le résultats qu'ils ont obtenus. Il gardent seulement les résultats des qbits pour lesquels ils ont fait la même mesure. Ils ont donc 100\% de corrlélation pour les résultats qu'ils gardent (les autres (ces avec des mesures différents) n'aurait pas été corrélé du tout). Les résultats qu'ils obtiennent forment donc une clef puisque A et B ont tout deux exactement la même chose et sont les seuls à l'avoir.
+
+
+\underline{Robustesse à une attaque de cette méthode}
+
+Ève aurait peu intéragir avec les états de Bell de sorte que les pairs soient aussi intriqué avec E. Elle aurait pu attendre l'annonce des mesures pour prendre les sienne et donc obtenir la clef aussi.
+
+De manière générale 
+
+$$\ket{\Gamma_{ABE}} = \ket{ 00 }_{AB} \otimes \ket{e_{00} }_E + \ket{ 01 }_{AB} \otimes \ket{e_{01}_e} + \ket{10}_{AB} \otimes \ket{e_{10} } + \ket{11}_{AB} \otimes \ket{e_{11} }_E  $$ 
+Supposons que $A$ et $B$ peuvent vérifier que $Z_A Z_B =1$, i.e. les corrélations sont parfaites dans le cas $ZZ$.
+
+$$\implies \ket{\Gamma_{ABE}} = \ket{00} \otimes \ket{e_{01} } + \ket{ 11 } \otimes \ket{e_{11} }$$ 
+
+idem pour $XX$
+
+$$\implies \ket{\Gamma_{ABE}} = \left( \ket{00} + \ket{11}  \right) \otimes \ket{e}$$ 
+
+Si $A$ et $B$ sont un état propre de $XX$ et $ZZ$, ils n'ont plus aucune intrication (corrélation) avec $E$
+
+$$\implies \text{la clef est secrete} $$ 
+
+\underline{Comment vérifier que les corrélations sont parfaites?}
+
+On peu sacrifier une partie de la clef. Ils publient une partie de leur résultat et vérifie s'il ont une correlation parfaite.
+
+Si elle l'est, la clef est sécuritaite, sinon les états on été traffiqués, il abandonnent. 
+
+
+Ils doivent décider de la portion à sacrifier après l'envoie afin que Eve n'evite pas sélectivement certaines paires.
+
+\underline{Distribution de clé BB84} 
+
+(résumé Ekart)
+\begin{itemize}
+    \item A prépare un état $\{ \ket{0} \}, \ket{ 1 }, \ket{+}, \ket{ 0 } $ et l'envoie à B.
+    \item Pour chaque qubit, B choisit une base au hasard et mesure dans cette base. 
+    \item A et B publient les bases choisies.
+    \item Les résultats aves les bases identiques constituent la clé
+\end{itemize}
+
+
+
+A mesure $Z$ $\to$ $\ket{00}$ ou $\ket{11}$    
+mesure $X$ $\to$ $\ket{++}$ ou $\ket{--}$    
+
+
+Chacun des ces cas est aléatoire avec 25\%.
+
+\underline{BB84} 
+A prépare $\ket{\Phi^+} = \frac{1}{\sqrt{2}} \left(  \ket{11} + \ket{ 00 } \right) = \frac{1}{\sqrt{2}} \left( \ket{ ++ } + \ket{--} \right)  $ 
+
+A envoie a B cet état
+
+A et B publient et comparent les choix de bases.<
+
+
+\underline{Avantage Ekert} 
+
+Basé sur intrication, test direct( inégalité de Bell ). Pas besoin de faire confiance au système
+
+\underline{Avantage BB84}: Pas besoin d'intrication donc plus facile à réalise.
+
+\begin{tcolorbox}[title=Différence entre Ève et l'environement]
+     Les deux sont très similaires. A vrai dire toute la discussion qu'on a eu jusqu'à maintenant est valide pour les deux. Par conte l'environement est toujours présent.
+
+Si les corrélation qu'on mesure sont fortes mais pas parfaites on peut faire de la correction d'erreur.
+\end{tcolorbox}
+
+\subsection{Théorème de non-clônage}
+
+Il est impossible de copier L,information quantique. (Utile de connaître cette contraite lorsqu'on pense aux algorithmes/protocols quantiques). Cette proprité découle directement de la \underline{linéarité} en MQ.
+
+On cherche une transformation unitaire $U$ telle que
+$$U \ket{\psi}\ket{0} = \ket{\Psi}\ket{\Psi}$$ 
+
+$$U \ket{00} = \ket{00}$$ 
+$$U \ket{10} = \ket{11}$$ 
+
+Appliquer $U$ sur un état général 
+
+$$U \ket{\psi} \ket{0} =u \left( \alpha \ket{0} + \beta \ket{1} \right) \ket{0}$$ 
+ $$= \alpha \ket{00} + \beta \ket{11} \neq \ket{\psi}\ket{\psi}$$ 
+
+
+ puisque $$\ket{\psi}\ket{\psi} = \left( \alpha \ket{0} + \beta \ket{1} \right)\left( \alpha \ket{0} + \beta \ket{1} \right) = \alpha^{2}\ket{00} + \alpha \beta \left( \ket{01} + \ket{10} \right) + \beta^{2}\ket{11} $$ 
+
+
+On peu \texit{copier} un état connu d'avance
+
+On peut aussi montrer cette proprité en utilisant le fait qu'une transformation uniraire préserve le recouvrement des fonction d'onde.
+
+Prenons $\ket{\psi}, \ket{\varphi}$ et appliquons une transformation unitaire
+
+$$\ket{\psi'}= V \ket{\psi} \quad \ket{\varphi'} = v \ket{\varphi}$$ 
+
+$$\bra{\psi}\ket{\varphi'} = \bra{\psi} V^{\dagger}V \ket{\varphi} = \bra{\psi} \ket{\varphi}$$ 
+
+
+Maintenat une opération qui copie agirait comme $U\ket{\psi 0} = \ket{\psi \psi} \quad U \ket{\varphi 0} = \ket{\varphi \varphi}$ \begin{align*}
+    \bra{\psi \psi} \ket{\varphi \varphi} = \bra{\psi} \ket{\varphi}^2 \quad \bra{\psi \psi} \ket{\varphi\varphi} = \bra{\psi 0} u^{\dagger}u \ket{\varphi 0} = \bra{\psi} \ket{\varphi} \bra{0}\ket{0} = \bra{psi} \ket{\varphi}
+\end{align*}
+
+En général $\bra{\psi}\ket{\varphi}^2 \neq \bra{\psi}\ket{\varphi}$ 
+
+
+$$\implies U \text{n'existe pas} $$ 
+
+\subsection{Téléportation quantique}
+
+On peut utiliser des ressources quantique pour faire de la communication classique. La téléportation c'est l'inverse.
+
+A veut envoyer un état $\ket{\psi}$ a B
+1) Elle connaît l'état: transmet 2 nombres réels ( $\geq 2c$  )
+2) Elle ne connaît pas l'état: Elle peut mesurer $\{  \ket{0}, \ket{ 1 } \} $ (ou dans tout autres base) et transmet le résultat de la mesure à B
+
+$$\bar F= \abs{\bra{\psi_{B}\ket{\psi_A}}}^{2} = \frac{2}{3}  $$ 
+
+C'est mieux qu'un état aléatoire où $ F = \frac{1}{\alpha} $ 
+
+
+\underline{Protocole de téléportation quantique} 
+
+Supossons que A et B partagent un état $\psi^+$
+
+\begin{figure}[ht]
+    \centering
+    \incfig{téléportation-quantique}
+    \caption{Téléportation quantique}
+    \label{fig:téléportation-quantique}
+\end{figure}
+
+\end{document}

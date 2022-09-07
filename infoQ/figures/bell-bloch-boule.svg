@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="bell-bloch-boule.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1044"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1040"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1036"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1032"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1028"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6250281"
+     inkscape:cx="469.41988"
+     inkscape:cy="256.08761"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       id="path787"
+       cx="115.76044"
+       cy="236.19749"
+       rx="35.539658"
+       ry="33.352016" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 80.220779,236.19749 c 8.953853,9.8957 22.194381,15.77146 35.539661,15.77146 13.34527,0 26.5858,-5.87576 35.53965,-15.77146"
+       id="path1026"
+       inkscape:path-effect="#path-effect1028"
+       inkscape:original-d="m 80.220779,236.19749 c 11.846817,5.25742 23.693371,10.51457 35.539661,15.77146 11.84628,5.25688 23.69337,-10.51404 35.53965,-15.77146" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:0.90000004,0.90000004;stroke-dashoffset:0"
+       d="m 80.220779,236.19749 c 10.580037,-6.63784 23.049741,-10.2257 35.539661,-10.2257 12.48992,0 24.95962,3.58786 35.53965,10.2257"
+       id="path1030"
+       inkscape:path-effect="#path-effect1032"
+       inkscape:original-d="m 80.220779,236.19749 c 11.846817,-3.4083 23.693371,-6.81687 35.539661,-10.2257 11.84628,-3.40883 23.69336,6.8174 35.53965,10.2257" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 115.76044,202.84548 v 66.70403"
+       id="path1034"
+       inkscape:path-effect="#path-effect1036"
+       inkscape:original-d="m 115.76044,202.84548 c 2.6e-4,22.23494 2.6e-4,44.46962 0,66.70403" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 80.220779,236.19749 H 151.30009"
+       id="path1038"
+       inkscape:path-effect="#path-effect1040"
+       inkscape:original-d="m 80.220779,236.19749 c 23.693371,2.6e-4 47.386471,2.6e-4 71.079311,0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 127.07762,226.94872 99.990975,249.24175"
+       id="path1042"
+       inkscape:path-effect="#path-effect1044"
+       inkscape:original-d="M 127.07762,226.94872 C 118.049,234.38 109.02012,241.811 99.990975,249.24175" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       x="113.5343"
+       y="197.03934"
+       id="text1100"><tspan
+         sodipodi:role="line"
+         id="tspan1098"
+         style="stroke-width:0.3"
+         x="113.5343"
+         y="197.03934">Z</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       x="158.44035"
+       y="238.09523"
+       id="text1104"><tspan
+         sodipodi:role="line"
+         id="tspan1102"
+         style="stroke-width:0.3"
+         x="158.44035"
+         y="238.09523">X</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-dashoffset:0"
+       x="95.740906"
+       y="253.07089"
+       id="text1158"><tspan
+         sodipodi:role="line"
+         id="tspan1156"
+         style="stroke-width:0.3"
+         x="95.740906"
+         y="253.07089">Y</tspan></text>
+    <ellipse
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.103105;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path1162"
+       cx="115.76044"
+       cy="236.19749"
+       rx="1.370124"
+       ry="1.4164133" />
+  </g>
+</svg>
