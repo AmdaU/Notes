@@ -1,0 +1,135 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-07
+
+\section*{Transport parallèle}
+
+Le concept de transport parallèle permet de comparer des vecteurs qui sont définis à des points différents (qui viennent de différents espaces tangents). 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{transport-parallèle}
+    \caption{transport parallèle}
+    \label{fig:transport-parallèle}
+\end{figure}
+
+$$A_i (x) = \vb{A}(x)\cdot \vb{e}_i(x)$$ 
+
+\begin{align*}
+	A_i + \partial A_i &= \vb{A}(x)\cdot \vb{e}_i (x+ \dd  x) \\
+										 &= \vb{A}(x)\cdot \left( \vb{e}_i (x) + \partial_j \vb{e}_i (x) \dd  x^{j} \right) \\ &= A_i (x) + A_k \underbrace{\vb{e}^k\cdot \partial_j \vb{e}_i (x)}_{\Gamma_{ij}^{k}(x)} \dd  x^i  
+\end{align*}
+
+$$\boxed{\delta A_i = \Gamma_{ij}^{k} A_k \dd x^{i}}$$
+
+$$\vb{e}_i = \partial_i \vb{X} \quad \vb{e}^k = \partial^{k}\vb{X} = g^{kj}\partial_j \vb{X}$$ 
+$$\partial_j \vb{e}_i = \partial_j \partial_i \vb{X}= \partial_i \vb{e}_j$$ 
+$$\Gamma_{ij}^{k}= \partial^{k}\vb{X}\cdot \partial_i \partial_j \vb{X} = \Gamma_{ji}^k$$ 
+
+$$\boxed{\partial A^{i}= - \Gamma_{kj}^{i} A^{k} \dd x^{j}}$$ 
+
+$$\delta (A^{i}B_i ) =0 = \delta^{i}B_i +A^{i}\delta B_i = \left( \delta A^{i}+ \Gamma_{kj}^{i}A^{k} \dd x^j \right)B_i = 0$$ 
+
+
+\underline{Dérivé covariante} 
+
+
+\begin{align*}
+    DA^{i} &= \text{changement "réel" du vecteur} \\ &= \dd A^{i}- \partial A^{i}\\ &= \partial_j A^{i} \dd x^{j}+ \Gamma_{kj}^{i}A^{k} \dd x^{j} \\ &= \underbrace{\nabla_j A^{i}}_{\partial_j A^{i}+ \Gamma_{kj}^{i}A^{k}}  \dd x^i 
+\end{align*}
+
+$$\underbrace{\boxed{\nabla_j A_i = \partial_j A_i - \Gamma_{ij}^{k}A_k}}_{\text{tenseur de rang 2} } $$ 
+
+
+$$\nabla_i \vb{A} = \text{proj} \partial_i \vb{A} $$ 
+
+\begin{tcolorbox}[title=]
+    Les symbols de Christoffel semblent requérir $\vb{X}$ et donc de travailler dans l'espace hôte. Ce n'est pas de cas. On peut tout ré-exprimer en fonction du tenseur métrique.
+
+    $$\Gamma_{ij}^{k}= \frac{1}{2} g^{kl} \left( \partial_j g_{il} +\partial_i g_{jl} - \partial_{l} g_{ij}   \right) $$ 
+\end{tcolorbox}
+
+
+$$\Gamma_{kij} = g_{kl} \Gamma_{ij}^{l} = \partial_k \vb{X}\cdot \partial_j \partial_j \vb{X}$$ 
+
+$$\partial_k g_{ij} = \vb{e}_i \vb{e}_j = \partial_i \vb{X}\cdot \partial_j \vb{X} $$ 
+$$\partial_i g_{jk} = \vb{e}_j \vb{e}_k = \partial_j \vb{X}\cdot \partial_k \vb{X} $$ 
+$$\partial_j g_{ki} = \vb{e}_k \vb{e}_i = \partial_k \vb{X}\cdot \partial_i \vb{X} $$ 
+
+On addition les deux derniers et on isole $\partial_k \vb{X}\cdot \partial_j \partial_i \vb{X}$ 
+
+pour avoir $$\boxed{\Gamma_{ij}^{k}= \frac{1}{2} g^{kl} \left( \partial_j g_{il} +\partial_i g_{jl} - \partial_{l} g_{ij}   \right)}$$
+
+
+\begin{tcolorbox}[title=Exemple: $S^{2}$( rayon $a$  ) ]
+     Coordonnées sphériques $\theta, \varphi$ 
+     $$[g_{ij} ]= \begin{bmatrix} a^{2}& 0 \\ 0 &a^2\sin^2\theta
+     \end{bmatrix}$$ 
+     $$\Gamma_{jk}^{i}= \frac{1}{2} g^{il} \left( \partial_j g_{lk} +\partial_k g_{jl} - \partial_i g_{jk}  \right) $$ 
+         $$[g^{ij}]= \begin{bmatrix} \frac{1}{a^{2}} &0 \\ 0 & \frac{1}{a^2\sin^2\theta}  
+         
+     \end{bmatrix}$$ 
+
+$$\partial_{\theta} g_{\varphi\varphi} = \partial_1 g22 = 2 a^2\sin\theta\cos\theta$$ 
+$$\Gamma_{22}^{1}= - \frac{1}{2} g^{11}\partial_1 g_{22} =- \sin\theta\cos\theta$$ 
+$$\Gamma_{12}^{2}= \Gamma_{21}^{2}= \frac{1}{2} g^{22}\partial_1 g_{22} = \frac{\cos\theta}{\sin\theta} = \cot\theta$$ 
+
+
+\underline{Dérivée covariante} 
+
+$$\nabla_{\theta} A_{\theta} = \partial_{\theta} A^{\theta}+ \Gamma_{\varphi\varphi}^{\theta}A^{\varphi}= \partial_{\theta} A^{\theta}$$ 
+
+$$\nalba_{\varphi} A^{\theta}= \partial_{\varphi} A^{\theta}+ \Gamma_{\varphi\varphi}^{\theta}A^{\varphi}= \partial_{\varphi} A^{\theta}-\sin\theta\cos\theta A^\varphi$$ 
+$$\dotsb$$ 
+\end{tcolorbox}
+
+\section*{Les géodésique}
+
+La géodésique est une courbe (trajectoire sur un variété) $x^i(\lambda)$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{géodésique}
+    \caption{géodésique}
+    \label{fig:géodésique}
+\end{figure}
+
+vecteur tangenant $\vb{u} = \dv{{}}{\lambda} \vb{X}(x(\lambda)) = \pdv{\vb{X}}{x^i} \dv{x^{i}}{\lambda} = \vb{e}_i \dot x^{i}= \vb{e}_i u^i $ 
+
+$$\abs{\vb{u}} = \sqrt{g_{ij}  u^{i}u^{j}} = \sqrt{g_{ij} \dv{x^{i}}{\lambda} \dv{dx^{j}}{\lambda} } = \sqrt{\dv{s^{2}} {\lambda^{2} }} = \abs{ \dv{s}{\lambda}  }  $$ 
+
+$$\grad_{\lambda} \phi = \dv{\phi}{\lambda} = \partial_i \varphi \pdv{x^{i}}{\lambda} = u^{i}\partial_i \phi$$ 
+
+
+$$\nabla_{\lambda} A^j = u^{i}\Grad_i A^{j} = u^{i}\partial_i A^{j} + \Gamma_{ki}^{j}A^{k}u^i$$ 
+
+
+
+\underline{Géodésique} 
+
+1) Minimise (rend stationaire) la distance entre deux points.
+
+$$S_{AB} = \int_{A}^{B}\dd s \quad \dd s^{2}= g_{ij} \dd x^{i} \dd x^{j}$$ 
+
+$$\delta S_{AB} = 0 \quad x^{i}(\lambda)+ \delta x^{i}(\lambda)$$ 
+
+2) courbe telle que $\vb{u}$ est transporté parallèlement
+
+$$Du^{i}= du^{i}- \delta^{i}= du^{i} + \Gamma_{kj}^{i}u^{k} \dd  x^{k} \dd  x^{j}\propto u^i$$ 
+
+$$\dv{{}}{\lambda} \left( u_i u^i \right) = 2u_i \dot u^{i}$$ 
+où $\dot{} \equiv \dv{{}}{\lambda} $ 
+
+$$=2u_i u^{i}f(\lambda) - \Gamma_{jk}^{i}u^{k}u^{j}u_i $$ 
+
+
+\begin{tcolorbox}[title=]
+    $$\Gamma_{ij}^{k\prime} = \pdv{x^{k\prime}}{x^l} \pdv{x^{m}}{x^i\prime} \pdv{x^{n}}{x^{j\prime}} \Gamma_{mn}^{l} - \dotsb$$  
+\end{tcolorbox}
+
+On va demander que $f(\lambda) =0 \implies \abs{\vb{u}} = \text{cst}  $ 
+
+$$\bosed{\dot u^{i} + \Gamma_{kj}^{i}u^{k}u^{i}= 0}$$ 
+\end{document}
+
