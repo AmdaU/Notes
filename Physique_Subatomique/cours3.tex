@@ -1,0 +1,140 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-08
+
+\section*{Exercice: Effet compton}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{effet-compton}
+    \caption{effet compton}
+    \label{fig:effet-compton}
+\end{figure}
+
+
+
+Formulation en termes de 4-vecteur:
+
+
+$$p_1 + p_2 = p_3 + p_4$$ 
+
+
+$$\left( p_1 + p_2 - p_3 \right)^2 = p_4^{2}= m^2$$ 
+
+$$p_1^{2}+p_2^{2}+p_3^{2}+ 2p_1 p_2 - 2 p_1 p_3 - 2 p_2 p_3 = m^2$$ 
+
+$$\boxed{p_1 p_2 = p_1^{0}p_2^{0}- \cancelto{0}{\vb{p}_1\cdot \vb{p}_2}\quad= Em}$$ 
+
+$$\boxed{p_1 p_3 = E E' = \vb{p}_1 \vb{p}_2 = EE' - EE'\cos\theta = EE'(1-\cos\theta) }$$ 
+
+$$0 + m^{2} + 0 +2Em - 2EE'(1-\cos\theta) -2 E'm = m^2$$ 
+$$\frac{1}{E'} - \frac{1}{m} (1-\cos\theta) - \frac{1}{E} = 0$$ 
+
+$$\frac{1}{E'} = \frac{1}{E} + \frac{1}{m} (1-\cos\theta)$$ 
+
+$$\frac{1}{E} = \frac{1}{\abs{\vb{k}}} = \lambdabar = \frac{\lambda}{2\pi}  $$ 
+
+$$\implies \lambdabar' = \lambdabar + \underbrace{\frac{1}{m}}_{\lambdabar_c}  (1-\cos\theta)$$ 
+
+
+\section*{Désintégration}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{désintégration}
+    \caption{Désintégration}
+    \label{fig:désintégration}
+\end{figure}
+\pagebreak
+\underline{Règle d'or de Fermi}  
+
+$$\Gamma_{i\to f} = 2\pi \abs{M_{fi} }^{2}\delta(E_i-E_f)$$ 
+
+
+$$M_{fi} = \bra{f}V\ket{i} + \sum_n \frac{\bra{f}V \ket{n}\bra{n}V\ket{i}}{E_i -E_n +i0^+} + \sum_{n,m} \frac{\bar{ f} V \ket{n}\bra{n}V \ket{m}\bra{m}V \ket{i}}{\left( E_{i}-E_0+i0^+ \right)(E-E_m +i0^+)} + \dotsb  $$ 
+La désintégration est un processus irréversible car il y a beaucoup plus d'état désintégré qu'autrement $\implies \Delta S > 0$   
+
+
+$$ \dd \Gamma = 2\pi \abs{M_{fi} }^{2} \frac{\dd ^3 P_{2}}{(2\pi^3)}  \frac{\dd ^3 P_{3}}{(2\pi^3)} \dotsb \frac{\dd ^3 P_{N}}{(2\pi^3)} \delta(E_1 - E_2 -E_3 - \dotsb -E_N)$$ 
+
+$$M_{fi} = \mathcal{M} \delta_{\vb{p}_1-\vb{p}_2-\dotsb} $$ 
+
+$$\implies \dd \Gamma = 2\pi \abs{\mathcal{M}_{fi}}^{2} (2\pi)^2 \delta(\vb{p}_1-\vb{p}_2-\dotsb-\vb{p}_N)\delta(E_1-E_2-\dotsb-E_n ) \frac{\dd ^3 P_{2}}{(2\pi^3)}  \frac{\dd ^3 P_{3}}{(2\pi^3)} \dotsb \frac{\dd ^3 P_{N}}{(2\pi^3)}$$ 
+
+
+$$= (2\pi)^4 \delta^{4}(p_1 -p_2 - p_3 -\dotsb-p_N ) \abs{\mathcal{M}_{fi} }^{2} \frac{\dd ^3 P_2 }{\textcolor{yellow}{2E_2} (2\pi)^3} \frac{\dd ^3 P_{n}}{\textcolor{yellow}{2E_n} (2\pi )^3}  \frac{1}{\textcolor{yellow}{2E_1}} \qquad \text{N.C.  \textcolor{yellow}{N.R.}}  $$ 
+
+La normalisation relativiste implique que le taux de transition est un invariant relativiste.
+
+\underline{Désintégration à deux corps} 
+
+
+$$\dd \Gamma = \abs{M_{fi} }^{2} \frac{1}{2E_{1}} \frac{\dd p_{2}}{(2\pi)^3 2E_{2}} \frac{\dd ^3 P_{3}}{(2\pi)^3 2E_3} (2\pi)^4 \delta^{4}(p_1 -p_2 -p_3 )  $$ 
+
+\underline{Référentielle de la particule 1} 
+$$E_1 = m_1$$ 
+intègre sur $\dd ^3 p_3 \to \delta( \cancelto{0}{\vb{p}_1}-\vb{p}_2 -\vb{p}_3  )$ 
+
+$$\vb{p}_3 \to - \vb{p}_2$$ 
+
+$$\dd ^3 p = p^{2}\dd p \dd \Omega $$ 
+
+
+$$\Gamma= \frac{1}{8\pi{}m_1} \int {p^2 \dd p \abs{M_{fi} }^{2}} \frac{\delta(m_1 - \sqrt{p^{2}+m_?^{2}} - \sqrt{p^{2}- m_?^2})}{\sqrt{}\sqrt{}} $$ 
+
+Nouvelle variable d'intégration $E = \sqrt{p^{2}+m_2^2} \sqrt{p^2+m_3^{2}}$ 
+
+
+$$\Gamma = \frac{1}{8\pi{}m_1} \int_{m_2+m_3}^\infty \dd E \frac{p}{E} \delta(m_1 -E) \abs{M_{fi} }^{2} = \frac{1}{8\pi m_{1}^{2}}\eval{\abs{M_{fi} }^{2}}_{E=m_1 }     \abs{\vb{p}_2}    $$ 
+
+$(m_1 > m_2 + m_3 )$ 
+
+\underline{Loi exponentielle} 
+
+$N(t)$: Nombre de particules 
+
+$$N(t + \dd t) = N(t) - N\Gamma \dd t$$ 
+
+$$\dv{N}{t} = - \Gamma N \to N(t) = N(0) e^{-\Gamma t}$$ 
+
+vie moyenne: $\tau \equiv \frac{1}{\Gamma} $ 
+
+
+demi-vie: $t_{1/2} = \tau \ln2$ 
+
+$$\tau\Delta E \sim 1$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{histogramme-avec-pic}
+    \caption{histogramme avec pic}
+    \label{fig:histogramme-avec-pic}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+    \centering
+    \incfig{blip-bloup}
+    \caption{blip bloup}
+    \label{fig:blip-bloup}
+\end{figure}
+
+$$A(E) = \frac{1}{2\pi} \frac{\Gamma}{\left( E -m^2 \right)^2 + \frac{\Gamma^{2}}{4}  }$$ 
+
+
+\section*{Section Efficace: Brève révision}
+
+
+$$\Phi: \text{ Flux} \quad \frac{\text{\# de particules} }{\text{surface} \cdot \text{temps}  }  $$ 
+
+$$\dv{\sigma}{\Omega} = \text{ Section différentiable } $$ 
+
+
+$$\sigma = \int \dd \Omega \dv{\sigma}{\Omega} = \text{ Section efficace } $$ 
+
+
+\end{document}

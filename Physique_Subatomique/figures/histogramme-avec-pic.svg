@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="histogramme-avec-pic.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1142"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071061"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect903"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1142-3"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.406257"
+     inkscape:cx="475.37541"
+     inkscape:cy="259.19871"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;marker-end:url(#Arrow1);stroke-dasharray:none"
+       d="m 26.640078,266.54553 c 56.03672,0 112.073172,0 168.109372,0"
+       id="path901"
+       inkscape:path-effect="#path-effect903"
+       inkscape:original-d="m 26.640078,266.54553 c 56.03672,2.6e-4 112.073172,2.6e-4 168.109372,0" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.1;stroke-dasharray:none"
+       d="m 67.087088,266.35543 v -2.66151 h 5.964867 v -1.54462 h 6.392616 v -1.78227 h 8.555186 v -5.18043 h 6.440148 v -12.30947 h 5.251932 v -15.54131 h 5.133123 v -9.3628 h 6.17873 v 9.07764 h 4.51524 v 15.39873 h 6.32133 v 16.89581 h 7.91355 v 4.34872 h 10.21869 v 1.71097 h 7.36696"
+       id="path1258" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#0000ff;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       x="189.16481"
+       y="272.08243"
+       id="text1368"><tspan
+         sodipodi:role="line"
+         id="tspan1366"
+         style="stroke-width:0.3"
+         x="189.16481"
+         y="272.08243">E</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.711;stroke-dasharray:2.133, 2.133;stroke-dashoffset:0"
+       d="m 65.3426,264.58052 c 8.139395,-0.37244 16.27867,-0.74487 22.152841,-6.32733 5.874171,-5.58246 9.483276,-16.37472 12.557569,-25.31305 3.07429,-8.93834 5.6136,-16.02225 8.11975,-15.03954 2.50615,0.98271 4.97883,10.03173 7.37714,18.60161 2.39831,8.56988 4.72209,16.66011 9.75586,21.0895 5.03377,4.42938 12.7771,5.19799 20.52042,5.9666"
+       id="path1140"
+       inkscape:path-effect="#path-effect1142-3"
+       inkscape:original-d="m 65.3426,264.58052 c 8.139407,-0.37217 16.278682,-0.7446 24.417828,-1.11729 3.60938,-10.79243 7.21849,-21.58469 10.827532,-32.37743 2.53954,-7.08393 5.07885,-14.16784 7.61808,-21.25214 2.47292,9.04964 4.94561,18.09865 7.41822,27.14759 2.32401,8.09082 4.64779,16.18105 6.97148,24.27119 7.74377,0.7689 15.48709,1.53752 23.23044,2.30587" />
+    <path
+       style="fill:#0000ff;stroke:#000000;stroke-width:0.6;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1);marker-start:url(#Arrow1)"
+       d="M 98.075865,245.18219 H 115.61399"
+       id="path1501" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#0000ff;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0"
+       x="99.916672"
+       y="250.05484"
+       id="text1559"><tspan
+         sodipodi:role="line"
+         id="tspan1557"
+         style="stroke-width:0.2;stroke-dasharray:none"
+         x="99.916672"
+         y="250.05484">$\Delta E$</tspan></text>
+  </g>
+</svg>
