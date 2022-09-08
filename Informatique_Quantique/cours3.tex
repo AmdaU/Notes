@@ -1,0 +1,205 @@
+\input{../parameters}
+\begin{document}
+
+
+\setcounter{section}{1}
+\setcounter{subsection}{5}
+
+\subsection{Téléportation quantique}
+
+
+A veut envoyer $\ket{\psi}$ à B  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{téléportation-quantique-2}
+    \caption{Téléportation quantique 2}
+    \label{fig:téléportation-quantique-2}
+\end{figure}
+
+
+
+\begin{align*}
+	\ket{\Psi} \otimes \ket{\Phi^+} &= \left( \alpha \ket{0} + \beta \ket{1} \right) \otimes \left( \frac{\ket{00}+\ket{11}}{\sqrt{2}}  \right) \\&= \frac{1}{\sqrt{2}} \left[ \alpha \ket{000} + \alpha \ket{011} + \beta \ket{100} + \beta \ket{111} \right] \\&= \frac{1}{2} \left[ \alpha \left( \ket{\Phi^+} + \ket{\Phi^-} \right) \ket{0}+ \alpha \left( \ket{\Psi^+} + \ket{\Psi^-} \right) \ket{1} + \beta \left( \ket{\Psi^+} - \ket{\Psi^-} \right) \ket{0} + \beta \left( \ket{\Phi^+} - \ket{\Phi^-} \right) \ket{2}   \right] \\&= \frac{1}{2} \left[ \ket{\Phi^-} \left( \alpha \ket{0} + \beta \ket{1} \right) + \dotsb  \right] \\&= \frac{1}{2} \left[ \ket{\Phi^+}\ket{\Psi} + \ket{\Phi^-}Z \ket{\Psi} + \ket{\Psi}X\ket{\Psi} + \ket{\Psi^-} ZX \ket{\Psi} \right]  
+\end{align*}
+
+Alice mesure $\{ \ket{\psi^\pm}, \ket{\psi^\pm} \} $ avec 25\% chaque. $$\ket{\Psi^+}: \mathds{1}\quad \ket{\Psi^-}: \text{applique Z} \dotsb $$  
+
+
+
+\begin{tcolorbox}[title=Aparté notation tensorielle]
+
+vecteur \verb|-O-|\\
+Matrice \verb|-[]-|
+	 
+état à deux qbits: \verb|0==|
+$$\Psi = \sum_{ij} c_{ij} \ket{e_{i}} \otimes\ket{e_j }$$  
+
+ 
+ket: \verb|O-|\\
+bra: \verb|-O|
+\\
+
+Produit tensoriel:\\
+\verb|O-|\\
+$ \otimes$\\
+\verb|O-|\\
+
+Contraction: ( $\bra{\psi}\ket{\phi}$  )\\
+
+\verb|(\psi)--(\phi)|\\
+
+Produit matrice-vecteur\\
+
+\verb|(\psi)--[u]-| $= u \ket{\psi}$\\ 
+
+Matrice-Matrice\\
+
+\verb|-[A]-[B]-| = $BA$ = \verb|-[BA]-|\\ 
+
+
+Trace:\\
+\verb|_____|\\
+\verb/|   |/\\
+\verb|L[M]J|
+
+\end{tcolorbox}
+
+\section{Calcul Quantique}
+
+\subsection{Calcul classique}
+
+ordinateur classique
+
+$$\rho: \{ 0,1 \}^n \to \{ 0,1 \}^,$$ 
+
+Portes universelles
+\verb|NAND|
+
+\begin{verbatim}
+    ____
+a---|   \
+    |    )---- a NAND b
+b---|___/
+
+COPY:
+      ______ a
+     /
+a---<
+     \______ a 
+
+
+EX: NOT
+            ____
+      ______|   \
+     /      |    \
+a---<       |     )------- !a
+     \______|    /
+            |___/
+
+\end{verbatim}
+
+
+\begin{tcolorbox}[title=]
+	\verb|COPY| est impossible en quantique \centering
+	 
+\end{tcolorbox}
+
+\underline{Complexité} 
+
+
+Difficulté de $\rho$: Nombre de portes universelle requisent pour le plus petit circuit réalisant $\rho$  
+
+Famille de Problème ou la taille varie
+
+La circuit ne doit pas être adapté à la taille
+
+\begin{tcolorbox}[title=]
+	 $$P: \text{Temps polynomial (facile)} $$ 
+	 $$\abs{c_{n}} = n^\alpha $$
+u
+
+	 $$NP: \text{Temps non-polynomial} $$ 
+
+	 \underline{NP-difficile}: Au moins aussi difficile que le problème le plus dur de NP (Pas forcément dans NP) 
+
+	 \underline{NP-comlet}: NP difficile \textbf{et} dans NP 
+	 
+	 clairement $$P \subseteq NP $$ 
+
+	 $$\boxed{\boxed{P =^?NP}}$$ 
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{la-complexité}
+    \caption{La complexité}
+    \label{fig:la-complexité}
+\end{figure}
+\subsection{Calcul quantique}
+
+Mécanique quantique: Opérateur d'évolution unitaire
+$$U^{\dagger}U = \mathds{1}$$ 
+
+La porte \verb|NAND| n'est pas réversible (2bits $\to$ 1bit )
+
+Il existe des porte réversibles classiqus
+
+\begin{figure}[ht]
+    \centering
+    \incfig{cnot}
+    \caption{CNOT}
+    \label{fig:cnot}
+\end{figure}
+
+\begin{tcolorbox}[title=Note]
+	ON peut toujours exprimer une fonction 
+	$$\rho: \mathbb{Z}_2^n \mapsto \mathbb{Z}_2^m$$
+	sous la forme 
+	$$g: \mathbb{Z}^{n+m}_2 \mapsto \mathbb{Z}^{n+m}_2$$  
+
+	$$g(x,0) \mapsto g(x, f(x))$$ 
+
+\end{tcolorbox}
+
+\subsection{Circuits Quantiques}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{anatomie-d'un-circuit-quantique}
+    \caption{Anatomie d'un circuit quantique}
+    \label{fig:anatomie-d'un-circuit-quantique}
+\end{figure}
+
+a) état initial ( $\ket{0}^{ \otimes n }$  ): Ce choix est arbitraire. Important de commencer dans un état non-intriqué
+
+
+b) Transformation unitaire U: On décompose $u$ en un ensemble de portes universelles agissant sur 1-3 qubits.
+Les U possibles ($U\in SU(2^n)$) forment un groupe continu. On peut générer $U$ à partir d'un circuit fini $C$  
+La complexité quantique est définie à partir de $\abs{C} $ 
+
+
+c) Mesure:
+Résultat non-détérministe
+On choisit de mesurer dans la base $Z$ $\{ \ket{0}, \ket{1} \}$ 
+On peut mesurer différentes bases en chageant $U$. On évite de cacher la complexité dans la mesure. On aurait pu choisir de mesurer durant le circuit.  
+
+
+\subsection{Complexité quantique}
+
+
+BQP (bounded-error quantum polynomial time): Esemble des Problèmes faciles pour un ordinateur quantique
+(Problèmes tel que $\abs{C} \leq n^\infty $ ) 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{complexité-quantique}
+    \caption{Complexité quantique}
+    \label{fig:complexité-quantique}
+\end{figure}
+
+
+L'ordinateur quantique doit donner la bonne réponse la plupart du temps ( $\geq \frac{2}{3} $  ) (pas deterministe). On moyenne sur un grand nombre de calculs
+
+\end{document}
