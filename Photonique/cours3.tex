@@ -1,0 +1,96 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-09
+
+\subsection*{Modèle de Lorentz, retour}
+
+
+On se place à $\omega \gg \omega_ij$ 
+
+Le déplacement est très faible, on peut négliger $\omega_{0}, \gamma$ 
+
+
+\setcounter{section}{2}
+\setcounter{subsection}{3}
+
+\subsection{Modèles quantiques}
+
+\begin{tcolorbox}[title=Objectifs]
+\begin{itemize}
+	\item Réintroduire la théorie des perturbation
+	\item $\mathcal{P}_{\ket{g}\to \ket{e}}$ 
+	\item Oscillations de Rabo
+\end{itemize}	 
+\end{tcolorbox}
+
+
+		$$H_0 = \hbar\omega_e \ket{e}\bra{e} \left( + \hbar \cdot 0 \ket{g}\bra{g} \right) $$ 
+
+	$$\ket{\psi(t)} = \gamma_g \ket{g} + \gamma_e e^{-i\omega_e t} \ket{e}$$ 
+
+	Comment le système se couple à un champ E.M.?
+
+
+$$H = H_0 + H_{\text{int}} $$ 
+
+$$H_{\text{int}} = -\hat D \hat E(\vb{r},t)$$ 
+
+$$\hat D: \text{ Opérateur de moment dipolaire } = q \hat r $$ 
+
+Problème à deux niveaux
+
+$$H = \hbar\omega_e \ket{e}\bra{e} -\hat D \hat E(r,t)$$ 
+
+
+Approche perturbative : $H_{\text{int}}: \text{ faible }  $ 
+$$H_{\text{int}} \to \lambda H_{\text{int}} \quad \lambda \ll 1$$ 
+
+
+$$\psi(t) = \sum_n \gamma_n (t)\ket{n}$$ 
+
+$$i\hbar \dv{{}}{t} \psi \ket{\psi(t)} = \left( H_0 + \lambda H_{\text{int}}  \right) \ket{\psi(t)}$$ 
+
+On projette sur un $\ket{k}$ quelconque 
+
+$$i\hbar \dv{{}}{t} \bra{k}\ket{\psi(t)} = \bra{k}H_0 \ket{\psi(t)} + \lambda \bra{k} H_{\text{int}}\ket{\psi(t)} $$ 
+
+$$= E_k \bra{k} \ket{\psi} + \lambda \sum_n \bra{k} H_{\text{int}} \ket{n}\bra{n}\ket{\psi(t)}$$ 
+
+$$i\hbat \left[ - \frac{E_k}{\hbar} + \dv{{}}{t} \gamma_k (t) \right]e^{-iE_k t/\hbar} = e_k \gamma_{k(t)} e^{-i E_k t/\hbar} + \lambda \sum_m \bra{k} H_{\text{int}} \ket{n} \psi_n (t) e^{(E_n -E_k )t/\hbar} $$ 
+
+
+donc,
+
+$$\forall \ket{k},\quad \dv{{}}{t} \gamma_k (t) = \lambda \sum_n \bra{k} H_{\text{int}} \ket{n} \gamma_n (t) e^{-i \frac{E_n -E_k }{\hbar}t } $$ 
+
+Cela est la solution exacte et n'est, évidemment, pas facile à résoudre en général.
+
+On fait donc une série en $\lambda$ 
+
+$$\gamma_{k(t)} = \gamma_k^{(0)}(t) +\lambda \gamma_k^{(1)}(t) + \lambda^{2}\gamma_k^{(2)}(t) + \dotsb$$ 
+
+
+$$\gamma_e^{(1)} = \frac{1}{i\har} \int_{t_0}^{t}\dd t' \bra{e}H_{\text{int}}\ket{e} \gamma_e^{(0)} e^{-i \delta E_{eg} t/\hbar} + \dotsb   $$ 
+
+$$\gamma_e^{(1)} (t) = \frac{1}{i\hbar} \int_{t_0}^{t}\dd t \bra{\psi}{e} H_{\text{int}} \ket{g} e^{-i \Delta E_{ge} t/\hbar} $$ 
+
+On va considérer un champ éléctrique de la forme
+
+$$\vb{E} (\vb{r},t) = \vb{E}_0 \cos(\omega t + \varphi)$$ 
+
+$$H_{\text{int}} = \hat W \cos(\omega t \pm \varphi) $$ 
+$$\hat W = \hat D \vb{E}_0 = q \hat r \vb{E}_0$$ 
+
+
+$$\gamma_e (t) = \frac{W_{eg}}{i\hbar} \\int_{t_0}^{t}\dd t' \cos(\omega t' + \varphi) e^{-i \frac{E_g -E_{e}{\hbar}} t' }$$ 
+
+$$\gamma_{e(t)\approx} \frac{W_{eg}}{2i\hbar} \int_{t_{0}}^{t} \dd t' \left[ e^{i\psi} e^{i\omega t'}+ e^{-i\varphi-i\omega t'} \right] e^{i\omega_{eg} t'} $$ 
+
+
+$$\dotsb$$ 
+
+
+
+
+\end{document}
