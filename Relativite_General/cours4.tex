@@ -1,0 +1,156 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-09
+
+\begin{tcolorbox}[title=À l'épisode précédent:]
+	
+$$\partial_i A_j, \, \partial_i A^j$$ 
+
+$$\nabla_i A_j = \partial_i A_j - \Gamma_{ji}^{k}A_k$$ 
+$$\nabla_i A^{j}= \partial_i A^{j}+ \Gamma_{kj}^{j}A^{k}$$ 
+$\Gamma$ est la \underline{connection affine ou symbole de Chritoffel}  
+	
+$$\Gamma_{ik}^{k}(x) = \frac{1}{2} g^{kl} \left( \partial_i g_{lj} + \partial_j g_{li} - \partial_l g_{ij}  \right) $$ 
+
+
+\begin{tcolorbox}[title=]
+	$\Gamma_ij^{k}$ \textbf{n'est pas un tenseur}\\
+	$\nalba_i A^j$ en est un!
+\end{tcolorbox}
+
+Il est toujours possible de choisir un référentiel tel que  $\Gamma_{ij}^{k}= 0\; \forall i,j,k$!  
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=Théorème du quotient]
+si 	$B^{ij}A_j $ est un vecteur $\forall A_j$ qui est un vecteur alors $B^{ij}$ est un tenseur.   
+		 
+\end{tcolorbox}
+
+\section*{Équation géodésique}
+$$\ddot x^{i} + \Gamma_{jk}^{i}\dot x^{j}\dot x^{k} =0$$ 
+
+Cette équation est équivalente à 
+
+$$\dot u^{i}\Gamma_{jk}^{i}u^{j}u^{k}$$ 
+
+$$Du^{i}= \dd u^{i}+ \Gamma_{jk}^{i}u^{i}\dd x^{k}= 0$$ 
+
+$$Du_i=  \dd u_i- \Gamma_{ij}^{k}u_k\dd x^{j}= 0$$ 
+
+On divise par $\dd \lambda$ 
+$$\implies \dot u_i - \Gamma_{ij}^{k} u_k u^{i}= 0$$ 
+$$= \dot u_i - \Gamma_{kij} u^{k}u^j$$ 
+$$=\dot u_i - \frac{1}{2} \left( \partial_i g_{ki} + \partial_j g_{ki} -\partial_k g_{ij}  \right)u^{k}u^{i} $$ 
+
+\begin{tcolorbox}[title=]
+	$$A_{kj} = -A_{jk} \qquad S^{kj}=-S^{jk}$$ 
+	$$A_{ki} S^{kj}= A_{jk} S^{jk} = -A_{kj} S_{kj} =0$$ 
+\end{tcolorbox}
+
+comme les deux derniers termes forment ensemble un tenseur anitsymétrique et qu'ils mutilplient un tenseur symétrique la contribution de ces termes s'annulent 
+
+
+$$0 = \dot u_i \del_i g_{kj} u^k u^j$$ 
+
+Si $g_kj$ ne dépend pas de $x^{i}$ alors $u_i = \text{cst} $    
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{géodésique-2}
+    \caption{Géodésique 2}
+    \label{fig:géodésique-2}
+\end{figure}
+
+
+$$S_{AB} = \int_{A}^{B}\dd \lambda L(x, \dot x) = \int_{A}^{B}\dd \lambda \underbrace{\sqrt{g_{ij} (x)\dot x^{i}x^{j}}}_{\abs{\vb{u}} }  = \int_{A}^{B} \sqrt{g_{ij} \dd x^{j} \dd x^{j}}= \int_{A}^{B}\dd s$$ 
+
+
+$$x^{i}(\lambda) \to x^{i}(\lambda) + \delta x^{i}(\lambda) $$ 
+
+$$\delta S_{AB} = \int_{A}^{B}\dd \lambda \frac{1}{2L} \delta(g_{ij} \dot x^{i}\dot x^{j}) = \int_{A}^{B}\dd \lambda \left\{ \frac{1}{2} \partial_k g_ij \dot x^{i}\dot^{j}\delta x^{k} + g_{ij} \dot x^{i} \delta \dot x^{i}\right\} $$ 
+
+\begin{tcolorbox}[title=]
+	$$g_{ij} \dot x^{i}\dv{{}}{\lambda} x^{i}=  \dv{{}}{\lambda} \left( g_ij \dot x^{i}\delta x^j \right) - \dv{{}}{\lambda} \qty(g_{ik} \dot x^{k}) \delta x^l$$ 
+\end{tcolorbox}
+
+$$\dotsb$$ 
+
+
+$$0 = \frac{1}{2} \partial_k g_{ij} u^{i}u^{j}-\left( \frac{1}{2} \partial_j g_{ik} + \frac{1}{2} \partial_i g_{jk}   \right)u^{j}u^{i} - g_{ki} \dot u^j $$ 
+
+$$=  \underbrace{\frac{1}{2}\left( \partial_k g_{ij} - \partial_j g_{ik} - \partial_i g_{jk}  \right)}_{-\Gamma_{kij} } u^{i}u^{j}- g_{kj} \dot u^{i}= 0$$ 
+
+
+$$\boxed{\Gamma_{ij}^{k}u^{i}u^{j}+ \dot u^{k} =0}$$ 
+
+\hrule
+
+\section*{Vaisseau en accélération constante}
+
+\boxed{$A$} $v(t), x(t)$ avec $t$ le temps terrestre  
+
+4-accélération $$a^{i}= \dv{u^{i}}{\tau} = \dv{{}}{\tau} (\gamma, \gamma \vb{v}) = \left( \frac{\vb{v} \cdot \vb{a}}{(1-v^2)^2}, \frac{\vb{a}}{1-\vb{v}^2} + \frac{\left( \vb{a} \cdot  \vb{v} \right) \vb{v}}{(1-v^{2})^2}    \right) $$ 
+
+
+$$a_i a^{i}= -\gamma^{4} \left( \vb{a}^2 + \gamma^{2}\left( \vb{v}\cdot \vb{a} \right)^2 \right) $$ 
+
+
+\begin{tcolorbox}[title=]
+	$$\dv{\gamma}{\tau} = -\frac{1}{2} \frac{1}{(1-v^2)^{3/2}} \left( -2 \vb{v} \cdot \dv{\vb{v}}{\tau}  = \frac{1}{(1-v^2)^2} \vb{v}\cdot \vb{a}  \right)  $$ 
+\end{tcolorbox}
+
+$$=-\gamma^{6}a^2$$ 
+
+
+$$\gamma^{3}a=g$$ 
+
+$$\frac{1}{\qty(1-v^2)^{3/2}} \dv{v}{t} =g $$ 
+$$g \dd t = \frac{\dd{}v}{(1-v^2)^{3/2}} $$ 
+
+Rapidité:
+$$\gamma = \cosh \eta$$ 
+$$v\gamma = \sinh\eta$$ 
+
+$$\dd v = \frac{1}{\cosh^2\eta} \dd \eta = \frac{1}{\gamma^{2}} \dd \eta $$ 
+
+$$\int g \dd t = \int \gamma \dd \ets = \int \cosh\eta \dd \eta $$ 
+
+$$gt + \cancel{cst} = \sinh\eta$$ 
+
+
+
+$$v(t) = \tanh\eta =\dotsb= \frac{gt}{\sqrt{1+(gt)^2}} $$ 
+
+Comment restaurer les \textit{vrai unités}?
+
+$$\frac{gt}{\sqrt{1 + \left( \frac{gt}{c}  \right)^2}} $$ 
+
+
+\begin{tcolorbox}[title=]
+	 $$gt = \sinh\eta \implies g \dd t = \cosh\eta \dd \eta$$
+\end{tcolorbox}
+
+
+$$x(t)= \int v(t) \dd t = \frac{1}{g} \int\tanh\eta\cosh\eta\dd\eta = \frac{1}{g} \int\sinh\eta = \frac{1}{g} \cosh\eta + \cancelto{0}{cst} = \frac{1}{g}(\cosh\eta -1)$$ 
+
+\clearpage 
+\boxed{$B$}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{milles-mots}
+    \caption{Milles mots}
+    \label{fig:milles-mots}
+\end{figure}
+
+
+\boxed{ $C$  }
+
+
+
+\end{document}
