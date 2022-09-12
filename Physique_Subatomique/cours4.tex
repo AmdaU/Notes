@@ -1,0 +1,145 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-12
+\section*{Section différentielle de diffusion}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diffusion-par-un-potentiel-fixe}
+    \caption{diffusion par un potentiel fixe}
+    \label{fig:diffusion-par-un-potentiel-fixe}
+\end{figure}
+
+
+
+$$\dv{\sigma}{\Omega} = \frac{1}{\Phi} \dv{\Gamma}{\Omega} $$ 
+
+$$\Gamma = 2\pi \frac{1}{\nu} \int \frac{\dd ^3 P_? }{(2\pi)^3} \abs{M_{fi} }^{2} \delta(E_2-E_1 ) $$ 
+
+L'intégrale deviens, en coord sphérique: $$\frac{1}{\nu} \int_{}^{} \frac{p_2^{2}\dd p_2 \dd \Omega}{(2\pi)^3   } $$ 
+
+Non relativiste: $E_2 = \frac{p_2^{2}}{2m} $ 
+$$\dd E_2 = \frac{p_2}{m} \dd p_2$$ 
+
+
+$$\dv{\Gamma}{\Omega} = \frac{1}{(2\pi)^3} \nu \int \abs{M_fi}^{2} p_2 m \dd E_3 \delta(E_{2-E_1)} = \frac{1}{(2\pi)^3} \nu \abs{M_fi}^{2}\abs{\vb{p}} m $$ 
+
+
+$$\dv{\sigma}{\Omega} = \left( \frac{m}{2\pi}  \right)^2 \nu^{2}\abs{M_{fi} }^{2}$$ 
+
+$$\text{Flux: }\rho \underbrace{v}_{\text{vitesse } = \frac{\abs{\vb{p}}}{m}   }   $$ 
+
+$$M_{fi} = \bra{f} V \ket{i} = \bra{\vb{p}_2} V \ket{\vb{p}_1} = d^{3}r \bra{\vb{p}_2}\ket{\vb{r}} V(\vb{r})\bra{\vb{r}}\ket{\vb{p}_1}$$ 
+
+$$= \frac{1}{\nu} \int \dd^{3}r e^{-i(\vb{p}_2 -\vb{p}_1 ) \cdot \vb{r}}$$ 
+$$= \frac{1}{\nu} \tilde V (\underbrace{\vb{p}_2 - \vb{p}_1 }_{\vb{q} =\text{tansfert de $p$ } } )$$ 
+
+
+$$\boxed{\dv{\sigma}{\Omega} = \left( \frac{m}{2\pi}  \right) ^2 \abs{\tilde V(\vb{q})}^{2}}$$ 
+
+\begin{tcolorbox}[title=Exemple: Loi de Coulomb]
+$$V(\vb{r}) = \frac{e_1 e_{2}}{4\pi r} $$ 
+
+$$\nabla^{2}\phi = - \delta(\vb{r}) \qquad \phi(\vb{r})= \frac{1}{4\pi{}r} $$ 
+$$- \vb{q}^2 \tilde \phi (\vb{q}) = -1\to \tilde\phi(\vb{q})= \frac{1}{\abs{q}^2}  $$ 
+
+\hrule 
+$$\vb{q}^2 = \dotsb 4 = \vb{p}^2\sin^{2}\frac{\theta}{2} $$ 
+
+$$\dv{\simga}{\Omega} = \left( \frac{m e_1 e_2 }{ 8\pi p^{2} }  \right)^2 \text{cosec} ^4 \frac{\theta}{2} $$ 
+
+$$\sigma = \int \dd \Omega \dv{\simga}{\Omega} \to \infty$$ 
+
+\underline{distribution de charge} 
+
+$$V(\vb{r}) = \frac{e_1 e_2 }{4\pi r} \to \frac{e_1 e_2 }{4 \pi r} \int \dd^{3} r' \frac{\rho (\vb{r}')}{\abs{\vb{r}-\vb{r}'} } $$ 
+c'est une convolution!
+
+$$\tilde V (\vb{q}) = \frac{1}{\abs{\vb{q}}^{2}} \tilde \rho(\vb{q})$$ 
+
+On obtiens donc un simple facteur de correction
+\end{tcolorbox}
+
+
+\subsection*{Diffusion à plusieurs particules}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diffusions-à-plusieurs-particules}
+    \caption{diffusions à plusieurs particules}
+    \label{fig:diffusions-à-plusieurs-particules}
+\end{figure}
+
+
+$$\dd \Gamma = \abs{\mathcal{M}_{fi}}^{2} \frac{\dd^{3}P}{(2\pi)^3} \left( 2\pi \right) ^4 \delta^4\left( p_{1+p_2} -p_3 -p_4 - \dotsb - p_N  \right) \qquad \text{[N.C.]}  $$ 
+
+\begin{tcolorbox}[title=]
+	$$\text{NC} \to \text{NR} \qquad \ket{\vb{p}}_{\text{NC}} = \frac{1}{\sqrt{2E}} \ket{\vb{p}}_{\text{NR}}    $$ 
+
+	 
+\end{tcolorbox}
+
+
+$$\dd \sigma= \abs{\mathcal{M}_{fi}}^{2} \frac{E_1}{\abs{\vb{p}}} \frac{\dd^{3}p_{3}}{(2\pi)^3} \dotsb  $$ 
+
+On veut trouver une quanité qui est egale à $\vb{p}_1$ dans le référentiel du laboratoire mais est aussi un invariant 
+
+
+$$(\underbrace{\vb{p}_1}_{(E_1 , \vb{p}_1 )}  \underbrace{\vb{p}_2}_{(m_2 , \vb{0})} )^2 - (m_1 m_2 )^2 $$ 
+
+$$E_1^{2}m_2^{2}- m_1^{2}m_2^{2}= (E_1^{2}-m_1^{2}) m_2^{2}= \vb{p}_1^2 m_1^{2}(m_2 , \vb{0})$$ 
+
+$$\dd \simga = \abs{ \mathcal{M}_{fi} }^{2} \frac{1}{4\sqrt{(p_1 p_2 )^2 - (m_1 m_2 )^2 }} \frac{\dd ^3 p_2 }{2 E_3 (2\pi) ^3} \dotsb (2\pi)^4 \delta(p_1 + p_2 - p_3 - \dotsb - p_N )  $$ 
+
+\subsection*{Résonances \& masse invariante}
+
+Masse invariente de $N$ particules 
+
+
+
+$$M^{2}= \underbrace{\left( p_1 + p_2 + \dotsb + p_N \right)}_{p_{\text{tot}} } ^2 = \left( E_1 + \dotsb + E_n  \right) - \left( \vb{p}_1 + \vb{p}_2 + \dotsb + \vb{p}_N \right)^2$$ 
+
+$$\rho(E) = \frac{1}{2\pi} \frac{\Gamma}{(E-M)^2 + \left( \frac{\Gamma}{2}  \right) ^2} $$ 
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{désintégration-2}
+    \caption{Désintégration 2}
+    \label{fig:désintégration-2}
+\end{figure}
+
+
+\clearpage
+
+\section*{Chaîne de masse \mu}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{chaîne-de-masse}
+    \caption{Chaîne de masse}
+    \label{fig:chaîne-de-masse}
+\end{figure}
+
+
+$$\mathcal{L}  = \frac{1}{2} \mu \sum_{r=1}^{N} \left\{ \dot u_r^{2} -\Omega^{2} u_r^{2} -\Gamma ^2 \left( u_r -u_{r+1}  \right) ^2 \right\} $$ 
+
+$$\dv{{}}{t} \pdv{\mathcal{L}}{\dot u_{r}} - \pdv{ \mathcal{L}  }{u_{r}} = 0  $$ 
+
+On tourne la manivelle: 
+
+$$\omega_q = \sqrt{\Omega^{2}+ 2\Gamma^{2}(1-\cos q)}$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{relation-de-dispersion}
+    \caption{relation de dispersion}
+    \label{fig:relation-de-dispersion}
+\end{figure}
+
+\end{document}
