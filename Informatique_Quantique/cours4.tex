@@ -1,0 +1,207 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Diagramme de complexité}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagramme-de-complexité}
+    \caption{diagramme de complexité}
+    \label{fig:diagramme-de-complexité}
+\end{figure}
+
+\setcounter{section}{2}
+\setcounter{subsection}{4}
+
+\subsection{Portes logiques}
+
+\subsubsection{Portes à 1 qubit}
+
+Les matrices de Paul forme une base pour décomposer n'importe 	quel matrice $2 \times  2$. $\mathcal{P} = \{ \mathds{1}, X, Y, Z \} = \{ \sigma_0 , \sigma_1 , \simga_2 , \simga_3 \}  $ 
+
+$$\boxed{M_{2 \times  2} = \sum_j m_j \sigma_j  }$$ 
+
+
+\begin{tcolorbox}[title=Démonstration de la complétude]
+	Autre base : $$B=\left\{ \cols{1&0\\0&0}, \cols{0&1 \\ 0&0},\cols{0&0\\1&0}, \cols{0&0\\0&1} \right\} $$  
+	$$B_1 = \frac{\mathds{1}+Z}{2}\quad B_2 = \frac{\mathds{1}-Z}{2}\quad B_3 = \frac{X+iY}{2}\quad B_4 = \frac{X-iY}{2} $$ 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Propriétés de $\mathcal{P} $ ]
+	\begin{itemize}
+		\item Hermétique $\sigma^{\dagger}=\sigma$
+		\item unitaire $\sigma^{T}= \sigma^{-1}$
+	\item Base orthogonale $\Tr(\sigma_j^\dagger\sigma_{k}) = \delta_{ik} $
+	\end{itemize}
+	 
+\end{tcolorbox}
+
+Les Matrices de Pauli génèrent des rotations sur la sphère de Bolch
+
+$$R_{x}(\theta) = e^{\frac{-i\theta}{2}X } = \cos(\frac{\theta}{2} ) - \sin(\frac{\theta}{2} )X$$ 
+$$R_y (\theta) = e^{\frac{-i\theta}{2}Y} = \dotsb$$ 
+$$R_z (\theta) = e^{\frac{-i\theta}{2}Z} = \dotsb$$ 
+
+
+Plus généralement, on a une équivalence ente transformation unitaire (à un qubit) et rotation en 3D.
+
+
+$$\text{SU} (2)\longleftrightarrow \text{SO} (3)$$ 
+
+
+SU(2): $\det(U) =1$, $UU^\dagger=\mathds{1}$, $2 \times 2$   \\
+
+SO(3): $\det(O)= 1$, orthogonale, $3 \times 3$   
+
+En général, on a 
+
+$$U = e^{-i \frac{\theta}{2} \hat n \cdot \vb{}{\sigma}}$$ 
+
+$$U = \cos(\frac{\theta}{2} )-i\sin(\frac{\theta}{2} ) \hat n \cdot \vb\sigma$$ 
+
+$$U = R_z (\alpha) R_x (\beta) R_z (\gamma)$$
+
+
+\begin{tcolorbox}[title=3 opérations utiles]
+	 \begin{enumerate}
+	 	\item Porte d'Hadamard $(H)$ 
+			$$H = \frac{1}{\sqrt{2}} \mqty(1 & 1\\ 1 &-1) = \frac{X+Z}{\sqrt{2}} = e^{-i \frac{\pi}{2} \left( \frac{X+Z}{\sqrt{2}}  \right) }$$ 
+			$$H  \ket{0} = \ket{+} = \frac{\ket{0}+\ket{1}}{\sqrt{2} }$$ 
+			$$H \ket{1} = \ket{-} = \frac{\ket{0}-1\ket{1}}{\sqrt{2}} $$ 
+		$$X \leftrightarrow Z \qquad Y \leftrightarrow -Y$$  
+	\item Porte de Phase ($S$)
+			$$S = \mqty(1 & 0 \\ 0 & i)= e^{- \frac{i}{2} \frac{\pi}{2} Z}$$ 
+			$$S\ket{0}=\ket{0}$$ 
+			$$S\ket{1}=i\ket{1}$$ 
+			$$S\ket{+}=\ket{+i}$$ 
+			$$S\ket{+i}=\ket{-}$$ 
+			$$S\ket{-1}=\ket{-1}$$ 
+			$$S\ket{-i}=\ket{+}$$ 
+			$$X\to Y\to -X \to -Y \to X$$ 
+			$$S^2=Z$$ 
+\item $\frac{pi}{8} $ ($T$)
+			$$T = \mqty(1 & 0 \\ 0 & e^{i\frac{\pi}{4} }) = e^{-i \frac{\pi}{8} Z} =e^{- \frac{i}{2} \frac{\pi}{4} Z}$$ 
+			$$X\to \frac{X+Y}{\sqrt{2}} \to Y \to \frac{Y-X}{\sqrt{2}} $$ 
+			$$T^2=S \approxeq \sqrt{Z}$$ 
+	 \end{enumerate}
+
+{\bf\centering Prendre la racine d'un opérateur est ambigu!}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Aparté: on fait un état avec un circuit]
+	$$U \ket{\psi}= \ket{\psi'} \qquad \text{\verb/ (|psi>)---[u] = (|psi'>)----} $$ 
+
+
+On peut faire évoluer un opérateur
+$$\verb.--[A]--[U]-- = --[U]--[U^t]--[A]--[U]--- = --[U]--[A]--.$$ 
+$$A' = UAU^\dagger$$ 
+
+ex:
+$$\verb --[Z]--[H]-- = --[H]--[HZH]--$$ 
+
+\begin{tcolorbox}[title=]
+	$$HZH = \dotsb =X$$ 
+\end{tcolorbox}
+ 
+$$\verb= --[H]--[X]--$$ 
+\end{tcolorbox}
+
+Un groupe de porte importantes est \underline{les portes de Clifford} 
+
+$$\mathcal{P} = \left\{ I,X,Y,Z \right\} $$ 
+
+$$C = \{ 	U | UPU^{\dagger}\in \mathcal{P}, P\in \mathcal{P}  \} $$ 
+
+ex : $$H, S \in C \quad T \notin C$$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{octaèdre}
+    \caption{octaèdre}
+    \label{fig:octaèdre}
+\end{figure}
+
+
+\subsubsection{Portes à 2 qubits}
+
+Il faut de l'intrication pour réaliser des calculs interessant pour 
+
+$$U \in \text{SU}(4) $$ 
+
+\begin{verbatim}
+	    _______
+	----|      |-----
+	    |   U  |
+	----|______|-----
+\end{verbatim} 
+
+On utilisera souvents des opérateurs controllant
+
+
+$$CU \ket{ij} = \ket{i} \otimes u^{i}\ket{j}$$ 
+
+\begin{verbatim}
+----.-----
+    |
+---[u]----
+\end{verbatim}
+Ex: CNOT (non contrôlé) CX
+\begin{verbatim}
+----.-----
+    |
+---(+)----
+\end{verbatim}
+
+
+$$\text{CNOT} \ket{ij} = \ket{i} X \ket{j} = \ket{i, j \otimes i}$$ 
+
+$$\text{CNOT} = \ket{0}\bra{0} \otimes \mathds{1} + \ket{1}\bra{1} \otimes X $$ 
+$$\text{CNOT} = \left( \frac{\mathds{1}+Z}{2}  \right) \otimes \mathds{1} + \left( \frac{\mathds{1}+z}{2}  \right) \otimes X = \frac{1}{2} \left( H+Z1+ 1X -ZX \right)  $$ 
+
+CNOT est hermétique et unitaire!
+$$\text{CNOT} = \text{CNOT}^\dagger \qquad \text{CNOT} ^{T}=  \qquad \implies \text{CNOT}^2 =\mathds{1} $$ 
+
+$$\text{CNOT}^2 \ket{ij} = \ket{i, j \oplus 2i} = \ket{ij} $$ 
+
+$$\text{CNOT}(Z\mathds{1})\text{CNOT} =ZI $$ 
+
+$$\text{CNOT}(\mathds{1}X)\text{CNOT} = \mathds{1}X  $$ 
+
+$$\text{CNOT}(X\mathds{1})\text{CNOT} = XX  $$ 
+
+
+\underline{Porte contrôle phase} (CZ)
+
+\begin{verbatim}
+----.-----   ---[Z]----   ----.----
+    |      =     |      =     |
+---[Z]----   ----.-----   ----.----
+\end{verbatim}
+
+
+$$CZ \ket{ij} = \ket{1}Z\ket{j} = (-1)^{i\^j}\ket{ij}$$ 
+
+$$CZ = \mqty(\mqty{\imat{3}}&\mqty{0\\0\\0} \\ \mqty{0 & 0 &0} &-1)$$ 
+
+En calcul quantique, le qubit "contrôle" est aussi affecté par la porte CU
+
+\underline{Phase kick-back}
+Revenons à la porte CNOT.
+
+\begin{verbatim}
+|psi>----.----|psi>
+         |
+| + >----.----| + >
+\end{verbatim}
+
+\begin{verbatim}
+|psi>----.----(|0><0|-|1><1|) |psi>
+         |
+| + >----.----| - >
+\end{verbatim}
+
+
+
+\end{document}
