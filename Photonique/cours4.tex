@@ -1,0 +1,131 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Solution non-pertubative}
+
+
+$$H_0 = \hbar \omega_0 \ket{e}\bra{e} = \hbar\omega_0 \mqty(0& 0\\ 0 & 1)$$ 
+
+\begin{tcolorbox}[title=]
+	$$\ket{e}= \mqty(0\\1) \qquad \ket{g} = \mqty(1\\0)$$  
+\end{tcolorbox}
+
+$$E = - \mel{e}{\hat D \cdot \vb{E}(\vb{r},t)}{g}$$ 
+
+$$H_{\text{int}} = - \hat D \cdot \vb{E} (\vb{r}, t) = - \hat D \left( \vb{E}_0(\vb{r})e^{-i\omega t} +cc \right) $$ 
+
+$$= \left( \op{g} + \op{e} \right) \left[ -\hat D \vb{E} (\vb{r},t) \right] \left( \op{g} + \op{e} \right)  $$ 
+
+$$= - \op{g} \hat d \cdot \vb{E} \op{g} - \op{g} \hat \cdot \vb{E} \op{e} - \dotsb$$ 
+
+
+$$H = \hbar \mqty(0 & 0 \\ 0 &\omega_{0}) - \mqty(\mel{g}{\hat D \vb{E}}{g} & \mel{g}{\hat D \vb{E}{e}}{e}\\ \mel{e}{\hat D \vb{E}}{g} &\mel{e}{\hat D \vb{E}}{e})$$ 
+
+
+\underline{importance des symétries} 
+
+On va regarder l'effet de l'opérateur parité sur notre système.
+
+$$\hat H_e = \frac{P^{2}}{2m} + V_{\text{coul}}(\vb{r}) $$ 
+
+on compare $H_e \Pi$ et $\Pi H_e$: si $H_e$ commute avec l'opérateur parité, le système à un symétrie d'inversion spatiale. 
+
+$$H_e \Pi f(x) = H_e f(-x) = - \frac{\hbar^{2}}{2m} f''(-x) + V_{\text{coul}} f(x) $$ 
+
+dans l'aute sens
+
+$$\Pi H_e f(x) = \Pi \left( -\frac{\hbar^{2}}{2m} f''(x) + V_{\text{coul}}(x) f(x)  \right) = -\frac{\hbar^{2}}{2m} f''(-x) + V_{\text{coul}} (x) f(-x) = H_e \Pi f(x)   $$ 
+
+Donc $[\Pi, H_e] =0$ si $V(x)=V(-x)$, ce qui est vrai pour les atomes. 
+
+Pour un vecteur propre $\ket{n}$ 
+$$H_e \Pi \ket{n} = \Pi H_e \ket{n} = \Pi E_n \ket{n} = E_n \left( \Pi \ket{n} \right) $$ 
+
+Donc si $\ket{n}$ est un vecteur propre, alors $\Pi\ket{n}$ l'est aussi.  
+
+$$\Pi^{2}\ket{n} =\ket{n}$$ 
+
+$$\Pi \ket{n} = \pm \ket{n}$$ 
+
+Si $\ket{n}$ est un vecteur propre de $H_e$, c'est aussi un vecteur propre de $\Pi$ avec une valeur propre de $\pm 1$   
+
+\begin{tcolorbox}[title=]
+	Pour un atome $\psi_e$ et $\psi_g$ sont soit pair, soit impair.   \centering
+\end{tcolorbox}
+
+$$\mel{e}{\hat D}{e} = q \int \psi_e^{*}\hat r \psi_e =0 = \bra{g} \hat D \ket{g}$$ 
+
+$$H_{\text{int}} = -\mqty(0 & \mel{g}{D \cdot E}{e}\\ \mel{e}{D \cdot E}{g}& 0) $$ 
+
+Les orbitales $\psi_e$ et $\psi_g$ ne présente pas de moments dipolaire permanents.  
+
+$E_n$ posant $d_{eg} = \mel eDg$  
+
+$$\hat H = \hbar \omega_0 \op e - d_{eg} \vb{E}(\vb{r},t) \op{e}{g} - d_{eg}^{*}\vb{E}(\vb{r},t) \op{g}{e}$$ 
+
+\underline{Changement de base pour $H$: Base tournante avec la pompe $\left( e^{-i\omega t} \right) $  } 
+
+Si on prend un unitaire $U$  
+
+Dans la nouvelle base (changement de base définis par $U$ )
+
+$$H' = UHU^{\dagger}+i\hbar \dv{U}{t} U$$ 
+
+
+Shro:
+
+$$\dv{\psi}{t} = \frac{-i}{\hbar} H\psi$$ 
+
+
+$$U \dv{\psi}{t} = \frac{-i}{\hbar}  UH\underbrace{\mathds{1}}_{U^{\dagger}U} \Psi $$ 
+
+$$\dv{{}}{t} (U\psi)  = \dv{U}{t} \psi + U \dv{\psi}{t} = \dv{U}{t} = \dv{U}{t} U^{\dagger}U \psi + U \dv{u}{t} $$ 
+
+$$\dv{{}}{t} (U\psi) = \frac{-i}{\hbar} UHU^{\dagger}U\psi + \dv{U}{t} U^{\dagger}U \psi = \frac{-i}{\hbar} \left( U H U^{\dagger}+ i\hbar \dv{U}{t} U^\dagger \right) U \psi $$ 
+
+
+$$U = e^{i\omega t \op e}$$ 
+
+$$U \ket{e} = e^{i\omega t \op e} \ket{e}  = \sum_k \frac{1}{k!} \left( i\omega t \ope \right) ^k \ket{e} = \sum_k \frac{1}{k!} \left( i\omega \right) ^k \ket{e} = e^{i\omega t}\ket{e}$$ 
+
+
+$$\bra{e} U^{\dagger}= e^{-i\omega t} \bra{e}$$ 
+
+
+$$i\hbar \left( \dv{{}}{t} U \right) U^{\dagger}= i\hbar \left( i\omega \op e  \right) e^{i\omega t \op e} e^{-i\omega t \op e} = -\hbar \omega \op e$$ 
+
+$$UHU^{\dagger} = \dotsb$$ 
+
+
+$$\dotsb$$ 
+
+
+$$H' = -\hbar \underbrace{\Delta}_{\omega-\omega_0 }  \op e - d_{eg} \vb{E}_o \op {e}{g} - d_{eg} \vb{E}_0^* e^{2i\omega t} \op{e}{g} + d_{eg}^{*}\vb{E}_0 e^{-2i\omega t} \op{g}{e} + d_{eg}^{*}\vb{E}_0 e^{-2i\omega t} \op{g}{e}$$ 
+
+\begin{tcolorbox}[title=]
+	\centering Dans la base tournante on \textit{renormalise} l'énérgie $\hbar \omega_{0\to} \hbar(\omega-\omega_0)$ 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Approximation Séculaire (Rotating wave approximation | RWA)]
+	 \centering Négliger les termes en $2\omega t$ 
+\end{tcolorbox}
+
+
+$$\boxed{H_{\text{séculaire}} = -\hbar \Delta \op e - d_{eg} \vb{E}_0 \op{e}{g} d_{eg}^{*} E_0^{*} \op{g}{e} }$$ 
+
+Pour obtenir $\mathcal{P}_{g\to e}(t)$, il faut diagonaliser $H_{\text{sec}} $  
+
+On pose $\underbrace{\Omega}_{\text{Freq. de Rabi} }  = - \frac{2d_{eg}\vb{E}_0}{\hbar} $  
+
+$$H_{\text{sec}} = \hbar \mqty(0 & \frac{\Omega}{2} \\ \frac{\Omega}{2} & -\Delta)$$ 
+
+$$\implies E_{\pm} = - \frac{\hbar\Delta}{2} \pm \frac{\hbar}{2} \sqrt{\abs{\Omega}^{2}+\Delta^2}$$ 
+
+
+Pour $\Delta =0$  
+
+$$\ket{+} = \frac{\sqrt{2}}{2 } \left( e^{-i \frac{\varphi}{2 } } \right) $$ 
+
+$$a f g/af$$ 
+
+\end{document}
