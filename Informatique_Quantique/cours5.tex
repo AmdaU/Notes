@@ -1,0 +1,165 @@
+\input{../parameters}
+\begin{document}
+
+\setcounter{subsection}{5}
+\setcounter{section}{2}
+
+\subsection{Universalité}
+
+Calcul Classique $\{ \text{NAND}, \text{COPY}   \} $ 
+
+Calcul classique réversible $\{ \text{Toffoli}  \} $ 
+
+Calcul quantique: plusieurs choix possibles
+
+\begin{enumerate}
+	\item Matrice générique $4x4$ ( $M\in \text{SU}(4) $  )
+		\underline{Ex} CR_x($\theta$)  $\quad \frac{ \theta}{\pi}$ irrationnel 
+\begin{verbatim}
+----.----
+    |
+-[Rx(z)]-
+\end{verbatim}
+\item SU(2)+CNOT
+	2 générateurs de rotations sont suffisant pour générer SU(2)
+	CNOT permet de générer de l'enchevêtrement. Ce n'est pas la seul pour qui permet de faire cela et d'autre porte aurait fait le travail (Cz par exemple)
+
+Cz:
+\begin{verbatim}
+----.----   ----o----
+    |     =     |
+--[(+)]--   ----o----
+\end{verbatim}
+
+\item Un ensemble discret de porte peut être universel:
+	ex: $\{ \text{H}, \text{S}, \text{T}, \text{CNOT}     \} $ 
+
+Ces portes sont importantes dans la théorie du calcul tolérant au faute.
+
+$T^2=S$ , on pourrait donc enlever $S$ de l'ensemble. Par contre faire des portes $T$ est vraiment difficile donc en pratique on aime remplacer $T^{2}$ par $S$      
+
+\begin{tcolorbox}[title=]
+	$\{ \text{H} , \text{S} , \text{CNOT}  \} $ n'est pas universel mais génère le groupe Clifford à plusieurs qubits. 
+v
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Gotesman-Krill 98]
+	 Le calcul quantique avec seulement les portes Clifford peut-être simulé classiquement.
+	 L'intrication est nécessaire mais pas suffisant pour avoir un avantage quantique.
+	 \underline{Preuve Sketch}: 
+
+	 Suivre l'évolution des opérateurs de Pauli à travers le circuit. 
+\end{tcolorbox}
+\end{enumerate}
+
+\subsection{L'algorithme de Deustch}
+
+Soit une fonction classique $f: \mathds{Z}  \mapsto \mathds{Z}$.On cherche à savoir si $f$ est balancée ou constante. 
+
+$$f \text{ balancé } f(0)\neq f(1) \qquad f(0) = 0, f(1)=1 \quad \text{ou}\quad f(0)=1, f(1)=0$$ 
+$$f \text{ constante } f(0)= f(1)\qquad f(0) = 0, f(1)=0 \quad \text{ou}\quad f(0)=1, f(1)=1 $$ 
+
+Calcul classique, il fait évaluer $f$ deux fois et comparer calcul quantique. On peut évaluer qu'une seule fois ...
+
+
+Puisque $f$ n'est pas forcément réversible car utilise un registre.
+
+$U_f \ket{xy} \equiv \ket{x, y \oplus f(x) }$ 
+
+Ex: $f$ constant $f(0)=f(1)=1$  
+$$U_f \ket{10}= \ket{1, 0 \oplus 1} = \ket{11}$$ 
+
+$$U_f^{2}\ket{xy} = \ket{x,y \oplus 2 f(x)} = \ket{xy}$$ 
+
+$$\implies U_f^{2}= \mathds{1}$$ 
+
+$$U_f = U_f^{\dagger} = U_f^{-1}$$ 
+
+Ce circuit quantique est 
+\begin{verbatim}
+|0>----[H]----|----|----[H]----[Mes]
+              |    |
+              | U_f|
+              |    |
+|0>--[X]--[H]-|----|--------[Poubelle]
+\end{verbatim}
+
+$$\ket{\psi_{0}} = \ket{00}$$ 
+$$\ket{\psi_{1}} = \left( \frac{\ket{0}+\ket{1}}{\sqrt{2}}  \right) \otimes \left( \frac{\ket{0}-\ket{1}}{\sqrt{2}}  \right) = \ket{+-}$$ 
+
+Appliquons $U_f$ sur $\ket{x} \otimes \left( \frac{\ket{0}-\ket{1}}{\sqrt{2}}  \right) $  
+
+$$U_f \left( \frac{\ket{X0}-\ket{X1}}{\sqrt{2}}  \right) = \frac{1}{\sqrt{2}} \left( \ket{X,f(x)} - \ket{x, 1 \oplus f(x)} \right) $$ 
+
+Si $f(x)=0$ ou $1$, l'état final est le même à un signe près  
+
+
+$$U_f \ket{x} \otimes \left( \frac{\ket{0}-\ket{1}}{\sqrt{2}}  \right) = (-1)^{f(x)} \ket{x}\ket{1}$$ 
+
+$$\dotsb$$ 
+
+
+\hrule
+
+\underline{Préparation d'un état de Bell} 
+
+
+\begin{verbatim}
+|0>----[H]----.----
+              |    |Phi+>
+|0>----------(x)---
+\end{verbatim}
+
+$$\ket{\Psi_{1}} = \left( \frac{\ket{0}+\ket{1}}{\sqrt{2}}  \right) \otimes \ket{0} = \frac{1}{\sqrt{2}} \left( \ket{00} + \ket{10} \right)  $$ 
+
+$$\ket{\psi_{2}} =\text{CNOT} \ket{\psi_1} = \frac{1}{\sqrt{2}} \left( \ket{00}+\ket{11} \right) $$ 
+
+
+\begin{verbatim}
+|0>----[H]----.----
+              |    |Psi+>
+|1>----------(x)---
+\end{verbatim}
+(Démarche similaire pour le démontrer)
+
+
+\begin{verbatim}
+|0>----[H]-,--.---,--
+ !         !  |   !
+|0>--------!-(x)--!--
+ !         !      !
+ !         !      !
+ !         !      !
+ Z         X      X
+ I         I      X
+ ____________________
+ I         I      Z
+ Z         Z      Z
+\end{verbatim}
+
+$\ket{00}$ étant propre de $ZI$ et $IZ$   
+
+\underline{SWAP gate} 
+
+\begin{verbatim}
+----x----   ----o---(+)---o----
+    |     =     |    |    |    
+----x----   ---(x)---o---(x)---
+\end{verbatim}
+
+
+$$\ket{\psi_{0}} = \ket{ij}$$ 
+
+$$\ket{\psi_{1}} = \ket{i, j \oplus i}$$ 
+
+$$\ket{\psi_2} =\ket{i \oplus j \oplus i, j \oplus i} = \ket{2 i \oplus j, j \oplus i} = \ket{j, j \oplus i}$$ 
+
+$$\ket{\psi_{3}} = \ket{j, j \oplus i \oplus j} = \ket{ji} = \text{SWAP} \ket{ij}$$ 
+
+
+\underline{Notation binaire} 
+
+On écrit le nombre binaire en décimale.
+
+
+\end{document}
