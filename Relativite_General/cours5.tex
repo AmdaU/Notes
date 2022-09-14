@@ -1,0 +1,129 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-14
+
+\section*{Courbure}
+
+
+
+\underline{Tenseur de Riemann $R_{jkl}^i$ } 
+
+$$R_{kji}^{l}= \partial_i \Gamma_{ki}^{l}-\partial_{i\Gamma_kj}^{l}+ \Gamma_{ki}^{m}\Gamma_{mj}^{l}- \Gamma_{kj}^{m}\Gamma_{mi}^{l}$$ 
+
+
+\begin{tcolorbox}[title=(1) Non commutativité des dérivées covarientes]
+
+	$$\partial_i \partial_i Y = \partial_j \partial_i Y$$ 
+	$$\nabla_i \nabla_j A_k -\nabla_j \nabla_i A_k = R_{kji}^{l}A_l $$ 
+	 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title= (2) holonomie]
+$$\Delta A^{i} = R_{kjl}^{i}A^{k}\dd x^l \dd x'^j$$ 
+(voir figure \ref{fig:holonomie})
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{holonomie}
+    \caption{holonomie}
+    \label{fig:holonomie}
+\end{figure}
+
+
+\begin{tcolorbox}[title=(3) déviation géodésique]
+\begin{tcolorbox}[title=dérivé intrinsèque]
+	$$\vb{A}(\lamda) = A^{i}(lambda) \vb{e}_i(\lambda)$$ 
+	$$\dv{{}}{\lambda} \vb{A} = \dv{A^{i}}{\lambda} \vb{e}_i + A^{i} \dv{\vb{e}_i}{\lambda}  = \dot A^{i}\vb{e}_i + A^{i}\partial_j \vb{e}_i \dv{x^{i}}{\lambda}  = \left( \dot A^{k}+ \Gamma)ji^{k} A^{i}\dot x^j \right) \vb{e}_k$$ 
+	$$\nabla_k A^{k}= \dot A^{k}+\Gamma_{ji}^{k}A^{i}\dot x^j$$ 
+\end{tcolorbox}
+
+$$\boxed{\nabla_{lamda}^{2}\xi^{i}= R_{jkm}^{i}\xi^{m}\dot x^{j}\dot x^{k}}$$ 
+	 
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{déviation-géodésique}
+    \caption{déviation géodésique}
+    \label{fig:déviation-géodésique}
+\end{figure}
+
+
+\underline{Tenseur de Rixxi} 
+$$R_{ik} = R_{ijk}^{j}$$ 
+
+
+\underline{Tenseur scalaire} 
+$$R=r_i^{i}= g^{ik}R_{ik} $$ 
+
+
+$$\nabla_j A_k = \partial_j A_k - \Gamma_{jk}^{m}A_m $$ 
+
+$$\nabla_{i}{\nabla_j} A_k = \nabla_i \left[ \partial_j A_k - \Gamma_{jk}^{m}A_m \right] = \partial_i \partial_j A_k - \partial_j \left( \Gamma_{jk}^{m}A_m  \right) -\Gamma_{ij}^{l}\left( \partial_l A_k - \Gamma_{lk}^{m}A_m  \right) - \Gamma_{ik}^{l}\left( \del_i A_l - \Gamma_{jl}^{m}A_m  \right) $$ 
+
+$$= \partial_i \partial_j A_k - \Gamma_{jk}^{m}\partial_i A_m -\partial_i \Gamma_{jk}^{m}A_m -\Gamma_{ij}^{l}\partial_l A_k - \Gamma_{ij}^{l}\partial_j A_l + \Gamma_{ij}^{l}\Gamma_{lk}^{m}A_m + \Gamma_{ik}^{l}\Gamma_{jl}^{m}A_m $$ 
+
+$$\nalba_j \nabla_i A_k = \dotsb(j\leftrightarrow i)$$ 
+
+$$\left( \nabla_i\nabla_j -\nabla_j \nabla_i \right)A_k = \left( - \partial_i \Gamma_{jk}^{m}+ \partial_j \Gamma_{ik}^{m} \right) A_m + \left( \Gamma_{ik}^{l}\Gamma_{jl}^{m}- \Gamma_{jk}^{l}\Gamma_{il}^{m} \right) A_m $$ 
+
+
+$$= (\partial_i \Gamma_{ki}^{l}-\partial_{i\Gamma_kj}^{l}+ \Gamma_{ki}^{m}\Gamma_{mj}^{l}- \Gamma_{kj}^{m}\Gamma_{mi}^{l})A_l $$ 
+
+\underline{Propriétés } 
+
+A)
+
+$$R_{lkji} = \frac{1}{2} \left( \del_i \partial_j g_{ki} + del_k \partial_j g_{li} - \partial_l \partial_j g_{ki} - \partial_k \partial_i g_{lj}  \right) +g^{mn}\left( \Gamma_{mil} \Gamma_{nkj} - \Gamma_{mjl} \Gamma_{nki} \right)  $$ 
+
+
+$$R_{lkji} = R_{klji} $$ 
+$$R_{lkji} = R_{lkij} $$ 
+$$R_{lkji} = R_{jilk} $$ 
+$$R_{lkji} + R_{ljik} + R_{likj} =0$$ 
+
+En $d$ dimensions il y a $ \frac{1}{12} d^{2}(d^2-1)$ (20 pour $d=4$ )   
+
+B) Indentité de Bianchi
+
+
+$$\nabla_m R_{ijkl}+ \nabla_k R_{ijlm} + \nabla_l R_{ijmk} =0 $$ 
+
+\begin{tcolorbox}[title=Exemple 1: sphère de rayon a]
+
+	$$\dd s = a^{2}\dd \theta^{2}+ a^{2}\sin^{2}\theta\dd \varphi^2$$ 
+	$$[g_{ij} ] = a^{2}\mqty[1 & 0 \\ 0 & \sin^2\theta]$$ 
+	$$[g^{ij}] = \frac{1}{a^2} \mqty[ 1 & 0 \\ 0 & \frac{1}{\sin\theta}  ]$$ 
+	$$\Gamma_{22}^{1}= -\sin\theta\cos\theta \qquad \gamma_{12}^{2}=\Gamma_{21}^{2}= \cot\theta$$ 
+
+$$R_{1212}  =a^2\sin\theta$$ 
+
+$$R_{22} = \sin\theta$$ 
+
+$$R_{11} = 1$$ 
+
+$$R = g^{ij}R_{ij} = \frac{2}{a^2} $$ 
+	 
+\end{tcolorbox}
+
+ 
+\begin{tcolorbox}[title=Exemple 2: le cylindre de rayon a]
+	 $$\dd s = \dd z^{2}+ a^{2}\dd \varphi^2$$ 
+	 $$[g_{ij} ] = \mqty[1 &0 \\ 0 & a^2]$$ 
+	 Le cylindre est plat!
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Exemple 3: le cône]
+	Le cône est plat \textbf{sauf} à l'apex, qui possède un courbure infini
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Exemple 4: tore plongé dans $\mathds{R}^{3} $ ]
+	$$\dotsb$$  
+\end{tcolorbox}
+
+
+
+\end{document}
