@@ -1,0 +1,116 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-16
+
+\section*{Exemple: Hyperboloïde de révolution}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{hyperboloïde-de-révolution}
+    \caption{Hyperboloïde de révolution}
+    \label{fig:hyperboloïde-de-révolution}
+\end{figure}
+
+$$r^2-z^{2}=1 $$ 
+
+$$2r \dd r - 2z -2z \dd z = 0 \;\&\; z= \sqrt{r^2-1}$$ 
+
+
+$$\dd s^{2}= \dd r^{2}+\dd^{2}+ r^{2}\dd \varphi^{2} =  \left( 1 + \frac{r^2}{r^{2}-1}  \right) \dd r^{2}+ r^{2}\dd \varphi$$ 
+
+$$\implies [g_{ij} ] = \mqty[\frac{2r^{2}-1}{r^2-1} &0\\ 0 & r^2 ]$$ 
+
+$$\Gamma_{11}^{1} = \frac{ r}{\left( r^2-1 \right) (2r^{2}-1)} $$ 
+$$\Gamma_{22}^{1}= \frac{ r \left( r^2-1 \right) }{ 2r^2-1} $$ 
+
+$$\Gamma_{12}^{2}= \Gamma_{21}^{2}= -\frac{1}{r} $$ 
+
+$$R_{1212} = \frac{ -r^{2}}{ \left( r^{2}-1 \right) (2r^{2}-1)}  $$ 
+$$R = \frac{ -2}{ \left( 2r^{2}-1 \right)^2 } $$ 
+
+$$\dot u_i = \frac{1}{2} \partial_i g_{jk} u^{i}u^{k}$$ 
+
+$$i=2 \implies \quad \dot u_{\varphi} = 0 \implies u_{\varphi=cst} = r^{2}\dot\varphi =h$$ 
+
+
+\begin{tcolorbox}[title=Coordonnées hyperboliques ]
+
+	$$r =\cosh\theta \quad z =\sinh\theta \quad \theta \in [-\infty,\infty]$$ 
+
+	$$r^{2}-z^{2}=1$$ 
+$$\dd s^{2}= \left( \cosh^{2}\theta + \sinh^{2}\theta  \right) \dd \theta^{2}+ \cosh^{2}\theta \dd \varphi = \cosh 2\theta \dd \theta^{2}+ \cosh^{2}\theta \dd \varphi^2$$ 
+
+$$\Gamma_{11}^{1}= -2 \Gamma_{22}^{1}= \tanh 2\theta$$ 
+
+$$\Gamma_{21}^{2}= \Gamma_{12}^{2}=\tanh\theta $$ 
+
+$$R_{1212} = - \frac{\cosh^2\theta}{\cosh^22\theta}  $$ 
+
+$$R = - \frac{ 2 }{\cosh2\theta} $$ 
+\end{tcolorbox}
+
+\hrule 
+\section*{Sphère}
+
+
+$$x^{1}= \theta = \text{cst} \quad x^{2}= \varphi \in [0,2\pi]$$ 
+
+$$\nabla_{lambda} A^{i}= \dv{{}}{\lambda} A^{i}+ \Gamma_{jk}^{i}A^{k}i^j$$ 
+
+$$\nabla_{\varphi} A^{i}= \dv{A^{i}}{\varphi} + \Gamma_{k\varphi}^{i}A^{k}= 0$$ 
+
+
+$$\begin{cases}
+	\nabla_{\varphi} A^{\varphi} = \dv{A^{\varphi}\varphi}{+} \Gamma_{12}^{2}A^{\theta}=0 \\
+	
+\nalba_{\varphi} A^{\theta}= \dv{A^{\theta}}{\varphi} + \Gamma_{22}^{1}A^{\varphi}= 0 
+\end{cases}$$
+
+$$\begin{cases}
+	
+\dv{A^{\varphi}}{\varphi} +A^{\theta} \frac{ \cos\theta }{\sin\theta} =0 \\\dv{A^{\theta}}{\varphi} - A^{\varphi}\sin\theta\cos\theta =0 
+\end{cases}$$
+
+$$\begin{cases}
+	\dv[2]{A^{\varphi}}{\varphi} + \cos^{2}\tehta A^{\varphi}= 0\\
+	\dv[2]{A^{\theta}}{\varphi} + \cos\theta A^{\theta}= 0
+\end{cases}$$ 
+
+
+$$\begin{cases}
+A^{\varphi}(\varphi) = \frac{1}{\sin\theta} \cos(\varphi \abs{\cos\theta} )\\
+A^{\theta}(\varphi) = \text{sign} (\cos\theta)\sin(\varphi \abs{\cos\theta} )
+\end{cases}$$ 
+
+$$A^{\varphi}(\varphi) = \frac{1}{\epsilon} \cos\varphi $$ 
+
+$$A^{\theta}(\varphi) = \sin\theta$$ 
+
+
+\hrule
+
+\section*{Coordonées polaires planes}
+
+
+$$\dd s^{2}= \dd r^{2}+ r^{2}\dd \varphi^2$$ 
+
+$$[ g_{ij} ] = \mqty[1 & 0 \\ 0 & r^2]$$ 
+
+
+$$\dot u_i = \frac{1}{2} \partial_i g_{kj} i^{k}u^{j}$$ 
+
+
+$$u^{r}= u_r = \dot r $$ 
+$$i=1 \implies \dot u_r = r\dot \varphi^{2}= \ddot r$$ 
+
+$$i=2 \implies \dot u_{\varphi} = 0 \implies u_{\varphi} = \text{cst} $$ 
+$$U_{\varphi} = g_{\varphi\varphi} u^{\varphi}= r^{2}\dot \varphi = h$$ 
+
+$$\implies \abs{\vb{u}}^{2} =1 = \dot r^{2}+ r^{2}\dot \varphi^{2}= \dot r^{2}+ frac r^2h^{2} r^{4}$$ 
+
+
+
+
+\end{document}
