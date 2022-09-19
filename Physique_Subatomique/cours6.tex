@@ -1,0 +1,105 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-19
+
+\section*{Retour}
+
+\underline{Chaîne de masse} 
+
+$$L=\frac{1}{2} \mu \sum_{r=1}^N\left\{\dot{u}_r^2-\Omega^2 u_r^2-\Gamma^2\left(u_r-u_{r+1}\right)^2\right\}$$ 
+
+$$U_i =  A e^{i \left( qr -\omega t \right) }$$ 
+
+$$\omega_q = \sqrt{\Omega^{2}+ 2 \Gamma^{2}\left( 1-\cos q \right) } = \sqrt{\Omega^{2}+ 4\Gamma^{2}\sin^{2} \frac{q}{2} }$$ 
+
+
+Limite continue
+
+$$ra \to x,\, u_r \to u(x),\, u_{r+1} - u_r \to a \partial_x u ,\, \sum_r \to \int \dd x/a,\, \phi(x) = \sqrt{\frac{mu}{\omega} } u(x) $$ 
+
+On a donc 
+
+$$L=\frac{1}{2} \mu \int_0^{\ell} \mathrm{d} x \frac{1}{a}\left[\dot{u}^2-\Omega^2 u^2-\Gamma^2 a^2\left(\partial_x u\right)^2\right]$$ 
+
+$$L = \frac{1}{2} \int_{0}^{t}\dd x \left[ \dot \phi^{2} -\Omega^{2}\phi^{2}-c^{2}(\partial_x \phi )^2 \right] $$ 
+
+
+On définir la densité lagrangienne telle que $$L = \int \dd x \mathscr{L} 	$$ 
+
+$$\mathscr{L} = \frac{1}{2} \left( \dot \phi^{2}-\Omega^{2}\phi^{2}- c^{2}(\del_x \phi)^2 \right) $$ 
+
+
+Équations de Lagrange:
+
+$$\pdv[2]{u}{t} + \Omega^{2}u - a^{2}\Gamma^{2} \pdv[2]{u}{x} =0$$ 
+
+$$\implies \sqrt{m^{2} c^{4} + c^{2}p^{2}} \quad p:= \frac{q}{a} \quad m := \frac{\Omega}{c^{2} } $$ 
+
+\underline{Hamiltonien} 
+
+$$H = \sum_r p_r \dot u_r -L $$ 
+
+Dans le cas quasi-continu on a 
+
+$$L  = \sum _r a \mathscr{L}(\phi(x_r ), \dot \phi(x_r ))$$ 
+
+
+Le moment conjugé est alors $$\pdv{L}{\dot\phi} = a \pi (x_r ) \qq{où} p_r = \pdv{L}{\dot u_r } $$ 
+
+$$ [\phi(x_r ),\pi(x_s)]_p = \frac{1}{a} \delta_{rs}  $$ 
+
+donc, pour un système continue 
+
+$$\left[ \pgi(x), \pi(x') \right]_p = \delta (x-x')$$ 
+
+
+donc $$H= \sum_r a \pi(x_r) \dot\phi (x_r ) -L = \int \dd c \left( \pi (x) \dot\phi(x) - \mathscr{L}  \right) $$ 
+
+On peut donc le représenter comme $$H = \int \dd x \mathscr{H} \qq{où} \mathscr{H} = \pi(x) \dot \phi (x) - \mathscr{L} $$ 
+
+
+\underline{Généralisation à trois dimensions } 
+
+$$L = \frac{1}{2} \int \dd^{3}r \left\{ \dot \phi^{2}-\Omega ^2 \phi^{2}-c^{2}(\nabla\phi)^2 \right\} $$ 
+
+L'équation de Lagrange deviens alors $$ \pdv[2]{\phi}{t} + \Omega^{2}\phi -c^{2}\nabla^{2}\phi =0$$ 
+
+$$H = \int \dd^{3}x \mathscr{H} $$ 
+
+$$H = \pi(\vb{r}) \dot\phi (\vb{r}) - \mathscr{L} $$ 
+
+$$\boxed{\left[ \phi(\vb{r}), \pi(\vb{r}') \right]_p =\delta(\vb{r}-\vb{r}')}$$ 
+
+
+\section*{Action}
+
+$$S  = \int \dd^{4}x \left( \partial_{\mu} \phi \partial^{u}\phi - m^{2}\phi^2 \right) $$ 
+
+
+\section*{Équation de continuité }
+
+$$\boxed{ \pdv{P}{t} + \grad \cdot \vb{J} =0 }$$ 
+
+shro
+
+$$i \pdv{\psi}{t} = - \frac{1}{2} \nalba^{2}\psi$$ 
+
+$P = \abs{\psi}^{2}$ 
+
+$\vb{J} = \frac{1}{2m} \left( \psi* \grad \psi -\psi \grad \psi^{*} \right) $  
+
+$\dv{P}{t} = \psi^{*}\dot\psi - \dot \psi^{*}\psi$ 
+
+$\grad \vb{J} = \frac{1}{2m} \left\{ \dotsb \right\} $
+
+$\frac{1}{2} \psi^{*}(0) + (0)\psi$ 
+
+
+L'équation de Klein-Gordon n'as pas cette propriété
+
+Cette dernière conserve bien le quadri-courrant mais $J^{2} = p\ngtr 0$ 
+
+
+
+\end{document}

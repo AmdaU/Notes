@@ -1,0 +1,27 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-16
+
+\section*{Résolution du Hamiltonien avec la théorie des perturbations}
+
+
+$$H = \underbrace{-\hbar \left( \omega -\omega_0 \right) \op e - d_{eg} \vb{E}_0 \op{e}{g} -d_{eg}^{*}\vb{E}_0^*\op{g}{e}}_{H_{0}}  \underbrace{ - d_{eg}^{*}\op{e}{g} - d_{eg}\vb{E}_0^* e^{-2i\omega t} \op{g}{e}}_{V}  $$ 
+
+états propres de $H_0$  
+
+$$\ket{\pm} = (\cos,\sin) \frac{\theta}{2} e^{-i \frac{\varphi}{2} }\ket{e} \pm (\sin,\cos) \frac{\theta}{2}  e^{i \frac{\varphi}{2} }$$ 
+
+
+
+L'approximation séculaire (qui consiste à négliger $V$), reviens à dire que la probabilité de transition $\ket{\pm} \to \ket{\mp}$ qu'il cause est très faible.
+
+
+
+On veut connaître $\mathcal{P}_{\ket{+}\to \ket{-}}(t)$ 
+
+$$\mathcal{P}_{\ket{+}\to \ket{-}} = \frac{1}{\hbar} \abs{\int_{0}^{t}\dd t' e^{-i \frac{E_+ - E_-}{ \hbar} t}\mel{+}{V}{-}}^2$$ 
+
+à claculer à $\Delta =0$ et $\Omega \in \mathds{R} (\varphi=0)$  
+
+\end{document}
