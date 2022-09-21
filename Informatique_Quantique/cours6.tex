@@ -1,0 +1,70 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-20
+
+\section*{Deustch}
+
+\begin{quantikz}
+	\ket{0} & & \gate{H}  &\gate[wires=2]{U_f} &\gate{H} &\meter{}
+	\\
+	\ket{0} & \gate{X} &  \gate{H} & & \trash{\text{trash}}
+\end{quantikz}
+
+
+\setcounter{section}{2}
+\setcounter{subsection}{7}
+
+\subsection{Problème de Deutsh-Jozsa}
+
+On cherche à trouver si 
+$$f: \mathds{Z}_2^n\mapsto\mathds{Z}_2$$
+est balancé (la moitié des résultats est 1 et l'autre 0) ou constant (toujours 0 ou 1). On sait que $f$ est un ou l'autre.
+
+Classiquement, on doit calculer $f$ $2^{n/2}+1$ fois (au pire)
+
+
+\begin{quantikz}
+	\ket{0}^{ \otimes n } & & \gate{H}\qwbundle{n}  &\gate[wires=2]{U_f} &\gate{H} &\meter{}
+	\\
+	\ket{0} & \gate{X} &  \gate{H} & & \trash{\text{trash}}
+\end{quantikz}
+
+
+\begin{tcolorbox}[title=]
+	 On appelle $U_f$ un oracle en informatique quantique 
+\end{tcolorbox}
+
+$$\ket{\psi_{0}} = \ket{0}^{ \otimes n+1 }$$ 
+
+$$\ket{\psi_{1}} = \ket{+}^{\otimes n} \ket{-} = \frac{1}{\sqrt{2}^n} \sum_{x=0}^{2^n -1} \ket{x} \otimes \left( \frac{\ket{0} - \ket{1}}{\sqrt{2}} \right) $$ 
+
+$$x = \sum_{k=1}^{n} x_k 2^{n-k}$$ 
+
+On applique maintenant $U_f$. On a un \textit{phase kick-back}
+
+$$\ket{\psi_{2}} = U_f \ket{\psi_{1}} = \sum_x \frac{(-1)^{f(x)}}{2^{n/2}} \ket{x} \otimes \left( \frac{\ket{0}-\ket{1}}{\sqrt{2}}  \right)  $$ 
+
+L'infromation sur $f(x)$ est conteny dans la phase des $n$ premiers qubits. On applique les Hadamard $H^{\otimes n}$ pour faire \textit{tomber} les phases vers des probabilité
+
+$n=1:$ 
+$$H \ket{x} = \begin{cases}
+	\frac{\ket{0}+ \ket{1}}{\sqrt{2}} & \text{si }x=0\\
+	\frac{\ket{0}-\ket{1}}{\sqrt{2}}& \text{si } x=1 
+\end{cases} = \sum_{z=0}^{1} \frac{\left( -1 \right) ^{XZ}}{\sqrt{2^n}} \ket{z} $$ 
+
+On généralise à $n \qeq 1$   
+
+$$H^{ \otimes n } \ket{x_1 \, x_2 \, \dotsb \, x_n } = \bigotimes_{j=1}^n \frac{1}{\sqrt{2}} \sum_{z_j=0}^{1} \left( -1 \right)^{x_j z_{j}}\ket{z_{j}} = \frac{1}{\sqrt{2^n}} \sum_{z_1 , \dotsb, z_n =0}^{1} \left( -1 \right) ^{x_{1z_1+\dotsb}} \ket{z_1 \, \dotsb \, z_n } = \frac{1}{\sqrt{2}^n} \sum_{z=0}^{2^n-1} \left( -1 \right)^(x \cdot z) \ket{z}$$ 
+
+Donc 
+
+$$\ket{\psi_{3}} = H^{ \otimes n } \otimes 1 \ket{\psi_{2}} = \sum_x \frac{(-1)^{f(x)}}{2^{n/2}} H^{ \otimes } $$ 
+
+
+
+
+
+
+
+\end{document}

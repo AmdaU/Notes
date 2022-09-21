@@ -1,0 +1,71 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-21
+\section*{Retour}
+
+$$H= -\hbar (\omega-\omega_{0}) \op e  -\vb{d}_{eg} \vb{E}_0 \op{e}{g} - \vb{d}_{eg} \vb{E}_0 \op{g}{e} + V$$ 
+
+
+$$\Omega =\abs{\frac{\vb{d}_{eg}\vb{E}_0}{\hbar} } \qq{,} \omega \gg \sqrt{\abs{\Omega}^2 + \Delta^2 }$$ 
+
+Comment calcule-t-on la probabilité d'exciter l'atome? ( $\mathcal{P}_{\ket{g}\to\ket{e}}(t) $  )
+
+
+
+$$H \ket{+} = e^{-i \frac{E_+}{\hbar} t} \ket{+}$$ 
+$$H \ket{-} = e^{-i \frac{E_-}{\hbar} t} \ket{-}$$ 
+
+$$\text{État initial:} \ket{\psi(0)}=\ket{g} = \left( \op + + \op - \right) \ket{g}$$ 
+
+Pour un $t$ quelconque: $$\ket{\psi(t)}=  e^{-i Ht/\hbar} \left( \op + + \op- \right) \ket{g} = \ip{+}{g}e^{-i E_+ t/\hbar} \ket{+} + \ip{-}{g}e^{-iE_+ t/\hbar} \ket{-}$$  
+
+$$\mathcal{P} _{g \to e} (t) = \abs{\ip{e}{\psi(t)}}^{2}$$ 
+
+
+$$= \ip{+}{g}e^{-i E_+ t/\hbar} \bra{e}\ket{+} + \ip{-}{g}e^{-iE_+ t/\hbar} \bra{e}\ket{-}$$ 
+
+$$\ip{e}{\psi(t)} = \dotsb = 2\sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{i \varphi} \left\{ \frac{e^{-iE_+ t /\hbar} - e^{-i E_- t/\hbar}}{2}  \right\} $$ 
+
+$$\boxed{ \mathcal{P} _{g\to e}(t) = \sin^{2}\theta \sin^{2}\left( \frac{t}{2} \sqrt{\Delta^{2} + \abs{\Omega}^2 } \right)  }$$ 
+
+valable si $\tilde \Omega = \sqrt{\Delta^{2}+ \abs{\Omega}^{2}}\ll \omega \text{ : Fréquence de la pompe } $ 
+
+
+Es-ce possible que cette approximation ne soit plus valide? ( $\tilde \Omega \sim \omega$  ) 
+
+Pour pomper l'atome, on prendre $\Delta = 0$ 
+
+$$\abs{\Omega} \sim \omega ?$$ 
+
+$$\abs{\Omega} = \abs{\frac{\vb{d}_{eg} \cdot \vb{E}_0}{\hbar} }  $$ 
+
+Possible en utilisant un laser toujours plus puissant!
+$$\mathcal{P} _{g\to e} (t) = \frac{\abs{\Omega}^{2}}{\abs{\Omega}^{2}+\Delta^2} \sin^{2}\left( \frac{t}{2} \sqrt{\abs{\Omega}^2 + \Delta^2 } \right)  $$ 
+
+Limites grand décalages : $$\mathcal{P} _{g \to e} (t) = \frac{\abs{\Omega}^{2}}{\Delta^{2}+\abs{\Omega}^{2}} $$ 
+
+
+Limites petit décalages : $$\mathcal{P} _{g \to e} (t) = 1 - \frac{\Delta^{2}}{\abs{\Omega}^{2}} $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{boule-de-bloch}
+    \caption{boule de Bloch}
+    \label{fig:boule-de-bloch}
+\end{figure}
+
+\section*{Règle d'or de Fermi}
+
+Atome en interaction avec un champ $\vb{E}$ :
+$$H = E_+ \ket{+} + E_- \ket{-}$$ 
+
+Avec le champ, on peut faire $\ket{g}\to \ket{e}$ 
+
+Une fois dans l'état $\ket{e}$, l'atome y reste si  le champ est nul puisque les états $e$ et $g$ ne sont plus couplées . 
+
+Comment alors, peut-il y avoir un émission spontané?: Les fluctuations du vide couple les états $e$ et $g$  
+
+
+
+\end{document}
