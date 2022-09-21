@@ -1,0 +1,108 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-21
+
+\setcounter{section}{2}
+\section{Principes fondamentaux de la relativité générale}
+\subsection{Théorie newtonienne de la gravitation}
+
+Newton ne cherche pas à expliquer le mécanisme de la gravité : il donne simplement une formule.
+
+Le concept de champ gravitationnel nait naturellement de le relativité restraint car la force ne peut pas être instantanée. On a besoin d'un champ pour \textit{contenir} la quantité de mouvement et l'énergie pendant un certain temps.
+
+$$\vb{F}(\vb{r}) = m \underbrace{\vb{g}(\vb{r})}_{\text{champ gravitationnel } } $$ 
+
+$$\vb{g} (\vb{r}) = -G \sum_i \frac{m_i}{\abs{\vb{r}-\vb{r}_i}^{3}} \left( \vb{r}-\vb{r}_i \right) $$ 
+
+$$\grad \cdot \vb{g} = -4\pi G \underbrace{\rho (\vb{r})}_{\text{densité de masse} } $$ 
+
+$$\vb{g} (\vb{r}) = - \grad \Phi$$ 
+
+$$\Grad \Phi = 4\pi G\rho$$ 
+
+$$\Phi(\vb{r}) = -G \int \dd^{3}r' \frac{\rho (\vb{r})}{\abs{\vb{r}-\vb{r}'} } $$ 
+
+
+\begin{tcolorbox}[title=Unitées ]
+	$$E = \rm[G] \frac{M^{2}}{L}  $$
+	$$E =\rm  \frac{L^{2}}{T^2} M \xrightarrow{c=1} M $$ 
+	$$c =1 \rm \to L= T$$ 
+\end{tcolorbox}
+
+On distingue les masses \textit{inertiel} et \textit{gravitationnel} 
+
+$$\vb{F}(\vb{r}) = m_{\text{grav}}  \vb{g}(\vb{r}) = m_{\text{inert}} \vb{a} $$ 
+
+Si $m_{\text{grav}} = m_{\text{inert}} \therefore \vb{a} = \vb{g} $ 
+
+
+Ce qui nous interesse est réellement le rapport $m_{\text{inert}}/m_{\text{grav}}  $ 
+
+L'expérience de Potvis vise a vérifier si cette masse est identique pour toutes substance.
+
+Il utilise la force centrifuge, qui est une force inertiel pour comparer les rapport de masse. Il a été démontré que les deux sont pareils jusqu'à 10^{-9} 
+
+Récemment, un sonde français a démontré que c'est la même chose jusqu'à 10^{-15}.
+
+Cette égalité est le \textbf{principe d'équivalence faible}
+
+Il suggère qu'un force inertiel est in différentiable d'une force gravitationnelle qui est le \textbf{principe d'équivalence faible}
+
+\section*{coordonnées de Rindler}
+
+$$x = \xi \cosh \theta \qquad t = \xi \sinh\theta $$ 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{coordonnées-de-rindler}
+    \caption{Coordonnées de Rindler}
+    \label{fig:coordonnées-de-rindler}
+\end{figure}
+
+Observateur à $\xi = \text{cst} $ 
+
+$$u^{i} = \xi \dot\theta \left( \cosh \theta, \sinh\theta \right) $$ 
+
+$$u^{i}u_i =1 = \xi^2\dot\theta^{2} \underbrace{\left( \cosh^{2}\theta- \sinh^{2}\theta \right)}_{1} $$ 
+
+$$\implies 1 = \xi \dot \theta \implies \dot\theta = \text{cst} $$ 
+$$\theta = \xi \tau$$ 
+
+
+$$a^{i}= \dot \theta \left( \sinh\theta, \cosh \theta \right) $$ 
+
+$$a^{i}a_i = \frac{1}{\xi^2} \left( \sinh^{2}-\cosh^2 \right) = - \frac{1}{\xi^2} $$ 
+
+accélération propre $\frac{1}{\xi} $ 
+
+\begin{tcolorbox}[title=]
+	Les coordonnées ne sont pas nécessaire en relativité générales et les problèmes peuvent être formulées comme des observateurs s'échangeant des signaux lumineux. 
+\end{tcolorbox}
+
+\subsection*{Tétrade}
+
+On peut toujours définir un base locale respectant le produit scalaire de Minkowski. qui différent de celle imposé par \textit{le} système de coordonnées. 
+
+
+\section*{Coordonnées localement cartésiennes}
+
+
+On définit
+
+$$x'^p = \left( x^{i}- x_p^{i} \right) + \frac{1}{2} \Gamma_{jk}^{i}(p) (x^{i}- x_p^{j})\left( x^{k}- x_p^{k}  \right)  $$ 
+
+$$\pdv{x'^{i}}{x^j} = \delta_i^{j} + \Gamma_{jk}^{i}(p) \left( x^{k}-k_p^{k} \right) $$ 
+
+$$\pdv[2]{x'^i }{x^{i}}{x^{k}}  = \Gamma_{jk}^{i}(P)$$ 
+
+$$\Gamma'_{jk}^{i}(p)= \pdv{x'^k}{x^l} o\dv{x'^m}{x^i} \pdv{x'^n}{x^j} \Gamma_{mn}^{l}(P) - \pdv{x'^,}{x^i} \pdv{x'^n}{x^j} \pdv{x'^k}{x^m}{x^n}$$ 
+
+$$= \dotsb = 0$$ 
+
+L'équation de la géodésique au point $P$ est donc simplement donnée par $\ddot x^{i}=0$  
+
+
+
+\end{document}
