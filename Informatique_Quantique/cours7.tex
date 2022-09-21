@@ -1,0 +1,33 @@
+\input{../parameters}
+\begin{document}
+
+\section*{Transformation de Fourrier Quantique}
+
+DFT $$\mathds{C}^n \to \mathds{C}^n$$ 
+$$\vb{x}\to \vb{y}$$ 
+
+$$y_k = \frac{1}{\sqrt{N}} \sum_{j=0}^{N-1} x_j e^{\frac{2\pi ijk}{N} }$$ 
+
+QFT: 
+
+$$\text{QFT} \ket{j} = \frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} e^{\frac{2\pi ijk }{N} } \ket{k} $$ 
+
+L'action sur un état arbitraire est donc
+
+$$\text{QFT} \ket{\psi} = \text{QFT} \left( \sum_{j=0}^{N_1} x_j \ket{j} \right) = \sum_{k=0}^{N-1} y_k \ket{k} $$ 
+
+avec $\vb{y}$ la DFT des $\vb{y}$ donné plus haut  
+
+
+On va utiliser $R_k = \mqty(1 & 0 \\ 0 & e^{-i 2\pi/2^n})$ 
+
+Ex:
+$$Z = R_1 \qquad S = R_2 \qquad T = R_3$$ 
+
+\begin{quantikz}
+	\ket{j_1}& \gate H &\gate{R_2}\\
+	\ket{j_2} & & \vqw{-1} sdfsfsfsfsfsf
+\end{quantikz}
+
+
+\end{document}
