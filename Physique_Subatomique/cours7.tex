@@ -1,0 +1,51 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-22
+\section*{Théorie des champs quantique}
+
+$$\text{Classique}\to \text{Quantique}  $$ 
+$$[A, B]_p \to \frac{1}{i\hbar} [\hat{A}, \hat B] $$ 
+
+$$L = \int \dd \mathscr{L} = \int \dd^{3} r \left\{ \dot \phi^{2}- m^{2}\phi^{2} - \left( \grad \phi \right)^2 \right\} $$ 
+
+$$H = \int \dd^{3}\tau \left\{ \pi(\vb{r}) + m^{2}\phi^{2} + \left( \grad\phi \right) ^2 \right\} \qq{où} \pi (\vb{r}) = \frac{\partial {\mathscr{L} }}{\partial {\phi}} \dot \phi
+$$ 
+$$[\phi(\vb{r}), \pi(\vb{r'})]_p = \delta(\vb{r}-\vb{r}') \xrightarrow{M.Q.} [\phi(\vb{r}), \pi(\vb{r}')] = i \delta(\vb{r}-\vb{r}') \qquad \hbar=1 $$ 
+
+On introduit un transformé de Fourrier pour profiter de la symétrie de translation:
+
+$$\phi(\vb{r}) = \frac{1}{\nu} \sum_{\vb{p}} \phi_{\vb{p}} e^{i \vb{p} \cdot  \vb{r}} \qq{,} \phi_{\vb{p}} = \int \dd^{3} r \phi(\vb{r}) e^{-i \vb{p}\cdot \vb{r}}$$ 
+
+L'opérateur, une fois passé dans la TF, n'est plus hermitien. Sa conjugason hermitien préserve quand même une expression simple:
+
+$$\phi^{\dagger} (\vb{r}) = \phi (\vb{r}) \qquad \phi_\vb{p}^{\dagger} = \phi_{-\vb{p}} $$ 
+
+Pareil pour $\pi$ 
+$$\pi^{\dagger} (\vb{r}) = \pi (\vb{r}) \qquad \pi_\vb{p}^{\dagger} = \pi_{-\vb{p}} $$ 
+
+$$H = \frac{1}{2} \int\dd^{3}r \frac{1}{\nu^2} \sum_{\vb{p},\vb{p}'} \left\{ \pi_{\vb{p}} \pi_{\vb{p}'} e^{i \left( \vb{p} 
+\cdot  \vb{p}' \right) } + \dotsb \right\}  $$ 
+
+L'intégrale sur les exponentielles donne des $\delta(p-p' )$ 
+
+
+$$H = \frac{1}{2} \frac{1}{\nu} \sum_p \left\{ \pi_{\vb{p}}  \pi_{-\vb{p}} + \left( m^{2}- \vb{p}^2 \right)\phi_{\vb{p}} \phi_{-\vb{p}}   \right\} $$ 
+$$H = \frac{1}{2} \frac{1}{\nu} \sum_p \left\{ \pi_{\vb{p}}^{\dagger}  \pi_{\vb{p}} + \omega_p^{2}\phi_{\vb{p}}^{\dagger}  \phi_{\vb{p}}   \right\} $$ 
+
+$$[\phi_{\vb{p}}, \pi_{\vb{p}'} ] = \int \dd^{3}r \dd^{3}r' e^{-i \left( \vb{p} \cdot \vb{r} + \vb{p}' \cdot \vb{r}' \right) } [\phi(r), \pi(r')]  = \dotsb = i \nu \delta_{\vb{p},-\vb{p}'} $$ 
+$$[\phi_{\vb{p}} , \phi_{\vb{p}'} ] = 0 \qquad [\pi_{\vb{p}} , \pi_{\vb{p}'} ]=0  $$ 
+
+On introduit alors 
+
+$$a_{\vb{p}} =\sqrt{\frac{\omega_\vb{p}}{2\nu} }\left( \phi_{\vb{p}} + i \frac{\pi_{\vb{p}}}{\omega_{\vb{p}} }  \right) \qquad a_{\vb{p}} ^{\dagger} = \sqrt{\frac{\omega_\vb{p}}{2\nu} } \left( \phi_{\vb{p}} ^{\dagger}  - i \frac{\pi_{\vb{p}} ^{\dagger}}{\omega_\vb{p}}  \right)  $$ 
+
+$$[a_{\vb{p}}, a_{\vb{q}} ^{\dagger}]  =\dotsb = \delta_{p,q} $$ 
+
+$$H = \sum_{\vb{p}} \omega_{\vb{p}} \left( a_{\vb{p}} ^{\dagger}a_{\vb{p}}  + \frac{1}{2}  \right) $$ 
+
+
+
+
+
+\end{document}
