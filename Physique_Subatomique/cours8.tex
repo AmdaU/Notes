@@ -1,0 +1,82 @@
+\input{../parameters}
+\begin{document}
+
+2022-09-26
+
+\section*{QFT: champ scalaires avec interaction}
+
+
+
+$$L = \frac{1}{2} <mu \sum_{r=1}^{N} \left\{ \dot u_r^{2} - \Omega^{2}u_r^{2}-\Gamma^{2}\left( u_r - u_{r+1}  \right) ^2 - \lambda u_t^3 \right\} $$ 
+
+C'est un développement à l'ordre 3 et non un résultat exacte
+
+
+$$H = H_0 + \underbrace{H_1}_{perturbation} $$ 
+
+$$H_1  = \frac{g}{6} \int \dd x \phi^{3}(x) \qquad \frac{g}{6} = \lambda \sqrt{\frac{a}{\mu} }$$ 
+
+
+$$\boxed{\text{3D} \to H_1 = \frac{g}{6} \int \dd^3 r \phi^3(\vb{r})}$$ 
+
+
+$$\phi(\vb{r}) = \frac{1}{\sqrt{\nu}} \sum_{\vb{p}} \frac{1}{\sqrt{2\omega p}} \left( a_p e^{i \vb{p} \cdot \vb{r}} + a_p ^{\dagger} e^{-i \vb{p}\cdot \vb{p}} \right) $$ 
+
+
+$$H_1 = \frac{g}{6} \frac{1}{\nu^{3}{2}} \int \dd^{3}r \sum_{p,p',q} } \frac{1}{\sqrt{8\omega_p \omega_{p'} \omega_{q}}  } \left( a_p e^{i\vb{p}\vb{r}} + a_p^{\dagger} e^{-i\vb{p}\vb{r}} \right) \left( a_{p'} e^{i\vb{p}'\vb{r}} + a_{p'}^{\dagger}e^{-i\vb{p}'\vb{r}
+}  \right) \left( a_q e^{i\vb{q}\vb{r}} + a_q^{\dagger} e^{-i\vb{q}\vb{r}} \right) $$ 
+On intègre sur $\vb{r}$ 
+
+$$H_1  = \frac{g}{6} = \frac{1}{2\sqrt{2\nu} } \sum_{p,q} \left\{ \frac{1}{\sqrt{\omega_p \omega_{p-q}  \omega_q}   } \left( a_p a_{p-q} a_q  + a_q ^{\dagger} a_{p-q} ^{\dagger} a_p^{\dagger}\right) + \dotsb\right\} $$ 
+
+Tout les termes qui sont une suite d'opérateur de création, créent au total un quantité de mouvement nulle.
+
+Dans les différents termes, on fait des changmenents de varaibles du type $q \to q+p$ 
+
+
+$$H_1  = \frac{g}{6} \frac{1}{2\sqrt{2\nu}} \sum_{p,q} \frac{1}{\sqrt{\omega_{p\omega_{q}\omega_{p+q} } } } \left[ a_p a_{-p-q} a_q +a^{\dagger}_p+ a_q a_p a_q + a_p a^{\dagger}_{p+q} a_q + \dotsb \right] $$ 
+
+
+Cette perturbation représente l'interaction entre différente excitation du champ. Des genres de \textit{collisions}. On considère, puisqu'on fait de la théorie des perturbation, que ces collision sont assez peu fréquente et contribuent peu à l'énérgie totale.
+
+$$\Gamma_{i\to f} = 2\pi \abs{M_{fi} }^{2} \delta(E_f -E_i ) $$ 
+
+
+$$M_{fi} = \mel{f}{H_{1}}{i} + \dotsb$$ 
+
+$$\ket{i} = a_{p_{1}}^{\dagger} a_{p_2} ^{\dagger} \ket{0}= a_1^{\dagger} a_2 ^{\dagger} \ket{0}$$ 
+$$\ket{f}=  a^{\dagger}_{p_{3}} a_{p_4}^{\dagger} \ket{0} = a_3 ^{\dagger} a_4^{\dagger} \ket{0}$$ 
+
+$\mel{f}{H_{1}}{i} =0$ car les états qui n'ont pas le même nombre de particules sont orthogonaux. On doit donc aller au second ordre de perturbation. \textit{L'état intermédiaire} $\ket{n}$ permet de créer des particules de manière seulement \textit{temporaire}.
+
+$$M_{fi} = \sum_n \frac{\mel{f}{H_1}{n}\mel{n}{H_1}{i}}{E_1 -E_n} $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagramme-pas-de-feynmann}
+    \caption{diagramme pas de Feynmann}
+    \label{fig:diagramme-pas-de-feynmann}
+\end{figure}
+
+
+$$(A)\begin{cases}
+	\begin{align*}
+		\mel{n}{H_{1}}{i} =& \bra{0} a_3 a_2 a_q (a^{\dagger}_q a_1 a_3 ^{\dagger}) a_1^{\dagger} a_2^{\dagger} \ket{0}\\
+											& \bra{0} a_p a_p^{\dagger} \ket{0} =1\\ 
+											& \bra{0} [a_p, a_p^{\dagger}] + a_p^{\dagger}a_p \ket{0}\\
+											&\cdot g \frac{1}{\sqrt{8 \nu \omega_1 \omega_2 \omega_3} }
+	\end{align*}\\
+	\begin{align*}
+		\mel{f}{H_{1}}{n} = &\bra{0}a_3 a_4 (a_4^{\dagger}a_2 a_{q)} a_3^{\dagger} a_2^{\dagger} a_q^{\dagger} \ket{0} \\
+												&\cdot g \frac{1}{\sqrt{8\nu \omega_2 \omega_q \omega_{1-3} } }
+	\end{align*}\\
+	M^{(A)} = \frac{g^2}{8\nu \sqrt{\omega_{1\omega_2\omega_3\omega_4}}} \frac{1}{\omega_{1-3} } \frac{1}{\omega_1 -\omega_3 -\omega_{1-3} }  
+\end{cases}$$ 
+
+
+Les autres diagramme nous mène presqu'exactement à la même équation ex:
+
+
+	M^{(A)} = \frac{g^2}{8\nu \sqrt{\omega_{1\omega_2\omega_3\omega_4}}} \frac{1}{\omega_{1-3} } \frac{1}{\omega_1 -\omega_3 -\omega_{1-3} }  
+
+\end{document}
