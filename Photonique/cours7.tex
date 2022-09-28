@@ -1,0 +1,144 @@
+\input{../parameters}
+
+\begin{document}
+2022-28-28
+
+\section*{Règle d'or de Fermi}
+
+Les fluctuations du vides sont essentielles pour expliquer la relaxation spontané
+
+Pour prendre ces fluctuations en compte, on utilise la théorie des perturbations.
+
+
+$$P_{e\to{}g} = \frac{1}{\har^2} \abs{\int_{0}^{t}\dd t' \mel{g}{H_{\text{int}}}{e} e^{-i\omega t} }^{2}$$ 
+
+
+
+$$S_{ge} = \frac{W_{ge}}{\hbar} \left[ e^{i\varphi} \int_{0}^{t}\dd t' e^{i\left( \omega - \omega_0 \right)t' } + e^{-i\varphi} \int_0^{t}\dd t' e^{-i\left( \omega+ \omega_0 \right)t' } \right] $$ 
+
+$$= \frac{W_{ge}}{i\hbar} \left[ e^{-i\varphi} \frac{e^{i\left( \omega - \omega_0 \right)t' }-1}{i \left( \omega-\omega_0	 \right) } - e^{-i\varphi} \cancel{\frac{e^{-i\left( \omega + \omega_0 \right)t' }-1}{i \left( \omega+\omega_0	 \right) }}  \right] $$ 
+
+$$P_{e\to{}g} = \frac{\abs{W_{ge} }^{2}}{\hbar^2} t^{2}\sinc^{2}(\delta t/2) \qquad t_0 =0 $$ 
+
+Pour tenir compte du champ électromagnétique :
+
+$$\mathcal{H}_a \to \mathcal{H} _a \otimes \mathcal{H}_\gamma \qquad \ket{e} \to \ket{e,0} \qquad \ket{g} \to \ket{g,1}$$
+
+$$P_{\text{emission}} = \frac{\abs{\mel{g, 1_{\lambda,\vb{k} }}{H_{\text{int}}{} }{e,0}}^{2}}{\hbar^2} \frac{\sinc^{2}(\delta t/2)}{\Delta^2}  $$ 
+
+Il existe un continuum de modes $\lambda, \vb{k}$ 
+
+\underline{Concept de ka densité de modes électromagnétiques} 
+
+$$\rho (E) = \dv{N(E)}{E} $$ 
+
+Sur un intervalle $\dd E$ 
+
+$$\dd P_{\text{emission}} = \dd N(E) \frac{\abs{\mel{g,1_E}{H_{\text{int}} }{e,0}}^{2}}{\Delta^2} \frac{\sin^2(\Delta /2)}{\Delta ^2} $$ 
+
+Donc
+
+$$P_{\text{emission}} \frac{1}{\hbar^2} \int \dd E \rho (E) \abs{\mel{g,1_E}{H_{\text{int}} }{e,0}}^{2}$$ 
+
+\underline{Fonction de dirac} 
+
+$$\frac{\sin^{2}\Delta t/2}{\Delta^{2}} \xrightarrow{T\to \infty} \frac{\pi}{2} \hbar t \delta(\Delta) $$ 
+
+\underline{Taux d'émission} 
+
+$$\Gamma = \frac{\dd P_{\text{emission}} }{\dd t} $$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{densité}
+    \caption{densité}
+    \label{fig:densité}
+\end{figure}
+
+
+\underline{Atome à proximité d'un miroir} 
+
+\setcounter{section}{2}
+
+\section{Sources de photons uniques}
+
+\begin{tcolorbox}[title=Objectifs]
+	 \begin{itemize}
+	 	\item Importance de ce type de source
+		\item Différentes réalisations
+		\item Characterization en sources de photons 
+	 \end{itemize}
+\end{tcolorbox}
+
+\subsection{Pourquoi?}
+
+La cryptographie quantique (BB84) et une application qui apporte énormément d'intérêt.
+
+Un autre utilisation importante des sources de photons uniques est la production d'état quantique.
+
+
+Un couplage optomécanique permet $$\ket{1 \text{photon}, 0	\text{phonon}   } \to \ket{0 \text{photon}, 1 \text{phonon}  }$$ 
+
+\underline{Préparation d'état plus complexes à partir d'un photon} 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{lame-séparatrice}
+    \caption{lame séparatrice}
+    \label{fig:lame-séparatrice}
+\end{figure}
+
+
+\underline{atome à trois niveau} 
+
+2 transitions permettent d'avoir un \textit{photon annonciateur}
+
+Cependant, on a pas de controle sur le mode. Aussi même avec le photon annonciateur, on est pas certain du temps ou le second va arriver.
+
+Pour corriger le manque de contrôle de la fréquence, on utilise un cavité. Pour qualifier la \textit{qualité} de cette fréquence on utilise le facteur de Purcell: $$F_p = \frac{\Gamma_{\text{cavité}} }{\Gamma_{\text{autre} + \Gamma_{\text{cavité}} } } $$ 
+
+
+\underline{SPDC: Spontaneous Parametric Down Conversion} 
+
+
+
+Cristal non-linéaire 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{guy-bernier}
+    \caption{Guy bernier}
+    \label{fig:guy-bernier}
+\end{figure}
+
+\setcounter{subsection}{2}
+
+
+\subsection{Optique non-linéaire}
+
+Exemple de système non-linéaire
+\begin{itemize}
+	\item Doubleur de fréquence
+	\item Laser pulsé (Q switch)
+	\item Amplification fibré 
+\end{itemize}
+
+
+La polarisation d'un milieu linéaire $$P(t) = \epsilon_0 \chi^{(1)} E(t) \qquad \chi^{(1)}: \text{susceptibilité} $$ 
+
+Non linéaire
+
+$$P(t)= \epsilon_0 \chi^{(1)} E(t) + \underbrace{\epsilon_0 \chi^{(2)}(t) + \epsilon_0 \chi^{(3)}(t) + \dotsb}_{\text{Non linéarie} } $$ 
+
+
+
+$$\vb{E} = \vb{E}_0 e^{-i\omega t } + c.c. $$ 
+
+$$P^{(2)}(t) = \underbrace{2\epsilon_0 \chi^{(2)} \vb{E}_0 \vb{E}_0^* }_{\text{rectification optique} } + \epsilon_0\chi^{(2)} \underbrace{\left( E_0^{2}e^{-2 i \omega t}+ E_0^{*2}e^{2i\omega t} \right)}_{\text{génération de seconde harmonique} }  $$ 
+
+
+
+
+
+\end{document}
