@@ -1,0 +1,63 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-04
+
+\section*{Algorithme de Grover}
+
+On cherche $x^{*}|f(x^{*})=1$  
+
+$f(x) = 0 \forall x \neq x^{*}$ 
+
+On utilise 2 transformations
+
+$$U_{\text{sol}} - \mathds{1}=2\op{x^{*}} $$ 
+$$U_i = \mathds{1} - 2 \op{0}$$ 
+
+$$\dotsb$$ 
+
+\setcounter{section}{2}
+\setcounter{subsection}{13}
+
+\subsection{Simulation de système quantique}
+
+\underline{Solution classique:} Utiliser des propriétés spécifiques au système
+
+ex: s'il n'y a pas d'intrication, on a besoin de $2n$ pramètres pour spécifier un état. 
+
+S'il y a \textit{un peu} d'intrication, on peut utiliser les réseaux de tenseurs (HPS)
+
+La solution pour un ordinateur quantique pour simuler un système quantique est générale
+
+
+On simule le Hamiltonien en utilisant un opérateur unitaire (Si le Hamiltonien de dépend pas du temps)
+
+On veut alors, évidement, construire $U(t)$ à partir d'un ensemble de portes élémentairesé
+
+\underline{Exemple: Modèle de Ising} 
+
+$$H = \hbar \sum_{j=1}^{n} \lambda \sigma_{x,j} + J \sigma_{x,j} \sigma_{z,j+1} $$ 
+
+Si $J= 0$ 
+
+$$U = e^{-i H t} = e^{-i \sum_{n=1}^{N} t \simga_{z,j}} = \prod_{j=1}^{n} \dotsb = \pi_{j=1}^{n}R_{x,j} (2\lambda t) $$ 
+
+Si $\lambda =0 $ 
+
+$$\dotsb$$ 
+
+$$U(t) = \prod_{j=1}^{n} e^{- \frac{1}{2} \theta z_1 z_2 }\qquad \theta = 2 Jt$$ 
+
+\underline{Cas générale } 
+
+Dans le cas général on la forme $$e^{A+B} \neq e^{A}e^{B}$$, On ne peut donc pas exprimer nouvel unitaire directement en fonction des $U$ qu'on a déjà trouvé. Cepedant, si on prend des $\Delta t$ très petit, on peut l'approximer comme la mutiplication des deux.  
+
+
+\subsection{Minimisation (État fondamentale d'un hamiltonien)}
+
+
+On combine $U(t)$ avec $QPE$ pour trouver $E_0 $ et $\ket{E_0}$
+
+C'est un problème dans $NP$: en générale on peut pas trouver la solution. 
+
+\end{document}
