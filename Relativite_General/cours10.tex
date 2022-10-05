@@ -1,0 +1,83 @@
+\input{../parameters}
+
+\begin{document}
+2022-36-05
+
+\section*{Métrique de Schwarzschild}
+
+Solution des équation de Einstein à symétrie sphérique. Solution découverte par Schwarzschild un peu avant sa mort.
+
+$$\dd \tau = A(r) \dd t^{2} B(r) \dd r^{2}- r^{2}\left( \sint^2\theta \dd \varphi^{2}-\dd \theta ^2 \right)= \left( 1 - \frac{r_s}{r} \dd t^{2} \right) \dd t^{2}- \frac{1}{\left( 1 - \frac{r_s}{r}  \right)} \dd r^2  -r^{2}\left( \sin^2\theta \dd \varphi	^2 + \dd \theta ^2 \right)   $$ 
+
+Cette métrique présente une singularité à $r = r_s $. Cependant c'est une artéfact du système de coordonné et non un singularité \textit{physique}. On peut s'en rendre compte en étudiant des valeurs qui ne dépende pas des coordonnés comme le tenseur de Riemann. En faisant cela, on se rend compte qu'il y a un \textit{vraie} singularité en $r=0$  
+
+$$R^{ijkl}R_{ijkl} = 12 \frac{r_s^{2}}{r^{6}} \qq{singularité géométrique!}$$ 
+
+\begin{tcolorbox}[title=]
+	On note la partie spatiale des coordonnées $\vec r = ( x^{1}, x^{2}, x^{3} )$  
+\end{tcolorbox}
+
+On peut alors noter la métrique de manière générale (avec des fonction arbitraire de toute les quantité qui sont invariantes par rotation)
+
+$$\dd \tau^{2}= A(r,t) \dd t^{2}- B(r,t ) \dd t (\vb{r} \cdot  \dd \vb{r}) - C(r,t)(\vb{r}\cdot \dd \vb{r})^2 -D(r,t) \dd \vb{r}^2$$ 
+On peut faire le changement de variable:
+$$\begin{cases}
+	x^{1} = r\sin\theta\cos\varphi\\
+	x^{2}= r\sin\theta \sin\varphi\\
+	x^{3}= r\sin\theta
+\end{cases}$$  
+
+Notre métrique est alors
+$$\dd \tau^{2}= A\dd t^{2}- V r \dotsb -D\left( \sin^{2\theta}\dd \varphi^{2}+ \dd \theta^2 \right) $$ 
+
+On peut alors toujours faire un changement de coordonné ou $\sqrt{D} =r$. On trouve alors
+
+$$\dd \tau^{2}= A \dd t^{2} + B \dd t \dd r - C \dd r^{2} -r^{2}\left( \sin^2\theta \dd \varphi^{2}\dd \theta^{2} \right) $$ 
+Si on impose également un symétrie d'inversion du temps (qui exclus les rotation), $B$ doit être nul car ce terme n'as pas cette symétrie. Ce n'est pas nécessaire de requérir cette symétrie. Plutôt, on peut posser
+
+$$\dd \bar t^{2} = \Pih \left[ A \dd t - \frac{1}{2} B \dd r \right] $$ 
+
+Cela permet de se débarrasser de ce $B$ 
+
+On a donc 
+
+$$\dd \tau^{2}= A(r,t) \dd t^{2}- B(r,t) \dd r^{2} - r^{2}\left( \sin^{2}\tetha \dd \varphi^{2}+ \dd \theta^{2} \right) $$ 
+
+$$g_{ij} = \mqty[\dmat{A(r),-B(r),-r^{2},-r^2\sin^2\theta}]$$ 
+
+$$R_{ij} =0$$ 
+
+$$\begin{cases}
+	R_{00} = \frac{A''}{2B} - \frac{A'}{4B} \left( \frac{A'}{A} + \frac{B'}{B}   \right) + \frac{A'}{rB}\\
+	R_{11} = - \frac{A''}{2A} + \frac{A'}{4A} \left( \frac{A'}{A} + \frac{B'}{B}  \right) + \frac{B'}{rB} \\
+	R_{22} = 1 - \frac{1}{B} - \frac{r}{2B} \left( \frac{A'}{A} - \frac{B'}{B}  \right)\\
+	R_{33} = R_{32} \sin \theta 
+\end{cases}$$ 
+
+
+$$R_{00} + \frac{A}{B} R_{11} = 0$$ 
+
+$$\frac{A'}{rB} + \frac{B'A}{rB^2} =0$$ 
+$$\frac{1}{r} \left( A'B + B'A \right) = 0$$ 
+
+$$\implies \left( AB \right)' = 0 \implies AB = \text{CST} = \alpha $$ 
+
+
+$$\dotsb$$ 
+
+$$\boxed{\dd \tau^{2}= \left( 1 - \frac{2M}{r}  \right) \dd t^{2}- \frac{1}{1 - \frac{2M}{r} }\dd r^{2}-r^{2}\dd \Omega^2 }$$ 
+
+\hrule
+\section*{Loi de conservation}
+
+$$\boxed{\dot u_i = \frac{1}{2} \partial_i g_{mk} u^{m}u^k}$$ 
+
+$$\dot u_0 =0 \quad u_0 = \text{cst}= k = g_{00} \dot u^{0}= g_{00} \dot t = \underbrace{\boxed{\left( 1 - \frac{r_0}{r} \right)\dv{t}{\tau} =k  }}_{\substack{\text{conservation de l'énergie}\\ \text{cinétique par unité de masse} }  $$ 
+
+$$\dot u_3 = \text{cst} \implies u_3  = g_{33} u^{3}=  -r^2\sin^{2}\theta \dot \varphi = -h $$ 
+
+$$\underbrace{\boxed{ r^{2}\dv{\varphi}{\tau} = h }}_{\text{moment cinétique par masse} } $$ 
+
+
+\end{document}
+ 
