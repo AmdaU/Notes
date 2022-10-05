@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="spdc.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <rect
+       x="764.82938"
+       y="415.28467"
+       width="278.67008"
+       height="127.638"
+       id="rect2269" />
+    <marker
+       style="overflow:visible"
+       id="marker1342"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071061"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1340"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1126"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1124"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="592.90902"
+     inkscape:cy="247.84092"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:lockguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.2"
+       d="m 20.725968,195.30155 v 0 h 59.171274"
+       id="path187" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.2"
+       d="m 20.725728,281.71559 59.171274,-0.14177"
+       id="path189" />
+    <path
+       style="fill:#000000;stroke:#ff0000;stroke-width:0.4;marker-end:url(#marker1126);stroke-dasharray:none"
+       d="M 32.541318,281.47382 V 195.30155"
+       id="path351" />
+    <path
+       style="fill:#000000;stroke:#ff0000;stroke-width:0.4;stroke-dasharray:none;marker-end:url(#Arrow1)"
+       d="m 67.632907,195.20155 -0.118152,42.99471"
+       id="path1292" />
+    <path
+       style="fill:#000000;stroke:#ff0000;stroke-width:0.4;stroke-dasharray:none;marker-end:;marker-start:url(#marker1342)"
+       d="M 67.517388,281.47382 V 237.23768"
+       id="path1338" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.388199;stroke-dasharray:0.776398, 0.388199;stroke-dashoffset:0"
+       d="M 50.729674,238.19626 H 81.622272"
+       id="path1605" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#ff0000;stroke:#000000;stroke-width:0.4;stroke-dasharray:0.799999, 0.4;stroke-dashoffset:0"
+       x="13.740651"
+       y="233.9874"
+       id="text1713"><tspan
+         sodipodi:role="line"
+         id="tspan1711"
+         style="stroke-width:0.4"
+         x="13.740651"
+         y="233.9874">$\omega_1$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#ff0000;stroke:#000000;stroke-width:0.4;stroke-dasharray:0.799999, 0.4;stroke-dashoffset:0"
+       x="74.074341"
+       y="221.7688"
+       id="text1771"><tspan
+         sodipodi:role="line"
+         id="tspan1769"
+         style="stroke-width:0.4"
+         x="74.074341"
+         y="221.7688">$\omega_2$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#ff0000;stroke:#000000;stroke-width:0.4;stroke-dasharray:0.799999, 0.4;stroke-dashoffset:0"
+       x="74.891457"
+       y="260.02667"
+       id="text1775"><tspan
+         sodipodi:role="line"
+         id="tspan1773"
+         style="stroke-width:0.4"
+         x="74.891457"
+         y="260.02667">$\omega_3$</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker1342)"
+       d="m 120.88371,214.80921 h 22.92178"
+       id="path1831" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.395747;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect1981"
+       width="51.598"
+       height="32.117104"
+       x="144.38622"
+       y="197.48647" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#marker1342);marker-end:url(#marker1342)"
+       d="m 223.9372,200.06424 -27.953,13.48079 27.00776,14.00062"
+       id="path1983" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="167.71977"
+       y="213.54501"
+       id="text2077"><tspan
+         sodipodi:role="line"
+         id="tspan2075"
+         style="stroke-width:0.4"
+         x="167.71977"
+         y="213.54501">$\chi^{(2)}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="109.35474"
+       y="210.03156"
+       id="text2081"><tspan
+         sodipodi:role="line"
+         id="tspan2079"
+         style="stroke-width:0.4"
+         x="109.35474"
+         y="210.03156">$\vec k_{1}, \omega_1$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="198.53413"
+       y="197.81454"
+       id="text2081-3"><tspan
+         sodipodi:role="line"
+         id="tspan2079-6"
+         style="stroke-width:0.4"
+         x="198.53413"
+         y="197.81454">$\vec k_{2}, \omega_2$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="198.53413"
+       y="231.40424"
+       id="text2081-7"><tspan
+         sodipodi:role="line"
+         id="tspan2079-5"
+         style="stroke-width:0.4"
+         x="198.53413"
+         y="231.40424">$\vec k_{3}, \omega_3$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="136.66388"
+       y="246.31821"
+       id="text2211"><tspan
+         sodipodi:role="line"
+         id="tspan2209"
+         style="stroke-width:0.4"
+         x="136.66388"
+         y="246.31821">$\omega_1 = \omega_2 + \omega_3$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="141.11206"
+       y="258.57657"
+       id="text2215"><tspan
+         sodipodi:role="line"
+         id="tspan2213"
+         style="stroke-width:0.4"
+         x="141.11206"
+         y="258.57657">$\vec k_1 = \vec k_2 + \vec k_3$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:1.60000002, 0.40000001;stroke-dashoffset:0;marker-end:url(#marker1342)"
+       d="m 120.88371,223.97469 h 23.5025"
+       id="path2217" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:1.6, 0.4;stroke-dashoffset:0"
+       x="128.6328"
+       y="229.80144"
+       id="text2265"><tspan
+         sodipodi:role="line"
+         id="tspan2263"
+         style="stroke-width:0.4"
+         x="128.6328"
+         y="229.80144">$\omega'$</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0,177)"
+       id="text2267"
+       style="stroke-width:1.51181102;font-size:12px;fill:none;stroke:#000000;stroke-dasharray:6.04724418, 1.51181105;stroke-dashoffset:0;white-space:pre;shape-inside:url(#rect2269)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:1.6, 0.4;stroke-dashoffset:0"
+       x="150.06024"
+       y="277.41827"
+       id="text2293"><tspan
+         sodipodi:role="line"
+         id="tspan2291"
+         style="stroke-width:0.4"
+         x="150.06024"
+         y="277.41827">$\vec E = E_1 e^{-i\omega t} + \underbrace{E' e^{-i\omega' t}}_{\text{fluctuations}}$</tspan></text>
+  </g>
+</svg>
