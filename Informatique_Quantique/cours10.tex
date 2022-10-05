@@ -1,0 +1,108 @@
+\input{../parameters}
+
+\begin{document}
+2022-33-05
+
+\setcounter{section}{2}
+\setcounter{subsection}{15}
+
+
+\subsection{solveur variationnel quantique (VQE)}
+
+On cherche à trouver l'énergie et l'état fondamentale d'un hamiltonien $H$ (n'importe quel problème de minimisation peut s'exprimer de cette façon).
+
+C'est un problème NP complèt: On ne trouveras pas un algorithme qui réussit à tout les coups mais un algorithme heuristique qui réussit on l'espère \textit{souvent}.
+
+\underline{VIE}: Algorithme classique utilisant un sous-routine quantique.
+
+\begin{tcolorbox}[title=Rappel: Principe variationnel]
+D'abord, on a que,
+	$$\mel{\psi}{H}{\psi} \geq E_0 \forall \ket{\psi} \in \mathcal{H} $$ 
+
+	On choisit $\ket{\psi(\vec\theta)}$ avec $\vec\theta$ un vecteur de paramètre et on minimise $$\expval{H}_{\vec{\theta}} \equiv \mel{\psi(\vec\theta)}{H}{\psi(\vec\theta)}$$ 
+	alors $$\min_{\vec\theta} \approx E_0 \qq{si $\theta$ nous donne assez de liberté }$$ 
+\end{tcolorbox}
+
+	\hrule
+	\underline{Ex:} $$H = \frac{\omega}{2} \simga_z$$  
+	On pose
+	$$\ket{\psi(\vec\theta)} = \cos \frac{\theta}{2} \ket{0} + \sin \frac{\theta}{2} \ket{1} $$ 
+
+	$$\expval{H}_\theta = \frac{\omega}{2} \left( \cos^{2}\frac{\theta}{2} - \sin^{2} \frac{\theta}{2}  \right)  $$ 
+
+	$$\min_{\theta} \expval{H}_\theta = -\frac{\omega}{2} \qquad \theta = \pi$$ 
+
+$$\ket{\psi(\pi)}= \ket{1}$$ 
+
+\underline{sous routine quantique} 
+
+Prend en entré $\vec \theta,\, H$ 
+retourne $\expval H _\theta $ 
+
+puisqu'on ne veut que la valeur moyenne, si notre hamiltonien à la forme $$H = \sum_k H_k$$, On peut mesurer individuellement la moyenne sur chacun des $H_k$ et faire la somme après. 
+
+
+\section{Suprématie quantique}
+
+On veut montrer qu'on peut réaliser une calcul quantique trop long à réaliser classiquement.
+
+
+On cherche un algorithme qui 
+
+\begin{enumerate}
+	\item Peu être réaliser sur les ordinateur quantique actuels. ( $n$ qubits et $q$ portes pas trop grand )
+	\item On doit pouvoir vérifier la réponse.
+	\item On veut un avantage quantique asymptotique (Un forte suspicion suffit)
+\end{enumerate}
+
+ex: Factorisation de Shor: 2 et 3, Google 1 et 3
+
+Stratège actuelle : circuit aléatoire
+
+$$U(\vec \theta ) \text{pris aléatoirement} $$ 
+
+On mesure les qubits en sorties un très grand nombre de fois
+
+Finalement on compare la ditribution avec la distribution idéale 
+
+\subsection{Calcul adiabatique}
+
+\begin{tcolorbox}[title=Théorème adiabatique]
+	 Si un système physique est dans un état propre $\ket{\psi_k}$ de $H$ est au temps $t_0$. Il restera dans un état propre de $H(t)$ si $H(t)$ varie lentement.      
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{un-graphique-tout-a-fait-quelconque}
+    \caption{un graphique tout a fait quelconque}
+    \label{fig:un-graphique-tout-a-fait-quelconque}
+\end{figure}
+
+$$\Delta = min_t(E_1(t)-E_0(t))$$ 
+
+\begin{tcolorbox}[title=]
+	\centering{
+	On doit être plus len que $\frac{1}{\Delta} \implies T \gg dfrac{1}{\Delta}  $}
+\end{tcolorbox}
+
+
+On choisi $H(t)$ tel que $\ket{E_0}$ encore la réponse voulue. On choisit $H(0)$  avec un état  fondamentale comme $$H(0) = J \Sum_j X_j = H_0$$ 
+
+l'état fondamentale est $\ket{\psi(0)} = \ket{+}^{ \otimes n }$ 
+
+On choisit $$H(t) = \left(  1- \frac{t}{\tau}   \right) H_0 + \frac{t}{T} H_{\text{final} } $$ 
+
+\underline{Exemple: Modèle de Ising} 
+
+$$H = \sum_i \lambda X_i + J Z_i Z_{i+1} $$ 
+
+On suppose qu'on peut contrôler $\lambda, J$ 
+
+$$J(\lambda) = J \frac{t}{T} $$ 
+
+
+
+
+
+
+\end{document}
