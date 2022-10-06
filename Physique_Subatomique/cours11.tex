@@ -1,0 +1,115 @@
+\input{../parameters}
+
+\begin{document}
+2022-31-06
+
+
+\section*{spineurs}
+
+
+$$x = \mqty(x^{0} - x^{3}& -x^{1}_ ix^{3}\\ -x^{1}- ix^{2}& x^{0}_ x^{3})= x_{\mu} \simga^{\mu} \qquad \sigma^{\mu}= (\mathds{1},\, \sigma_1 ,\, \sigma_2,\,\sigma)3$$ 
+
+
+$$N^{\dagger} X' N =X \qquad \det N =1 $$ 
+
+On peut aussi écrire $X$ comme 
+
+$$X = x_{\mu} \tilde \sigma^{\mu} \qquad \tilde \sigma^{\mu}= (\mathds{1},\, -\vec \sigma)$$ 
+
+\begin{tcolorbox}[title=]
+$$R(\vb{n}, \theta) = \cos \frac{\theta}{2} + \vb{n} \cdot \bm{\sigma} \sin \frac{\theta}{2} $$ 
+$$P(\hat v, \eta) = \cosh \frac{\eta}{2} + \sinh \frac{\eta}{2} $$ 
+$$N = PR$$ 
+$$M = P^{-1}R$$ 
+\end{tcolorbox}
+ 
+
+\begin{tcolorbox}[title=]
+	$$N^{\dagger}\sigma^{\mu}N = \Lambda_{\nu}^{\mu}\sigma^\nu$$  
+	$$M^{\dagger}\tilde \sigma ^{\mu} M = \Lambda_{\nu}^{\mu}\tilde \sigma^\nu$$ 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=]
+	$$\psi_R'=N\Psi_R  $$  
+	$$\psi_{L}' = M \psi_L $$ 
+\end{tcolorbox}
+
+\underline{Champs spinoriels } 
+
+$$\psi_L^{\dagger} \tilde \sigma^{\mu}\partial_u \psi_L \to \dotsb$$ 
+
+On essaie de construire une action à partir des ces nouveau champs
+
+
+$$i\psi_L^{\dagger}\tilde \sigma^{\mu}\psi_L \qquad i \psi_R^{\dagger}\sigma^{\mu}\psi_R$$ 
+
+$$S = i\int \dd^{4} x \psi_L^{\dagger}\tilde\sigma^{\mu}\partial_{\mu} \Psi_L $$ 
+
+$$S^{*}= -i\int \dd^{4}x \left( \psi_L^{\dagger}\tilde\sigma^{\mu}\partial_{\mu} \psi_L \right) ^{\dagger} = - i \int \dd^{4} x \partial_{\mu} \psi^{\dagger} \sigma^{\mu}\psi_L = -i \int \dd ^x \left\{ \partial_{\mu} \left( \psi_L ^{\dagger} \tilde \sigma^{\mu}\psi_L  \right) -\psi_L^{\dagger}\tilde \sigma^{\mu}\partial_{\mu} \psi_L \right\}  = -i \oint_{\infty} \dd^{3}a\dotsb + i\int \dd ^4 x \psi^{\dagger}_L\sigma \partial_{\mu} \psi_L $$ 
+
+On ne s'intéresse pas au premier terme car il s'annule si on intègre sur tout l'espace. On peut donc considérer cette action comme réel. Si on intègre pas sur toute l'espace, on peut toujours argumenter que la variation de l'action est réel et c'est tout ce qui nous interesse. 
+
+
+$$S_R =  i \int \dd ^4 x \psi_R^{\dagger}\sigma^{\mu}\partial_{\mu} \psi_R $$ 
+
+$$\delta S_R  = i \int \dd^{4}x \partial \psi_R ^{\dagger}	\sigma^{\mu}\partial_{\mu} \psi_R + \dotsb = \dotsb + \dotsb =0$$ 
+
+$$\implies \sigma^{\mu}\partial_{\mu} \psi_R = 0 \qquad \tilde \sigma^{\mu}\partial_{\mu} \psi_L = 0 \qq{Équation de Weyl}$$ 
+ 
+On pose comme solution $$\psi_{L(x)} = u_L e^{-i p_{\mu} x^{\mu}}$$ 
+
+On va supposer que la quadri-impulsion est donnée par:
+
+$$p^{\mu}= (E, 0,0,p)$$ 
+$$p_{\mu}= (E, 0,0,-p)$$ 
+
+$$\sigma^{\mu}p_{\mu} = \mqty(E-p & 0 \\ 0 & E+p)$$ 
+$$\tilde \sigma^{\mu}p_{\mu} = \mqty(E+p&0\\0 & E-p)$$ 
+
+
+$$\mqty(E-p&0\\0 & E+p)u_R = 0$$ 
+$$\mqty(E+p&0\\0 & E-p)u_L = 0$$ 
+
+$$u_R = \mqty(1 \\0) \qquad E= p > 0$$ 
+$$u_L = \mqty(0 \\1) \qquad E= p > 0$$ 
+
+
+\section*{Lagrangien de Dirac}
+
+$$\mathscr{L}_D  = i\psi_L^{\dagger}\tilde \sigma^{\mu}\partial_{\mu} \psi_L + i\psi_R^{\dagger}\sigma^{\mu}\partial_{\mu} \psi_R - m \left( \si_L ^{\dagger}\psi_R + \psi_R^{\dagger} \psi_L \right) $$ 
+
+$$u_R = \mqty(1 \\0) \qquad E= p > 0$$ 
+Les unités de l'action sont celles de $\hbar$, dans notre système d'unité donc $[S]=1$   
+
+$[\mathscr{L} ] =  L^{-4}$ 
+
+\begin{tcolorbox}[title=Nouvelle notation: le spineur de dirac]
+	$$\psi = \mqty[\psi_{L}\\\psi_R  ]$$  
+	$$\mathsrc{L}_D = i\psi^{\dagger}\mqty[\tilde \sigma^{\mu}& 0\\ 0 &\sigma^{\mu}]\partial_{\mu} \psi - m \psi ^{\dagger} \mqty[0 & \mathds{1}\\  \mathds{1} &0 ]\psi$$ 
+	$$\gamma_0 = \mqty[0 & \mathds{1} \\ \mathds{1} & 0] \qquad \gamma^{k}= \mqty[0 & \sigma_k \\  \sigma_k &0 ]$$ 
+	$$\gamma^{\mu}= \gamma^{0}\mqty[\tilde\sigma^{\mu} & 0 \\ 0 & \sigma^{\mu}]$$ 
+	$$\left( \gamma^{0} \right) ^2 = 1 \qquad \left( \gamma^{k} \right) = \mqty[-\sigma_\mu^{2}&0 \\0 & -\sigma_k^{2}]= - \mathds{1}$$ 
+	$$\gamma^{0}\gamma^{k}+ \gamma^{k}\gamma^{0}=0$$ 
+
+$$\gamma^{\mu}\gamma^{\nu}+ \gamma^\nu \gamma^{\mu} = g^{\mu\nu}$$ 
+
+$$\boxed{\bar\psi = \psi ^{\dagger}\gamma^{0}}$$ 
+
+\begin{tcolorbox}[title=]
+	$$\gamma^{\mu}A_{\mu} = \slashed{A}$$  
+	$$\gamma^{\mu}\partial_{\mu} = \slashed{\partial}$$  
+\end{tcolorbox}
+  
+$$\mathscr{L}_D = i \bar \psi \gamma^{\mu}\partial_{\mu} \psi - m \bar \psi \psi$$ 
+
+On passe dans la machine de la variation nulle de l'action pour obtenir
+
+$$i \gamma^{\mu}\partial_{\mu} \psi - m\psi =0\qq{L'équation de Dirac!}$$ 
+ 
+$$\boxed{(i\slashed{\partial} - m)\psi =0}$$ 
+
+\end{tcolorbox}
+
+
+
+\end{document}
