@@ -1,0 +1,55 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-07
+
+\section*{Métrique de Schwarzschild }
+
+\underline{Équation géodésique} 
+
+$$\to \dot u_i = \frac{1}{2} \partial_i g_{mk} u^{m}u^{k}$$ 
+$$u_t = \text{cst} = k $$ 
+$$u_{\varphi} = \text{cst} = -h $$ 
+
+\hrule 
+
+\section{ Coordonnées de Kottler-Møller}
+
+
+$$\begin{cases}
+	t = \left( x' + \frac{1}{\alpha}  \right) \sinh\alpha t\\
+	x = \left( x' + \frac{1}{\alpha} \right) \cosh \alpha t' - \frac{1}{\alpha} 
+\end{cases}$$ 
+
+A $$g_{ij}' = \mqty[\left( 1 + \alpha x' \right)^2 &0 \\ 0 & -1 
+] $$ 
+
+$$\dd t - \dd x' \sinh \alpha t' + \left( \alpha x' + 1  \right) \cosh \alpha t' \dd t'$$ 
+$$\dd x = \dd x' \cosh\alpha t'  + \left( \alpha x' +1 \right) \sinh \alpha t' \dd t'$$ 
+
+$$\dd \tau =  \dd t^{2}- \dd x^{2} = \dotsb$$ 
+
+
+$$\left[ \pdv{x^{i}}{x'^j}  \right] = \mqty[\left( \alpha x' +1 \right) \cosh\alpha t' & \sinh\alpha t' \\ \left( \alpha x' + 1  \right) \sinh\alpha t' & \cosh\alpha t'] $$ 
+
+
+
+B
+
+$$\dd \tau =  \left( 1 + \alpha x' \right) \dd t'$$ 
+
+$$[u^{i}] = \left( \dv{t}{\tau} ,\, \dv{x}{\tau}  \right)  = \dv{t'}{\tau} \eval{\left( \dv{t}{t'} ,\, \dv{x}{t'}  \right) }_{x'=\text{cst} } $$ 
+
+$$=  \frac{1}{1+\alpha{}x'} \left( \left( 1+\alpha x' \right) \cosh\alpha t',\, \left( 1+\alpha x' \right) \sinh\alpha t' \right) = \left( \cosh \alpha t', \sinh \alpha t' \right) $$ 
+
+$$[a^{i}] = \dv{t'}{\tau} \left( \dv{	}{t'} \cosh \alpha t' ,\, \dv{{}}{t'} \sinh \alpha t' \right) = \frac{\alpha}{1+\alpha{}x'} \left( \sinh\alpha t', \cosh\alpha t' \right) $$ 
+
+\begin{tcolorbox}[title=raccouris je crois]
+	 $$a^{i}= e/f??$$ 
+	 $$\qq{si} $v=0$ $$ 
+	 $$\to a^{i}= (0, \, \vec a )$$ 
+	 $$a_ia^{i} = - \vec a ^2 s$$ 
+\end{tcolorbox}
+
+
+\end{document}
