@@ -1,0 +1,81 @@
+\input{../parameters}
+
+\begin{document}
+2022-33-13
+
+\section*{Révision}
+
+\underline{Spineur de Dirac} 
+
+$$\psi = \mqty(\psi_L \\ \psi_R)R$$ 
+
+Le lagrangien de Dirac,
+$$\mathscr{L}_D = i \bar \psi \gamma^{\mu}\partial_{\mu} \psi - m\bar\psi \psi$$ 
+mène à l'équation de Dirac $$i\gamma^{\mu}\partial_{\mu} \psi - m\psi =0$$ 
+
+
+$$\gamma^{0}= \mqty[0& \mathds{1} \\ \mathds{1} & 0] \qquad \gamma^{k}= \mqty[0 & \sigma_k \\ \sigma_k & 0 ]$$ 
+
+$$\gamma^{\mu}\gamma^{\nu}+ \gamma^{\nu}\gamma^{\mu}= 2 q^{\mu\nu} \mathds{1}$$ 
+
+$$\gamma^{0}\gamma^{\mu}\gamma^{0}= \left( \gamma^\mu \right) ^{\dagger}$$ 
+
+$$\gamma^{\mu}\to U \gamma^{\mu}U ^{\dagger}	$$ 
+
+$$\psi \to U \psi\$$ 
+
+\underline{Représentation de Dirac} 
+
+$$U = \frac{1}{\sqrt{2}} \mqty[\mathds{1}& \mathds{1}\\ -\mathds{1} & \mathds{1}]$$ 
+
+$$\psi = \frac{1}{\sqrt{2}} \mqty[\psi_L + \psi_R \\ -\psi_L + \psi_R ]$$  
+
+$$\gamma^{0}= \mqty[\mathds{1}& 0 \\ 0 & -\mathds{1}] \qquad \gamma^{k}= \mqty[0 & \sigma_k \\ \sigma_k & 0 ]$$ 
+
+\underline{Ondes plannes} 
+
+$$\psi= \psi_{\vb{p}} e^{-ip_{\mu} x^\mu} $$ 
+
+$$\left( p_{\mu} \gamma^{\mu}-m \right) \psi_{\vb{p}} = 0$$ 
+
+
+$$\left( E \gamma^{0} - \sum_i \gamma^{i}p^{i}- m\right)\psi_{\vb{p}} = 0 $$ 
+En multipliant par $\gamma^{0}$ de la gauche, on obtiens  ( $(\gamma^{0})^2 = \mathds{1}$  )
+
+
+$$\left( E - \sum_i \gamma^0\gamma^{i}p^{i}- m\right)\psi_{\vb{p}} = 0 $$ 
+
+
+$$\underbrace{\mqty[m & \vb{p} \cdot \bm{\sigma}\\ \vb{p}\cdot \bm{\sigma}& -m]}_{"H"}  \psi_p = E \psi_p \qq{ou} \underbrace{\mqty[m & -i\bm{\sigma} \cdot \grad\\ -i\bm{\sigma}\cdot \grad & -m]}_{"\mathscr{H} "}  \psi_p = i \pdv{\psi}{t}   \psi_p $$ 
+
+Au repos ($\vb{p} = 0$), on a 
+
+$$\mqty[m& 0 \\0 &-m]\psi_0 = E\psi_0$$ 
+
+$$E= m \qquad u_1 = \mqty[1\\0\\0\\0] \qquad u_2 =\mqty[0\\1\\0\\0]$$ 
+$$E= -m \qquad u_1 = \mqty[0\\0\\1\\0] \qquad u_2 =\mqty[0\\0\\0\\1]$$ 
+
+
+$$\left( o_{\mu} \gamma^{\mu}+m \right) \left( p_{\mu} \gamma^{\nu}-m \right) = p_{\mu} p_{\nu}\gamma^{\mu}\gamma^{\nu}-m^{2}= p_{\mu} p_{\mu} \frac{1}{2} \left( \gamma^{\mu}\gamma^{\nu}+ \gamma^{\mu}\gamma^\nu \right)  -m^{2}= g^{\mu\nu}p_{\mu} p_{\nu} -m^{2}= p^{2}- m^{2}$$ 
+
+
+
+$$\left( p_{\nu} \gamma^{\nu}+m \right) \boxed{\left( p_{\mu} \gamma^{\mu}-m \right) \psi_p} =0$$ 
+
+$$\left( p^{2}- m^2 \right) \psi_{\vb{p}} = 0$$ 
+
+$$p^{2}= m^{2}\qquad E^{2}-\vb{p}^2 =m^2$$ 
+
+$m$ se comporte donc bel et bien comme une masse 
+
+$$\left( p_{\nu} \gamma^{\nu}+m  \right) =  \mqty[p^{0}+k &0 &- p_z & -p_x + ip_y \\ 0&  p^{0}+m & -p_x -ip_y & p_{z}\\ p_z & p_x - ip_y & -p^{0}+m &0 \\ p_x + ip_y & -p_z &0 & -p^{0}+m]$$ 
+
+
+Les quatres colonnes sont les vecteurs $u_{\vb{p}_i} $ si on les normalise par $\frac{1}{\sqrt{2E_{\vb{p}} \left( E_p + m \right)  }} $  
+
+
+
+
+
+
+\end{document}
