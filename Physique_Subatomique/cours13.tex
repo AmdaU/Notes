@@ -1,0 +1,63 @@
+\input{../parameters}
+
+\begin{document}
+2022-31-31
+
+\underline{Remise de l'intra} 
+
+\section*{Quantification du champ de Dirac}
+
+
+\[ \psi(\vb{r}) = \frac{1}{\sqrt{\mathcal{V}}} \sum_{\vb{p}} \sum_{s=1}^{4} u_{\vb{p},s} e^{i\vb{p}\cdot \vb{r}} \] 
+
+
+\begin{tcolorbox}[title=Retour sur le champ scalaire]
+	\[ \phi(\vb{r}) = \frac{1}{\sqrt{\mathcal{V}}} \sum_{\vb{p}} \frac{1}{\sqrt{2\omega_{\vb{p}} }}\left( a_{\vb{p}} e^{i \vb{p} \cdot  \vb{r}}  + a_{\vb{p}}^{\dagger} e^{-i\vb{p} \cdot \vb{r}} \right) \] 
+\end{tcolorbox}
+
+
+\[ \frac{1}{\mathcal{V}} \int \dd 3 r \left( u_{\vb{p},s} e^{i\vb{p}\cdot \vb{r}} \right)^{\dagger} \left( u_{\vb{p},s} e^{\vb{p}\cdot \vb{r}} \right)  \] 
+
+\[ c_{\vb{p},s} = \frac{1}{\mathcal{V}} \int \dd^{3}r u_{\vb{p},s,\alpha} ^{*} \psi_\alpha(\vb{r} e^{-i\vb{p}\vb{r}})  \] 
+
+\[ \mathscr{L}_D = i \bar \psi \gamma^{\mu} \partial_{\mu} \psi - m \bar\psi \psi = i \psi^{\dagger}\partial_{\mu}\psi_{\alpha} + i \sum_{k=1}^{3} \bar\psi_{\alpha}^{k}\gamma_{?,?}^{?}\partial_? \psi_? - m \bar \psi_{\alpha} \psi_{\alpha}  \] 
+
+\[ \psi_{\alpha} = \frac{\partial {\mathscr{L} }}{\partial {\dot \psi_\alpha}} = i\psi_{\alpha}^{*}\] 
+
+\[ \mathscr{H} = \sum_{\alpha} \psi_{\alpha} \dot\psi_{\alpha} - \mathscr{L} = \dotsb = -i \sum_{k=1}^{3} \bar \psi_{\alpha} \gamma_{\alpha,\beta}^{k} \partial_k \psi_{\beta} + \bar\psi_{\alpha} \psi_\alpha  \] 
+
+
+\[ [\psi_{\alpha}(\vb{r}), \pi_{\beta}(\vb{r}')]_p = \delta(\vb{r}-\vb{r}') \delta_{\alpha,\beta} \xrightarrow{\text{commutateur}} i\delta(\vb{r}-\vb{r}')\]  
+
+\[ [\psi_{\alpha(\vb{r})}, \psi_\beta^{\dagger}(\vb{r})]  \] 
+
+\[ c_{p,s} = \frac{1}{\sqrt{\mathcal{V} } } \int \dd^{3}r u_{\vb{p},s,\alpha}^{*} \psi_\alpha^{\dagger}	(\vb{r}) e^{i\vb{p}\vb{r}}\] 
+\[ c_{p,s}^{*} = \frac{1}{\sqrt{\mathcal{V} } } \int \dd^{3}r u_{\vb{p},s,\alpha} \psi_\alpha^{\dagger}	(\vb{r}) e^{-i\vb{p}\vb{r}}\] 
+
+
+\[ [c_{ps},, c_{p's'}^{\dagger}] = \frac{1}{\mathscr{V}} \int \d^{3}r d^{3}r' \sum_{\alpha,\beta} u_{ps\alpha} ^{*} U_{ps\alpha} e^{-i\vb{p}\vb{r} +i\vb{p}\vb{r}} [\psi_{\alpha}(\vb{r}), \psi_\beta^{\dagger}(\vb{r}')]  \] 
+
+\[ = \frac{1}{\mathscr{V} } \int d^{3}r \sum_{\alpha} e^{-i\left( \vb{p}-\vb{p}' \right) \cdot \vb{r}} u_{psa} ^{*} u_{p's'\alpha'}   \] 
+
+\[ =\delta_{\vb{p}\vb{p'}} \delta_{ss'}  \] 
+
+La relation qu'on obtiens n'est pas tout à fait vrai, le résultat qu'on obtiens ne donne pas ce qu'on voudrait pour des fermions. C'est normal puisque le résultat qu'on obtiens à entièrement été dérivé de la mécanique classique. Comme la mécanique quantique ne peut être entièrement dérivé depuis la mécanique classique, il manque quelque chose. (Le théorème de spin statistique par exemple?)
+
+\begin{tcolorbox}[title=1928 $\to$  Jordan; Wigner]
+	 Le problème est reglé en prennant l'\textbf{anti-commutateur} au lieu du commutateur
+\end{tcolorbox}
+
+\[ \{ c_{ps} , c_{p's'} ^{\dagger} \} = \delta_{\vb{p},\vb{p}'} \delta_{s,s'}   \] 
+
+
+
+
+\[ H= sum_{\vb{p}} \underbrace{E_{\vb{p}}}_{\sqrt{m^{2}+ \vb{p}^2}}  \left( c_{\vb{p}1}^{\dagger}c_{\vb{p}1} + c_{\vb{p}2}^{\dagger} c_{\vb{p}2} - c_{\vb{p}3} ^{\dagger}c_{\vb{p}3} c_{\vb{p}4} ^{\dagger} c_{\vb{p}4}  \right)  \] 
+
+\[  \] 
+
+
+
+
+
+\end{document}
