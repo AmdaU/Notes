@@ -1,0 +1,118 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-01
+
+\setcounter{section}{2}
+
+\section{Correction d'erreur}
+
+\subsection{codes classiques}
+
+Canal symétrique binaire
+
+\begin{cases}
+	0 &\to 0 : \text{probabilité }  p-1\\ 
+	{}& \to 1: \text{probabilité } p 
+\end{cases}
+
+\begin{cases}
+	1 &\to 1 : \text{probabilité }  p-1\\ 
+	{}& \to 0: \text{probabilité } p 
+\end{cases}
+
+Pour corriger les erreur on rajoute de la \underline{redondance}  
+
+\underline{ex: code de répétition} 
+
+\[ 0 \to000 \qquad 1\to 111 \] 
+
+\underline{Code classique (linéaire)} 
+
+\[ \left[ n,k,d  \right]  \] 
+
+\noindent$n$: nombre de bits envoyé (nombres de bits physiques)\\
+$k$: nombre de bit d'information\\
+$d$: distance du code 
+
+\underline{distance:} nombre de bits qu'il faut inverser pour passer d'un mot code à une autre 
+
+code de répétition: 2 mot codes: $\{ 000, 111 \} $, $\left[ 3,1,3 \right] $ 
+
+code universel: tout les chaînes de bits sont des mots codes 
+: $\left[ n,n, 1 \right] $ 
+
+
+code de parité: 
+\begin{matrix}
+	00\\01\\10\\11
+\end{matrix}\to \begin{matrix}
+	000\\011\\101\\110 
+\end{matrix}, $\left[ 3,2,2 \right] $ 
+
+Objectifs du design de code  
+\begin{itemize}
+	\item avec un $n,k$ donné maximiser $d$\\
+	\item avec $n,d$ fixé, maximiser k\\
+	\item $d,k$ minimiser $n$  
+\end{itemize}
+
+Le \underline{taux du code} est \[ R = \frac{k}{n}  \]  
+
+Pour le code de répétition $[n,1,n]$, $n\to \infty \implies R \to 0$  
+
+En général, on peut corriger $\left\lfloor \frac{d-1}{2}  \right\rfloor$ erreurs pour le canal symétrique binaire
+
+Avec le code de répétition 3 bits
+
+la probabilité d'avoir 2 erreur ou plus est de 
+
+\[ 3p^{2}\left( 1-p \right) +p^{3} \sim p^2 <p \] 
+
+En général $p_L \sim p^{\frac{d+1}{2} }$ 
+
+
+\subsection{Codes quantiques}
+
+Arguments en défaveur de la possibilité de la correction d'erreur quantique:
+
+\begin{enumerate}
+	\item Pas de copie possible (thm de non clonage )
+	\item Le nombre d'erreurs est \textit{infini}
+	\item La mesure en MQ mène à l'effondrement de la fonction d'onde $\implies $ pas de vote pas majorité???????? 
+	\item Comment gérer l'intrication avec l'environnement?
+\end{enumerate}
+
+
+code de répétition quantique:
+
+$\ket{0} \to \ket{000}$ 
+$\ket{1}\to\ket{111}$ 
+
+\begin{center}
+	\begin{quantikz}
+		\alpha \ket{0} + \beta \ket{1} & \ctrl{1} &\ctrl{2} &\qw\rstick[wires=3]{$\ket{\psi}$}\\
+		\ket{0} &\targ{} &\qw &\qw\\
+		\ket{0} & \qw &\targ{} &\qw
+	\end{quantikz}
+\end{center}
+
+
+On doit mesurer les \textit{syndromes} de l'état pour savoir s'il y a eu erreur ou non.
+
+On mesure $Z_1 Z_2$ et $Z_2 Z_3$. On peut alors determiner quel erreur est \textit{probablement} arrivée 
+
+on mesure $Z_1 Z_2$ avec
+
+\begin{quantikz}
+	\ket{+} & \ctrl{1}&\gate{H} &\meter{}\\
+	\ket{\psi} & \gate{U} & \qw &\qw
+\end{quantikz} $\to$ \begin{quantikz}
+	\ket 0 & \gate{H} &\ctrl{1} & \gate{H} &\gate{H} &\ctrl{2} &\gate{H} &\meter{}\\
+	\lstick[wires=3]{$\ket{\psi}$} &\qw & \control{} & \qw & \qw &\qw & \qw &\qw\\
+\qw &\qw &\qw &\qw &\qw &\control{} &\qw &\qw\\
+\qw &\qw &\qw & \qw &\qw &\qw &\qw & \qw
+\end{quantikz} 
+
+
+\end{document}
