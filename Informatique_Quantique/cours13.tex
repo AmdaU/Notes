@@ -1,0 +1,57 @@
+\input{../parameters}
+
+\begin{document}
+2022-31-02
+
+\section*{Correction d'erreur (suite)}
+
+La barre est souvent utilisée pour désigner un bit \textit{logique} ex:
+\[ \ket{\bar 0} = \ket{000} \qquad \ket{\bar1} = \ket{111}  \] 
+
+Circuit pour mesurer les stabilisateurs
+
+\begin{quantikz}
+	\ket+ & \ctrl{1} &\meter{}\\
+				&\gate U &\qw
+\end{quantikz}
+
+Cas où l'erreur commute avec le stabilisateur
+
+\begin{quantikz}
+	\ket+ & \qw &\ctrl{1} &\meter{}\\
+				\qw&\gate E&\gate U &\qw
+\end{quantikz}=\begin{quantikz}
+				\ket+ & \ctrl{1} &\qw &\meter{}\\
+							&\gate U &\gate E&\qw
+\end{quantikz}
+
+
+\subsection*{opérateurs logiques}
+
+Afin de préserver la \textit{stabilité} \textit{durant} les calculs on veut pouvoir effectuer les opération directement sur les qubits logiques eux-mêmes. On définit donc
+
+\[ \bar X \ket{\bar 0} = \ket{\bar 1} \qquad \bar X = X_1 X_2 X_3 \] 
+
+Il est évidemment essentiel que tout ces opérateurs \textit{logiques} commutent avec les stabilisateurs
+
+\[ \bar Z = Z_1 \] 
+
+\begin{tcolorbox}[title=Rotation logique]
+	 \begin{center}
+	 	Un rotation logique \textbf{n'est pas} simplement le produit de la rotation sur chaque qubit \[ \bar R(\theta)\neq R_{x_1}  (\theta) R_{x_2} (\theta) R_{x_3} (\theta) \] 
+		\[ \bar R_x (\theta) = e^{-i \frac{\theta}{2} \bar X} \] 
+	 \end{center}
+\end{tcolorbox}
+
+
+Le code de répétition ne peux pas corriger une erreur $Z$. On aurait pu choisir un code différent tel quel \[ \ket{ \bar 0 } = \ket{+++} \quad \ket{\bar 1} =  \ket{---}\] 
+
+Les stabilisateur sont alors $X_1 X_2$ et $X_2 X_3$. On as alors gagné la capacité de corriger les erreurs en $Z$ mais plus celles en $X$.  
+
+
+
+
+
+
+
+\end{document}
