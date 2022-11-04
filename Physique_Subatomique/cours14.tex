@@ -1,0 +1,79 @@
+\input{../parameters}
+
+\begin{document}
+2022-31-03
+
+Au dernier cous, on a \textit{développé} le champ de Dirac en modes. \[ \psi(\vb{r}) =\frac{1}{\sqrt{\mathcal{V}}} \sum_{\vb{p}} \sum_{s=1}^{4} c_{\vb{p},s} u_{\vb{p},s} e^{i\vb{p}\vb{r}}   \] 
+
+\[ \{c_{\vb{p},s}, c_{\vb{p}',s'}^{\dagger}\} = \delta_{\vb{p},\vb{p}'}   \] 
+\[ \{c_{\vb{p},s}, c_{\vb{p}',s'}\} = 0\] 
+
+
+Mer de Dirac
+
+\[ \ket{F} = \prod_{\vb{p}}\prod_{s=3,4} c_{\vb{p},s}^{\dagger} \ket{0}  \] 
+
+
+\[ E_0 = -2 \sum_{\vb{p}} E_\vb{p} \] 
+
+On suppose que $\norm{\vb{p}} $ est borné bien qu'on ne connaisse pas vraiment la borne supérieur 
+
+On définit les opérateur de création et de destruction de \textit{trou} dans la mer de Dirac \[ d_{\vb{p}1} = c_{-\vb{p}4} ^{\dagger} \qquad d_{\vb{p}2} = c_{-\vb{p}3} ^{\dagger}  \] 
+
+
+
+Le Hamiltonien se réexprime alors comme \[ H = \sum_{\vb{p}} \sum_{s=1,2} E_{\vb{p}} \left( c_{ps} ^{\dagger} c_{ps} - d_{-ps} d_{-ps} ^{\dagger} \right) = \sum_{\vb{p}} \sum_{s=12} E_{\vb{p}} \left( c_{ps} ^{\dagger} c_{ps} d_{ps} ^{\dagger} d_{ps} -1 \right)    \] trou
+
+La quantité de mouvement est donnée par \[ \vb{P} = \sum_{\vb{p},s=1,2,3,4}  \vb{p}c_{ps} ^{\dagger} c_{ps} = \sum_{ps=1,2} \vb{p}\left( c_{ps} ^{\dagger} c_{ps} + d_{-ps} + d_{-ps} ^{\dagger} \right)  = \dotsb = \sum_{p,s=1,2} \vb{p}\left( c_{ps} ^{\dagger} c_{ps} + d_{pas} ^{\dagger} d_{ps}  \right)   \] 
+
+Le 4-courrant est donné par \[ j^{\mu}=\bar\psi \gamma^{\mu}\psi  \] 
+
+L'équation de la conservation de la charge est respecté par l'équation de Dirac : \[ \partial_{\mu} j^{\mu}= 0 \qq{si} i \gamma^{\mu}\partial_{\mu} \psi -m\psi  =0  \] 
+
+La densité de charge électrique est donné par  \[ j^{0}= \rho =  \bar \psi \gamma^{0}\psi = \psi^{\dagger}	\psi  \] 
+
+\[ Q = e \int \dd^{3}\tau \rho = \int \dd^{3} r \psi ^{\dagger}(\vb{r}) \psi (\vb{r}) = e \sum_{p,s,s'} c_{ps} ^{\dagger}c_{ps} \underbrace{u_{ps} ^{\dagger} u_{ps}}_{\delta_{ss'} }  = e \sum_{\vb{p},s=1,2} \left( c_{ps} ^{\dagger} c_{ps}  + d_{-ps} d_{-ps} ^{\dagger}  \right) = e \sum_{\vb{p},s=1,2} \left( c_{ps} ^{\dagger} c_{ps}  - d_{ps}^{\dagger}  d_{ps} \right) + Q_0  \] 
+
+$Q_0$ est alors la charge de la mer de Dirac
+
+
+\section*{Jauge}
+
+Ex: 
+
+\[ F_{\mu\nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}  \] 
+
+\[ A_{\mu} \to A_{\mu} + \partial_{\mu} \xi \implies F_{\mu\nu} \to F_{\mu\nu}  \] 
+
+En mécanique la substitution de Peierls s'écrit \[ \grad \to \grad - ie \vb{A} \qquad \partial_t \to \partial_t +ie \Phi  \]  
+C'est le \textit{couplage minimal}
+
+\[ \boxed{\partial_{\mu} \to \partial_{\mu} + ie A_{\mu} } \] 
+
+Avec cette substitution $\psi \to e^{-ie\xi(r,t)} \psi$ 
+
+On aimerait que l'équation de Shrodinger soit invariant à une phase près \textit{localement} contrairement à globalement
+
+\underline{Dérivée covariente:}  
+
+\[ \mathcal{D}_\mu = \partial_{\mu} + ieA_{\mu}  \] 
+\[ \psi' = e^{-ie\xi } \psi \] 
+On peut montrer que:
+\[ \mathcal{D}'_\mu \psi' = e^{-ie\xi} \left( \mathcal{D} _\mu \psi \right)  \] 
+
+
+On a alors la \textit{nouvelle} équation de Schrodinger 
+
+\[ i \mathcal{D} _t \psi = - \frac{1}{2m} \vec \mathcal{D} ^2 \psi  \] 
+
+On construit l'action électromagnétique comme
+
+\[ S_{em} = \frac{1}{4} \int \dd^{4}x \underbrace{F^{\mu\nu}F_{\mu\nu}}_{-2 \left( \vb{E}^2 -\vb{B}^2 \right) }  - e\int \dd x^{\mu}A_{\mu} -m \int \dd s \] 
+
+
+\[ \mathscr{L} = \frac{1}{2} (\vb{E}^2 - \vb{B}^2) = \frac{1}{2} \left[ \left( \pdv{vA}{t}  \right) ^2  -\left( \grad \times \vb{A} \right) ^2 \right] \] 
+
+\[ \vec \pi = \pdv{\mathscr{L}}{\vb{\dot A}}  \] 
+
+
+\end{document}
