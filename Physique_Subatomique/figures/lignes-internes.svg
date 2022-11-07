@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="lignes-internes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker1590"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="7"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="path1588"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.06066017"
+       markerHeight="6.70710678"
+       viewBox="0 0 4.06066017 6.70710678"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="7"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="arrow3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.8481506"
+     inkscape:cx="327.18246"
+     inkscape:cy="235.21766"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;marker-mid:url(#Arrow3)"
+       d="m 31.661615,204.75018 h 23.90699 26.022019"
+       id="path300" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="28.125246"
+       y="199.42717"
+       id="text1127"><tspan
+         sodipodi:role="line"
+         id="tspan1125"
+         style="stroke-width:0.3"
+         x="28.125246"
+         y="199.42717">$\alpha$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="75.839104"
+       y="199.71609"
+       id="text1131"><tspan
+         sodipodi:role="line"
+         id="tspan1129"
+         style="stroke-width:0.3"
+         x="75.839104"
+         y="199.71609">$\beta$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="52.496098"
+       y="199.42558"
+       id="text1293"><tspan
+         sodipodi:role="line"
+         id="tspan1291"
+         style="stroke-width:0.3"
+         x="52.496098"
+         y="199.42558">$p$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="32.793156"
+       y="222.1823"
+       id="text1297"><tspan
+         sodipodi:role="line"
+         id="tspan1295"
+         style="stroke-width:0.3"
+         x="32.793156"
+         y="222.1823">$\frac{i\left( p_\mu \gamma^\mu + M \mathds{1} \right)_{\beta\alpha}}{p^2-m^2}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="43.825615"
+       y="236.088"
+       id="text1301"><tspan
+         sodipodi:role="line"
+         id="tspan1299"
+         style="stroke-width:0.3"
+         x="43.825615"
+         y="236.088">i \left(\frac{1}{p_\mu \gamma^\mu -m}\right)_{\beta\alpha}</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 21.742398,258.87268 c -1.07731,-0.12675 -1.07731,-0.12675 0,0 z"
+       id="path1305" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 21.742398,258.87268 c 3.51659,-0.89499 4.67562,-4.27329 8.412597,-4.56259 7.76367,-0.60104 7.5471,6.69266 10.74151,6.63001 4.25153,-0.0834 5.75029,-5.35605 9.76717,-5.96463 7.2936,-1.10502 10.0716,5.11021 12.19113,5.22796 3.15363,0.17521 5.69783,-4.65576 8.62647,-5.63194 4.52636,-1.50873 4.66003,4.20613 7.12933,4.20613 3.354419,0 4.316379,-4.48191 7.652139,-5.03785 3.30399,-0.55066 5.09679,4.91558 8.07989,3.65957"
+       id="path1313" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       id="path1403"
+       sodipodi:type="arc"
+       sodipodi:cx="94.342628"
+       sodipodi:cy="257.39935"
+       sodipodi:rx="0.58334184"
+       sodipodi:ry="0.5773778"
+       sodipodi:start="0"
+       sodipodi:end="6.2406881"
+       sodipodi:arc-type="slice"
+       d="m 94.92597,257.39935 a 0.58334184,0.5773778 0 0 1 -0.577144,0.57735 0.58334184,0.5773778 0 0 1 -0.589408,-0.56508 0.58334184,0.5773778 0 0 1 0.564621,-0.58935 0.58334184,0.5773778 0 0 1 0.601405,0.55255 l -0.582816,0.0245 z" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       id="path1403-7"
+       sodipodi:type="arc"
+       sodipodi:cx="21.667749"
+       sodipodi:cy="259.35605"
+       sodipodi:rx="0.58334184"
+       sodipodi:ry="0.5773778"
+       sodipodi:start="0"
+       sodipodi:end="6.2406881"
+       sodipodi:arc-type="slice"
+       d="m 22.251091,259.35605 a 0.58334184,0.5773778 0 0 1 -0.577144,0.57734 0.58334184,0.5773778 0 0 1 -0.589408,-0.56507 0.58334184,0.5773778 0 0 1 0.564621,-0.58936 0.58334184,0.5773778 0 0 1 0.601405,0.55256 l -0.582816,0.0245 z" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       id="path1403-5"
+       sodipodi:type="arc"
+       sodipodi:cx="81.590614"
+       sodipodi:cy="204.75018"
+       sodipodi:rx="0.58334184"
+       sodipodi:ry="0.5773778"
+       sodipodi:start="0"
+       sodipodi:end="6.2406881"
+       sodipodi:arc-type="slice"
+       d="m 82.173956,204.75018 a 0.58334184,0.5773778 0 0 1 -0.577144,0.57735 0.58334184,0.5773778 0 0 1 -0.589408,-0.56508 0.58334184,0.5773778 0 0 1 0.564621,-0.58935 0.58334184,0.5773778 0 0 1 0.601404,0.55255 l -0.582815,0.0245 z" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       id="path1403-3"
+       sodipodi:type="arc"
+       sodipodi:cx="31.658731"
+       sodipodi:cy="204.82809"
+       sodipodi:rx="0.58334184"
+       sodipodi:ry="0.5773778"
+       sodipodi:start="0"
+       sodipodi:end="6.2406881"
+       sodipodi:arc-type="slice"
+       d="m 32.242073,204.82809 a 0.58334184,0.5773778 0 0 1 -0.577144,0.57735 0.58334184,0.5773778 0 0 1 -0.589408,-0.56508 0.58334184,0.5773778 0 0 1 0.564621,-0.58935 0.58334184,0.5773778 0 0 1 0.601405,0.55255 l -0.582816,0.0245 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#000000;stroke:#000000;stroke-width:0.3"
+       x="40.002422"
+       y="276.89926"
+       id="text1504"><tspan
+         sodipodi:role="line"
+         id="tspan1502"
+         style="stroke-width:0.3"
+         x="40.002422"
+         y="276.89926">$-i \frac{q_{\mu\nu}}{q^2}$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;marker-mid:url(#Arrow1)"
+       d="m 152.68419,224.17366 7.77191,-7.77191 7.10207,-7.10207 -8.68769,-8.68769 -6.96416,-6.96417"
+       id="path1514" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 167.55817,209.29968 c 4.03239,2.66351 6.46467,-1.71758 10.87888,-1.98242 3.87539,-0.23251 2.94593,3.86073 5.0081,3.88652 2.38105,0.0298 4.50235,-2.60842 6.77033,-2.99499 4.27232,-0.72821 4.24095,2.25451 6.72157,2.01987 1.70608,-0.16137 2.29569,-2.45155 3.94936,-2.89747 2.43143,-0.65566 2.94925,1.45067 4.70162,1.7761 1.76095,0.32701 4.74721,-0.57948 5.88573,-0.19655"
+       id="path1574" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="161.38104"
+       y="200.87575"
+       id="text1578"><tspan
+         sodipodi:role="line"
+         id="tspan1576"
+         style="stroke-width:0.3"
+         x="161.38104"
+         y="200.87575">$-ie \gamma_{\beta\alpha}^\mu$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 118.51685,268.68475 c 0.23239,-1.66911 1.7519,-3.4181 3.44768,-3.82184 4.09133,-0.9741 2.6145,7.18484 5.9103,6.06766 2.4821,-0.84136 7.74721,-7.60744 9.90961,-6.79657 2.37604,0.89097 1.62721,5.79186 4.39334,5.79186 4.44641,0 1.55442,-7.30067 12.07671,-1.65482"
+       id="path1584" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.3;marker-mid:url(#marker1590)"
+       id="path1586"
+       cx="167.0939"
+       cy="267.54974"
+       rx="13.008333"
+       ry="12.772164" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 180.10224,267.54975 c -0.35819,-1.57141 0.70552,-2.74598 2.06859,-3.50612 4.08488,-2.27798 3.54146,0.91653 5.77239,2.79744 0.65391,0.55131 2.18357,0.49909 2.93545,0.3349 2.34224,-0.5115 1.99596,-3.73206 4.21602,-3.95975 2.42182,-0.24837 3.51582,3.62065 5.27988,3.46725 1.86568,-0.16225 2.09202,-3.69604 4.41302,-3.66425 2.60092,0.0356 2.98457,3.1114 5.12227,3.66425 2.34655,0.60686 5.3956,-1.31992 8.06442,-1.31992"
+       id="path1656" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="163.98949"
+       y="268.66257"
+       id="text1660"><tspan
+         sodipodi:role="line"
+         id="tspan1658"
+         style="stroke-width:0.3"
+         x="163.98949"
+         y="268.66257">$-1s</tspan></text>
+  </g>
+</svg>

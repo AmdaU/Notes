@@ -1,0 +1,101 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-07
+
+\[ \mathscr{H} = \frac{1}{2} \left( \vb{E}^2+ \vb{B}^2 \right)  \] 
+Comme on étudie le champ électromagnétique seul (sans source), on a \[ \grad \cdot \vb{A} = 0 \qquad \Phi = 0 \] 
+
+\[ \vb{E}= - \pdv{\vb{A}}{t} \qquad \vb{B} = \grad \wedge \vb{A} \] 
+
+\[ L = \frac{1}{2} \int \dd ^3 \tau \left( \vb{E}^2 -\vb{B}^2	 \right) =  \frac{1}{2} \int \dd ^3 r \left\{ \vb{\dot A}^2 - \left( \grad \wegde \vb{A} \right) ^2 \right\}  \] 
+
+\[ \vb{A}(\vb{r}) = \frac{1}{\mathcal{V} } \sum_q \vb{A}_q e^{i\vb{q}\vb{r}} \] 
+
+\[ \grad \wedge \vb{A}(\vb{r}) = \frac{-i}{\sqrt{\mathcal{V}}} \sum_q \vb{A}_q \wedge \vb{q} e^{i\vb{q}\vb{r}}   \] 
+
+\begin{align*}
+L &= \frac{1}{2\mathcal{V}} \int \dd^{3}r \sum_{q,q'}^{} \left\{ \dot A_q \dot A_q' + \left( \vb{q} \wedge \vb{A}_q  \right) \cdot \left( \vb{q} \wedge \vb{A}_q  \right)  \right\} e^{-i \vb{r}\left( \vb{q}-\vb{q}' \right) }\\
+	&= \frac{1}{2} \sum_{q,q'} \dot A_q^{*} \cdot \dot A_{q'} - \left( q^{2}\vb{A}_q^{*}  \cdot \vb{A}_q - \left( \vb{q}\cdot \vb{A}_q \right) (\vb{q}\cdot \vb{A}_q) \right) \\
+	&= \frac{1}{2} \sum_{q} \left\{  \vb{\dot A}_q \vb{\dot A}_\vb{q} - \vb{q}^2 A_\vb{q}^{*}	\cdot \vb{A}_\vb{q} \right\}\\
+	&= \frac{1}{2} \sum_{q,j=1,2} \left\{ \dot A_{jq} ^{*} \dot A_{jq} -\omega_q^{2}A_{jq} ^{*} A_{jq}  \right\} 
+\end{align*}
+
+
+Comme avec la champ scalaire, on va pouvoir définir des opérateurs de création et d'annihilation 
+
+\begin{tcolorbox}[title=flashback du champ scalaire]
+\[ L = \frac{1}{2} \sum_q \left\{\dot \phi_q ^{*} \dot \phi_q  -\omega_q^{2}\phi_q^{*} \phi_q   \right\}  \]  
+
+\[ \phi(\vb{r}) = \frac{1}{\sqrt{\mathcal{V}}} \sum_p \frac{1}{\sqrt{2\omega_p}} \left( e_{\vb{p}} e^{i\vb{p}\vb{r}} + a_p^{\dagger} e^{-i\vb{p}\vb{r}} \right)   \] 
+\end{tcolorbox}
+
+
+\[ [a_{jq}, a_{j'q'}^{\dagger}] = \delta_{jj'} \delta_{qq'}     \] 
+
+\[ A(\vb{r},t) = \frac{1}{\sqrt{\mathcal{V}}} \sum_{p,j}  \frac{1}{\sqrt{2\omega_p}} \left(a_{jq} \epsilon_{jq}  e^{i\vb{q}\vb{r}+i\omega t} + a_{jq} ^{\dagger} \epsilon_{jq} ^{*} e^{-i\vb{q}\vb{r} + i\omega t} \right)   \] 
+
+
+on a ici utilisé la \textit{jauge transverse} ou $\vb{q}\cdot \vb{A}_q =0$ 
+
+
+\[ H =\sum_{q,j} \omega_q \left( a_{jq} ^{\dagger} a_{jq} +12  \right)  \] 
+
+\[ \omega_q = \abs{q} \implies \text{masse nulle}   \] 
+
+vecteur de Poynting
+
+
+\[ \vb{P} = \int \dd ^3 r \vb{E} \wedge \vb{B} = \sum_{jq} q a_{jq} ^{\dagger} a_{jq}  \] 
+
+
+à partir de la densité de quantité de mouvement $\vb{E} \wedge \vb{B}$ on construit la densité que momement cinétique $\vb{r}\wedge \left( \vb{E} \wedge \vb{B} \right) $   
+
+\[ \vb{S} = \int \dd^{3}r \vb{r}\wedge \left( \vb{E} \wedge \vb{B} \right)  = \vb{S}_{\text{orb}} + \sum_{pj}  a_{jq} ^{\dagger} a_{jq}  \left( \epsilon_{jq} ^{*} \wedge \epsilon_{jq} 	 \right)  \] 
+
+\section*{Électrodynamique quantique (QED)}
+
+\[ S= \int \dd^{4}x i \bar \psi \gamma^{\mu}\underbrace{\partial_{\mu}}_{\to \mathcal{D}_\mu = \partial_\mu +ieA_{\mu} }  \psi -m \bar\psi \psi = - \frac{1}{4} \int \dd^{4}x F_{\mu\nu} F^{\mu\nu}\] 
+
+\[ S = S_0 + S_{\text{int}}  \] 
+\[ S_{\text{int}} = -e \int \dd^{4}x \bar \psi \gamma^{\mu} \psi A_\mu \] 
+
+\[ L_{\text{int}} -e \int \dd ^3 r \bar\psi \gamma^{\mu}\psi A_{\mu}  \] 
+
+\[ H_{\text{int}} = e \int \dd^{3}r \bar\psi \vec\gamma \psi \cdot \vec{A}  \]
+
+ \begin{aligned}
+H=-\frac{e}{\mathscr{V}} \int \mathrm{d}^3 r \sum_{j, \mathbf{k}} \sum_{s, s^{\prime}, \mathbf{p}, \mathbf{p}^{\prime}} & \frac{1}{\sqrt{2 \omega_k \mathscr{V}}}\left(a_{j \mathbf{k}} \varepsilon_{j \mathbf{k}} \mathrm{e}^{i \mathbf{k} \cdot \mathbf{r}}+a_{j \mathbf{k}}^{\dagger} \varepsilon_{j \mathbf{k}}^* \mathrm{e}^{-i \mathbf{k} \cdot \mathbf{r}}\right) \\
+&\left(c_{\mathbf{p}, s}^{\dagger} \bar{u}_{\mathbf{p}, s} \mathrm{e}^{-i \mathbf{p} \cdot \mathbf{r}}+d_{\mathbf{p}, s} \bar{v}_{\mathbf{p}, s} \mathrm{e}^{i \mathbf{p} \cdot \mathbf{r}}\right) \gamma\left(c_{\mathbf{p}^{\prime}, s^{\prime}} u_{\mathbf{p}^{\prime}, s^{\prime}} \mathrm{e}^{i \mathbf{p}^{\prime} \cdot \mathbf{r}}+d_{\mathbf{p}^{\prime}, s^{\prime}}^{\dagger} v_{\mathbf{p}^{\prime}, s^{\prime}} \mathrm{e}^{-i \mathbf{p}^{\prime} \cdot \mathbf{r}}\right)
+\end{aligned}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagramme-de-feynman:-qed}
+    \caption{Diagramme de Feynman: ligne externes}
+    \label{fig:diagramme-de-feynman:-qed}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{lignes-internes}
+    \caption{lignes internes}
+    \label{fig:lignes-internes}
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diffusion-électron-muon}
+    \caption{Diffusion électron muon}
+    \label{fig:diffusion-électron-muon}
+\end{figure}
+
+\[ i \mathcal{M} = u_{\alpha} (p_1 s_1 ) u_{\gamma} (p_2,s_2) \bar u_{\beta} \bar u_{delta} \left( -ie\gamma_{\beta\alpha}^{\mu} \right) \left( -ie \gamma_{\delta\gamma}^{\nu} \right) \frac{-ig_{\mu\nu}}{(p_{1}-p_{2})^2}    \] 
+
+
+
+\end{document}
