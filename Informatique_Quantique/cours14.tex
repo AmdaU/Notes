@@ -1,0 +1,140 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-08
+
+\subsection*{Finalisation de la correction d'Erreur}
+
+On a vu comment on notait les codes de correction d'erreur classique. Les codes de correction d'erreur quantiques (linéaires) eux sont caractérisé par \[ \left[ \left[ n,k,d \right]  \right]  \] 
+
+$n$: nombre de qubits physiques 
+$k$: nombre de qubits logiques 
+$d$: nombre de minimal de qubits sur lequel il faut agir pour faire une opération logique 
+
+
+\underline{Ex:} 
+
+\begin{itemize}
+	\item code de répétition $\left[ \left[ 3,1,1 \right]  \right] $  
+	\item code de shor $\left[ \left[ 9,1,3 \right]  \right] $ 
+	\item cpde de surface $\left[ \left[ N, 1, \sqrt{N} \right]  \right] $ 
+\end{itemize}
+
+En général, on peut corriger \[ \left\lfloor \frac{d-1}{2}  \right\rfloor \] 
+Le probabilité d'une erreur logique va comme \[ P_L = \left( \frac{p}{p_{\text{seuil}}}   \right)^{\frac{d-1}{2} +1} \] 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{graphique-typique-de-correction-d'erreur}
+    \caption{Graphique typique de correction d'erreur}
+    \label{fig:graphique-typique-de-correction-d'erreur}
+\end{figure}
+
+\setcounter{section}{3}
+
+\section{Chapitre 4: Dispositif}
+
+\subsection{Critères de D. Vincerizo}
+
+\begin{center}
+	\begin{quantikz}
+		\ket0 & \gate[wires=3]{U} &\meter[wires=3]{}\\
+		\ket0 &\qw & \meter{} &\\
+		\ket0 &\qw & \meter{} &
+	\end{quantikz}
+\end{center}
+
+
+\begin{tcolorbox}[title=Pour faire un ordinateur quantique il faut: ]
+	\begin{enumerate}
+	\item Des qubits bien définis $\left\{ \ket{0}, \ket{1} \right\} $ 
+	\item pouvoir initialiser les qubits dans un état précis
+	\item avoir un ensemble de portes 
+	\item pouvoir mesurer les qubits
+	\item des opérateurs de bonne fidélité 
+	\end{enumerate} 
+\end{tcolorbox}
+
+
+On prend l'exemple d'un spin $\frac{1}{2}$ 
+
+
+\begin{enumerate}
+	\item cubits bien définit
+	\[ \left\{ \ket{\downarrow}, \ket{\uparrow} \right\}  \] 
+
+On applique un champ magnétique pour lever la dégénéressance
+
+\item Initialisation
+	On veut $\ket{\psi} \to \ket{0}$ 
+
+Pour cela, on peut mettre le système en contacte avec un réservoir de température \textit{nulle} ( $\hbar \omega \ll k_B T$  ). On laisse alors se produire une relaxation de type $T_1 $  
+
+Un autre stratégie consiste à mesurer le qubits et à aplliquer une porte conditionelle
+
+\begin{center}
+	\begin{quantikz}
+		{}	& \bend{} & \cwbend{} &\\
+		\qw & \meter{} \vcw{-1} & \gate X \vcw{-1} & \qw \ket 0
+	\end{quantikz}
+\end{center}
+
+\item Portes logiques
+
+\[ H = - \vb{u} \cdot  \vb{B} \] 
+
+\[ U(t) = e^{-iHt} \] 
+
+\[ R_x (\theta) = e^{-i \omega t} \] 
+
+\[ \theta = Bt \] 
+
+
+Portes à deux qubits
+
+On veut une intéraction du type $H_{\text{int}} = g_{ij} \sigma_i \otimes \sigma_j $ 
+
+
+ex: couplage $XX$ 
+
+\[ U_{xx} = e^{-i \frac{\pi}{4} \sigma_x \sigma_x} \] 
+
+
+\[ U_{xx}\left( t- \frac{\pi}{4g_{xx} } \right)  \ket{0} = \frac{\ket{0}-\ket{1}}{\sqrt{2}}  \] 
+
+
+ex CZ:
+
+\[ H_{\text{int}} = g_{zz} \sigma_z^{(1)} \sigma_z^{(2)}  \] 
+
+\[ CZ = e^{i\frac{\pi}{4} } R_{z_1} \left( \pi/2 \right) R_{z_2} \left( \pi/2 \right)  U_{zz} \left( t = \frac{2}{4g_{zz} }   \right)  \] 
+
+Certaine portes à 2 qubits utilisent un système intermédiaire (un \textit{bus}). L'avantage et que cela permet de coupler des qubits qui sont physiquement très éloignées
+
+
+\item Mesure de qubit
+
+	Une mesure quantique idéale en mécanique quantique envoie effondre l'état. Par contre en realité, on peut complètement détruire un état en mesurant, en absorbant un photon par exemple.
+
+
+\item Taux d'erreur faible
+
+erreurs \begin{itemize}
+	\item erreur de mesure
+	\item control imprécis su système: bruit dans $B$ 
+		\[ B \to B + \delta B \qquas t \to t + \delta t \] 
+	\item termes parasites du Hamiltonien 
+		ex: interaction spin-spin  
+	\item relaxation et déphasage P
+\end{itemize}
+\end{enumerate}
+
+\subsection{Référentiel tournant}
+
+Heu, voir notes de photonique i guess...
+
+
+
+
+
+\end{document}
