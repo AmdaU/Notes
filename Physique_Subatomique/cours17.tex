@@ -1,0 +1,177 @@
+\input{../parameters}
+
+\begin{document}
+2022-32-14
+
+\section*{QCD (Quantum Chromodynamics)}
+
+
+\subsection*{Couleur de quarks}
+
+On justifie la notion de \textit{couleur} par trois observation
+
+\begin{enumerate}
+	\item $\Delta^{++}$: Des baryons produit lorsqu'on envoie un faisceau de proton sur des cibles. Cette particule se désintègre extremement rapidement. Tellement qu'on ne peut pas l'obsever directement. On l'observe seulement par \textit{résonance} dans le processus de scattering. Cette particule n'as pas l'air élémentaire (et ne l'est pas) à cause de sa charge de $2e$. Sont spin et de $J= \frac{3}{2} $ ce qui est étrange sans le modèle des quarks. Cette particules est en quelque sorte l'état fondamentale de trois quarks.    
+
+Généralement, la fonction d'onde de l'état fondamentale d'un système est symétrique car l'antisymétrie et lié à des variation plus rapide et donc plus d'énérgie. La fonction d'onde de $\Delta^{++}$ est donc symétrique.  
+
+La particules est donc symétrique en spin ( $\ket{\frac{3}{2} } = \ket{\uparrow\uparrow\uparrow}$  ) \textbf{et} en position. Pourtant, étant un fermion, cette particule devrait avoir une fonction d'onde antisymétrique. On déduit de cela qu'il doit y avoir un autre degré de liberté interne. Ce degré de liberté additionnel est la couleur. On peut montrer que cette antisymétrie requirt une degré de liberté à \textit{trois dimentions}
+
+Champ de dirac:
+
+\[ \psi_{\alpha,i}  \] 
+
+$\alpha$ est ici l'indice de Dirac et $i \in \{ 1,2,3 \} $ est l'indice de couleur  
+
+\[ \mathscr{L} = \sum_{i=1}^{3} \left( i \bar \psi_i \partial_{\mu} \gamma^{\mu}\psi_i - m \bar \psi_i \psi_i \right) \qq{pour 1 type de quark} \] 
+
+au lieu d'utiliser les indice $\{ 1,2,3 \} $, on préfère $\{ 	R, G, B \} $ 
+
+\[ \frac{1}{\sqrt{6}} \left\Big\{ \ket{RGB} + \ket{GBR} + \ket{BRG} - \ket{GRB} - \ket{RBG} - \ket{BGR} \right\}  \] 
+
+\[ = \frac{1}{\sqrt{6}} \epsilon_{ijk} \ket{ijk} \] 
+
+
+\item \[ e^{+}e^{-} \to \text{hadron}  \] 
+	\[ e^{+} e^{-} \to \mu^{+}\mu^{-} \] 
+
+
+  \[ R = \frac{\sigma_{e^{+}e^{-}}\to\text{hadrons} }{\sigma_{e^{+}e^{-}\to\mu^{+}\mu^{-}}} = \sum_a Q_a^{2} \] 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{graphique}
+    \caption{Argument 2, on semble avoir 3 fois plus de type de particules que prévu}
+    \label{fig:graphique}
+\end{figure}
+
+
+\item neutralité éléctrique des familles
+
+On demande la neutralité éléctrique des différents types de famille, entre autre dans le but de construire la mer de Dirac.
+
+
+
+\subsubsection*{Rotation de couleur}
+
+
+\[ \psi_{\to} \psi_{i}' = \sum_{j=1}^{3}U_{ij} \psi_j  \] 
+
+\[ U^{-1} =U ^{\dagger} \] 
+
+\[ \mathscr{L} = \sum_{i=1}^{3} \left( i \bar \psi_i \partial_{\mu} \gamma^{\mu}\psi_i - m \bar\psi_i \psi_i \right)  \] 
+
+
+\[ \ket{\psi} = \frac{1}{\sqrt{6}} \epsilon_{ijk} \ket{ijk} \] 
+
+\[ \ket{\psi'} = \frac{1}{\sqrt{6}} \underbrace{\epsilon_{ijk} u_{il} u_{jm} u_{kn} }_{\epsilon_{lmn} \det U} \ket{lmn}   \] 
+
+\[ =\det U \frac{1}{\sqrt{6}} \epsilon_{lmn} \ket{lnm} \] 
+
+\[ =\underbrace{\det U}_{1} \ket{\psi}  \] 
+
+
+
+\[ \implies U \in \text{SU}(3)  \] 
+
+\begin{tcolorbox}[title=Parenthèse sur la théorie des groupe]
+    groups définis par des matrices 
+
+    $a,b,c \in G$  
+    $a,b \in G \implies ab \in G$ 
+    \[ \exists e \in G | ae =ea =a \] 
+    \[ (ab)c = a(bc) \] 
+    \[ \forall a \in g \exists a^{-1} | a a^{-1} = e \] 
+
+    \rule 
+
+    $\rm U(n)$: groupe des matrices unitaires de dimension $n$  
+
+    $\text{SU}(n) $: U($n$) et $\det \in G =  1$ 
+
+    $\rm O(n)$: matrice orthogonales 
+
+    ${\rm SO}(n)$ : speciale orthogonales  
+\end{tcolorbox}
+
+État quark-antiquark ($q\bar q$)
+
+\[ c_k \to U c_k \]  
+\[  d_k^{\dagger} \to U d_k^{\dagger} \] 
+\[  c_k^{\dagger} \to U ^{*} c_k^{\dagger} \] 
+\[  d_k \to U ^{*} d_k \] 
+
+\[ \ket{\psi}_{\text{meson}} = \frac{1}{\sqrt{3}} \left\Big( \ket{R\bar R} + \ket{G \bar G} + \ket{B\bar B} \right)  = \frac{1}{\sqrt{3}} \sum_{i=1}^{3} \ket{i\bar i} \] 
+
+\[ \ket{\psi'} \to \frac{1}{\sqrt{3}} \sum_{i=1}^{3} U_{ij} ^{*} U_{iR} \ket{j\bar R} = \frac{1}{\sqrt{3}} \sum_{jk} \delta_{jk} \ket{j \bar k} = \frac{1}{\sqrt{3}} \sum_j \ket{j \bar j} = \ket{\psi} \] 
+
+
+
+\subsection*{Théorie de Yang-Mills (1954)}
+\subsection*{Gross, Wilczek, Politzer (1973)}
+
+C'est une théorie de l'intéraction forte qui était très remise en question avant l'idée des quarks. 
+
+
+
+\[ \psi_i \to \psi_{i}' = \underbrace{U_{ij}}_{\in \rm{SU}(3)}  (x) \psi_j  \] 
+
+
+\[ \mathscr{L} = \sum_{j=1}^{3} \bar\psi_i \left( i\gamma^{\mu}\partial_{\mu} -m \right) \psi_i \] 
+
+On construit alors la dérivé covariante 
+
+
+\[  \mathscr{D}_\mu \psi = \left( \partial_{\mu} + i g A_\mu \right) \psi \] 
+
+En éléctromagnétisme: 
+
+\[ \psi' = \psi e^{ie \xi(r) } \psi \] 
+\[  \left( \mathcal{D}_\mu \psi \right)' = e^{i\xi } \mathcal{D}_\mu \psi  \] 
+
+
+En chromodynamique 
+
+\[ \psi' = U\psi \] 
+\[  \left( \mathcal{D}_\mu \psi \right)' = U \mathcal{D}_\mu \psi \] 
+
+\[  \mathcal{D}_\mu ' \psi' =  \left( \partial_{\mu} _ i g A_{\mu} ' \right)U \psi = U \left( \partial_{\mu} _ ig A_{\mu}  \right) \psi \] 
+
+\[  = \partial_{\mu} U \psi + \cancel{U \partial_{\mu} \spi} + ig A'_\mu U \psi = \cancel{U \partial_{\mu} \psi} + i gU A_{\mu} \psi \forall \psi \] 
+
+\[  \implies \partial_{\mu} U + i g_{\mu} ' = i gU A_\mu \] 
+\[  \implies \partial_{\mu} U U ^{\dagger} _ ig A'\mu = ig U A_{\mu} U^{\dagger}  \] 
+
+\[ \boxed{A'_\mu = \frac{i}{g} \partial_{\mu} U U^{\dagger} + u A_{\mu} U^{\dagger} } \] 
+
+
+
+\[ \mathscr{L} = \bar\psi \left( i\slashed{\mathcal{D}} - m \right) \psi = \bar \psi \left( i \slashed \partial - m - g \slashed A  \right) \psi \] 
+
+
+\begin{tcolorbox}[title=lien entre matrice unitaire et hermitienne]
+    \[ U = e^{iH}\qquad U^{-1}=  e^{-iH} = U ^{\dagger} \]  
+
+    \[  \det U = 1 \to \tr H =0  \] 
+
+    \[\rm{SU}(2) \to e^{\frac{1}{2} i \omega_a \sigma_{a}} \qquad \rm{SU}(3) \to e^{i\omega_a T_a} \] 
+    Il y a 8 matrices $T_a$, analogues aux matrices de Pauli, ce sont les matrices de Gell-mann 
+    \[ T_a = \frac{1}{2} \lambda a \] 
+\end{tcolorbox}
+
+
+\[\lambda_1 = \mqty(0 & 1 & 0 \\1 & 0 &0 \\ 0 & 0 &0) \quad \lambda_2 = \mqty(0 & -i & 0 \\i & 0 &0 \\ 0 & 0 &0) \quad \lambda_3 = \mqty(1 & 0 & 0 \\0 & -1 &0 \\ 0 & 0 &0)  \] 
+\[\lambda_1 = \mqty(0 & 1 & 0 \\1 & 0 &0 \\ 0 & 0 &0) \quad \lambda_2 = \mqty(0 & -i & 0 \\i & 0 &0 \\ 0 & 0 &0) \quad \lambda_3 = \mqty(1 & 0 & 0 \\0 & -1 &0 \\ 0 & 0 &0)  \] 
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
