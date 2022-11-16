@@ -1,0 +1,163 @@
+\input{../parameters}
+
+\begin{document}
+2022-11-16
+
+
+Précession géodésique = effet de Sitter
+
+effet de Lense-thirring 
+
+
+\subsection*{4-vecteur spin:} 
+
+\[ s^{i} = \left[ 0, \vec{{S}} 
+ \right] \qquad \text{(Dans le référentiel de l'obejet)}  \]
+
+\[ \dv{S^{i}}{\tau} = \Gamma_{jk}^{i}S^{j}u^{k} \]
+
+\[ \nabla_{\lambda} A^{i} =  \]
+
+
+
+On considère une orbite (criculaire?)
+
+\[ \Omega = -\frac{3M \omega}{2r}  = - \frac{3r_s}{r} \underbrace{\omega}_{\text{freq de l'orbite} }   \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{orbite}
+    \caption{Orbite}
+    \label{fig:orbite}
+\end{figure}
+
+
+\[ \Omega^{\alpha}= \frac{1}{r^3} \left( S^{\alpha} - 3 \frac{\left( \vb{s}\cdot \vb{r} \right) x^{a}}{r^2}  \right)  \]
+
+
+\begin{tcolorbox}[title=Gravity probe B]
+	 Une sonde dont la conception à pris de \textit{nombreuse} décénies
+
+\begin{center}
+\begin{matrix}
+	& \text{observation}  & \text{théorie} \\
+	\text{géodésique}  & $6602 \pm 18 \rm mas$	&6606\\
+	\text{Lense-Thirring}  & $37.2 \pm 7.2 \rm mas$&	39.2\\
+\end{matrix}
+\end{center}
+\end{tcolorbox}
+
+\section*{Ondes Gravitationnelles }
+
+La théories des ondes gravitationnel présente beaucoup de subtilité. Presque tout les grand de la relativité se sont trompé sur les ondes gravitationnelles. La théorie de la relativité et hautement non-linéaire mais comme pour tout, on peut faire des approximation au premier ordre.
+
+\[ g_{ij} = \eta_{ij} + h_{ij} \]
+
+$\eta_{ij}$ ne se transforme pas comme un tenseur \textit{sauf} dans le cas d'une transformation de Lorentz, c'est une constante sinon 
+
+\begin{tcolorbox}[title=Transformation de Lorentz]
+	\[ 	x'^i  = \Lambda_j^{i} x^{j} \]
+
+	\[ \pdv{x'^{i}}{x^j} = \Lambda_j^{i} \qquad \pdv{x^{k}}{x'^i} = \left( \Lambda ^{-1} \right)_i^{k} = \cancel{\Lambda_j^{k}} \]
+
+	\[ g_{ij} ' = \pdv{x^{k}}{x'^i} \pdv{x^{l}}{x^j} g_{kl}  \]
+
+\[ \eta_{ij} + h'_{ij} = \left( \Lambda ^{-1}\right)_i^{k} \left( Lambda ^{-1} \right)_g^{l} \left(  \eta_{ij} - h_{lg}   \right)     \]
+\[ x'^i [ x^{i}+ \xi^{i}(x) ] \]
+	 
+\end{tcolorbox}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{difféomorphisme}
+    \caption{difféomorphisme}
+    \label{fig:difféomorphisme}
+\end{figure}
+
+difféomorphisme:
+
+\[ \begin{cases}
+	\pdv{x'^i}{x^j}  = \delta_j^{i} + \partial	_j \xi^{i}\\
+	\pdv{x^{i}}{x'^j} = \delta_i^{j} + \partial_j \xi^{i}
+ \end{cases} \]
+
+ \[ g'_{ij} = \eta_{ij} + h'_{ij} = \dotsb = \eta_{ij} + \partial_j \xi_i - \partial_i \xi_j +h_{ij}  \]
+
+ \[ \boxed{h'_{ij} = h_{ij} - \partial_j \xi_i -\partial_i \xi_j} \]
+
+
+\[ \text{Transformation de jauge}\qquad A_{i}' = A_i - \partial_i \xi    \]
+
+Lien fort avec l'élétromagnétisme mais avec un spin 2
+
+Le tenseur métrique est \[ g_{ij} = \eta_{ij} + h_{ij}  \]
+
+le tenseur contravariant est \[ g^{ij} = \eta^{ij}- h^{ij} \] 
+La soustraction venant du fait que la contribution au premier ordre de $	g_{ij} g^{ij} $ doit s'annuler.
+
+
+\[ \Gamma_{ij}^{k} = \frac{1}{2} g^{kl}\left( \partial_j g_{il} - \partial_i g_{jl} - \partial_l g_{ij}  \right) = \frac{1}{2} g^{kl}\left( \partial_j h_{il} -\partial_{ij} h_{jl} \partiall j_{ij}\right)  = \frac{1}{2} \left( \partial_j h_i^{l} + \partial_i h_{jl	} - \partial^{l}h_{ij}  \right)    \]
+
+
+\[ R_{kji}^{l}= \partial_j \Gamma_{ki}^{l}- \partial_i \Gamma_{kj}^{l} + \Gamma_{ki}^{m}\Gamma_{mj}^{l}- \Gamma_{kj}^{m}\Gamma_{mi}^{l} = \frac{1}{2} \partial_j \left( del_k h_{il} - \partial_i h_k^{l}- \partial^{l} h_{ik}  \right) - (i \leftrightarrow j) = \dotsb \]
+
+
+\[ R_{ki} = \frac{1}{2} \left( \partial_k \partial_j h_i^{j} + \partial^{i}\partial_i h_{kj} - \partial_i \partial_k h_j^{i} - \partial^{j}\partial_j h_{ki}  \right)  \]
+
+\[ R= g^{ik}R_{ik} = \frac{1}{2} \left( \partia^_i \partial_j h_j^{i}  + \partial^{i} \partial_i h_j^{i} - \partial_i \partial^{i} h_i^{j} - \partial^{i}\partial_j h_i^{j}\right) = \partial_i \partial_j h^{ij}- \partial_i \partial^{i}h_j^{i} \]
+
+\[ 	\partial_i \partial^{i} = \square \qquad \text{d'Alembertien}  \]
+\[ 	\partial_a \partial^{a} = \nabla^{2}= \triangle \qquad \text{Laplacien}  \]
+
+
+Equation d'Einstein:
+
+\[ \boxed{R_{ij} - \frac{1}{2} g_{ij} R = 8\pi T_{ij} } \]
+
+Vesion linéarisée:
+
+\[ \frac{1}{2} \left( \partial_k \partial_j k_{i?j} + \partial_i \partial_j h_{k}^{i} - \partial_i \partia_k h - \square h_{ki} - \eta_{ik} \partial_i \partial_j h^{ij}+ \eta_{ik} \square h \right) 8\pi T_ik \]
+
+
+Comparison avec l'électromagnétisme (qui est beaucoup plus simple )
+
+\[ \text{EM} \qquad \square A_i + \partial_i \partial^{j} A_j = - j^{i}  \]
+
+
+
+\[ \bar h_{ij} = h_{ij} - \frac{1}{2} \eta_ij h \qquad	\text{déformation à trace inversée}  \]
+
+
+\[ \bar h = h - 2 h = -h \]
+
+
+On veut simplifier l'expression avec une transformation de Gauge 
+
+
+\[ h_{ij} ' = h_{ij} - \partial_i \xi_j - \partial_j \xi_i \]
+\[ h' = h - 2 \partial_i \xi^i \]
+
+\[ \bar h_{ij}' = \bar h_{ij} - \partial_i \xi_j - \partial_j \xi_i - \eta_{ij} \partial_k \xi_k  \]
+
+
+Si on choisit \[ 	\xi_i | \square \xi_i = \partial^{j}h_{ij} \to \partial^{i}\bar h_{ij} ' =0 \]
+
+
+\[ \implies \square \bar h_{ij} = - 16\pi T_{ki}  \]
+
+C'est une équation d'onde!
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
