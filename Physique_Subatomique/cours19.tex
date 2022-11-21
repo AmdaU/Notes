@@ -1,0 +1,125 @@
+\input{../parameters}
+
+\begin{document}
+2022-11-21
+
+\[ 	\mathscr{L}_{Q C D}=-\frac{1}{4}\underbrace{\left(\partial_\mu A_\nu^a-\partial_\nu A_\mu^a-g f_{b c a} A_\mu^b A_\nu^c\right)}_{F_{\mu\nu}^{a}} \left(\partial^\mu A^{a \nu}-\partial^v A^{a \mu}-g f_{d e a} A^{d \mu} A^{e v}\right) + \sum_f \bar \psi_f \left( i \gamma^{\mu}\mathcal{D}_\mu -m_f \right) \psi_f \]
+
+\[ f_{abc} : \text{ complètement antisymétrique}   \]
+
+
+La QCD est une théorie fort (toudoum tish) compliqué car c'est une théorie non linéaire
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagrammes-non-linéaires}
+    \caption{diagrammes non-linéaires}
+    \label{fig:diagrammes-non-linéaires}
+\end{figure}
+
+C'est la QED avec une constante de couplage variable
+
+\[ \frac{1}{\alpha_s\left(q^2\right)}=\frac{1}{\alpha_s\left(q_0^2\right)}+\frac{33-2 N_q}{12 \pi} \ln \frac{q^2}{q_0^2} \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{diagramme-de-phase-(théorique)-de-la-matière-hadronique}
+    \caption{Diagramme de phase (théorique) de la matière hadronique}
+    \label{fig:diagramme-de-phase-(théorique)-de-la-matière-hadronique}
+\end{figure}
+
+Les boules de \textit{glu} sont des états formées exclusivement de gluons qui existe d'après la théorie des groups mais qu'on a jamais mesuré hors de tout doute.
+
+
+L'interaction entre les hadrons nucléaire est analogue à l'interaction de Wandervall au sens ou les nucléons sont neutres. L'interaction entre les nucléons est donc assez complex.
+
+\section*{Symétries discrètes}
+
+\begin{tcolorbox}[title=]
+	 \begin{center}
+	 P: Parité \qquad C: Conjugaison de charge \qquad T: Inversion du temps
+	 \end{center}
+\end{tcolorbox}
+
+
+\begin{enumerate}
+	\item P
+		\[ 	\left( t,x,y,z \right) \to \left( t,-x,-y,-z \right) \qq{ou} 	\left( t,x,y,z \right) \to \left( t,-x,-y,-z \right) \quad (\vb{r} \to -\vb{r})  \]
+\end{enumerate}
+
+vecteur \underline{polaires}: \[ 	\vb{r},\, \vb{v},\, \vb{a},\, \vb{p},\,\vb{f}, \vb{E} \] 
+
+vecteur \underline{axiaux}: \[ 	\vb{B}, \vec{J} \]
+
+\underline{scalaires}: \[ \vb{p} \vb{v} \] 
+
+\underline{pseudo-scalaire}: \[ \vb{E} \cdot \vb{B} \to - \vb{E} \cdot \vb{B} \] 
+
+
+\item En MQ $	\PI \ket{\vb{r}} = \ket{-\vb{r}}$
+	\[ \Pi^{2}= \mathds{1} \implies \lambda = \pm \]
+
+
+Si $[H, \Pi] =0$, alors les état ont une \textit{parité} : $\Pi \ket{\psi} = \pm \ket{\psi}$
+
+Action de la parité sur le champ de Dirac
+
+\[ \psi = \mqty(\chi_L\\\chi_R) \]
+
+\[ \text{rep. chiral: } \gamma^{0}= \mqty(0 &1 \\ 1 & 0)  \]
+
+\begin{align*}
+	{\psi(\vb{r},t) &\to \psi' (\vb{r},t) = \eta \gamma^{0}\psi(- \vb{r}, t) \\ A_{\mu} (\vb{r},t) &\to A_{\mu} ' (\vb{r},t) = \tilde A_{\mu} (-\vb{r}) \to A_{\mu}' (\vb{r}, t) = \tilde A _\mu (-\vb{r}, t)}\\
+	\partial_{\mu}' &\to \tilde_{\mu} 
+\end{align*}
+
+\[ i \gamma^{\mu}\partial_{\mu} \psi = e \gamma^{\mu}A_{\mu} \psi - m \psi = 0  \]
+
+On remplace tout par les quantié primé et on vérifie que ça donne bien 0 
+
+\[ \dotsb \]
+
+ça donne bien 0!: L'équation de Dirac est invariante par parité. 
+
+
+\[ \gamma^{5} = i \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \]
+
+\noindent rep chirale: \[ 	\gamma^{5}= \mqty(-1 & 0 \\ 0 & 1) \]
+rep Dirac: \[ 	\gamma^{5}= \mqty(0 & 1 \\ 1 &0) \]
+
+\[ \frac{1}{2} \left( 1 + \gamma^{5} \right)  =\mqty[0 &0 \\ 0 &1] \qq{chiral}\]
+
+\begin{align*}
+	\psi_R = \frac{1}{2} \left( 1 + \gamma^5 \right) \psi	\\
+	\psi_L = \frac{1}{2} \left( 1 -\gamma^5 \right) \psi \\
+	\bar\psi_R = \bar \psi \frac{1}{2} \left( 1 - \gamma^5 \right)	\\
+	\bar\psi_L = \frac{1}{2} \bar\psi \left( 1 -\gamma^5 \right)
+\end{align*}
+
+Propritété importante: $\gamma^{5}$ anti-commute avec tout les matrices de Dirac ( $\{\gamma^{5}, \gamma^i\} =0;\; i \in \{ 0,1,2,3 \} $ ) 
+
+\subsection*{Conjugaison de charge}
+
+\[ \psi \to \psi^{c} =  i \eta_c \gamma^{2}\psi ^{*} \]
+
+\[ A_{\mu}  \to A_{\mu} ^{c}= - A_\mu \]
+
+
+\begin{align*}
+	u_{\vb{p},1} ^ c &= v_{\vb{p},1} \\
+u_{\vb{p},2}^c &= - v_{\vb{p},2} \\
+v_{\vb{p},1} ^c &= u_{\vb{p},1} \\ 
+v_{\vb{p},2}^c &= - u_{\vb{p},2}  
+\end{align*}
+
+
+Moulin à café (équation de Dirac)
+
+
+
+
+
+
+
+\end{document}

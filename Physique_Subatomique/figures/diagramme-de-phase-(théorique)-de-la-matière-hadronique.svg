@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="diagramme-de-phase-(théorique)-de-la-matière-hadronique.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker2226"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path2224"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1626"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1357"
+       is_visible="true"
+       lpeversion="1" />
+    <marker
+       style="overflow:visible"
+       id="marker1073"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path1071"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1357-7"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5500311"
+     inkscape:cx="450.31356"
+     inkscape:cy="218.38272"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;marker-start:url(#marker1073);marker-end:url(#Arrow1)"
+       d="m 21.136208,188.99971 v 90.52692 H 216.37609"
+       id="path298" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="10.548661"
+       y="190.18901"
+       id="text1295"><tspan
+         sodipodi:role="line"
+         id="tspan1293"
+         style="stroke-width:0.3"
+         x="10.548661"
+         y="190.18901">$T$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="210.03629"
+       y="285.6636"
+       id="text1299"><tspan
+         sodipodi:role="line"
+         id="tspan1297"
+         style="stroke-width:0.3"
+         x="210.03629"
+         y="285.6636">$\mu$ </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="35.624081"
+       y="267.87717"
+       id="text1353"><tspan
+         sodipodi:role="line"
+         id="tspan1351"
+         style="stroke-width:0.3"
+         x="35.624081"
+         y="267.87717">gaz</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.290223"
+       d="m 50.902823,243.15978 c 6.679848,2.48279 12.680394,6.76699 17.19772,12.27865 5.541771,6.7616 8.80264,15.36001 9.138193,24.09602"
+       id="path1355"
+       inkscape:path-effect="#path-effect1357"
+       inkscape:original-d="m 50.902823,243.15978 c 5.732804,4.09317 11.465378,8.18605 17.19772,12.27865 5.732341,4.09259 6.092361,16.0643 9.138193,24.09602" />
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       id="path1423"
+       cx="50.852268"
+       cy="243.13452"
+       rx="0.8306908"
+       ry="0.82498986" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 52.170504,220.98511 c 14.576745,2.427 28.359581,9.41957 38.927023,19.74919 10.637533,10.39813 17.966933,24.13133 20.684293,38.75645"
+       id="path1355-5"
+       inkscape:path-effect="#path-effect1357-7"
+       inkscape:original-d="m 52.170504,220.98511 c 12.976209,6.58352 25.951877,13.16658 38.927023,19.74919 12.975153,6.58259 13.790053,25.83809 20.684293,38.75645" />
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:0.249085"
+       id="path1423-3"
+       cx="52.14587"
+       cy="220.9915"
+       rx="0.68312681"
+       ry="0.69157791" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#000000;stroke:#000000;stroke-width:0.3"
+       x="74.490242"
+       y="252.75032"
+       id="text1594"><tspan
+         sodipodi:role="line"
+         id="tspan1592"
+         style="stroke-width:0.3"
+         x="74.490242"
+         y="252.75032">liquide</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 79.601988,272.52017 c 0.740744,0.0351 1.484845,-0.001 2.218698,-0.1078 1.465443,-0.21313 2.87676,-0.70446 4.333586,-0.97017 3.203606,-0.58431 6.545699,-0.0652 9.723612,-0.77613 0.922178,-0.20629 1.818878,-0.51405 2.738128,-0.73302 1.710528,-0.40746 3.494878,-0.50291 5.239118,-0.28026"
+       id="path1624"
+       inkscape:path-effect="#path-effect1626"
+       inkscape:original-d="m 79.601988,272.52017 c 0.06215,0.20027 1.835724,-0.0524 2.218698,-0.1078 1.465929,-0.21216 2.872099,-0.81633 4.333586,-0.97017 3.219887,-0.33892 6.530427,-0.21732 9.723612,-0.77613 0.909352,-0.15913 1.81542,-0.64911 2.738128,-0.73302 1.680668,-0.15283 3.728308,0.6084 5.239118,-0.28026" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="86.823608"
+       y="274.23788"
+       id="text1642"><tspan
+         sodipodi:role="line"
+         id="tspan1640"
+         style="stroke-width:0.3"
+         x="86.823608"
+         y="274.23788">suprafluide </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.3"
+         x="86.823608"
+         y="278.20663"
+         id="tspan1644">nucléaire</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="88.16925"
+       y="206.91551"
+       id="text2200"><tspan
+         sodipodi:role="line"
+         id="tspan2198"
+         style="stroke-width:0.3"
+         x="88.16925"
+         y="206.91551">plasma de quark-gluons</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 95.354829,244.10951 c 0,0 27.791781,-17.70816 55.345621,-18.31183 27.55383,-0.60366 65.96277,4.16093 65.96277,4.16093"
+       id="path2210" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       d="m 161.3727,279.51815 c 0,0 7.82634,-15.65687 19.5766,-20.75635 11.75025,-5.09948 37.32055,-10.62872 37.32055,-10.62872"
+       id="path2212" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       x="126.29439"
+       y="250.18732"
+       id="text2216"><tspan
+         sodipodi:role="line"
+         id="tspan2214"
+         style="stroke-width:0.3"
+         x="126.29439"
+         y="250.18732">Supra non-CLF</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3;stroke-dasharray:none"
+       x="189.77003"
+       y="267.39139"
+       id="text2220"><tspan
+         sodipodi:role="line"
+         id="tspan2218"
+         style="stroke-width:0.3"
+         x="189.77003"
+         y="267.39139">CFl</tspan></text>
+    <path
+       style="fill:none;stroke:#ff6600;stroke-width:0.9;stroke-dasharray:none;marker-end:url(#marker2226)"
+       d="M 78.689646,284.55077 H 149.49308"
+       id="path2222" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#ff6600;stroke-width:0.899999;stroke-dasharray:none"
+       x="102.42849"
+       y="290.74524"
+       id="text2448"><tspan
+         sodipodi:role="line"
+         id="tspan2446"
+         style="stroke-width:0.9"
+         x="102.42849"
+         y="290.74524">Étoile à Neutron</tspan></text>
+  </g>
+</svg>
