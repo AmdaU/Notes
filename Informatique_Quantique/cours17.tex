@@ -1,0 +1,86 @@
+\input{../parameters}
+
+\begin{document}
+2022-11-22
+
+\setcounter{section}{4}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{3}
+
+
+
+\subsubsection{Qubit supraconducteur: transmon (Co-inventé par alexandre Blais)}
+
+
+On remplace l'inducteur d'un circuit RLC par une indictance non-linéaire nt_\
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{qbit-transoms}
+    \caption{qbit transoms}
+    \label{fig:qbit-transoms}
+\end{figure}
+
+
+\[ \begin{matrix}
+	\text{Inductance} & \text{Jonction Josephson (J)}\\
+	I = \frac{\Phi}{L} & I = I_0 \sin(\frac{2\pi}{\Phi_0} \Phi)\\
+	\Phi (t) = \int_{-\infty}^{t}\dd t V(t) & \Phi(t) = \int_{- \infty}^{t}\dd t V(t)\\
+E = \int \dd t V(t) I(t)= \int \dd t \dv{\Phi}{t} \frac{\Phi}{L} = \frac{\Phi^{2}}{2L} & E = \dotsb = -\underbrace{I_c \frac{\Phi_{0}}{2\pi}}_{E_J}   \cos(\underbrace{\frac{2\pi}{\Phi_0} \Phi}_{\varphi} )
+\end{matrix} \]
+
+où $I_c$ est le courant critique, $	\Phi_0$ est le quanta de flux ($\Phi_0 = \frac{h}{2e} $)
+
+
+
+Le Hamiltonien de notre nouveau système est \[ H = 4 E_c \hat n^{2}-E_J \cos(\hat \varphi) = E_c \left[ 4 \hat n^{2}- \frac{E_J}{E_c} \cos(\varphi) \right]  \]
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{potentiel}
+    \caption{Potentiel}
+    \label{fig:potentiel}
+\end{figure}
+
+
+Puisqu'on a un cosinus, les \textit{petites} différence avec l'oscillateur harmonique commence à apparaitre au 4ème ordre
+
+\[ H_{\text{approx}} = 4 E_c \hat n^{2}+ E_J \frac{\hat\varphi^2}{2} + E_j \frac{\hat\varphi^{4}}{8}  \]
+
+
+De manière analogue à l'oscillateur harmonique on définit
+
+\[ \hat n = - \frac{i}{2} \left( \frac{E_J}{2E_c}  \right)^{\frac{1}{4} } \left( b - b ^{\dagger} \right) \]
+
+
+\[ \hat \varphi = \left( \frac{2E_c}{E_j}  \right)^{\frac{1}{4} }\left( b + b ^{\dagger} \right)  \]
+
+
+Le Hamiltonien peut alors se réécrire comme \[ H = \dotsb = \dotsb(\text{RWA} ) \dotsb = \hbar \left( \omega_q - \frac{k}{2}  \right) b b^{\dagger} + \frac{\hbar{}k}{2} \left( b^{\dagger}b \right) ^2 \]
+
+où $\hbar \omega_q \equiv \sqrt{8E_j E_{c}} - E_c $ et $\hbat k = -E_c $
+
+\[ H = \hbar \left( \OMega_q - \frac{k}{2} + \frac{k}{2} b^{\dagger}b \right) b ^{\dagger} b  \]
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{beep-boop-bap}
+    \caption{beep boop bap}
+    \label{fig:beep-boop-bap}
+\end{figure}
+
+Étant donné la séparation ente les niveau énérgétique on appele souvent les qubits transmons des atomes artificiels. 
+
+\[ \frac{K}{\omega_q} = \frac{E_c}{\sqrt{8E_J{}E_c}-E_c} \approx \frac{E_c}{\sqrt{8E_j{}E_c}} = \sqrt{\frac{E_c}{8E_j} }  \]
+
+Dans la limite $\frac{E_j}{E_c} \to \infty$, le  transmon deviens un oscillateur harmonique
+
+
+
+
+
+
+\end{document}
