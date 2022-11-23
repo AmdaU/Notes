@@ -1,0 +1,58 @@
+\input{../parameters}
+
+\begin{document}
+2022-11-23
+
+\section*{Retour sur la propagation d'onde gravitationnelles}
+
+\[ \boxed{\square \bar h_{ik} = -16 T_{ik} } \]
+
+\[ \partial_i \partial^{i} \psi \equiv \square \psi - \rho (x)  \]
+
+\[ \Psi(x) = \frac{1}{4\pi} \int \dd^{3}r \frac{\rho(\overbrace{t- \abs{r-r'}}^{t'}, \vb{r} )}{\abs{r -r'} }  \]
+
+
+\[ \bar h_{ik} =  - 4 \int \dd^{3}r' \frac{T_{ik} (t',\vb{r})}{\abs{\vb{r}-\vb{r}'} }  \]
+
+
+Fonction de Green:
+
+\[ \square G(x) = \delta (x) \]
+
+\[ \psi(x) = \int \dd^{4}y(x-y)\rho (y) \]
+\[ \square \psi(x) = \int \dd^{4}y\square_x G(x-y) \rho(y) \]
+
+\[ \boxed{G(x) = \frac{\delta(t - \abs{\vb{r}} )}{4\pi \abs{\vb{r}} } } \]
+
+
+
+
+\subsection*{Rayonnement d'on objet binaire}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{objet-binaire}
+    \caption{objet binaire}
+    \label{fig:objet-binaire}
+\end{figure}
+
+
+\[ \vb{r}_A = \left( a\cos\Omega t, a\sin \Omega t, 0 \right)  \]
+
+\[ \vb{r}_B = -\vb{r}_A \]
+
+
+\[ \Omega = \sqrt{\frac{M}{4a^2} } \]
+
+
+\[ I^{ab} = \sum_{\alpha}^{} m_{\alpha} x_{\alpha}^{a}x_{\alpha}^{b}= 2 M x_A^{a}x_A^{b}= 2 M_a \mqty[\cos^{2}\Omega t & \cos \Omega t \sin \Omega t &0 \\ \cos\Omega t \sin\Omega t & \sin^{2}\Omega t &0 \\0 &0 &0] \]
+
+\[ \bar h^{ab}= \frac{8M_{a^2}\Omega^{2}}{r} \eval{\mqty[\cos 2 \Omega t' &\sin 2\Omega t' & 0 \\ \sin 2\Omega t' - \cos 2 \Omega t' &0 \\ 0 & 0 &0 ]}_{t'=t-r } \]
+
+\[ \bar h^{ij}(t) = \frac{8M a^{2}\Omega^2}{r} \Re \left[ \left( e_1^{ij} - i e_2^{ij} \right) e^{2i\Omega (t-t')} \right]   \]
+
+
+
+\end{document}
