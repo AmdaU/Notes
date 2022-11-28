@@ -1,0 +1,98 @@
+\input{../parameters}
+
+\begin{document}
+2022-11-28
+
+\[ \ce{^{60}Co} \to \ce{^{60}Ni} + e^{-} + \bar\nu_e + 2\gamma \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{désintérgration}
+    \caption{Désintérgration}
+    \label{fig:désintérgration}
+\end{figure}
+
+Il n'y a pas une symétrie totale entre la ligne pleine et la ligne pointillée
+
+
+Fermi a choisit le Lagrangien 
+
+\[ \mathscr{L}_I = 2 \sqrt{2} G_F \left\{ \left( \bar p \gamma^{\mu}n \right) \left( \bar e \gamma^{\mu}\gamma_e  \right) +c.h. \right\}  \]
+
+
+Les différentes options théorique étaeint
+
+\[ \begin{matrix}
+	\bar p \gamma^{\mu} n & \text{vecteur} \\
+	\bar p n & \text{scalaire}\\
+	\bar p \gamma^{5}n & \text{pseudoscalaire}\\
+	\bar p \gamma^{\mu}\gamma^{5}m & \text{axial}\\
+	\bar \left\{ \gamma^{\mu}\gamma^\nu \right\} n & \text{tenseur} 
+\end{matrix} \]
+
+
+\begin{tcolorbox}[title=1958: théorie V-A]
+	 \[ \bar p \gamma^{\mu}n - \bar p\gamma^{\mu}\gamma^{5}n \]
+	 \[ \frac{1}{2} \bar p \gamma^{\mu}\left( 1- \gamma^5 \right) n = \bar p \gamma^{\mu}n_L  \]
+	 \[ \frac{1}{2} \left( 1-\gamma_s  \right) \text{: Projecteur sur la composante gauche}  \]
+\end{tcolorbox}
+
+
+\[ \implies 2 \sqrt{2} G_F \left( \bar p \gamma^{\mu} n_L  \right) \left( \bar e \gamma_{\mu} \nu_L  \right) + c.h. \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{digramme-de-feynman-de-la-théorie-v-a}
+    \caption{digramme de Feynman de la théorie V-A}
+    \label{fig:digramme-de-feynman-de-la-théorie-v-a}
+\end{figure}
+
+
+Il y a un problème qui viens du fait que $G_F$ n'est pas adimentioné. On prédit donc une croissance quadratique en diffusion avec l'énérgie, ce qui est un non-sens.
+
+
+\[ \sigma = \frac{\abs{\mathcal{M}}^{2}}{E^2} = G_F^{2}E^{2} \implies \mathcal{M} \propto G_F E^2 \]
+
+
+
+On s'attendrait donc à ce que le processus comporte une particule intermédiaire 
+
+
+On s'attendait alors à avoir $\mathcal{M} \propto \frac{1}{q^{2}-M^2} $
+
+Ce qui fait qu'on a des régime différents à basse et haute énérgie
+
+
+\begin{tcolorbox}[title=théorie éléctro-faible]
+Noble 1979\begin{cases}
+	\text{Glashow}\\
+	\text{Weinberg}\\
+	\text{Salam} 
+\end{cases} $\oplus$ mécanisme de Higgs
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=versions du modèle standard, ]
+	\begin{tcolorbox}[title=version 1.0,width=(\linewidth-2pt)/2,equal height group=AT,before=,after=\hfil]
+			groupe de jauge: 
+		\[ \underbrace{\text{SU}(3)}_{8\text{gen} }  \times \underbrace{\text{SU}(2)}_{3 \text{gen} }  \times \underbrace{\text{U(1)}}_{1 \text{gen} }     \]
+		
+		SU(3): QCD\\
+		SU(2): Isospin\\
+		U(1): hypercharge faible 
+
+		\[ \ell_L = \mqty(\nu_{L} \\ e_L ) \qquad q_L = \mqty(u_l \\ d_L ) \]
+		\[ e_R \quad u_{R} \quad d_R \]
+		\[ y=-2 \quad y=\frac{4}{3}  \quad y = \frac{-2}{3}  \]
+	\end{tcolorbox}
+	\begin{tcolorbox}[title=version 2.0,width=(\linewidth-2pt)/2,equal height group=AT,before=,after=\hfil]
+		On introduit un nouveau champ scalaire: le champ de Higgs. Plutôt 4 car c'est un champ complexe et c'est un champ de doublet d'isospin. \[ \Phi = \mqty(\phi^{+}\\ \phi^0) \]
+		\[ Q = \frac{1}{2} Y + \frac{1}{2} \sigma_3  \]
+	\end{tcolorbox}
+	
+\end{tcolorbox}
+
+
+
+
+
+\end{document}
