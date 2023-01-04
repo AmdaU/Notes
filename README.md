@@ -2,7 +2,7 @@
 Mes notes de cours prisent en LaTeX depuis ma 5ieme session au bac en physique.
 
 
-Exemples de notes prise dans le cours de Relativité Générale:
+Exemples de notes prise dans le cours de Relativité Générale (ordre quelquonque):
 
 ![allo](imgs/all-30.png)
 ![allo](imgs/all-26.png)
