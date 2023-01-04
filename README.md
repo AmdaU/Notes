@@ -1,5 +1,5 @@
 # Notes
-Mes notes de cours prisent depuis ma 5ieme session au bac en physique
+Mes notes de cours prisent en LaTeX depuis ma 5ieme session au bac en physique.
 
 
 Exemples de notes prise dans le cours de Relativité Générale:
