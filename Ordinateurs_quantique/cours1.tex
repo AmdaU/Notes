@@ -1,0 +1,124 @@
+\input{../parameters}
+
+\begin{document}
+
+2023-08-29
+
+{\section*{Principe Physique des ordinateurs quantique}\centering}
+
+
+\subsection*{intro}
+
+\begin{itemize}
+	\item Architectures d'ordinateurs quantiques
+	\begin{itemize}
+		\item Qubit supraconducteurs
+		\item ions piégés
+		\item qubits de spin
+		\item qubits topologiques
+		\item qubits photoniques
+	\end{itemize}
+	\item Défi d'un ordinateur quantique
+		\begin{itemize}
+			\item Avoir un long temps de vie
+			\item Pouvoir faire des opération à un qubit
+			\item Pouvoir faire des opération à deux qubits
+			\item le long temp de vie et le contrôle ont des besoin contradictoire (beaucoup d'interaction vs le moins d'interaction possible)
+		\end{itemize}
+	\item Circuit QED: Qubits supra (transmon) + cavité micro-onde
+\end{itemize}
+
+\subsection*{Plan}
+\begin{itemize}
+	\item Notion de base de l'info Q
+	\item oscillateur harmoniques et circuits supra
+	\item qubit supra
+	\item interaction lumière-matière
+	\item Dissipation
+	\item info quantique
+\end{itemize}
+
+\section{Info quantique: notion de base}
+
+\subsection{Bits et qubits}
+
+\begin{center}
+	classique: ${0,1}$ $0:\mqty(1\\0),\, 1: \mqty(0\\1)$ \qquad quantique: \{ \ket 0, \ket 1  \}, $0 \sim \mqty(1\\0),\, 1 \sim \mqty(0\\1)$
+
+\end{center}
+	Les qubits peuvent être en superposition 
+	\[ \ket{\psi} = \psi_0 \ket{0} + \ket{1} = \mqty(\psi_0 \\\psi_1) \]
+	\[ \bra{\psi}\ket{\psi} = 1\]
+	
+	Plusieurs qubits: \[ \ket{0} \otimes \ket{1} \otimes \ket{0} \dotsb \otimes \ket{0} = \ket{010\dotsb0} \]
+
+\subsection{Opérations logiques}
+
+\subsubsection{Opérations à 1 bit}
+
+\begin{center}
+	
+bit: $\mathds{1}$, NOT
+
+qubit: Une infinité d'opérations
+\end{center}
+
+Les opération sur des qubits sont des matrices unitaires 
+
+\[ U^{\dagger}U = \mathds{1} \]
+
+Les matrices de Pauli forment un base des opération unitaires.
+
+
+
+
+\[ \mathds{1} = \mqty(1 & 0\\ 0& 1),  X = \mqty(0 &1 \\ 1 &0), Y= \mqty(0 & -i \\ i &0), Z = \mqty(1 & 0 \\ 0 &-1) \]
+
+
+Ce sont les générateurs de rotation dans $\mathds{R}^{3}$: isomorphisme entre SO3 et SU2.
+
+\[ R_z (\theta) = e^{-i Z \theta \over 2}\]
+
+Plus généralement
+
+\[ R_{\hat{n}}(\theta) = e^{i \hat n \cdot \vec{{\sigma}} \over 2} \]
+
+
+
+\subsubsection{Opérations à 2 bits}
+
+\verb|NAND| est une porte universelle! (On peut construire tout les portes à $n>2$ bits avec)
+
+La \textit{version quantique} de cette porte et le \verb|CNOT| (Control not) 
+\begin{table}[htpb]
+	\centering
+	\begin{tabular}{c|c}
+		IN & OUT \\ 00 & 00 \\ 01 & 01\\ 10 & 11\\ 11 & 10
+	\end{tabular}
+\end{table}
+
+\[ \verb|CNOT| = \mqty(\mathds{1} & {0}\\ {0} & X) \]
+
+
+\begin{center}
+\begin{quantikz}
+	& \targ{} & \qw &\\
+	& \ctrl{-1}& \qw &\\
+\end{quantikz}
+	
+\end{center}
+
+
+
+\subsection{Critère de D}
+\textit{Critères minimal pour avoir un ordinateur quantique}
+
+\begin{enumerate}
+	\item Un system avec des qubits bien définis pouvant être \textit{mis à l'échelle}
+		\underline{qubit}: Système à deux niveau
+		\underline{mise à l'échelle}: requiert la correction d'erreur
+	\item Possibilité d'initialiser un état: Ôter l'entropie du system
+	Un moyen de le faire dans un system suffisement froid: attendre la relaxation: $\bra{1} \ket{\psi} \to 1$ pour $t \ll 1$
+\end{enumerate}
+
+\end{document}
