@@ -1,0 +1,154 @@
+\input{../parameters}
+
+\begin{document}
+2023-08-30
+
+\setcounter{section}{1}
+\setcounter{subsection}{2}
+
+\subsection{Critère de DiVincinzo (suite)}
+
+\begin{enumerate}
+	\setcounter{enumi}{2}
+	
+	\item Temps de cohérence plus long que les qubits logiques
+	
+		$T_1 : \ket{1} \to \ket{0}$ (temps de relaxation)
+
+		$T_{2:} \ket{+} \to \ket{-}$ (temps de déphasage)
+
+	\item Ensemble universel de portes logiques
+		\{ rotation à 1 qubit (SU2), \verb|CNOT| \}
+
+		\underline{Ex:} spin 1/2 dans $B(t)$
+
+		\[ H(t) \frac{\hbar\gamma}{2} \left( B_x (t) \sigma_x + B_y (t) \sigma_y + B_z (t) \sigma_z \right)  \]
+
+		\[ U(t) = T e^{-i \int_{0}^{t}\dd t' H(t')} \]
+
+		opérateurs à deux qubits
+		\[ 	\verb|CNOT| \to H(t) = J(t) \sigma_{21}\sigma_{x2}   \]
+	\item Mesure des qubits 
+
+		En ce moment la fidélité est de $>99\%$ pout $T_{\text{mesure}} $
+
+\end{enumerate}
+
+
+\section{Circuit quantiques supraconducteurs}
+
+\subsection{Oscillateurs LC}
+
+\begin{figure}[ht]
+		\centering
+		\incfig{lc}
+		\caption{Circuit LC}
+		\label{fig:lc}
+\end{figure}
+
+
+\[ V_L = V_C \implies \phi_L = \phi_C \equiv \phi \]
+
+\[ I_L = \frac{\Phi}{L} = \frac{\phi}{L}  \]
+
+$I_C = \dot Q = C \dot V = c \ddot \phi$
+
+\[ I_1 + I_2 = c \ddot \phi + \frac{\phi}{l} = 0 \]
+
+\[ 	\underbrace{\implies \ddot \phi + \omega_0^{2} \phi = 0}_{\text{Eq. d'Euleur-Lagrange} }  \qquad \text{ avec } \omega_0 \sqrt{\frac{1}{LC} }  \]
+
+Le Lagrangien qui donne cette équation est \[ L = \frac{1}{2} C \dot \phi^{2}- \frac{\phi^{2}}{2L} \leftrightarrow \frac{1}{2} m x^{2}- \frac{1}{2} k x^{2} \]
+
+
+L'Hamiltonien \[ H = \dot \phi q - L(\phi, \dot \phi) = \frac{q^{2}}{2c} \frac{\phi^{2}}{2L}   \]
+
+
+avec $q = \frac{\partial {L}}{\partial {\dot \phi}} = c \dot \phi $
+
+
+Quantification: 
+
+\[ 	q, \phi \to \hat q,\ hat \phi \]
+
+
+\[ 	[A, B]_p \to \frac{1}{i\hbar} [A, B]  \]
+
+\[ [\phi, q]_p = 1 \to [\hat\phi, \hat q] = i\hbar  \]
+
+
+
+
+On introduit les \textit{opérateurs d'échelles} $a$ et $a^{\dagger}$
+
+
+\[ \phi = \sqrt{\frac{\hbar{}Z_0}{2} } \left( a^{\dagger} + a \right) \qquad q = i \sqrt{\frac{\hbar}{2Z_0} } \left( a^{\dagger}-a \right)  \]
+
+
+\[ H = \hbar \omega_0 \left( a^{\dagger}a + \frac{1}{2}  \right)  =\hbar \omega_o a ^{\dagger} a\]
+
+
+Valeur moyenne de $\phi$ dans $\ket{0}$: $\bra{0}\phi \ket{0} = 0$
+
+La varience est non-nulle $\Delta \phi = \sqrt{\expval{\phi^2} - \expval{\phi}^2} = \sqrt{\hbar Z_0 \over 2}$
+
+
+\textbf{Est-ce possible d'opérer un circuit LC dans le régime quantique?}
+
+
+On veut $	\omega_0 \gg \kappa = \frac{\omega_0}{Q} $
+
+$\kappa$ est le taux de perte d'énérgie
+
+\[ \kappa = \frac{1}{RC} \qquad Q = \omega_0 RC = \frac{R}{Z_0}  \]
+(pour un résistance en parallèle)
+
+
+On veut que $R$ (en parallèle ) $\to 0$ pour avoir $Q \to \infty$
+
+
+On veut aussi avoir $\hbar \omega_0 \gg K_B T$ afin d'éviter les excitation Harmoniques 
+
+
+À quoi correspondent les états $\ket{n}$
+
+\begin{figure}[ht]
+		\centering
+		\incfig{oscilleteur}
+		\caption{oscilleteur}
+		\label{fig:oscilleteur}
+\end{figure}
+
+
+Fluctuations quantiques du voltage
+
+Opérateur voltage
+
+
+\[ q = CV \iff V = q/C \]
+
+\[ \Delta V = \sqrt{\bra{0}V^{2}\ket{0} - \bra{0}V \ket{0}^2} = \sqrt{\hbar \omega_0 \over 2 c} \sim 2.5\mu V\]
+
+
+Des micro volts c'est gros!
+
+
+
+\subsection{Hamiltonien d'un circuit: méthode des noeuds}
+
+Flux de branche: $\Phi_b (t) = \int_{0}^{t}\dd t' V (t') $
+
+Charge de branche: $Q_b (t) = \int_{0}^{t}\dd t' i_b (t)$
+
+
+Énérgie dans la branche $b$ \[ 	E_b = \int \dd t V_b (t)  i_b (t)\]
+
+
+branche capacitive \[ E_b = \dotsb = \frac{1}{2} c_b \dot \Phi_b^{2} \]
+
+branche inductive: \[ E_b = \dotsb \frac{\Phi_b^2}{2L_c}  \]
+
+$\Phi_b = L_b i_b $
+
+
+
+\end{document}
