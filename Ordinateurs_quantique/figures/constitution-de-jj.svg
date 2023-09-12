@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="constitution-de-jj.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.3694903"
+     inkscape:cx="777.25864"
+     inkscape:cy="240.58652"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false"
+       originx="0"
+       originy="0"
+       visible="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <g
+       id="g1"
+       transform="translate(11.537044,-5.6201024)">
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         id="path1"
+         cx="28.288692"
+         cy="232.24916"
+         rx="4.6418924"
+         ry="4.7508416" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="M 32.930584,232.24916 H 58.521761"
+         id="path2" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         id="path1-3"
+         cx="-151.69127"
+         cy="-235.33792"
+         rx="4.6418924"
+         ry="4.7508416"
+         transform="scale(-1)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="M 147.0494,235.33791 H 121.45822"
+         id="path2-6" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         id="rect2"
+         width="62.595585"
+         height="31.61063"
+         x="58.521763"
+         y="219.12585" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="m 74.459607,219.12585 h 7.333363 v 31.61063"
+         id="path3" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="M 103.57468,250.88648 V 219.12585"
+         id="path4" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+         x="66.623848"
+         y="236.08386"
+         id="text4"><tspan
+           id="tspan4"
+           style="stroke-width:0.3;stroke:#000000"
+           x="66.623848"
+           y="236.08386">$S$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+         x="90.656349"
+         y="236.62486"
+         id="text5"><tspan
+           id="tspan5"
+           style="stroke-width:0.3;stroke:#000000"
+           x="90.656349"
+           y="236.62486">$T$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+         x="112.12956"
+         y="235.00616"
+         id="text6"><tspan
+           id="tspan6"
+           style="stroke-width:0.3;stroke:#000000"
+           x="112.12956"
+           y="235.00616">$S$</tspan></text>
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         id="path6"
+         cx="194.87111"
+         cy="217.8717"
+         rx="2.8658035"
+         ry="2.5916605" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="m 194.87111,220.46336 v 18.13062 l 3.0158,-2.6825"
+         id="path7" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="m 191.8553,240.79563 3.01581,-2.20165 3.11549,3.36121"
+         id="path8" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         d="m 191.76685,236.10276 3.10426,2.49122 v 18.86022"
+         id="path9" />
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.3"
+         id="path10"
+         cx="194.99197"
+         cy="261.61929"
+         rx="4.2214165"
+         ry="4.1650834" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:#000000;stroke:#000000;stroke-width:0.3"
+         x="199.01591"
+         y="223.95021"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="stroke-width:0.3"
+           x="199.01591"
+           y="223.95021">$n_1$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;fill:#000000;stroke:#000000;stroke-width:0.3"
+         x="201.11105"
+         y="250.63223"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="stroke-width:0.3"
+           x="201.11105"
+           y="250.63223">$n_2$</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+\input{../parameters}
+
+\begin{document}
+2023-09-12
+
+\setcounter{section}{2}
+
+\section{Qubits supraconducteurs}
+
+
+\subsection{Jonction Josephson}
+
+On a constaté que de piloter un circuit LC à sa fréquence de résonance génère un état cohérent (ce qui ne ressemble pas du tout à un système à deux niveau). Pour avoir un système à deux niveau on ajoute un élément non linéaire à notre circuit: la jonction josephson
+
+\subsubsection{Hamiltonien et relation de commutation}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{constitution-de-jj}
+    \caption{constitution de jj}
+    \label{fig:constitution-de-jj}
+\end{figure}
+
+
+\[ n_1 + n_2 = \text{cte}  \]
+
+\[ n = n_1 - n_2 \text{ peut changer par effet tunnel!}  \]
+
+
+\underline{Description quantique} 
+
+
+Base de charge : \[ \hat n \ket{n} = n \ket{n} \quad n \in ] -\infty, \infty [ \]
+
+
+Dans cette base, l'hamiltonien qui décrit l'effet tunnels de paires de cooper est
+
+\[ H_J = - \frac{E_J}{2} \sum_{n=-\infty}^{\infty} \left( \ket{n}\bra{n+1} + \ket{n+1}\bra{n} \right)  \]
+
+
+$E_J =  \frac{h \Delta}{8 e^{2}R_n} $ est l'énergie de Josephson
+
+avec $\Delta$ l'énergie de gap et $R_n$ la résitance de l'état normal
+
+
+\subsubsection{Base de phase}
+
+
+\[ \ket{\psi} = \sum_{n=-\infty}^{\infty} e^{in\varphi}\ket{n} \]
+
+avec $\varphi \in [0, 2\pi[$
+
+De la même façon \[ \ket{n} = \frac{1}{2\pi} \int_{0}^{2\pi}\dd \varphi e^{-in\varphi} \ket{\psi}  \] 
+
+Dans cette base le Hamiltonien s'écrit
+
+\[ H_J = - \frac{E_J}{2} \sum_{n=-\infty}^{\infty} \left( \frac{1}{(2\pi)^2} \iint_0^{2\pi} \dd \varphi \dd \varphi' e^{-in\varphi} e^{i(n+1)\varphi'} \ket{\varphi}\bra{\varphi'} + \text{H.C.}   \right)  \]
+
+\[  = - \frac{E_J}{2} \frac{1}{2\pi} \int_{0}^{\infty}\dd \varphi \left( e^{i\varphi} + e^{-i\varphi} \right) \ketbra{\varphi}  \]
+
+
+On introduit
+
+$e^{i \hat \varphi} =  \frac{1}{2\pi} \int \dd \varphi e^{i\varphi} \ket{\varphi}\bra{\varphi}$
+
+
+qui agit sur $\ket{n}$ comme
+
+\[ e^{\pm i \hat \varphi} \ket{n} = \ket{n \mp 1}\]
+
+\[ H_g = E_J \frac{e^{i\hat\varphi}+e^{-i \varphi}}{2} = - E_J \cos \har \varphi  \]
+
+la variable $\varphi = \varphi_1 -\varphi_2$ s'interprète comme la différence de phase entre les deux côté de la jonction
+
+\subsubsection{Relation de commutation et relation constiutive}
+
+
+\[ [e^{\pm{}i\hat\varphi}, \hat{n}] = e^{\pm i \hat \varphi}  \]
+
+
+C'est plus clair quand $\hat \varphi$ est dans une fonction periodique
+
+En utilisant la représentation de Heisenberg on peut trouver comment les opérateurs évoluent 
+
+
+\begin{align}
+    \frac{d {\hat \varphi}}{d {t}} &= \frac{2e}{\hbar} \hat V\\
+    \hat I &= I_c \sin \hat \varphi
+\end{align}
+
+
+\[I_c = \frac{2e E_{J}}{\hbar} \text{: le courant critique}   \]
+
+
+Le sinus est la non linéarité qu'on cherchait!
+
+
+\section{Transmons}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{remplacement-par-une-inductance-non-lineaire}
+    \caption{remplacement par une inductance non-lineaire}
+    \label{fig:remplacement-par-une-inductance-non-lineaire}
+\end{figure}
+
+On remplace l'inductance par une jonction josephson qui agit dans un certain régime comme un inducteur linéaire
+
+
+\[ H = 4 E_c \left( \hat n - n_g \right)^2 - E_J \cps \hat \varphi \]
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{energie-en-fonction-du-flux}
+    \caption{Energie en fonction du flux}
+    \label{fig:energie-en-fonction-du-flux}
+\end{figure}
+
+
+
+$H$ est controlé par un seul paramètre soit le ratio $\frac{E_J}{E_C} $. Quel ration donne le meilleur qubit? On veut une bonne anharmonicité et un bon temps de cohérence
+L'anharmonicité est $<alpha = E_{12} - E_{01} $
+
+anharmonicité relative: \[ \alpha_r = \frac{\alpha}{E_{01} }  \]
+
+
+Temps de cohérence $T_2$:
+
+
+
+
+
+
+
+
+
+\end{document}
