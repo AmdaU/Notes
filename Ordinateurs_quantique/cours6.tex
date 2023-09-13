@@ -1,0 +1,97 @@
+\input{../parameters}
+
+\begin{document}
+2023-09-13
+
+Régime transmon $\frac{E_J }{E_c } $ grand:
+
+La dissipation de charge va comme $e^{\frac{E_J }{E_c } }$
+
+\begin{figure}[ht]
+    \centering
+    \incfig{graphiques}
+    \caption{graphiques}
+    \label{fig:graphiques}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{anharmonicité}
+    \caption{anharmonicité}
+    \label{fig:anharmonicité}
+\end{figure}
+
+Pour atteindre ce régime : $C_s \gg C_J$
+
+
+\setcounter{section}{3}
+\setcounter{subsection}{2}
+
+\subsubsection{Approximation Keir du Transmon}
+
+\underline{Approx:} On laisse tomber $n_g$
+
+\[  \hat H = 4 E_c \hat n^{2}- E_j \cos \hat \varphi = 4E_c \hat n^{2}+ \frac{\hat \varphi^2}{2L_? } - E_g \left( cos( ? ) - ? \right)  = \hat H_{l} + \hat H_{nl} = \left[ \left( \dotsb \right)  \right]   \]
+\[ \hat \varphi = \left( \frac{2E_{c}}{E_j}    \right) ^{\frac{1}{4} }\left( b ^{\dagger} + b \right) \qquad \hat n = \frac{i}{2} \left( \frac{E_{J}}{2E_c}  \right)^{\frac{1}{4} } \left( b^{\dagger} - b \right)   \]
+donc $H_l = \hbar \omega_p b^{\dagger} b$ avec $\omega_p = \sqrt{8 E_J E_c}/\hbar$
+
+
+Puisque la \textit{particule} est massive, elle n'explore que le bas du puit. On peut donc faire une expension en série de $H_{\text{nl}} $
+
+\[ \hat H_{\text{nl}} - \frac{1}{4!} E_J \hat \varphi^{4}= - \frac{1}{4!} E_c^{\frac{1}{4} } \left( b^{\dagger} + b \right)^4 \approx - E_c b^{\dagger} b - \frac{E_c}{2} b^{\dagger} ba^{\dagger} bb \]
+
+On ne garder que les termes ayant le même nombre de $b$ et $b^{\dagger}$ (Ce qui reviens à l'approximation séculaire)
+
+Pour s'en convaincre, on passe à un référentiel tournant à $\omega_p$
+
+\[ H' \sim - \frac{E_c}{12} \left( b^{\dagger} e^{i\omega_p t}  + e^{-i\omega_p t} \right)^4 = \text{... expension...}  \]
+
+Le terme qui tourne le moins vite, $b^{\dagger}^3b$ apprait $6$ fois
+
+\[ 2 \omega_p \gg \frac{6E_{c}}{12} \to \sqrt{\frac{E_j}{E_c} } \gg 1 \text{: satisfait par le régime transmon} \]
+
+De retour dans le référention du labo
+
+\[ H \approx \hbar \omega_p b^{\dagger}b - E_c b^{\dagger} b - E_c b^{\dagger} b - \frac{E_c}{J} b^{\dagger} b^{\dagger} b b = \hbar \omega_q b^{\dagger} b - \frac{E_c}{2} b^{\dagger} b^{\dagger} bb \]
+
+On peut le réecrire le hamiltonien pour mieux comprendre l'effet de la non-linéairité
+
+\[ H = \left( \hbar\omega_q' - \frac{E_c}{2} b^{\dagger} b \right) b^{\dagger} b \]
+
+Chaque niveau d'énérgie dépend néativement du nombre de niveau, on voit donc que l'énérgie entre chaque niveau diminue.
+
+
+\begin{tcolorbox}[title=Remarque sur $\hat phi$]
+     $\phi$ à seulement vraiment un sens lorsque dans une fonction périodique. En prenant un série de Taylor on perd la périodicité de la fonction. On pert une partie de la physique, donc. 
+
+     \underline{Anharmonicité}: \[ \frac{E_{c}}{\hbar\omega_{q}} \sim \frac{E_c}{\sqrt{8E_J E_c }} \quad \text{: petit dans le régime transmon}    \]
+     En partique $  \frac{E_c}{h} \sim 100 - 400 MHz$
+\end{tcolorbox}
+
+
+
+\subsubsection{Transmons ajustable par le flux}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{double-jj}
+    \caption{Double jj}
+    \label{fig:double-jj}
+\end{figure}
+
+\[ L = \frac{1}{2} C_3 \ddot \phi + \frac{1}{2} C_{J_1} \dot \phi^{2}+ \frac{1}{2} C_{J_2} \left( \dot \phi \do \Phi_{\text{ext}}  \right)^2 + E_{J_1} \cos \vap + E_{J_2} \cos \left( \varphi + \varphi_{\text{ext}}  \right) \]
+
+\[ H = 4 E_x \hat n^{2}- \cancelto{0}{2 e \frac{C_J}{C_s} \dot \phi_{\text{ext}} \hat n} - E_{J_1} \cos \hat \varphi - E_j \cos \left( \hat \varphi + \varphi_{\text{ext}}  \right)  \]
+
+avec $c_g = c_s + c_{J_1} + c_{J_2} $
+
+Dans le cas $   E_{J_1} = E_{J_2} \equiv \frac{E_J}{2} $ alors
+
+
+\[  H = \dotsb \]
+
+
+Dans le régime transmon \[ \hbar\omega_q = \sqrt{8E_c \abs{E_g (\Phi_{\text{ext}} )} } -E_C\]
+
+\end{document}
