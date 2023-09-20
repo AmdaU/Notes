@@ -1,0 +1,51 @@
+\input{../parameters}
+
+\begin{document}
+2023-09-20
+
+\[ \boxed{H \approx \hbar \omega_0 a^{\dagger}a +\hbar\omega_c b^{\dagger} b - \frac{E_c}{2} b^{\dagger}b^{\dagger}b b+ \hbar g \left( a^{\dagger} b + a b^{\dagger} \right)}   \]
+
+En supposant que seul les niveau $\ket{0} et \ket{1}$ sont les seul niveau du trasmons auquel on accède on peut réécrire le Hamiltonien comme le Hamiltonien de Jaynes-Cumming qui est: 
+
+\[ \boxed{H = \hbar \omega_0 a^{\dagger}a +\hbar \frac{\omega_q}{2}  \sigma_z + \hbar g \left( a^{\dagger} \sigma_-  + a \sigma_+ \right)}  \]
+
+
+C'est l'hamiltonien décrivant l'échange d'une quanta entre un atome et un champ éléctromagnétique 
+
+\vspace{1cm}
+\hrule 
+
+\section*{Charge de cours avec Othomane }
+
+%\begin{figure}[ht]
+    %\centering
+    %\incfig{éléments-de-circuits}
+    %\caption{test}
+    %\label{fig:test}
+%\end{figure}
+
+
+\underline{Relation Constitutive de la JJ} 
+
+On considère une la JJ réel comme ayant un capacitance parasite en parallèles 
+
+\begin{align*}
+    i\hbar \frac{\partial {\hat \rho}}{\partial {t}}  &= [\hat\rho, H]\\
+                                                      &= [\hat\rho, 4E_c \hat n^{2}- E_J \cos \rho]\\
+                                                      &= [\hat \rho, 4 E_c \hat n^2]\\
+                                                      &= 4 E_c \left[ \underbrace{[\hat\rho, n]}_{i}  + n \underbrace{[\hat\rho, n]}_{i}   \right] 
+\end{align*}
+
+
+\[ \frac{d {\rho}}{d {t}}= 4 \frac{E_c}{\hbar} b = \frac{2\pi}{\Phi_0} \hat V\]
+
+
+\begin{align*}
+    [n, H] = - E_J [n, \cos\rho] 
+\end{align*}
+
+\[ \implies \frac{d {n}}{d {t}} = E_J \left[ n, \rho \right] \sin(\rho) = - \frac{E_j}{\hbar} \sin \rho 
+ \]
+
+
+\end{document}
