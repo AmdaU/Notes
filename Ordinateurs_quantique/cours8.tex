@@ -1,0 +1,105 @@
+\input{../parameters}
+
+\begin{document}
+2023-09-26
+
+\setcounter{section}{4}
+\setcounter{subsection}{1}
+
+
+
+\section*{Circuit QED}
+
+\subsection{Hamiltonien de Jaynes-Cummings}
+
+\[ H_{JC} = \hbar a ^{\dagger} a + \hbar \frac{\omega_a}{2} \sigma_z + \hbar g \left( a ^{\dagger} \sigma_- a \sigma_+  \right)  \]
+Le couplage est:
+\[ g = dE_0  \]
+
+On peut faire la diagonalisation par block pour trouver les énergies propres et les états propres. Les dress states:
+
+\[ E_{\bar{\sigma n}}, \ket{\bar{\sigma n}}  \]
+
+
+Exception: l'état fondamentale
+
+\[ E_{\bar{g0}} = E_{go} = -\hbar \omega_{q}/2\]
+
+
+dans le sous espace à n quanta:
+
+\[ E_{\bar{gn}} = \hbar n\omega_r - \sqrt{\Delta^ + 4g n} \qquad E_{\bar{gn}} = \hbar n\omega_r + \sqrt{\Delta^ + 4g n}  \]
+
+
+\[ \ket{\bar{gn}} = \cos\theta_n \ket{gn} -\sin\theta_n \ket{en-1 } \qquad \ket{\bar{en-1}} = \sin\theta_n \ket{gn} +\cos\theta_n \ket{en-1 }\]
+
+avec $\theta_n = \arctan(2 g \sqrt{n}/ \Delta)$ l'angle de mélange
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{niveaux-d'énérgies}
+    \caption{niveaux d'énérgies}
+    \label{fig:niveaux-denergies}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{circuit-avec-drive}
+    \caption{circuit avec drive}
+    \label{fig:circuit-avec-drive}
+\end{figure}
+
+2 premier états excités à $\Delta=0$
+
+\[ \ket{\bar{g1}} = \frac{1}{\sqrt{2}} \left( \ket{g1} - \ket{e0}  \right) \qquad  \ket{\bar{e0}} = \ket{g1} + \ket{\bar{e0}}  \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{transmission-en-fonction-de-la-fréquance}
+    \caption{transmission en fonction de la fréquance}
+    \label{fig:transmission-en-fonction-de-la-fréquance}
+\end{figure}
+
+
+\subsection{Régime dispersif}
+
+à $\Delta=0$, le qubit est maximalement intriqué avec les photon: le qubit est essentiellement dans un état aléatoire si on a pas acces au photon
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{delta-pas-zero}
+    \caption{delta pas zero}
+    \label{fig:delta-pas-zero}
+\end{figure}
+
+
+\subsubsection{Transformation de Shrieffer-Wolff}
+
+
+En quantique, L'approche usuelle pour solutionner un problème est de diagonaliser l'hamiltonien 
+
+\[ H_D = U H U^{\dagger}  \]
+
+Malheureusement, ce n'est pas toujours possible, on représente alors notre hamiltonien comme
+
+\[ H = H_D + V \]
+
+Ou $V$ est un \textit{petit} terme qui \textit{perturbe} note Hamiltonien
+
+La perturbation couple faiblement les sous=espaces $\mu$
+
+
+On prend un trasformation unitaire qui diagonalise approximetivement le Halitonien 
+
+\[ H' = e^{-S} H e^{S} \qq{avec $S^{\dagger} = S$ pour que $e^{S} soit unitaire$} \]
+
+
+\begin{align*}
+    H' &= \left( \mathds{1} -s + \frac{s^2}{2!} + \dotsb  \right) H \left( \mathds{1} + s + \frac{s^2}{2} + \dotsb  \right) \\
+       &= H + [H, S] + \frac{1}{2!} [[H, S], S] + \dotsb\\
+    &= \sum_{k=0}^{\infty}\frac{1}{k!} [H, S]^{(k)} 
+\end{align*}
+
+\end{document}
