@@ -1,0 +1,60 @@
+\input{../parameters}
+
+\begin{document}
+2023-10-03
+
+\[ H' = H_0 + [H_2, S_1 ] + \frac{1}{2} \left[ \underbrace{[H_?, S_1]}_{-H_2} , S_1  \right]  \]
+
+\[ = H_0 + \frac{1}{2} [H_1, S_1] à 	\quad \text{à l'ordre 2} \]
+
+\[ H' = H_x = \hbar \omega_r a^{\dagger}a + \hbar \left( \frac{\omega_q}{2}  + \chi \right)  + \hbar \chi a^{\dagger} a \sigma_z \]
+\[ = \hbar \left( \omega_r + \xhi \sigma_z  \right)a^{\dagger} a + \hbar \left( \frac{\omega_r}{2} + \chi \right) \sigma_z \]
+
+Le qubit déplace la fréquence de résonance du résonateur de $\pm \chi$ 
+
+Critère plus précis pour que la transformation de SW doit valide.
+
+\[ \norm{V}  = \max_{\ket{\psi}} \norm{V \ket{\psi}} = \max_{\ket{\psi}} \abs{\bra{\psi}{\tilde V ^{\dagger} V}{\ket{\psi}}} < \frac{\Delta_{\text{min}}}{2}  \]
+
+\[ \Delta_{\text{min}} = \Delta \qquad \ket{\psi} = \ket{n\sigma}  \]
+
+\[ \norm{V} = g \left( n + \sigma \right)^{\frac{1}{2} } \ll \frac{\Delta}{2}   \]
+
+\[ \norm{V} = g (n+\sigma)^{\frac{1}{2} } \ll \frac{\Delta}{2} \]
+On veut donc
+
+\[ n \ll n_{\text{crit}}^\sigma \equiv \left( \frac{\Delta}{2g}  \right)^2 - \sigma \]
+
+Nonbre de petit photons: $n_{\text{crit}} $
+
+vrai petit paramètre $\frac{n}{n_{\text{crit}}} $
+
+\setcounter{section}{4}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{2}
+
+\subsubsection{Régime dispersif transmon}
+
+
+\[ H =  \frac{q_{r^2} }{2c} + \frac{\phi_r}{2L} + \underbrace{4 Z_c n_q - E_J \cos\varphi_q}_{H_q } +2 \beta \frac{q_r}{c} n_q   \]
+
+avec $	\beta = \frac{c_g}{c_I} $
+
+
+\[ H_g = \hbar \sum_{k=0}^{\infty} \omega_k \ketbra{k} \]
+
+\[ H = \hbar \omega_r a^{\dagger}a + \hbar \sum_{k} \omega_k \ketbra{k} + i \hbar \sum_{k,k'} g_{k,k'} \left( a^{\dagger} -a  \right) \ketbra{k}{k'}\]
+
+
+avec \[ 	g_{k,k'} = \frac{2e\beta}{\hbar} \sqrt{\frac{\hbar\omega_0 }{2c} } n_{k,k'} \]
+
+où $n_{k,k'} = \bra{k}n_q \ket{k} \qquad g_{k,k'} = g_{k,k'} ^{*}= g_{k',k} $
+
+
+
+
+
+
+
+
+\end{document}
