@@ -1,0 +1,87 @@
+\input{../parameters}
+
+\begin{document}
+2023-10-31
+
+\setcounter{section}{4}
+
+\section{système quantiques ouverts}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{systeme-en-interaction-avec-un-bain}
+    \caption{systeme en interaction avec un bain}
+    \label{fig:systeme-en-interaction-avec-un-bain}
+\end{figure}
+
+\subsection{Matrices densité}
+
+On s'imagine avoir préparer l'état dans $\ket{+}$
+
+
+Après un mesure dans le base $z$ quel est l'état?
+
+$\ket{\psi_{p}} = \sqrt{1-p}\ket{0} + \sqrt{p}\ket{1}?$
+
+Évidement pas, c'est l'état avant la mesure.
+
+Ce qu'on mesure est une valeur moyenne
+
+$\expval{\hat O} = \bra{\psi}\hat O \ket{\psi}$
+
+Normalement si à chaque préparation on obtiens $\ket{\psi_i}$ est obtenue avec poids $p$ quel est $\expval{\hat O}$?
+
+\[ \expval{\hat O}  =\sum_i p_i \expval{\hat O}{\psi_{i}} = \Tr(p \hat O) \]
+
+Si on a une connaissance parfaite pour un $i$ alors $\rho = \ketbra{\psi}$
+
+\[ \implies \Tr(\rho) =1 \]
+
+
+\subsubsection{États purs et mixte}
+
+Si on a l'info complète sur le système $\rho = \ketbra{\psi}$
+
+C'est un \textbf{état pur}
+
+un état mixte
+
+\[ \rho = \sum_i p_i \braket{\psi} \]
+
+Les états sont tels que $\rho^{2}= \rho\implies \Tr \rho^{2}= \Tr \rho =1$
+
+Pour les états mixtes $\Tr \rho^{2} = \Tr \sum_i p_i^{2} \ketbra{\psi_{i}} = \sum_i p_i^{2}\leq 1$
+
+\underline{Exemples} 
+
+\begin{enumerate}
+    \item $\ket{0} \to \ketbra{0}$
+    \item $\ket{+} \to \ketbra{+} = \frac{1}{2} \left( \ketbra{0} + \ketbra{0}{1} + \ketbra{1}{0} + \ketbra{1} \right) $
+    \item État mixte de $\ket{+}$ et $\ket{-}$
+        \[ \rho = \frac{1}{2} \ketbra{+} + \frac{1}{2} \ketbra{-} \]
+\end{enumerate}
+
+\subsubsection{État mixtes depuis état purs intriquées}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{intrication-rhoooo}
+    \caption{Intrication rhoooo}
+    \label{fig:intrication-rhoooo}
+\end{figure}
+
+
+Bob ne se fait donner le second qubit qu'à la fin et ne sait pas le circuit qui à été appliqué!
+
+Bob mesure l'opérateur $\hat O_B$, sa valeur moyenne est \[ \expval{\hat O_{b}} = \bra{\psi} \mathds{1}_A \otimes \hat O_b \ket{\psi} \]
+
+
+\[ \expval{\hat O_{b}} = \Tr \left( \mathds{1}_A \otimes \hat O_b \ketbra{\psi} \right) = \sum_b \bra{b} \hat O_b \rho_b \ket{b}  \]
+
+où $\rho_b = \sum_a \ketbra{a}{\psi}\ketbra{\psi}{a}$
+
+\[ \expval{\hat O_{B}} = \Tr_B(\rho_B \hat O_B \]
+
+
+\end{document}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="120mm"
+   viewBox="0 0 240 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="intrication-rhoooo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1483215"
+     inkscape:cx="413.81143"
+     inkscape:cy="140.10938"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false"
+       originx="0"
+       originy="0"
+       visible="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="M 25.862681,208.22818 H 59.227288"
+       id="path1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 76.968622,208.07818 h 55.929228 l 55.99215,0"
+       id="path2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="M 25.862681,260.02411 H 127.84388"
+       id="path3" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="M 137.9728,259.87411 188.89,259.62568"
+       id="path4" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.261702"
+       id="path5"
+       cx="132.96419"
+       cy="259.87411"
+       rx="5.0086112"
+       ry="5.1358275" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 127.95558,259.87411 c 2.91266,0.057 5.82533,0.11397 7.5438,0.15645 1.71846,0.0425 2.24274,0.0704 2.58176,0.0844 0.33903,0.014 0.49282,0.014 0.4439,-0.0285 -0.0489,-0.0425 -0.30059,-0.12743 -0.55224,-0.21238"
+       id="path6"
+       inkscape:path-effect="#path-effect6"
+       inkscape:original-d="m 127.95558,259.87411 c 2.91266,0.057 5.82533,0.11398 8.73799,0.17096 0.52427,0.028 1.04855,0.0559 1.57282,0.0839 0.15378,0 0.30757,0 0.46135,0 -0.25164,-0.0849 -0.50329,-0.1699 -0.75494,-0.25485" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       d="m 132.96419,254.73829 c 0,3.42388 0,6.84777 0,10.27165"
+       id="path7"
+       inkscape:path-effect="#path-effect7"
+       inkscape:original-d="m 132.96419,254.73829 c 0,3.42388 0,6.84777 0,10.27165" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3"
+       d="m 132.89785,208.07818 0.0663,46.66011"
+       id="path8" />
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:0.351164"
+       id="path9"
+       cx="132.92931"
+       cy="208.22818"
+       rx="2.6446354"
+       ry="2.5985253" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.3"
+       id="rect9"
+       width="17.741335"
+       height="17.88846"
+       x="58.978394"
+       y="199.43394" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="64.659615"
+       y="209.82381"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="stroke-width:0.3"
+         x="64.659615"
+         y="209.82381">$R_Y^{\theta}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="14.487281"
+       y="207.92818"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="stroke-width:0.3"
+         x="14.487281"
+         y="207.92818">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="14.399968"
+       y="261.0076"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="stroke-width:0.3"
+         x="14.399968"
+         y="261.0076">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="18.003235"
+       y="209.03386"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="stroke-width:0.3"
+         x="18.003235"
+         y="209.03386">$\ket{0}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke:#000000;stroke-width:0.3"
+       x="17.344065"
+       y="260.82977"
+       id="text12-3"><tspan
+         sodipodi:role="line"
+         id="tspan12-6"
+         style="stroke-width:0.3"
+         x="17.344065"
+         y="260.82977">$\ket{0}$</tspan></text>
+  </g>
+</svg>
