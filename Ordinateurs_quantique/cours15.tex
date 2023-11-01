@@ -1,0 +1,110 @@
+\input{../parameters}
+
+\begin{document}
+2023-11-01
+
+\setcounter{section}{5}
+\setcounter{subsection}{1}
+
+\setcounter{subsubsection{3}
+
+\subsubsection{Évolution de la matrice densité}
+
+\[ \rho = \sum_i \p_i \ketbra{\psi_{i}} \qquad i\hbar \partial_t \ket{\psi} = H \ket{\psi} \]
+
+\[ \dot \rho = \sum_i p_i \ket{\dot\psi}\bra{\psi} + \ket{\psi}\bra{\dot\psi} \]
+
+\[ \implies \dot \rho = - \frac{i}{\hbar} [H, \rho] \to \mathscr{L}\rho \]
+
+\subsection{Équation maîtresse }
+
+\subsubsection{Hamiltonien système - bain}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{circuit-effectif}
+    \caption{circuit effectif}
+    \label{fig:circuit-effectif}
+\end{figure}
+
+\[ H = \dotsb = \hbar \omega_r a ^{\dagger}a + \sum^{\infty}\hbar \omega_i c^{\dagger}_i c - \sum^{\infty} \lambda_i \left( c_a^{\dagger} +c_a \right) \left( a ^{\dagger} +a   \right)   \]
+
+\[ H  = H_s + H_B + H_{SB}  \]
+
+\[ \rho_S (t) = \Tr_B \rho_{SB} (t) \]
+
+\subsubsection{Matrices densité réduite et canaux quantiques}
+
+On cherche $\rho_S(T)$
+
+On sait que 
+
+$\rho_{SB} (t) = U(t) \rho_{SB} U^{\dagger}(t) = U(t) \left( \rho_0 + \ketbra{e} \right) U^{\dagger}(t)$
+
+
+\[ \rho_S = \Tr_B \left( \dotsb \right) = \sum_k \bra{B_k} \dotsb \ket{B_{k}} = \sum_k E_k \rho^{0} E_k^{\dagger}  \]
+
+$E_k = \bra{B_{k}} U_{SB} (t) \ket{B_k}$
+
+\[ \rho(t) = \mathcal{E}(\rho(0)) \qq{Quantum map!} \]
+
+
+
+\[ \Tr \mathcal{E}(\rho) = \Tr \sum_k E_k \rho E_k^{\dagger} = \Tr E_k^{\dagger} E_k \rho = 1 \implies \sum_k E_k^{\dagger} E_k = \mathds{1} \]
+
+Les $\mathcal{E}$ sont compressibles 
+
+\[ \mathcal{E}_2 \circ \mathcal{E}_1(\rho) = \mathcal{E}_2 \left( \sum_k E_k \rho E_k^{\dagger} \right) = \sum_{j,k} E_j E_k \rho E_k^{\dagger} E_j^{\dagger} = \sum_i G_i \gho G_i^{\dagger} =  \]
+
+\subsubsection{Équation maîtrise de Linblad }
+
+
+\[ \dot \rho = \frac{1}{\hbar} [H, \rho]  \]
+
+
+\[ \rho(t+\dd t) =  \rho(t) - \frac{i}{\hbar} [H, \rho(t)] \dd t \]
+
+
+On suppose qu'à chaque $\dd t$ on suppose que $S$ et $B$ sont factorisable.
+
+On définit 3 échelles de temps
+
+\underline{corse grain time}: temps de discrétisation ($t_{\text{corse}} = \Delta t \sim \delta t $)
+
+\underline{temps de mémoire de l'environemment} $t_b$, après $t_b$, l'evironement oubli avoir interagit avec le système 
+
+
+On suppose que $t_{\text{corse}} \gg t_B $
+
+
+On suppose un chaine de Markov (faux mais vrai approximativement(?))
+
+$t_c$ est le temps caractéristique du système  
+
+\[ t_c \gg t_{\text{corse}} \gg t_B  \]
+
+
+
+En prennat la trace sur le bain
+
+
+\[ \rho(t + \delta t) = \mathcal{E}_H \rho(t) = \sum_j E_j \rho(t) E_j^{\dagger} \]
+
+
+On cherche les $E_j$
+
+\[ E_j = \mathds{1} + \hat O \dd t = \mathds{1} + \left(  \frac{-i}{\hbar} +K \right) \dd t  \]
+
+\[ I = \sum E_j ^{\dagger} E_j = \dotsb \]
+
+\[ E_j = L_j \sqrt{\dd t} \]
+
+
+
+
+
+
+
+
+\end{document}
