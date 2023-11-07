@@ -1,0 +1,93 @@
+\input{../parameters}
+
+\begin{document}
+2023-11-07
+
+\section*{suite}
+
+\[\dot \rho = - \frac{1}{2} [H, \rho] +\sum_i \gamma_i \mathcal{D} [L_i]\rho\]
+
+\[ \qq{où} \mathcal{D}[L] \rho = L\rho L^{\dagger} - \frac{1}{2} \{ L^{\dagger}L, \rho \}  \]
+
+\setcounter{section}{5}
+\setcounter{subsection}{2}
+\subsection{Oscillateur harmonique amortis}
+\subsubsection{Équation maitraisse}
+\[ H = \hbar \omega_r a^{\dagger} a + \sum_m \hbar \omega_m c_m^{\dagger}c_m  - \sum_m \lambda_m (c^{\dagger}_m + c)(a^{\dagger}+a) \]
+
+En prenant la limite continue 
+
+
+\[ H = \hbar \omega_r a^{\dagger} a + \hbar\int_0^\infty \dd\omega \omega c(\omega)^{\dagger}c(\omega)  - \int_o^\infty \lambda(\omega) (c^{\dagger}(\omega) + c(\omega))(a^{\dagger}+a) \]
+
+Après la RWA
+
+\[ H = \hbar \omega_r a^{\dagger} a + \hbar\int_0^\infty \dd\omega \omega c(\omega)^{\dagger}c(\omega)  - \int_o^\infty \lambda(\omega) (c^{\dagger}(\omega)a + c(\omega) a^{\dagger}) )\]
+
+On constate que la contribution du dernier terme est beaucoup plus importante autour de $\omega = \omega_r $
+
+\[ H = \hbar \omega_r a^{\dagger} a + \hbar\int_0^\infty \dd\omega \omega c(\omega)^{\dagger}c(\omega)  - \lambda(\omega_r)\int_0^\infty  (c^{\dagger}(\omega)a + c(\omega) a^{\dagger}) )\]
+
+Le dernier terme deviens
+
+\[ -\lambda(\omega_r) \left( B^{\dagger} a + B a ^{\dagger} \right) \]
+À température nulle $\expval{c^{\dagger}(\omega) c(\omega)} =0 $
+
+
+\[ \boxed{L = \sqrt{?}a} \]
+
+En posant $\rho = \ketbra{n}$ on trouve \[ -\kappa a \rho a^{\dagger} = -n \kappa \rho \]
+
+Ce terme génère donc bien une perte! Le terme de \textit{jump} à fait sont travail. Mais que font les autres termes \textinterrobang
+
+...
+
+\[ \rho(t) = \left( 1- e^{-\kappa t} \ketbra{0} + e^{-\kappa t} \ketbra{1} \right)  \]
+
+(Je comprend pas trop la demarche mais on se rends compte que ça préserve la normalisation)
+
+On essaie de trouver un interpretation \textit{moins ennuyante} des \textit{no jumps terms}.
+
+On s'imagine un système préparé dans l'état 
+
+\[ \frac{1}{2} \ketbra{0} + \frac{1}{2} \ketbra{1} \]
+
+...
+
+Les \textit{no jump termes} reflète le fait qu'on gagne de l'information qu'on a sur la cavité, on est de plus en plus sur d'être proche de 0 en ne voyant pas de photons sortir? Ish
+
+
+À température finie
+
+\[ \expval{c^{\dagger}(\omega) c(\omega')} = n_B (\omega) \delta(\omega-\omega') \]
+
+
+\subsection{pour un qubit}
+
+
+\[ L = \sqrt{\gamma_{1}} \sigma_-  \]
+
+\[ \dot \rho = - \frac{i}{\hbar} [H,, \rho] + \gamma \mathcal{D}(\sigma_- )\rho \]
+
+\subsubsection{Déphasage}
+
+
+\[ H = \hbar \delta(t) \frac{\sigma_z}{2}  \]
+
+où $\delta(t)$ est une fonction fluctuante à \textit{basse fréquence}.
+
+On modélise cela par \[ \dot \rho \frac{\gamma_{\varphi}}{2} \mathcal{D}[\sigma_{z]} \rho \qquad L = \sqrt{\frac{\gamma_{\varphi}}{2} }\sigma_z \]
+
+\[ \ketbra{0}{1} \to^{t} \ketbra{0}{1}e^{-\gamma_{\varphi} t} \]
+En combinant avec $\gamma_1$
+
+\[ \dot \rho = \gamma_1 \mathcal{D}[\sigma_{z]\rgo} + \frac{\gamma_{\varphi}}{2} \mathcal{D}[\sigma_{z]} \rho \]
+
+\[ \rho(t) = \begin{pmatrix} \rho_{11} (0) e^{-\gamma_1 t} & \rhp_{10} (0) e^{-\gamma_2 t} \\ \rho_{00} (0) e^{-\gamma_2 t} & \rho_{00} (0) \left[ 1 - e^{-\gamma_1 t} \right] 	
+\end{pmatrix} \]
+
+
+
+
+
+\end{document}
