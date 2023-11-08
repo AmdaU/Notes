@@ -1,0 +1,69 @@
+\input{../parameters}
+
+\begin{document}
+2023-11-08
+
+\section*{(suite)}
+
+\[ \gamma_2 = \frac{\gamma_1}{2} \gamma_{\phi}  \]
+
+\[ \dot \rho = \gamma_1 \mathcal{D}[\sigma_{-]} + \frac{\gamma_{\varphi}}{2} \mathcal{D}[\sigma_{z]} \rho  \]
+
+Pour mesurer $\gamma_\varphi$ (?) on fait Ramsey:
+
+pulse $\frac{\pi}{2} $, temps $t$, pulse $\pi$ 
+
+\begin{figure}[ht]
+    \centering
+    \incfig{gamma-2}
+    \caption{gamma 2}
+    \label{fig:gamma-2}
+\end{figure}
+
+
+\setcounter{section}{5}
+\setcounter{subsection}{4}
+\setcounter{subsubsection}{2}
+
+\subsubsection{Dissipation dans le régime dispersif}
+
+Lorsqu'on peut approximer l'Hamiltonien de Rabi par celui de Jaynes-Cummings alors les dissipateurs 
+
+\[ \kappa \mathcal{D}[a]\rho + \gamma_1 \mathcal{D}[\sigma_-]\rho  + \frac{\gamma_{\varphi}}{2} \mathcal{D}[\sigma_z]\rho \]
+
+sont une bonne approximation. Dans le régime dispersif, les états du qubits sont $\{ \ket{\overline{g0}}, \ket{\overline{e0}}\} $ avec $\ket{\overline{g0}} = \ket{g0}$
+
+On fait un changement de référentiel $U$ sur l'équation maitresse 
+
+$\dot \rho = -\frac{i}{2} [H, \rho] + \gamma_A \mathcal{D}[A]\rho $
+
+\[ \dot \rho' = - \frac{i}{\hbar} [UHU^{\dagger}, \rho'] - U\dot U^{\dagger}\rho' - \dot \rho \dot U U^{\dagger} + \gamma_A \mathcal{D}[UAU^{\dagger}] \rho ' \]
+
+\subsubsection{filtre Pucell}
+
+\[ \gamma_{\kappa} =  \left( \frac{g}{\delta}  \right)^? \kappa \sim \frac{\kappa}{100}   \]
+
+$T_{1\kappa} = \frac{1}{\gamma_{A}} \sim 8000 ns $
+
+On ajoute un filtre pour contrer ça, un filtre Purcell
+
+\begin{figure}[ht]
+    \centering
+    \incfig{filtre-purcell}
+    \caption{filtre purcell}
+    \label{fig:filtre-purcell}
+\end{figure}
+
+\section{Mesure dispersive }
+
+\subsection{Interaction dispersive}
+
+
+\[ H_{\chi} = \hbar \left( \omega_r + \chi \sigma_z  \right) a^{\dagger} a+ \hbar \frac{\omega_q}{2} \sigma_z  \]
+
+
+
+
+
+\end{document}
+
