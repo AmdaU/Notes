@@ -1,0 +1,59 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-09
+
+\section{(Rappel) Électromagnétisme classique}
+
+On s'intéresse d'abord à développer la théorie du magnétisme en physique classique. Cette théorie échoue à décrire correctement le magnétisme. En effet il faut la mécanique quantique pour le faire. Par contre le formalisme développé en quantique reste utile.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{densité-de-courrant}
+    \caption{densité de courrant}
+    \label{fig:densité-de-courrant}
+\end{figure}
+
+On a la loi suivant pour obenir le champ mangétique
+
+\[ \mathbf{B}(\mathbf{r})=\frac{1}{c} \int \mathrm{J}\left(\mathbf{r}^{\prime}\right) \times \frac{\mathbf{r}-\mathbf{r}^{\prime}}{\left|\mathbf{r}-\mathbf{r}^{\prime}\right|^3} d^3 r^{\prime} \quad \text{(Biot-Savard)}  \] 
+
+Qu'on peut réécrire comme 
+\[ \mathbf{B}(\mathbf{r})=\frac{1}{c} \nabla \times \int \frac{\mathrm{J}\left(\mathbf{r}^{\prime}\right)}{\left|\mathbf{r}-\mathbf{r}^{\prime}\right|} d^3 r^{\prime} \]
+
+Puisque $\vb{B} = \grad \times \vb{A}$
+
+\[ \vb{A} = \frac{1}{c} \int \frac{\mathrm{J}\left(\mathbf{r}^{\prime}\right)}{\left|\mathbf{r}-\mathbf{r}^{\prime}\right|} d^3 r^{\prime} \]
+
+Pas de monopoles magétiques:
+\[ \grad \cdot \vb{B} = 0 \]
+
+\[ \grad \times \vb{B} = \frac{1}{c} \grad \times \grad \times \int \frac{\mathrm{J}\left(\mathbf{r}^{\prime}\right)}{\left|\mathbf{r}-\mathbf{r}^{\prime}\right|} d^3 r^{\prime} = \dotsb \]
+
+On developpe $\frac{1}{\abs{\vb{r}-\vb{r}'} } $
+
+\[ \frac{1}{\abs{\vb{r}-\vb{r}'} } = \frac{1}{\abs{\vb{r}}} + \frac{\vb{r}\cdot \vb{r}'}{\abs{\vb{r}}^{3}}   + \dotsb\]
+
+Le premier terme non-nul est le terme dit \textit{dipolaire}
+
+\[ A_{\text{dip}}(\mathbf{r})=\frac{1}{c} \frac{1}{|\mathbf{r}|^3} \sum_{i, j} \hat{n}_i r_j \int r_j^{\prime} J_i d^3 r^{\prime} = \dotsb = -\frac{1}{c} \frac{1}{|\mathbf{r}|^3} \sum_i \hat{n}_i \frac{1}{2}\left[\mathbf{r} \times \int\left(\mathbf{r}^{\prime} \times \mathbf{J}\right)\right]_i d^3 r^{\prime}\]
+
+On définit alors la densité de moment dipolaire comme
+
+\[ \mathcal{M}(\vb{r}) = \frac{1}{2c} \vb{r} \times \vb{J}(\vb{r})  \]
+Ce qui permet de réécrire 
+
+\[\vb{A}_{\text{dip}} =  -\frac{1}{|\mathbf{r}|^3} \mathbf{r} \times \int \overrightarrow{\mathscr{M}}\left(\mathbf{r}^{\prime}\right) d^3 r^{\prime} \equiv \frac{\vb{m} \times \vb{r}}{\abs{\vb{r}}^{3}}  \]
+
+Le moment magnétique peut se réécrire de la forme
+
+
+\[ \vb{m} = \sum_{i}^{} \gamma_i \mathcal{L}_i \]
+
+avec $\mathcal{L}_i$ le moment cinétique et $\gamma_i= \frac{q_i}{2M_i c} $ le facteur gyromagnétique 
+
+
+
+
+
+\end{document}
