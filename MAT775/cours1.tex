@@ -1,0 +1,114 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-11
+
+\section{Rappel de théorie des groupes et de leurs actions}
+
+Un groupe est une paire $(G, *)$, ou $G$ est un ensemble et $*$ est une opération $(*: G \times G \to G)$
+
+3 axiomes:
+\begin{enumerate}
+	\item $a * (b *c) = (a * b) *c \quad \forall a,b,c \in G$	
+	\item $\exists e \in G | e * a = a * e = a \forall a \in G$
+	\item $\forall a \in G, \exists b \in G | a*b = e$
+\end{enumerate}
+
+Ex: $(\mathds{Z}, +), (\mathds{Q}, +), (\mathds{R}, +), (\mathds{C}, +), (\mathds{R}, +), \dotsb$
+
+Les groupes matriciels sont très importants 
+
+Tout les groupes mentionné jusqu'à maintenant sont infini, un exemple de groupe fini est $(\mathds{Z}_n, +)$
+
+\[ S_E = \{ f: E\to E | f \text{ est inversible }  \}  \]
+avec l'opération de composition $\circ$
+
+On l'appel le groupe symétrique de $E$
+
+$S_n = S_{\{ 1,2, \dotsb, n \} }$
+
+Est le groupe des permuations de $n$ éléments
+
+Notation pour désigner les éléments $\sigma \in S_n$:
+
+\[ \sigma = \begin{pmatrix} 1 &2 &3 & 4 & \dotsb & n\\ \sigma(1)& \sigma(2)& \dotsb & \dotsb & \dotsb & \sigma(n) \end{pmatrix}  \]
+
+\underline{Définition:} Un \underline{morphisme/homomorphisme} de groupes ($G,\, H$) est une fonction $f: G \to H$ t.q. $f(a *_G b) = f(a) *_H f(b)$. Si $f$ est inversible alors $f^{-1}$ est aussi un morphisme et on dit alors que $f$ est un \underline{isomorphisme} 
+
+\underline{Exemples:} 
+
+\begin{itemize}
+	\item $\rm{det}: \rm{GL}_n (\mathds{R}) \to \mathbb{R}^{*}$
+	\item $\abs{\cdot} : \mathbb{C} \to \mathbb{R} ^{*}$
+	\item $\mathbb{Z} \to \mathbb{Z}_n$
+\end{itemize}
+
+
+\underline{Définition:} Une \underline{action} d'une groupe $G$ sur un ensemble $X$ est une application \[ \bullet  : G \times \to X  \]  satisfaisant \[ e \bullet x = x \quad \forall x \in X \] et \[ a \bullet (b \bullet x)  = (a * b) \bullet x \]
+
+\underline{Exemple:}
+
+\[ G = \rm{GL}_n (\mathbb{R})\quad X =\mathbb{R}^n \]
+
+\underline{Définition}: Une \underline{action} de $G$ sur $x$ est un homomorphisme $f: G \to S_x$  
+
+Les deux définition sont équivalentes
+
+On définit $f(g) = (x \mapsto g \bullet x)$
+
+\begin{align*}
+	f(g_1 * g_{2)(x)} =& (g_1 * g_{2)} \bullet x\\ =& g_1 \bullet (g_2 \bullet x) \\&= g_1 \bullet f(g_2)(x) \\ &= f(g_{1)} (f(g_{2)(x))} \\&= \left[ f(g_1 ) \circ f(g_2 ) \right] (x )\quad \forall x \in X  
+\end{align*}
+
+\[ \implies f(g_1 * g_2) = f(g_1) \circ f(g_2 )\]
+
+Si $X$ a plus de structure et qu'on a une action de de $G$ sur X qui preserve la structure lors on dit que $G$ agit par (homéomorphise, isométrie, application linéaire, ... (linéairement)) sur $X$
+
+\underline{exemple:} $G = S_3 $ agit par isométrie sur un triangle équilatéral (voir \ref{fig:triangles-équilatérals})
+
+\begin{figure}[ht]
+    \centering
+    \incfig{triangles-équilatérals}
+    \caption{Triangles équilatérals}
+    \label{fig:triangles-équilatérals}
+\end{figure}
+
+\textbf{ATTENTION}: $S_4$ n'agit pas (fidelement, injectivement) sur le carré par isométrie (certaines permuations \textit{brisent le triangle}) S. Par contre $S_4$ agit par isométries sur le cube!
+
+
+%\begin{figure}[ht]
+    %\centering
+    %\incfig{cube}
+    %\caption{cube}
+    %\label{fig:cube}
+%\end{figure}
+
+
+$A_n \subset S_n$ et est groupe des permuations paire
+
+$A_5$ agit par isométrie sur le dodécaèdre  
+
+\underline{Théorème:} [Cayley] Tout groupe est isomorphe à un \underline{sous-groupe} d'un groupe de permutation $S_E$    
+
+
+\underline{Démonstration}: On considère l'action de $G$ sur lui-même $(x = G)$
+
+\[ g_1 \bullet g_2 = g_1 * g_2 \]
+
+on obtiens $f: G\to S_G$: homomorphisme injectif car si $f(g_{1)} = f(g_1)$ alors $f(g_{1)(e)} = f(g_2)(e)$, $g_1 \bullet e = g_2 \bullet e$, $g_1 = g_2$
+
+\[ \implies f(G) \subset S_G \text{ est isomorphe a $G$ } \]
+
+\underline{Définition:} Une \underline{représentation} d'un groupe $G$ est une actions linéaire de $G$ sur un espace vectoriel $V$. Autremenet dit, un homomorphisme $ \rho: G \to \rm{GL}(V)$. Le rang d<une représentation est $\rm{dim}V$
+
+\underline{exemples}: \[ \rho \mathds{C}^{*} \to \rm{GL}(2, \mathds{R}) \] 
+\[ a+ib \to \begin{pmatrix} a & -b \\ b & a \end{pmatrix}  \]
+
+Si $G$ est un groupe fini, il admet la \underline{représentation régulière}: 
+
+\[ G = \{ g_1 , g_2, \dotsb , g_n  \}  \]
+
+\[ V = \expval{e_{g_1}, \dotsb} \]
+
+
+\end{document}
