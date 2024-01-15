@@ -1,0 +1,179 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-15
+
+\section*{retour sur le dernier cours}
+\[ (G, \bullet) \quad \text{c'est un groupe} \]
+
+\[ S_E = \{ \sigma: E \to E | \sigma \text{ inversible }  \}  \quad \text{ est une groupe pour la composition } \]
+
+
+Un \underline{cycle} est un élément de $S_n$ de la forme \[ \sigma(a_1 ) = a_{i\neq1},\, \sigma(a_{k}) = a_{1,\,} i = 1, \dotsb, k \] 
+On le note $(a_1 \, a_2 \, a_3 \, \dotsb\, a_k)$
+
+\begin{tcolorbox}[title=Fait important]
+	Toute permutation se décompose de manière unique en cycles disjoint 
+	\underline{Exemple:}
+	\[ \sigma = \begin{pmatrix} 1 & 2 &3 &4 &5 \\ 2 & 1 &5 &4 &3 \end{pmatrix} = (1\, 2) \circ (3\, 5) = (3\, 5) \circ (1\, 2) \]
+	\[ \begin{pmatrix} 1 & 2 & 3 &4 &5 &6 &7\\ 7 &3 &4&1 &6 &2 &5 \end{pmatrix}  = (1\, 7\, 5\,6\,2\,3\,4) \]
+\end{tcolorbox}
+
+
+Le signe (ou la signature) d'un cycle de longeur $\ell$ est \[ 	(-1)^{\ell -1} \begin{cases} +1: \text{la permutation est paire}\\ -1: \text{la permutation est imparire}  	
+\end{cases}\]
+
+
+On a la relation $\rm{sgn}(\sigma_1 \circ \sigma_{2}) = \rm{sgn}(\sigma_1 ) \rm{sgn}(\sigma_2 )$
+
+On peut utiliser une manière graphique pour calculer la signature d'une permutation (graph: compter le nombre d'intersections)
+
+Action de $G$ sur $X$: deux définitions 
+
+\begin{enumerate}
+	\item $\bullet: G \times X\to X $
+	\item homomorphisme $f: G \to S_x$
+\end{enumerate}
+
+\underline{Représentation de $G$:} action linéaire de $G$ sur un espace vectoriel $V$ 
+
+\underline{Exemple:} La \underline{Représentation vectoriel} sur $V$  
+
+\[ g \circ \vb{v} = \vb{v} \quad \forall g \in G,\, v\in V \]
+\[ \rho: G \to GL(V) \]
+\[ g\mapsto \mathds{1} \]
+
+
+Pour $G$ fixé, on a la représentation \underline{régulière} ($R$) (pour chaque élément du groupe on a un vecteur) 
+
+\[ \expval{e_{g_{1},}  \dotsb, e_{g_n} }  \qq{où} G = \{ g_1, \dotsb, g_n  \} \]
+
+On définit $g \bullet e_g = e_{g \bullet g}$
+
+\underline{Exemple:} \[ \mathds{Z}_3 = \{ 0,1,2 \}  \] 
+\[ V = \expval{e_0 \, e_1 \, e_2 } \]
+\[ R(0) = \begin{pmatrix} 1 & 0  &0 \\ 0 & 1 & 0 \\ 0 & 0 &1 \end{pmatrix}  \]
+
+\[ R(1) = \begin{pmatrix} 0 & 0  &1 \\ 1 & 0 & 0 \\ 0 & 1 &0 \end{pmatrix}  \]
+
+
+\[ R(2) = \begin{pmatrix} 0 & 1  &0 \\ 0 & 0 & 1 \\ 1 & 0 &0 \end{pmatrix}  \]
+
+Les éléments du groupe $\mathds{Z}_3$ sont ici representé par les matrices 3x et l'addition (modulaire) est remplacé par la multiplication matriciel des éléments de la représentation.
+
+\underline{Autre exemple:} 
+
+\[ S_3 = \{ e, (12), (13), (23), (123), (132) \}  \]
+
+\[ R(12)  = \begin{pmatrix} 0 & 1 & 0 & 0 &0 &0 \\ 1 & 0&0 &0&0 &0\\ 0 &0 &0 &0 &0 & 1\\ 0&0&0&0&1&0 \\ 0&0&0&1&0&0 \\ 0&0&1&0&0&0 \end{pmatrix} \]
+
+Plus généralement , si $G$ agit sur $E$ (ensemble fixé), on définit une \underline{représentation de permutation} sur $\expval{e_1 , e_2 , \dotsb , e_{n}} \quad E = \{ e_1 , \dotsb , e_n \} $ par $\rho(g)(e_i ) = g \bullet e_1 \qq{(action de $G$ sur $E$)}$
+
+\underline{exemple:} $V = \mathds{C}$ Ou on prend $\mathds{C}$ comme un espace vectoriel 
+
+
+\[ G = \mathds{Z}_3 \]
+\[ \rho : \mathds{Z}_3 \to \mathds{C}^{*} = \rm{GL(1, \mathds{C})} \]
+\[ n \mapsto \omega^{n}\qq{où} \omega = e^{2\pi i /3} \]
+
+\underline{Définition:} Un \underline{sous-représentaation} de \[ \rho: G \to \rm{GL}(V) \]  est la restriction de $\rho$ à un sous-espace $U\subset V$ invariant par $\rho$. c-à-d, si $u \in U$, alors $\rho(g) u \in U\forall g \in G$
+
+\underline{Exemple:} Pour $R: S_3 \to \rm{GL}(6, \mathds{C})$ 
+Le sous-espace $\{ \begin{pmatrix} z\\z\\z\\z\\z\\z \end{pmatrix} \in \mathds{C}^6 | z \in \mathds{C} \} $ est une sous représentation \underline{triviale} 
+
+Le sous-espace $U_0 = \left\{ \begin{pmatrix} z_1 \\ z_2 \\ \vdots \\ z_6 \end{pmatrix} \in \mathds{C}^6 | z_1 + z_2 + \dotsb + z_6 = 0 \right\} $	est aussi une sous-représentation de $R$ de dimension 5
+
+
+\underline{Définition:} Une représentation est \underline{irréductible} si elle n'admet aucune sous représentation \underline{propre} ($\neq 0, \neq V$)   
+
+
+\underline{Exemple:} $S_3$:
+
+$\rho: S_3 \to \rm{GL}(3, \to \mathds{C})$ la représentation de permutation induite par l'action \underline{???} de $S_3$ sur $\{ 1,2,3 \} $ 
+$\rho(12) = \dotsb 3x3,\, \rho(123) = \dotsb 3x3$
+
+$\rho$ est elle irréductible ? non, 
+
+\[ \expval{ \begin{pmatrix} 1 \\ 1 \\1 \end{pmatrix}  } = \{ 	\begin{pmatrix} z\\z\\z \end{pmatrix} \in \mathds{C}^3 | z \in \mathds{C} \}  \]
+est invariant est irréductible
+
+Également, $U_0 = \expval{\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix} , \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}   } =  \{ \begin{pmatrix} z_1 \\ z_2 \\ z_3 \end{pmatrix} | z_1 + z_2 +z_3 = 0 \} $ est invariant
+
+
+Es-ce que $U_0$ est irréducibleÉ
+
+Cherchons un sous-espace invariant de dim 1
+
+\[ \rho (12) \begin{pmatrix} z_1 \\ z_2 \\ z_3 \end{pmatrix}  = \begin{pmatrix} z_2 \\ z_1 \\ z_1 - z_2 \end{pmatrix} = \lambda  \begin{pmatrix} z_1 \\ z_2 \\ -z_1 - z_2 \end{pmatrix}   \]
+
+\[ \dotsb \]
+
+Conculsion : $U_0$ est une représentation irréductible. On l'appelle repreésentation \underline{standard} de $S_3$
+
+\underline{Ex:} $S_3$
+
+
+\[ \rm{sgn}: S_3 \to \mathds{C}^{*} = \rm{GL}(1, \mathds{C}) \]
+\[ \sigma \mapsto \rm{sgn}(\sigma) \]
+
+Si $\rho_{1:} G \to \rm{GL}(u), \quad \rho_{2:} G \to \rm{GL}(v)$ sont 2 représentation de $G$, leurs \underline{somme directe} est la représentation $\rho_1 \oplus \rho_{2:} G \rm{GL}(u \oplus v)$ 
+
+\[ (\rho_1 \oplus \rho _2 )(g) (u \oplus v) = \rho_1 (g) u \oplus \rho_2 (g) v \]
+
+
+\underline{Exemple:} si $U = \mathds{R}^{n}$ $V = \mathds{R}^{m}$ 
+
+\[ U \oplus V  = \mathds{R}^{n+m}\]
+
+$U \oplus v$ contient $u \oplus 0$ et $0 \oplus v$ comme sous représentation 
+
+
+\underline{Proposition}: Soit $U \subset V$ une sous-repr/sentation de $\rho: G \to \rm{Gl}(V)$. Alors, il existe une sous-représentation $W\subset V$ telle que $V = U \oplus W$  
+
+
+\begin{tcolorbox}[title=Attention!]
+	 
+	Faux en général pour les groupes infinis
+\end{tcolorbox}
+
+
+\underline{Exemple:} $\rho: \mathds{Z} \to \rm{GL}(2, \mathds{C})$
+\[ n \mapsto \begin{pmatrix} 1 & n \\ 0 & 2 \end{pmatrix}  \]
+est une représentation de $\mathds{Z}$, $\expval{e_1}$ est une sous-représentation triviale, mais il n'en existe par d'autre 
+
+\[ \begin{pmatrix} 1 &0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}  = \begin{pmatrix} x+y \\ y \end{pmatrix}   \]
+
+\underline{Démonstration:} 
+
+Soit $V_0 \subset V$ n'importe quel complément de $U$ ($V = U \oplus W_0 $)
+
+Ce n'est \textbf{pas} un sous-espace en général
+
+\[ \rho(g) w \notin W_o  \qq{pour} w \in W_0\]
+
+Soit $\pi: V \to U$ la projection complémentaire à $W_0$
+
+Définissons $\pi' = \frac{1}{\abs{G}} \sum_{g\in G}^{} \rho(g) \circ \pi \circ \rho (g^{-1})$
+si $u \in U$
+\[ \pi' (u) = \frac{1}{\abs{G}} \sum_{g\in G}^{\infty} \rho(g) \pi \left[ \rho (g') u \right]   \]
+\[ \frac{1}{\abs{G}} \sum_{g\in G}^{} \cancel{\rho(g) \rho(g^{-1})} u  \]
+
+ \[ 	\frac{1}{\abs{G}} \abs{G} u = u   \]
+
+ \[ \implies \pi' : V\to U \qq{est surjectif et indentité sur $$} \]
+
+ \[ W = Ker(\pi') \qq{est notre candidat de sous-représentation}\]
+
+Vérifions que $W$ est $\rho(G)$ invariant
+
+\[ h \in G \quad V \in \rm{Ker} \pi' \]
+
+\[ \pi'(\rho(h) V) = \frac{1}{\abs{G}} \sum_{g \in G}^{\infty} \rho(g) \pi \rho(g') \rho(h) v  = \dotsb = 0\]          
+
+comme $\pi'/ i = \mathds{1}_u$
+
+\[ U \cup ,,,,,, \]
+
+
+
+\end{document}
