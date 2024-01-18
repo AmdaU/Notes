@@ -1,0 +1,178 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-18
+
+\section*{Rappels}
+\begin{itemize}
+	
+	\item représentation de $G$ $\rho \to \rm{GL}(V)$
+	\item somme direct $\rho_1: G \to \rm{GL}(V)$, $\rho_2 : G \to \rm{GL}(U)$, $\rho_1 \oplus \rho_2 : G \to (V \otimes U)$
+
+	\item Sous-représentation $U \subset V$ 
+		$G$ invarientL $\forall g \in G,\, \rho(g) u\in U$
+
+	\item $\rho$ est \underline{irréductible } si les seul sous-représentation sont $\{ 0 \} $ et $V$ 
+
+	\item \underline{Théorème}: Si $U \subset V$ est une sous représentation de $ \rho: G \to \rm{GL}(V)$ alors $\exists W \subset V$ sous-espace t.q. $V = U \oplus W$  
+
+\end{itemize}
+
+\underline{Exemple:} 
+
+$\rho: S_3 \to \rm{GL}(\mathbb{C}^3)$: représentation de permutation
+
+\[ U = \expval{\begin{pmatrix} 1 \\ 1 \\1 \end{pmatrix} } \subset \mathds{C}^{3}\] est une sous-représentation
+
+\[ W = \{ \begin{pmatrix} x\\y\\z  \end{pmatrix} \in \mathds{C}^{3} | x+y+z =0 \} \]
+
+
+\[ \mathds{C}^{3} = U \oplus W \]
+
+
+\underline{Corrolaire}: Toute représentation s'écrit comme une somme directe de représentation irréductible 
+
+
+\underline{Définition:} Un \underline{morphisme de représentation} entre $\rho_{1} : G \rm{GL}(U)$, $ \rho_2 : \rho_2 :\rm{GL}(U) $ est une application linéaire $\varphi V \to U$ telle que $ \forall g \in G$   
+
+
+\[ \varphi \circ \rho_{1(g)} = \rho_{2(g)} \circ \varphi \]
+
+
+Si $\varphi$ est inversible, c'est un \underline{isomorphisme} de représentation
+
+
+
+\underline{Proposition}: 
+
+\begin{enumerate}
+	\item $\rm{Ker}(\varphi) \subset V$
+	\item $\rm{Im}(\varphi) \subset U$
+	sont des sous représentation 
+\end{enumerate}
+
+\underline{Démonstration}:
+
+
+\begin{enumerate}
+	\item Si $v <in \rm{Kerr}(\varphi)$
+		$\implies \varphi(v)= 0$
+		\[ \varphi(\rho_1(g) v) = \rho_2 (g) (\varphi(v)) = 0 \]
+		\[ \implies \rho_1 (g) v \in \rm{kerr}(\varphi) \]
+	\item $\rho_2(g) (\varphi (v)) = \varphi(\rho_1 (g) V) \in \rm{Im} (\varphi)$
+\end{enumerate}
+
+\underline{Lemme de Shur} 
+\begin{enumerate}
+	\item $\varphi: V \to U$ est un morphisme entre représentation irréductible alors $\varphi=0$ ou $\varphi$ est un iso 
+	\item $\varphi: V \to V$ Morphisme de $V$ représentation irréductible alors $\varphi= \lambda \mathds{1}$
+\end{enumerate}
+
+\underline{Démonstration:} $ \varphi: V \to U$ 
+
+\begin{enumerate}
+	\item \[ \dotsb \]
+	\item $\varphi V\to V$
+		$\varphi$ admet une valeur propre $\lambda$
+		\[ \implies \rm{Kerr}(\varphi - \lambda \mathds{1}) \neq 0 \]
+		\[ \implies \rm{Kerr}(\varphi - \lambda \mathds{1}) = V \]
+		\[ \implies \varphi - \lambda \mathds{1} = 0 \]
+		\[ \implies \varphi = \lambda I \]
+\end{enumerate}
+
+
+La décomposition en irréductible \[ V = V_1^{m_{1}} \oplus \dotsb V_k^{m_{k}}  \] est unique à isomorphisme près
+
+
+
+\underline{Exemple:}
+Soit $G$ une goupe fini abélien 
+
+\[ G \tilde = \mathds{Z}_{m_{1}}^{n_1}\oplus \dotsb \]
+
+et supposons $\rho : G \to \rm{GL}(V)$irréductible. Fixons $g \in G$
+
+$\rho(g): V \to V$ alors $\rho(g)$ est une morphisme de représentation car $\rho(h)(\rho(h) v) = \rho(gh) b = \rho(hg) v = \rho(h)(\rho(g)v)$
+
+Par le Lemme de Shor $\rho(g) = \lambda_g \mathds{1}$
+$\implies$ tout les $\rho(g)$ sont$\lambda_g$ I
+
+
+$\implies$ tout sous-espace de $V$ est stable par $\rho(g) \forall g \in G$
+
+donc $\rm{dim} V = 1$
+
+\underline{Conclusion:} tout représentaiton irréductible d'un groupe abélien est de dim $1$ 
+
+\underline{Exemple:} $G = \mathds{Z}_4$ 
+
+\[ \dotsb \]
+
+
+\underline{Exemple:} $G = S_3 = \{ e, (12), (12), (123),(132) \} $ 
+
+\[ H = \{ e, (123), (132) \}  \] est le plus grand sous-groupe de $G$ que est abélien 
+
+\underline{Remarque:} G est engendré par (123) et (12) 
+
+On leur donne des petit non spéciaux en cette honneur $\tau =(123),\sigma= (12)$
+
+\[ \sigma \tau \sigma  = (12)(123)(12) = (132) = \tau^2 \]
+
+
+Soit $\rho: S_3 \to \rm{GL}(V)$ une représentation irréductible 
+
+on a $\rho(\tau)^3 = \mathds{1} $ car $\tau^{3}= e$
+
+
+$\implies \rho(\tau)$ est diagonalisable est ses valeurs propres sont des racines cubiques de $1$. Soit $v \in V$ vecteurs propres de $\rho(\tau)$ $\implies \rho(\tau) v = \omega^{k}v$ pour $ \omega = e^{2\pi i /3}, i \in \{ 0,1,2 \} $
+
+on a 
+
+\begin{align*}
+	\rho(\tau) \left( \rho(\sigma) v \right) =& \rho (\tau \sigma) v \\ = \rho (\sigma \tau^{2)}v \\ = & \rho (\sigma) \rho(\tau)^2 v \\ =& \rho(\sigma) \omega^{2k} v \\ =& \omega^{2k} (\rho(\sigma) v )
+\end{align*}
+
+\underline{conclusion} si $v$ est une vecteur propre de $\rho(\tau)$ de valeur propre $\omega^{k}$ alors $\rho(\tau) v$ est vecteur propre de $ \rho(\tau)$ de valeur propre $\omega^{2}k$
+
+Il y a deux cas selon la valeur propre 
+
+\begin{enumerate}
+	\item $k=1$ ou 2 $\implies \omega^{2}\neq \omega^{2k}$
+		\[ \implies v \text{ et } \rho(\sigma) v  \] sont linéairement indépendants $U = \expval{v_1 \rho (\sigma)v}$, $U$ est stable par $G$: $V$ et $\rho(\sigma)V$ sont vecteur propres de $\rho (\tau)$ \underline{et} $	\rho(\sigma)(v) = \rho(\sigma) v$, $\rho(\sigma)(\rho(\sigma)(v)) = v$ 
+
+		\[ \implies U = V \] et dans la base $v, \rho(\sigma) v$ on alors
+		\[ \rho(\tau) = \begin{pmatrix} \omega^{k}& 0 \\ 0& \omega^{2k} \end{pmatrix}  \]
+		\[ \rho(\sigma) = \begin{pmatrix} 0 & 1\\ 1 &0 \end{pmatrix}  \]
+
+\item k = 0 
+	\begin{align*}
+		\rho(\tau) v &= v\\  \rho(\tau)(\rho (\sigma) v) &= \rho(\sigma)v	
+	\end{align*}
+	\begin{enumerate}
+		\item \[ \rho(\sigma) v = \lambda v \] et $ \lambda \in \{ 1,\, -1 \}  \quad (\sigma^{2}=1)$
+			si $\lambda =1$ $\expval{v} = V$ et $\rho = \rho_{\text{trivial}} $
+			si $\lambda =-1$, $\expval{v} = V$ et $ \rho - \rho_{\text{sign}} $
+		\item $v$ et $\rho(\sigma) v$ sont linéairement indépendants
+
+			Considérons $V + \rho(\sigma)v$, $V - \rho(\sigma)v$
+
+			$\rho(\tau)(v + \rho(\sigma)v) = v + \rho(\sigma)v$
+			et $\rho(\sigma) (v+\rho(\sigma) v) = \rho(\sigma) v + v$
+
+			$\implies v + \rho(\sigma) v$ est stable par $G$.
+
+			idem pour $-$. C'est donc une contradiction au fait que $V$ soit irréductible.
+	\end{enumerate}
+\end{enumerate}
+
+
+\section*{Théorie des caractères}
+
+soit \[ \rho: G \to \rm{GL}(v) \] une représentation
+
+Alors sont \underline{caractère} est la fonction \[ \chi_
+\rho : G \to \mathds{C}\]
+\[ g\mapsto \rm{tr}(\rho(g))\]
+
+\end{document}
