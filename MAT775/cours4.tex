@@ -1,0 +1,134 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-22
+
+\section*{Rappel}
+
+Un \underline{morphisme}  de représentation est une application linéaire $\varphi:V \to U$ (qui est compatible avec les deux représentation) t.q.
+
+\[ \rho_2 (g) \circ \varphi = \varphi \circ \rho_2 (g) \]
+^
+$\varphi$ est appelée une application \underline{équivariante} 
+
+\underline{Lemme de Shur} 
+
+\begin{enumerate}
+\item	Si $\rho_1,\, \rho_2$ sont irréductible $\varphi$ morphisme $\implies \varphi = 0$ ou isomorphe
+
+\item Si $V=U$ alors $\varphi = \lambda \mathds{1}$
+\end{enumerate}
+
+\underline{Prop:} Tout représentation irréductible d'un groupe abélien est de dimension (rang) 1.
+
+Les repr ??? de $S_3$ (à iso près) sont $\rho_?, \rho_? \qq{et} \rho_?$
+
+\section*{Caractère d'une représentation:}
+
+\[ \chi_{\rho} : G \to \mathds{C}  \]
+\[ g \mapsto \tr(\rho (g)) \]
+
+$\chi_{\rho} $ est un exemple de fonction \underline{centrale} (class function) c-à-d $\forall h \in Ga,\, \chi_{\rho} (h g h^{-1}) = \chi_{\rho} (g)$
+
+Dans $S_n$ permutation de $n$ éléments la conjugasion correspond à un "changement d'étiquette" 
+
+La \underline{tables des caractères} d'un groupe fini $G$ est un  tableau où les \underline{lignes} sont les représentations irréductibles et les \underline{colonnes} sont les calsses de conjugaison dans $G$. Les entrées sont $\chi_\rho(g)$   
+
+\underline{Exemple:} $S_3$ 
+
+\begin{table}[htpb]
+	\centering
+	\label{tab:car_s3}
+
+	\begin{tabular}{c|c|c|c}
+	&	1 & 3 & 2 \\
+	&	e & (12) & (123)\\\hline
+		$\chi_?$ & 1 &1 &1 \\\hline 
+		$\chi_?$ & 1 & -1 & 1 \\ \hline
+		$\chi_{\rho_{\text{std}}}$ & 2 &0 & -1
+	\end{tabular}
+	\caption{tables des caractères de $S_3$}
+\end{table}
+
+\begin{tcolorbox}[title=Remarques]
+	\begin{itemize}
+		\item Dans la première colonne on lit les dimensions des représentation irréductible  
+		\item les colonnes sont orthogonales par le produit scalaire standard 
+		\item Autant de lignes que de colonnes
+		\item chaque lignes est un vecteur de norme $\abs{G} $
+	\end{itemize}
+\end{tcolorbox}
+
+\underline{Exemple:} $\mathds{Z}_{4}$ 
+
+\begin{table}[htpb]
+	\centering
+	\label{tab:label}
+
+	\begin{tabular}{c|c|c|c|c}
+	& 1 & 1 & 1 &1 \\ 
+	& 0 & 1 & 2 & 3\\ \hline
+		$\chi_?$ &1 &1&1&1 \\\hline
+		$\chi_?$ & 1 & i & -1 & -i \\\hline
+		$\chi_?$ & 1 & -1 & i & -1 \\\hline
+		$\chi_?$ & 1 & -i & -1 & i
+	\end{tabular}
+	\caption{Table des caractères de $\mathds{Z}_{4}$}
+\end{table}
+
+\section*{Rappels et suppléments d'algèbre linéaire}
+
+$V$ un $(k)$espace vectoriel est un groupe abélien muni d'une multiplication par un scalaire
+\[ k \times V <to V \]
+\[ (\lambda, \vb{v}) \mapsto \lambda \cdot \vb{v} \]
+
+satisfaisant 
+\begin{enumerate}
+	\item $(\lambda \vb{u}) \cdot \vb{v} = \lambda \cdot (u \cdot \vb{v})$
+	\item $1 \cdot \vb{v} = \vb{v}$
+	\item $\lambda(u +v) = \lambda u + \lambda v$
+	\item $(\lambda + \mu ) = \lambda v + \mu v$
+\end{enumerate}
+
+
+Soit $U,V$ deux k-espaces vectoriels 
+
+\[ \rm{Hom}(U,\, V) := \{ L:U \to V | L \text{application linéaire}  \}  \] est un k-espace vectoriel lorsque muni des opérations
+
+\[ (L_1 + L_{2)} (u) = L_1 (u) + L_2 (u) \]
+\[ (\lambda\cdot L ) (u) = \lambda \cdot (L(u)) \]
+\[ \rm{dim}(\rm{Hom} (u,v)) = \rm{dim} (u) \rm{dim} (v) \]
+	
+Le produit Tensoriel de $U$ et $V$ est un $k$-espace vectoriel $U \otimes V$ muni d'une application bilinéaire 
+
+$U \times V \to U \otimes V$
+
+$(u,v) \mapsto u \otimes v$
+
+et satisfaisant la \underline{propriété universelle} : Pour tout application bilinéaire $b: U \times V \to W$
+
+Je vois pas ... 
+
+
+\underline{En pratique}: Si $e_1 , \dotsb , e_n $ est une base de $U$, $f_1, \dotsb, f_m $ est une base de $V$ alors $\{ e_i \otimes f_g \} $ est une base de $U \times V$ 
+
+\underline{Exemple:} 
+
+J'ai pas envie de l'écrire
+
+\[ \begin{pmatrix} a \\b  \end{pmatrix} \otimes \begin{pmatrix} c \\ c \end{pmatrix} = \dotsb ac e_1 \otimes f_1  + \dotsb \]
+
+\underline{Exemple:}  produit scalaire standard dans $\mathds{C}^{2}$ est bilinéaire ($(\begin{pmatrix} a\\b \end{pmatrix},\, \begin{pmatrix} c\\d \end{pmatrix} ) \to ac+ bc$)
+
+Quelle est $\bar b \mathds{C}^{2} \otimes \mathds{C}^{2} \to \mathbb{C}$
+
+$(\begin{pmatrix} a\\b \end{pmatrix} \otimes \begin{pmatrix} c\\d \end{pmatrix} ) \to ac+ bc$
+
+\begin{tcolorbox}[title=Attention]
+	Il est des éléments de $\mathds{C}^{2} \otimes \mathds{C}^{2}$ qui n'écrivent pas comme des états factorisables 
+\end{tcolorbox}
+
+
+
+
+\end{document}
