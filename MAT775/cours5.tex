@@ -1,0 +1,153 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-25
+
+\underline{Exercices} 
+
+\begin{enumerate}
+	\item Calculer la représentation irréductible de $\mathds{Z}_2 \times  \mathds{Z}_2 $
+	\item $Q_8:$ Groupe des quaternions (8 éléments) \[ \{ 1,\, -1,\, i,\, j,\, k\, -i,\, -j,\, -k \}  \] avec \[ ii = jj = kk = -1 \qquad -ji = ij = -k \]
+		\begin{enumerate}
+			\item Calculer les classes de conjugasion dans $Q_8$
+			\item Déterminer les représentations irréductible (il y en a 5, dimension 1 et 2)
+			\item Dresser la tables des caractère de $Q_8$
+		\end{enumerate}
+	\item Décomposer $R:S_3 \to \rm{GL}(6, \mathds{C})$ en irréductibles
+	\item Calculer $\rho_{\text{std}} \otimes \rho_{\text{std}}: S_3 \to	\rm{GL} (\mathds{C}^2 \otimes	\mathds{C}^2)  $
+\end{enumerate}
+
+\underline{Solutions:} 
+
+\begin{enumerate}
+	\item \[ \mathds{Z}_2 \times  \mathds{Z}_2 = \{ 	(0,0), (0,1), (1,0), (1,1) \}  \]
+		abélien $\implies$ toute représentation irréductible est de dim 1
+		On a $(0,1) + (0,1) = (0,0)$
+		\[ \rho(0,1)\rho(0,1) =1 = \rho(0,1)^2 \implies \rho(0,1) \in \{ 1,-1 \}  \]
+		\[ \rho_2 (nm) = (-1)^n \quad \rho_{3(n,m)} = (-1^m) \quad \rho_4 = (-1)^n (-1)^m \quad \rho_1 = \text{repr. triv} = 1 \]
+	\item
+		\begin{enumerate}
+			\item \[ \{ 1 \}, \{ -1 \} , \{ 	i,-i \}, \{ j,-j \}, \{ k,-k \}   \]
+			\underline{Démarche:}
+			\[ j i j ^{-1} = j i (-j) = -k(-j) = kj = -i \]
+			\[ \dotsb \]
+			Pareil pour tout les éléments
+		\item Si $\rho: Q_8 \to \mathds{C}^{*}$ est de rang 1. Comme $i^{4}= 1$, $\rho(i) \in \{ 1, i, -1, -i \} $ (de même pour $j$ et $k$)
+		\[ (-1)^2 =1 \implies \rho(-1) \in \{ -1, 1 \}  \]
+		On a \[ \rho_{\text{triv}}(g) =1  \]
+
+		Supposons $\rho(i) = i \implies \rho(-1) = -1$
+		Je vois pas très bien le reste de la démarche mais on arrive à une contradiction  en prennant $\rho(i)= i$ ou $\rho (i) = -1$
+		(même chose pour $j$ et $k$ évidemment)
+		On doit donc prendre $\rho(i) \in \{ 1,-1 \},\, \rho(j) \in \{ 1,-1 \},\, \rho(k) \in \{ 1,-1 \} $
+
+		On fait le $c)$ tout de suite pour s'aider (voir \ref{tab:carc8})
+
+		\begin{table}[]
+			\centering
+			\label{tab:carc8}
+		
+			\begin{tabular}{c|c|c|c|c|c|c}
+				& $e$ & $i$ & $j$ & $k$ & -1\\ \hline
+				$\rho_{\text{triv}}$ & 1 & 1 & 1 & 1 & 1\\\hline
+				$\rho_1$ & 1 & -1 & 1 &-1 & 1\\\hline
+				$\rho_2$ & 1 & -1 & -1 & 1 & 1 \\\hline
+				$\rho_3$ & 1 & 1 & -1 & -1 & 1 \\\hline
+				$\rho_4$ & 2 & 0 & 0 & 0 & -2 
+			\end{tabular}
+			\caption{Tableau de char de $C_8$} 
+		\end{table}
+		\end{enumerate}
+\end{enumerate}
+
+
+\underline{Fin de la periode d'Exercices} 
+
+\underline{Rappel d'algèbre linéaire sur les projections} 
+
+$V$ espace vectoriel
+
+$P: V \to V$L application linéaire t.q. $P^{2} = P$ est appelé une \underline{projection}  (sur le sous-espace $\rm{Im}(P)$)
+
+
+\underline{Ex:}  $P: \mathds{C}^{2} \to \mathds{C}^{2}$ est une projection
+
+
+\[ P = \begin{pmatrix} 1 & 0 \\ 0 &0 \end{pmatrix} \qq{et} P^{2}=P  \]
+
+
+\underline{Proposition}: Si $P$ est une projection, $\tr(P) = \rm{dim}(Im P)$ 
+
+\underline{Démonstration} On a $V = \rm{Ker} P \oplus \rm{Im} P$ 
+
+\begin{enumerate}
+	\item car $\rm{dim}(V) = \rm{dim}(\rm{Ker}P) + \rm{dim}(\rm{Im}(P))$
+	\item et si $v \in (\rm{Ker}P) \cap (\rm{Im}P)$ $P(v) =0$
+		mais aussi $v = P(u) \implies 0 = P(v) = P(P(u)) =P(u) =v$
+		\[ \implies v=0 \]
+	
+		Si $v \in \rm{Im}(P)$ $P(V) = V$
+		\[ \implies P|_{\rm{Im}(P)} = \mathds{1}_{\rm{Im}(P)} \]
+		\[ \qq{et} P|_{\rm{Ker}P} = 0_{\rm{Ker}P} \]
+		\[\implies P = \begin{pmatrix} \mathds{1}_{\rm{Im}P} & 0 \\ 0 & 0_{\rm{Im} P} \end{pmatrix} \qq{dans certaines bases}\]
+		\[ \implies \tr(P) = \tr(\mathds{1}_{\rm{Im}P}) = \rm{dim}\rm{Im}P \]
+\end{enumerate}
+
+
+\underline{??? d'irréducitbilité est relations d'orthogonalité} 
+
+Soit $\rho: G \to \rm{GL}(V)$
+
+définissons $V^{G}= \{  v \in V | \rho(g) v = v \forall g \in G \} $ le sous-espace des invariants
+\begin{tcolorbox}[title=Exercice]
+	
+Montrer que $V^G$ est un sous-espace vectoriel de $V$  
+\end{tcolorbox}
+
+
+et  $P:V \to V$
+
+\[ P(V) = \frac{1}{\abs{G}} \sum_{g \in G?}^{} \rho(g) v  \]
+
+
+\underline{Prop:} $P$ est une projection sur $V^G$ 
+
+\underline{Démonstration:} ON veut montrer 
+
+\begin{enumerate}
+	\item $\rm{Im} P = V^{G}$ et 
+	\item $P^{2}= P$
+\end{enumerate}
+
+\begin{enumerate}
+	\item Supposons $v \in \rm{Im} P $
+		\[ \implies v = P(u) = \frac{1}{\abs{G}} \sum_{g\in G} \rho(g) u  \]
+		alors \[ \rho(h) v = \rho (h) \dotsb  \]
+		Il a effacé avant que j'ai eu le temps de noter \verb|:(|
+
+\[  = \frac{1}{\abs{G}} \sum_{g\in G} \rho(g) h = P(u) = v  \]
+
+\[ \implies \rm{Im} P \subset V^{G} \]
+
+Inversement, si $v \in V^G$
+
+alors $P(v) = \frac{1}{\abs{G}} \sum_{g \in G} \rho(g) v  $
+\[ = \frac{1}{\abs{G}} \sum_{g\in G} v = \frac{\abs{G}}{\abs{G}} v = v    \]
+
+\[ \implies P^{2}= P(P(v)) = P(v) \]
+
+\[ \rm{dim}(V^{G)}= \tr(P) = \tr(\frac{1}{\abs{G}} \sum_{g \in G} \rho(g) ) = \frac{1}{\abs{G}} \sum_{g \in G} \tr(\rho(G))  =\frac{1}{\abs{G}} \sum_{g \in G} \chi_{\rho} (g)  \]
+
+En particulier, si $\rho$ est irréductible est non-trivial alors \[ \sum_{g \in G} \chi_{\rho} (g) = 0 \]
+
+\underline{Ex:} $S_3$
+\[ \dotsb \]
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
