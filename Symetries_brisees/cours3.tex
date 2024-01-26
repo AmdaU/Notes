@@ -1,0 +1,36 @@
+\input{../parameters}
+
+\begin{document}
+2024-01-26
+
+\section*{Moment magnétique d'un atome à plusieurs e}
+
+\[ \vb{M} = \gamma \sum_i \left( \vb{L}_i + g \vb{S}_i \right) \begin{matrix}
+\to \\ \text{W-E proj}  	
+\end{matrix} \gamma g_J \vb{J} \qq{dans} \mathcal{E}_J = \{ \ket{E_0, S, L, J, M} \} \]
+
+
+\[ \abs{\mu_{\text{eff}} } \norm{\vb{M}\ket{}_{\mathcal{E}_J}} = \sqrt{\bra{}_{\mathcal{E}_J} \vec{M} \cdot \vb{M} \ket{}_{\mathcal{E}_J}} = \frac{\hbar \abs{\gamma} \rho_s }{\abs{\mu}_B } \sqrt{J \left( J+1 \right) } \]
+
+
+\section{Règles de Hund*}
+
+\begin{enumerate}
+	\item Maximiser $S$
+	\item Maximiser L
+	\item Minimiser l'interaction spin-orbite $\to J$
+		\[ \sum_i \lambda_i \vb{L}_i \vb{S}_i \begin{matrix}\to\\ \text{W-E} \end{matrix}\lambda(L,S ) \vec{L}\cdot \vb{S}\]
+		\[ \vb{J} = \vb{L} + \vb{S} \implies \vb{J}^2 = \left( \vb{S} + \vb{L} \right)^2 = \dotsb \]
+		\[ \implies \vb{L} \cdot \vb{S} = \frac{1}{2} \left( \vb{J}^2 - \vb{L}^2 - \vb{S}^2 \right)  \]
+		théorie des perturbations dégénéré au premier ordre 
+		\[ \expval{W_{\rm{SO}} }_{\mathcal{E}_J} = \frac{\lambda (L, S)}{2} \expval{\vb{J}^2 - \dotsb} \]
+		\[ \Delta E_{\text{SO}}  = \hbar^{2}\lambda(S, L) \frac{1}{2} \left[ J(J+1) - L(L+1) - S(S+1) \right]   \]
+		En prennant $J=\abs{L-S} $ On minimise la répulsion si $\lambda(S,L) >0$, $L+S$ sinon
+\end{enumerate}
+
+Les règles de Hund fonctionnent bien pour les terre rares mais beaucoup moins bien pour les méteaux de transition : $\rm{Mn}^{+3}, \rm{Cr}^{+2}, \rm{Cu}^{+2}, \dotsb$
+
+
+
+
+\end{document}
