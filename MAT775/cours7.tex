@@ -1,0 +1,180 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-01
+
+\begin{tcolorbox}[title=typo devoir 1]
+	2.1 \[ \Lambda^{n} = \{  \alpha \in V^{\otimes n} | \sigma \bullet \alpha  = ?(\sigma) \alpha\}  \] 
+Exemples: \[ 	\mathds{R}^{2} = \expval{e_1 \, e_2 } \]
+\[ \rm{Sym}(\mathds{R}^{2}) \ni  e_i \otimes e_2 + e_2 \otimes e_1\]
+\[ \sigma(e_1 \otimes e_2 + e_2 \otimes e_1) = \sigma(e_1 \otimes e_{2} + \sigma (e_2 \otimes e_1 ) = e_1 \otimes e_2 - e_2 \otimes e_1 \]
+\[ \Lambda^{2}(\mathds{R}^{2}) \ni e_1 \otimes e_2 - e_2 \otimes e_1  \]
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=Rappels]
+	 $\rho_1 , \rho_2 $ reps indestructibles de $G$
+
+	 alors \[  \expval{\chi_{\rho} } \]
+	 \[ \dotsb \]
+\end{tcolorbox}
+
+
+\underline{Corollaire 5}: 
+si $g \neq e$
+
+\[ \sum_{\rho_i \text{irred} } \rm{dim} (\rho_i )\chi_{\rho_i}(g) = 0  \]
+
+\underline{Démonstration}: 
+
+\[ 0 = \chi_R (g) = \sum_{\rho_i \text{irred} } \rm{dim} (\rho_i )\chi_{\rho_i}(g)\quad (g \neq e) \]
+
+Permet de trouver une caractère manquant dnas le table si on connaît tout les autres
+
+\begin{tcolorbox}[title=Plus d'algèbre linéaire ]
+	$e_1 ,\, \dotsb e_n$ base de $V$  $f_1 ,\, \dotsb f_m$ base de $W$ 
+	$e_i \otimes f_j $ base de $V \otimes W$
+
+	\[ M \in \rm{GL}(V) \qquad N \in \rm{GL}(W)  \]
+	\[ M \otimes N \in \rm{GL}(V \otimes W) \]
+
+\end{tcolorbox}
+
+\underline{Proposition:}
+
+\[ \tr(M \otimes N) = (\tr M)(\tr N) \]
+\[ \chi_{\rho_1 \otimes \rho_2 } = \chi_{\rho_1} \cdot \chi_{\rho_2}  \]
+
+\underline{Démonstration} 
+ 
+\[ \tr(M \otimes N) = \sum_{ij} \left[ (M \otimes N) (e_i \otimes f_j ) \right]_{i,j } = \sum_{i,j} M_{i,i} M_{j,j} = \left( \sum_i M_{ii}  \right) \sum_j (M_{jj} )  = \tr M \tr N \]
+
+\underline{Définition} 
+
+L'espace dual de $V$ est $\rm{Hom}(V, \mathds{C})$ noté $V^{*}$
+
+Si $M \in \rm{GL}(V) $ 
+
+$M^{*} \in \rm{GL}(V^{*}) $  
+
+$M^{*} \cdot \alpha = \alpha \circ M ^{-1}$
+
+De même, si $\rho_{i} G \to \rm{GL}(V)$ est une repr. La repr \underline{dual} est $\rho^{*}: G \to \rm{GL}(V^{*})$ 
+\[ g \mapsto \rho(g)^{*} \]
+
+\underline{Proposition}: \[  \chi \rho ^{*} = \bar \chi_{\rho}  \] 
+
+\underline{Démonstration}: 	
+$g \in G$, $\rho(g) \in \rm{GL}(V)$ est une matrice d'ordre \underline{finie} 
+\[ \left( \exists n | \rho(g)^n = I\right)  \]
+
+\[ \implies \rho(g) \text{est diagonalisable est ses valeurs propres sont des racines de 1}   \]
+
+\[ \chi_{\rho} (g) = \tr(\rho(g)) = \lambda_1 + \dotsb \lambda_d\]
+
+\[ \rho^{*}(g) = (\rho(g)^{-1})^t  \]
+
+\[ \tr(\rho^{*}(g)) = \lambda_1^{-1} + \dotsb + \lambda_d^{-1} = \bar \lambda_1 + \dotsb + \bar \lambda_d = \bar \chi_{\rho} (g) \]
+
+\underline{Corrolaire } $\rho$ est irréductible $\iff \rho^{*}$ est irréductible
+
+\[ 1 = \expval{\chi_{\rho}, \chi_{\rho}}  = \frac{1}{\abs{G}	} \sum_{g \in G} \bar \chi_{\rho} (g) \chi_{\rho} (g)   \]
+
+\[ \iff \expval{\bar \chi_{\rho} , \bar \chi_{\rho} }  = \sum_{g \in G} \chi_{\rho} (g) \bar \chi_{\rho} (g) = 1\]
+
+\[ \tr(A \otimes B) = \tr(A) + \tr(B) \]
+
+\underline{Proposition}: 
+\[ \chi_{\rho_1 \oplus \rho_{2}} = \chi_{\rho_{1}} + \chi_{\rho_2}   \]
+
+
+\underline{Proposition}:
+
+\[ \rm{Hom}(V, W) \cong V^{*} W \]
+
+\underline{Démonstration}:
+
+\[ f: V^{*} \otimes W \to \rm{Hom}(V, W)\]
+\[ \alpha \otimes  w \mapsto (v \mapsto \alpha(v) w) \]
+
+est linéaire 
+
+\[ e_1 ^{*}, \dotsb , e_n ^{*}  \text{ base de V}  \]
+\[ w_1 , \dotsb , w_m  \text{ base de W}  \]
+
+\[ f(e_i ^{*} \otimes w_j ) = (v \mapsto e_i ^{*} (v) w_j  ) = (v ) \]
+
+confus
+
+\underline{Exemples:} $S_4 $ et $A_4 $
+
+Les classes de conjugaisons dans $S_4 $ sont 
+
+\[ \overbrace{(e)}^{1} ,\, \overbrace{(12)}^{6} ,\, \overbrace{(123)}^{8} ,\, \overbrace{(1234)}^{6} ,\, \overbrace{(12)(34)}^{3}     \]
+
+(Toutes les traspotitions sont coujugés )
+
+
+\begin{table}[htpb]
+	\centering
+	\label{tab:label}
+	\begin{tabular}{c|c|c|c|c|c}
+		 & 1  & 6 & 8 & 6 & 3\\
+		 & $e$ & (12) & (123) & (1234) & (12)(34)\\\hline
+		$\chi_0$ & 1 & 1 & 1 & 1 & 1 \\\hline 
+		$\chi_{\text{sym}}$ &1 & -1 & 1 & -1 & 1 \\\hline
+		$\chi_{\text{std}}$ &3 & 1 & 0 & -1 & -1 \\\hline
+		$\chi_{\text{sym} \otimes \text{std} }$ &3 & -1 & 0 & 1 & -1 \\\hline
+		$\chi_{4}$ &2 & 0 & -1 & 0 & 2 \\\hline
+	\end{tabular}
+	\caption{char de $S_4$}
+\end{table}
+
+
+
+Regardons la representation  $\rho_?$ de dim 4
+
+\[ \rho_? : S_4 \to \rm{GL}(\mathds{C}^{4}) \]
+
+on sait que $\rho_?$ se décompose en $\rho_{\text{triv}} \oplus \rho_{\text{std}} $
+
+
+\[ \chi_{\rho_{?}} = \chi_{\rho_{?}} - \chi_0   \]
+
+\[ = (4\, 2\, 1\, 0\, 0) - (1\,1 \, 1\, 1\,1 \,1) \]
+\[  = (3\, 1\, 0 \, -1\, -1) \]
+
+\[ \expval{\chi_{\text{std}} \chi_{\text{std}}  } = \frac{1}{24} \left( 3^2 + 6^2 + \dotsb \right)  =1  \]
+
+
+Pour trouver $\rm{di}(\rho_4 )$
+
+on utilise $\abs{G} = \sum_{\rho \text{irred} }\dim(\rho_i)^2$
+
+\[ 23 = 1^2 + 1 ^2 + 3^2 + 3^2 +d^{2} \]
+
+$d = 2$
+
+On trouve les autres coeffs avec \[ 0 = \sum_{g \text{irred} } \rm{dim} (\rho_i) \chi_{\rho_i} (g) \]
+
+Calculons $\rho_4$
+
+On a $\rho((12)(34)) = I$
+\[  \tr(\rho((12)(34))) = 2\]
+
+$M $ est conjugé à \[ \begin{pmatrix} x & 0 \\ 0 & 2-x \end{pmatrix}  \]
+
+mais \[ \begin{pmatrix} x^{2}& 0 \\ 0 &(2-x)^2 \end{pmatrix} = \mathds{1} \]
+
+\[ \implies M = \mathds{1} \]
+
+Quand une representation
+
+
+a une noyau $\rm{Ker} \rho \subset G$
+
+elle se factorise
+
+$\rho_4$ ne se factorise pas 
+
+\end{document}
