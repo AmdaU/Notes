@@ -1,0 +1,39 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-02
+
+\begin{tcolorbox}[title=Rappels]
+\[ \sum_k a_k \ket{\psi_{k}}\bra{\psi_{k}} = D  \] 
+\[ \sum_k a_k =1 \]
+\[ S = - k_{B} \tr D \ln D \]
+
+\textbf{À l'équilibre $S$ est maximale}
+\end{tcolorbox}
+
+
+Avec contrainte statistiques (valeur moyenne fixée) et certaines (valeur tout court fixé) 
+
+Multiplicateurs de Lagrange 
+\[ \delta \left( S(D) - \sum_i \zeta_i \frac{\tr(DA_i)}{\expval{A_i }} - \zeta_0 \tr D\right)   \]
+
+\[ \tr(\delta{D} \ln D) - \tr \delta D - \sum_i \underbrace{\frac{\zeta_{i}}{k_{B}}}_{\zeta_i} \tr \delta D A_i - \underbrace{\frac{\zeta_{0}}{k_{B}}}_{\zeta_0}\tr \delta D =0     \]
+
+\[ \tr \delta D  \left[ \ln D + \sum_i \zeta_i A_i + \zeta_0 + \mathds{1} \right] = 0  \]
+
+
+\[ \dotsb \]
+
+\[ \tr D = \frac{\tr e^{-\sum_i \zeta_i A_{i}}}{Z} = 1  \]
+
+\[ Z = \tr e^{-\sum_i \zeta_i A_{i}}\]
+
+
+On arrive donc à dériver n'importe quel quantité à partir de la fonction de partition
+
+\[ \expval{A} = \tr DA = - \pdv{\ln{Z}}{\zeta_i}  \]
+
+
+
+
+\end{document}
