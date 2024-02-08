@@ -1,0 +1,132 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-08
+
+\underline{Groupe de Lie (matriciel)} 
+
+\( G \subset \rm{GL}(n, \mathds{C})\) un sous-groupe \underline{fermé} 
+
+(La topologie sur $\rm{GL}(n, \mathds{C}) \subseteq M_{n} \mathds{C}$
+
+
+SI \( M_n \in G\) et \(M_n \to M \in \rm{GL}(n, \mathds{C})\) alors \(M \in G\)
+
+
+\begin{tcolorbox}[title=]
+	En fait, tout sous-groupe fermé de \(GL(n, \mathds{C})\) est une \underline{sous-variété lisse} (\(G\) a un espace tangent à chaque point, on peut décrire les fonctions définies sur \(G\))  
+\end{tcolorbox}
+
+
+\underline{(contre)Exemple:} 
+
+\(\mathds{Q}^{*} \subseteq \mathds{C}\) n'est pas fermé.
+
+\begin{tcolorbox}[title=Exemples]
+		\[ \rm{GL}(n, \mathds{C}), \rm{GL}(n, \mathds{R}), \rm{SL}(n, \mathds{C}) \]
+	\[ \dotsb \] 
+\end{tcolorbox}
+
+\underline{Définition} 
+On dit qu'un groupe de Lie matriciel est connexe s'il existe un chemin \(\gamma:[0:1] \to G\) avec \(\gamma(0) = A\) \(\gamma(1) =B\) \(\forall A,B \in G\)
+
+(il suffit de considérer \(A = I\))
+
+\underline{Exemple:} \(\rm{O}(n)\) n'est \underline{pas} connexe  
+
+\[ A = I \in \rm{O}(n) B = \begin{pmatrix} -1 &0 & \dotsb & 0\\ 0& 1 & \dotsb & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \ddots &1 \end{pmatrix} \in \rm{O}(n) \]
+
+S'il existait un chemin \(\gamma:[0,1] \to \rm{O}(n)\) t.q.  \(\gamma(0) = I\) et \(\gamma(1) = B\)
+
+alors \(\det \circ \gamma : [0,1] \to \{ -1, 1 \} \subseteq \mathds{R} \) t.q. \(\det \circ \gamma (0) = 1,\, \det \circ \gamma(1) = -1  \)
+
+
+\(G\) Groupe de Lie matriciel 
+
+\(G^0\)  Compostantes connexe de l'identité 
+
+\underline{Proposition}:
+
+\[ G^{0}\subseteq  G\] est un sous groupe normal
+
+\underline{Démonstration}
+
+
+\(A,B \in G \implies \exists A(t), B(t) \text{ des chemins  }, A(0) = B(0) = I, A(1) = A, B(1) =B\)
+
+On définit \(\gamma(t) = A(t) \cdot B(t)\)
+
+\[ \implies A \cdot B \in G^{0} \]
+
+Pour l'inverse, on définit, \(\gamma(t) = A(t) ^{-1}\)
+
+On a \(\gamma(0)=  A(0) ^{-1} = I ^{-1} = I \)
+
+\[ \gamma(1) = A(1)^{-1} = A ^{-1} \]
+
+\[ \implies A^{-1} \in G^{0} \]
+
+\[ \therefore G^{0}\subseteq G \] est un sous groupe 
+
+
+Pour vérifier que \( G^{0}\) est \underline{normal}, il faut montrer que \(\forall C \in G, \, A \in G^{0}\) 
+
+\[ CAC^{-1} \in G^{0} \]
+
+On définit \( \gamma(t) = C A(t) C^{-1} \)
+\[  \gamma(0)= C A(0) C ^{-1} = CI C^{-1} =I \]
+\[ \gamma(1) = CA C^{-1} \]
+
+
+
+\underline{Définition} Une homomorphisme de groupe de Lie est \(f: G \to H\) qui est un homomorphisme de groupe continue. (automatiquement lisse)
+
+\underline{Exemple:} \(\det: \rm{GL}(n, \mathds{C}) \to \mathds{C}^{*}\) est une homomorphisme de groupe de Lie car 
+
+\begin{enumerate}
+	\item \(\det (AB) = \det A \det B\)
+	\item continu car polynôme
+\end{enumerate}
+
+\begin{tcolorbox}[title=Rappel]
+	Pour \( S \subset \mathds{R}^n ou \mathds{C}^n \) une sous-variété. \underline{l'espace tangent} en \(p  \in S\) est
+	\[ T_p S = \{ \gamma' (0) | \begin{matrix}
+		\gamma : [-1,1] \to S\\ \gamma(0) = p
+\end{matrix}\}\]
+Si \(f:S_1 \to S_2 \) est une application lisse, la dérivé de \(f\) en \(p\) est une application linéaire
+\[ \dd f_p : T_p S_1 \to T_{f(p)} S_2 \] définie par : \[ \dd f|_p (\vb{v}) = \dv{{}}{t} (f \circ \gamma)|_{t=0}  \] pour \(\gamma \) chemin dans \(S_1\) avec \(\gamma(0)= p, \gamma'(0) = \vb{v}\) 
+
+\end{tcolorbox}
+
+
+Calculons pour \(\det: \rm{GL}(2 \mathds{C}) \to \mathds{C}^{*}\) 
+La dérivé au point \(p = I \in \rm{GL}(2, \mathds{C})\)
+
+
+\[ \dd (\det)|_I : T_I \rm{GL}(2, \mathds{C}) \to T_1 \mathds{C}^{*} \]
+
+\[ \gamma(t) = I + tX \qq{pour} X = \begin{pmatrix} a & b \\ c & d  \end{pmatrix} \]
+
+\[ \gamma'(0) = \begin{pmatrix} 1+ ta & tb \\ tc & 1 + td \end{pmatrix} (0) = X  \]
+
+\[ T_I \rm{GL}(2, \mathds{C})= M_2(\mathds{C}) \]
+
+\[ (\det \circ \gamma) (t) = (1+ta)(1+td) -t^{2}bc \]
+
+\[ \dv{{}}{t} |_{t=0} \left( (\det \circ \gamma)(t) \right) = a+d = \tr(X) \in T_1 (\mathds{C}^{*}) \]
+
+Conclusion \[ \eval{\dd (\det)}_{I} (X) = \tr(X) \]
+
+\underline{Exemple}:
+
+\[ U(1) = \{ z \in \mathds{C}^{*} | z\bar z = 1 \}  \]
+
+On veut déterminer \(T_1(u_1)\)
+
+\[ \gamma(t) = e^{itx} \qquad \gamma'(t) = i x e^{itx}\qquad \gamma'(0) = ix \]
+
+\[ T_{1(S')} = T_1 (U_{1)} = i \mathds{R} \]
+
+
+
+\end{document}
