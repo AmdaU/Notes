@@ -1,0 +1,140 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-12
+
+\begin{tcolorbox}[title=Rappels]
+
+	\begin{itemize}
+		\item Groupe de Lie matriciel \(G \ni I\)
+			\(\to\) sous-groupe fermé de \(\rm{GL}(n \mathds{C})\)
+		\item G est une sous-variété 
+		\item \underline{Exemples}
+			\(\rm{GL}(n, \mathds{R})\)
+			\(\rm{Sl}(n,\mathds{R}), \rm{SL}(n,\mathds{C})\)
+			\(\rm{O}(n), \rm{O}(n,\mathds{C})\)
+			\(\rm{SO}(n), \rm{SO}(n, \mathds{C})\)
+			\(\rm{U}(n), \rm{SU}(j)\)
+			\(\rm{Sp}(2n, \mathds{R})\)
+			\(\rm{Sp}(2n, \mathds{C})\)
+			Groupe des matrice triangulaire superieur
+			\((\rm{S})\rm{O}(p,q) = \{ M \in \rm{GL}(p+q, \mathds{R}) | M^{t}I_{pq} M^{t}= I_{pq}  \} \)
+			\((\rm{S})\rm{U}(p,q) = \{ M \in \rm{GL}(p+q, \mathds{C}) | M^{*} I_{pq} M = I_{pq}  \} \)
+
+		\item \rm{G} Connexe si \(\exists \gamma: [0,1] \to G\)
+			avec \(\gamma(0) = I, \quad \gamma(1) = A \quad \forall A \in G\)
+		\item \(G^{0} \subseteq G\) (composantes connexe de \(I\)) est un sous-groupe normal 
+	\underline{exemple}: 
+	\[\rm{O}(1,1) = \{ M= \begin{pmatrix} a &b \\ c & d \end{pmatrix}  | M^{t} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} M = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \} \]
+	On résous le système d'équations:
+
+	\[ M = \begin{pmatrix} a & \pm c\\ c & \pm a \end{pmatrix} \qq{avec} a^{2}- c^{2} =1  \]
+	\end{itemize}
+	 
+	\underline{Exercice}:
+
+	\(\rm{O}(2)\)
+
+\end{tcolorbox}
+
+Étant donné \(f:G \to H\) un morphisme de groupe de Lie. On lui associe une application linéaire \[ \eval{\dd f}_{I} : T_I G \to T_{I} H \]. En fait cette application détermine uniquement \(f\). 
+
+\boxed{\centering\text{Un voisinage arbitrairement petit autour de \(I\) engendre \(G\)} }
+
+\begin{tcolorbox}[title=Attention, colframe=red]
+	Pas tout les applications linéaires \(L: T_I G \to T_I H \) sont la dérivé d'un morphisme 
+\end{tcolorbox}
+
+On cherche une condition pour que \[ L = \eval{\dd f}_{I}   \]
+
+
+Étant donnée \(g \in G\), on définit la \underline{multiplication à gauche} \(L_g : \to  G\) c'est une application lisse 
+mais 
+\[ \dd \eval{L_g }_{I} : T_I G \to T_g G  \]
+
+On va plutôt regarder la conjugaison par \(g \in G\)
+
+\[ \rm{Ad}(g) : G \to G \]
+\[ h \to g h g ^{-1} \]
+
+\[ \dd \eval{\rm{Ad}(g)}_{I} : T_I G \to T_I G   \]
+\[ X \to gX g ^{-1} \]
+
+\[ \gamma(t) \in G | \gamma(0) = I \quad \gamma' (0) = X \]
+\[ \rm{Ad}(g) (\gamma(t)) = g \gamma(t) g ^{-1} \]
+
+\[ \dd \eval{\rm{Ad}(G)}_{I} = \eval{\dv{{}}{t}}_{t=0} g \gamma (t) g ^{-1} = g X g ^{-1}  \]
+
+Pour obenir une condition sur \(T_I G\) uniquement, on dérive \(\rm{Ad}(f)\) par rapport à \(g\) en fixant \(X\)
+
+\[ G \to T_I G \]
+\[ g\mapsto g X g ^{-1} \]
+
+pour dériver cette appilcation on prend 
+
+\(\gamma (-\epsilon, \epsilon) \to G \)
+
+\[ \gamma(0) = I \]
+\[ \gamma'(0) = U  \in T_I G \]
+
+\[ \eval{\dv{{}}{t} }_{t=0} \gamma(t) X \gamma(t) ^{-1}  = \left[ \gamma'(t) X \gamma(t) ^{-1} + \gamma(t) X (\gamma(t)^{-1}  )'\right]_{t=0}  \]
+
+
+
+\[ = YXI^{-1} + -IXI^{-1}Y I^{-1} \]
+\[ = YX - XY \in T_I G \]
+
+
+L'opération sur \(T_I g\)
+\[ [X, Y] = XY - YX  \] s'appelle le \underline{crochet} 
+
+
+
+Comme le crocher est définit en termes de la multiplication dans \(G\) et ses dérivées, pour tout morphisme de groupe de Lie \( f: G \to H\) la dérivé \( \dd f \eval{}_{I}: T_I G \to T_I H \) satisfaisant \( \dd f \eval{}_{I} [X, Y] = [ \dd f \eval{}_{I} X, \dd f \eval{}_{I} Y   ] \)
+
+
+En fait \(L : T_I G \to T_I H\) est la dérivé d'un morphisme de groupe de Lie \(\iff L( [X, Y]  ) = [ L(X), L(Y) ] \forall X, Y \in T_I G \)
+
+Le crochet a toutes les propriétés suivantes 
+
+\begin{enumerate}
+	\item Bilinéaire 
+	\item antisymétrique
+	\item Identité de Jacobi 
+\end{enumerate}
+
+
+
+\underline{Définition}: Une algèbre de Lie complexe est un espace vectoriel \(\mathfrak{g}\) complexe muni d'une application sur \(\mathds{C} \) 
+
+\[ [{}, {}] : \mathfrak{g} \times  \mathfrak{g} \to \mathfrak{g}  \]
+
+\underline{Exemple}: Si \(G\) est une groupe de lie matriciel, \(g = T_I G\) muni de \( [X, Y] = XY - YX \) est une algèbre de lie
+
+
+Si \(f: G \to H\) est un morphisme d'algèbre de Lie (linéaire et \( \dd  f \eval{}_{I} [X, Y] = [	\eval{\dd{}f}_{I}X ,\eval{\dd{}f}_{I} Y]    \))
+
+
+\underline{Exemple}:  
+
+\[ G = \rm{GL}(n, \mathds{C}) \quad \mathfrak{g} = M_n(\mathds{C})\]
+
+\(G = \rm{SL}(n, \mathds{C})\)
+\[ \gamma(t) \in \rm{SL}(n ,\mathds{C}) \]
+
+\[ \gamma(0) =1\]
+
+\[ \det(\gamma(t)) = 1 \]
+
+\[ \eval{\dv{{}}{t} }_{t=0} \det (\gamma(t)) = 0 = \eval{\dd \det(0)}_{\gamma (0)} = \tr \circ \gamma '(0) = \tr(\gamma '(0))\]
+
+\[ \tr(\gamma'(0)) = 0 \quad \forall \gamma'(0) \in T_I \rm{SL}(n, \mathds{C}) \]
+
+
+\[ T_I \rm{SL}(n \mathds{C}) \subseteq \{ X \in M_n (\mathds{C}) | \tr X = 0 \}  \]
+
+
+En fait on a l'égalité
+
+
+\end{document}
