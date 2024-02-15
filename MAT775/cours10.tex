@@ -1,0 +1,114 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-15
+
+\begin{tcolorbox}[title=Rappels]
+	\(G\) groupe de liea\\
+	\(\mathfrak{g} = T_I G\) algèbre de Lie pour \( [X, Y] = XY - YX\)
+
+	En général, une algèbre de LIe est un espace vectoriel muni d'un crochet \( [., .]: V \times V \to V\) satisfaisant
+
+\begin{enumerate}
+	\item bilinéaire
+	\item antisymétrique
+	\item Jacobi
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Exercice, colframe=green]
+	\begin{enumerate}
+		\item Montrer que \(\mathds{R}^{3}\) muni du produit vectoriel \(\times \) est une algèbre de lie
+		\item Construire un isomorphisme entre \( \left( \mathds{R}^{3}, x \right) \text{ et } \left( \square(3), [., .]  \right)    \)	
+	\end{enumerate} 
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[title=tentative]
+	\begin{enumerate}
+		\item On doit montrer que \(\times \) respecte les trois conditions 
+			\begin{enumerate}
+				\item \(\vb{x}, \vb{a}, \vb{b} \in \mathds{R}^{3}\)
+
+					\[ \vb{x} \times \lambda\left( \vb{a} + \vb{b} \right)  = \begin{pmatrix} x_1 \\ x_2 \\ x_3  \end{pmatrix} \times\lambda  \left( \begin{pmatrix} a_1 \\ a_2 \\ a_3   \end{pmatrix} + \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}  \right)  = \begin{pmatrix} x_1 \\ x_2 \\ x_3  \end{pmatrix} \times \begin{pmatrix} \lambda a_1 + \lambda b_1 \\ \lambda a_2 + \lambda b_2 \\ \lambda a_3 + \lambda b_3 \end{pmatrix}= \begin{pmatrix} \\ \dotsb \\ {} \end{pmatrix} = \lambda (\vb{x} \times  \vb{a} + \vb{x} \times \vb{b}  \]
+
+
+			\end{enumerate}
+	\end{enumerate} 
+\end{tcolorbox}
+
+
+\section*{L'application exponentielle}
+
+\(G\) groupe de Lie, \(\mathfrak{g}= T_I G\) sont algèbre de Lie
+
+
+\underline{Définition}:
+
+\[ \exp : \mathfrak{G} \to G \]
+est l'unique application lisse satisfaisant
+
+\begin{enumerate}
+	\item \(\exp(0) = I\)
+	\item \(\eval{\dd \exp}_{0} : \mathfrak{g} \to \mathfrak{g} \) est l'application identité
+	\item \(\forall X \in g\) l'application \(t \to \exp(tx)\) est un homomorphisme de groupes 
+		\[ \exp(t+s) X = \exp tX + \exp sX  \]
+
+		(l'existence et l'unicité sont à démontrer)
+\end{enumerate}
+
+\underline{Proposition}:
+
+Pour \(G = \rm{GL}(n, \mathds{C} \), \(\exp(X) = \sum_{k=0}^{\infty} \frac{1}{k!} x^{k}= e^{X}\)
+
+\begin{tcolorbox}[title=Rappels sur l'exponentiation de matrices]
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	 
+\end{tcolorbox}
+
+\underline{Proposition}:
+
+\[ f: G \to H \] est un morphisme de groupe de Lie alors 
+
+\[ \begin{pmatrix} \mathfrak{g} & \to \dd f \eval_I \to & \mathfrak{h} \\ \downarrow \exp_g & & \downarrow\exp_H \\ G & \to f \to & H \end{pmatrix}  \]
+
+commute, c-à-d, \(f \circ \exp_G = \exp_H \circ \dd f \eval_I \)
+
+\underline{Conséquence:}
+
+Si \(G \subseteq \rm{GL}(n, \mathds{C})\)
+
+
+\(\implies i \circ \dotsb \)
+
+
+tout à été effacé  dasfefefwefeffsfefrgqp
+
+\underline{Démonstration}:
+
+\[ \dotsb \]
+
+\section*{Représentation de groupe/algèbre de Lie} 
+
+\underline{Définition} 
+
+Une représentation de \(G\) est un morphisme \(G \to \rm{GL}(n, \mathds{C}\)
+
+Une représentation de \(\mathfrak{g}\) est une morphisme d'algèbre de Lie \( \mathfrak{g} \to \mathfrak{g}\rm{l}(n, \mathds{C})\)
+
+
+\underline{Exemeple:} Représentation adjointe 
+
+
+\(\rm{Ad}: G \to \rm{GL}(\mathfrak{g}\)
+\[ g \mapsto \rm{Ad}(g) \]
+
+où \(\rm{Ad}(g) (X) = g X ^{-1} g\)
+
+on peut vérifier la linéairité et \(\rm{Ad} = \left( \rm{Ad} g\right) \left( \rm{Ad} h \right)  \)
+
+
+
+\end{document}
