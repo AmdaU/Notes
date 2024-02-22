@@ -1,0 +1,140 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-22
+
+\begin{tcolorbox}[title=Rappels ]
+	\[ \dotsb \]
+\end{tcolorbox}
+
+\underline{Proposition}: Soit \(0 \neq V \in V_\beta\), alors \(\{ V, \rho(\gamma) v, \rho(y)^2 v, \dotsb \} \) engendre \(V\) 
+
+\underline{Démonstration:} On montre que \(U = \expval{v, \rho(y)v, \rho(y)^2 v, \dotsb}\) est stable pour \(\rho(x), \rho(y), \rho(H)\)
+
+\begin{enumerate}
+	\item \(\rho(H) (\rho(y)^m v) = \left( \beta -2m \right)\rho(Y)^m c \in U \)
+	\item \(\rho(y) \rho(y)^m v = \rho(y)^{m+1}v \in U\)
+	\item \(\rho(x) \rho(y)^m v =?\)
+
+		On va montrer par récurrence que \(\rho(x) \rho(y)^m v = m(\beta-m+1) \rho(y)^{m-1}\)
+
+	pour \(m=0 \) \(\rho(x) v = 0\)
+	pour \(m=1\) \( \rho(x)\rho(y) = \left( \rho(H) + \rho(Y)\rho(x) \right)v \)
+
+	\[ \rho(x) \rho(y)^{m+1} v = \left( \rho(H) + \rho(y) \rho(x)) \rho^{m} \right)  \]
+	\[ \dotsb \]
+
+	\[ \left[ \left( m+1 \right) \left( \beta -m \right) \rho(y)^m V \right]  \]
+
+\(\implies U \subseteq \) est stable pour \(\rho\) comme \(\rho\) est irréductible, \(U=V\)
+
+
+\underline{Conséquences} 
+
+\begin{itemize}
+	\item \(V_{\alpha} =1\)
+	\item \(\rho\) est uniquement déterminé par \(\beta = {\max} up(\rho(H))\)
+\end{itemize}
+
+De plus, comme \(V\) est de dimension finie, il existe \(m\) t.q.\(\rho(y)^m v = 0\) et \(\rho(y)^{m-1} v = 0\)
+
+\[ 0 = m(\beta -m+1)\rho(y)^{m+1} v \]
+
+\[ \implies m(\beta-m+1) =0 \]
+\[ \implies \beta = m -1 \qquad \beta \in \mathds{N}\]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{ladder}
+    \caption{ladder}
+    \label{fig:ladder}
+\end{figure}
+
+\end{enumerate}
+
+Il y a au plus une représentation irréductible de dimenention \(n\) et les espaces propres de \(\rho(H)\) sont
+\[ V_{1-n}, V_{2-n}, \dotsb V_{n-2}, V_{n-1}  \]
+
+On va montrer qu'ils existent
+
+\section*{Produit tensoriels de représentation d'algèbre de Lie}
+
+\underline{Rappel} 
+
+\[ \rho_i : G \to {\rm{}GL}(V_i ) i \in \{ 1,2 \}    \]
+
+\[ \rho_1 \otimes \rho_2 : G \to {\rm{}GL}(V_1 \otimes V_{2})  \]
+
+est définie par \(\rho_1 \otimes \rho_{2}(g) \left( V_1 \otimes V_2  \right)  = \rho_{1}(g)v \otimes \rho_2 (g) v_2 \) 
+
+Si \(G\) est un groupe de Lie \(\mathfrak{g}\) son algèbre de Lie 
+
+Calculons \(\eval{\dd(\rho_1 \otimes \rho_2)}_{I}  \mathfrak{g} \to {\rm{}gl} V_1 \otimes V_2\)
+
+Soit \(\gamma(t) \in G\), \(\gamma(0)=I\), \( \gamma'(0) = X \in G \) 
+
+\[ \dv{{}}{t} \left( \rho_1 \otimes \rho_2  \right) \gamma(t) (V_1 \otimes V_2)  = \dotsb = \left( \dd \eval{\rho_1 }_{I} (x) V_1  \right) \otimes V_2 + V_1 \otimes ( \dotsb )\]
+
+
+\underline{Définition}: 
+
+
+Si \(\rho_i: \mathfrak{g} \to {\rm{}gl} (V_i)\) sont 2 représentation d'algèbre de Lie, alors \(\rho_1 \otimes \rho_2 \) est définie par \(\left( \rho_1 \otimes \rho_2  \right) X  \left( V_1 \otimes V_2  \right) \)
+
+On a également \(sym^{n}(\rho) \subseteq \rho^{ \otimes n}\), \(\Lambda^{n}(\rho) \subseteq \rho^{ \otimes n}\) sous-représentation comme pour \(G\) un groupe
+On introduite la notation 
+
+\[ v_1 \cdot v_2 \dotsb \cdot v_n := Sym^{n} (v_1 \otimes v_2 \dotsb v_n) \in Sym^n(V)\]
+et \[ v_1 \wedge v_1 \dotsb = Alt(v_1 \dotsb) \] 
+
+
+Revenons à \({\rm{}sl}(2,\mathds{C})\)
+
+la représentation \underline{?????} est \(i :  \dotsb\) 
+
+\[ i(H) = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \]
+
+a les valeurs propres \(1, -1\)
+
+
+\[ \mathds{C}^2 = V_1 \oplus v_2  \]
+
+est la représentation irréductive de dimension 2
+
+\[ sym(\mathds{C}^2) = \expval{e_1 \cdot e_1, e_1 \cdot e_{2,} e_2 \cdot e_2} \]
+
+\[ \left( Sym(i)(H) \right)(e_1^{2}) = H^{ \otimes 2}(e_1 \otimes e_{1)} = 2 e_1^{2}  \]
+
+sur \(e_1 \otimes e_2\) c'est \(0\)
+sur \(e_2 \otimes e_2\) c'est \(-2e_2^{2}\)
+
+\[ \implies sym(\mathds{C}^2) = \expval{e_1^{n-i}, e_2^{i}} \]
+
+Chacun est une vecteur propre de \(sym(H)\) et 
+
+\[ sym(H)(e_1^{n-1} \cdot {e_2^i}) = \left( H \underbrace{e_1 e_1 e_1 e_2^{i}}_{n_1}  \right) + \left( e_1 H e_1 \dotsb e_2^{i} \right)  + \dotsb \]
+
+
+\[ = \dotsb = (n-2i) e_1^{n-i} e_2^{i} \]
+
+Je vois pas
+
+\underline{Exemple}:
+Quelle est la d/composition de \(sym^{2}(\mathds{C}^2) \otimes sym^{2}(\mathds{C}^2)\) en irréductibles?
+
+On calcule les valeurs propres de \(\rho(H)\)
+
+pour \(sym^{2}(\mathds{C}^2: -2, 0 2\)
+pour \(sum^{2}(\mathds{C}^2): -3, -1, 1\)
+
+Si \(\rho_1 (H) v = \lambda_1 v, \rho_{2}(H) u = \lambda_2 u\)
+\[  \left( \rho_1 \otimes \rho_2  \right) H \left( v \otimes u \right) = \rho_1(H) v \otimes u + v \otimes \rho_2 (H) u = \lambda_1 v \otimes u + v \otimes \lambda_2 u = \left( \lambda_1 + \lambda_2 \right) \left( v \otimes u  \right)  \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{valeurs-propres}
+    \caption{valeurs propres}
+    \label{fig:valeurs-propres}
+\end{figure}
+
+\end{document}
