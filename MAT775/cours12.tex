@@ -1,0 +1,131 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-26
+
+
+\begin{tcolorbox}[title=Rappels]
+	Représentation irréductibles de \({\rm{}sl}(2 \mathds{C}) = \expval{H, X, Y}\)
+
+\[ V^{(n)} = \oplus_{\alpha} V_{\alpha}  \]
+
+\[ \begin{matrix} &Y && Y && Y && Y \\ &\leftarrow&&\leftarrow&&\leftarrow&&\leftarrow\\ -n && -n+2 &&\dotsb && n-2 && n \\ &\rightarrow&&\rightarrow&&\rightarrow&&\rightarrow\\
+& X&&X&&X&&X\end{matrix} \]
+	 
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Notation]
+	Une Représentation est doit 
+	\[ \rho: g \to gl(V) \] ou bien une action \[ g \times  V \to V \] 
+	\[ \forall Z \in g \quad v \mapsto Xv \qq{est linéaire}\]
+
+	\(\exists\) une unique représentation de dim \(n\). On peut la construire comme \(\sym^{n-1} (\mathds{C})\)
+
+	Produit tensoriel de représentation d'algèbre de Lie, 
+
+	\(V,W\) deux repr de \(g\), \(V \otimes W\) est une représentation avec \(X(v \otimes w = X v \otimes w + v \otimes Xw \)
+\end{tcolorbox}
+
+
+\underline{Exemple}:
+
+\[ \Lambda^{2}(\sym^{3}(\mathds{C}^2)) \]
+
+\[ \mathds{C}^2 = \expval{e_{1}m e_2} \]
+
+\[ \sym^{3}(\mathds{C}^2) = \expval{e_1^{3}, e_1^{2}, e_{2,} e_{1,} e_2^{2}, e_2^{3}} \]
+
+\[ \Lambda^{2}(\sym^3( \mathds{C}^2)) = \expval{e_1^{3} \wedge e_1^{2}e_{2,} e_1^{3}\wedge \dotsb} \]
+
+Calculons les valeurs propres de \(H\) pour cette représentation 
+
+\[ \dotsb \]
+
+\section*{Représentation de \({\rm{}SL}(2 \mathds{C})\) irréductibles}
+
+\underline{Fait}: Si \(G\) est connexe \(\rho:G\to {\rm{}GL}(V)\) 
+une représentation est uniquement déterminée par ka représentation \[ \dd \eval{\rho}_{I} : g \to {\rm{}gl}(V) \]
+
+\({\rm{}SL(2, \mathds{C})}\) est connexe. On connait \underline{toutes} les représentation irréductibles de \({\rm{}sl}(2 \mathds{C}) \). On peut les construire avec \(\sym^{n}(\mathds{C}^2\) 
+
+\underline{Conséquences}: Les représentations \(\sym^{n}(\mathds{C}^2) \) de \({\rm{}SL}(2, \mathds{C}\) sont toutes les représentation irréductibles de \({\rm{}SL}(2, \mathds{C})\)
+
+\underline{Exemple}:
+
+Calculons \(\sym^{2}(\mathds{C}^2\) pour \({\rm{}SL}(2, \mathds{C})\)
+
+\[ \sym^{2}(\mathds{C}^2) = \expval{e_1^{2}, e_1 e_{2}, e_2^{2}} \]
+
+\[ \dotsb \]
+
+\section*{Représentation de \({\rm{}sl(3, \mathds{C})}\)}
+
+\underline{Fait}: \({\rm{}sl}(n, \mathds{C})\) est une algèbre simple.
+
+On veut imiter la stratégie utilisé pour \({\rm{}sl}(2 \mathds{C})\)
+
+
+Le sous-espace  \(h = \{ \begin{pmatrix} a_1 0 & 0 \\ 0 & a_2 & 0 \\ 0 & 0 & a_3 \end{pmatrix}  \} \) joue le role de la matrice \(H\)
+
+remarquons que les matrices de \(h\) commutent entre elles et sont diagonalisables 
+
+Si \(\rho: {\rm{}sl}(3, \mathds{C}) \to {\rm{}gl}(V)\)
+
+Par préservation de la forme de Jordan \( \forall H \in h\), \(\rho(H)\) est diagonalisable 
+
+\begin{tcolorbox}[title=Rappel]
+	Une famille de matrices diagonalisables qui commutent est \underline{simultanément diagonalisable} c-à-d il existe une base dans laquelle elles sont toutes diagonales 
+\end{tcolorbox}
+
+\[ \implies V = \oplus_{\alpha} V_\alpha \] décomposition en sous-espaces propres simultanés de \(h\)
+
+On interprète \(\alpha\) comme des fonctions \(\alpha: h \to \mathds{C}\)
+\(\alpha(H)\) est la valeur propre de \(H \in h\) sur le sous-espace \(V_\alpha\) 
+\[ \rho(H) v = \alpha(H) v\quad \forall H \in H \quad \forall v \in V_\alpha \]
+
+
+\(\alpha\) est linéaire
+
+\[ \alpha(a H_1 + b H_2) v = \rho(a H_1 + b H_2 ) v = a \rho ( H_1 ) v + b \rho( H_2 ) v = a \alpha(H_1) + b \alpha(H_2 )  \]
+
+Autrement dit, \(\alpha \in h^{*}\)
+
+
+
+On doit comprendre \( [{}, {}] \) sur \({\rm{}sl}(3, \mathds{C})\)
+
+De manière équivalente, on doit comprendre
+\[ {\rm{}ad}: g \to {\rm{}gl}(g) \]
+\[ {\rm{}ad}(x) y = [X, Y]  \]
+
+Par la construction précédente, on peut découper \(g\) en sous-espaces propres de \({\rm{}ad}(h)\)
+
+\[ {\rm{}ad} \begin{pmatrix} a_1 \\ & a_2 \\ && a_3 \end{pmatrix} \begin{pmatrix} 0 & 1 &0\\0&0&0\\0&0&0 \end{pmatrix} =  \dotsb \begin{pmatrix} 0& a_1 -a_2 &0 \\ 0 &0&0\\0&0&0 \end{pmatrix} = \underbrace{\left( a_1 -a_2  \right)}_{\alpha(H)}  \begin{pmatrix} 0 & 1 &0 \\0&0&0\\0&0&0 \end{pmatrix}  \]
+
+On viens de trouver un des 8 sous-espace propres, (trouvons les autres?)
+
+Notons \(E_{ij} \) matrice avec un 1 en \(i,j\) est 0 ailleurs 
+
+\[ {\rm{}ad}(H) E_{1,2} = \alpha(H) E_{1,2}  \]
+
+on définit \(L_i \begin{pmatrix} a_1 \\ & 1_2 \\ &&a_3 \end{pmatrix}  =a_i\)
+
+\[ {\rm{}ad}(H) E_{1,2} = \left( L_1 - L_2 \right) (H) E_{1,2}  \]
+
+\[ {\rm{}ad}(H) E_{1,3} = (L_1 - L_3) (H) E_{1,3}  \]
+\[ {\rm{}ad}(H) E_{2,1} = \left( L_2 - L_1 \right) (H) E_{2,3}  \]
+
+\[ 2,1 \]
+\[ 3,1 \]
+\[ 3,2 \]
+
+de plus \({\rm{}ad}(H_1) H_2 = 0\) est de dimension 2
+
+
+\[ g = h ??? \]
+
+
+
+
+
+\end{document}
