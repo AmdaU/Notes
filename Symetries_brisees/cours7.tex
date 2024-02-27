@@ -1,0 +1,46 @@
+\input{../parameters}
+
+\begin{document}
+2024-02-27
+
+\section*{Fonctionnelle Ginzburg-Landau, fluctuations gaussiennes }
+
+\[ \Gamma = \Gamma^{0} - \sum_{<ij>} J_{ij} \bar M_i \bar{M}_j + \frac{1}{\beta} \sum_i \left\{ \frac{1}{2} \bar{M}_i^{2}+ \frac{1}{12} \dotsb \right\}  \]
+
+On fait un carré parfait avec le premier terme
+
+\[ \underbrace{-\sum_{<ij>} J_{ij}' \bar{M}_i \bar{M}_j + \sum_{<ij>} J_{ij}' \bar{M}_i^{2} - \sum_{<ij>} J_{ij}'}_{}  \bar{M}_i^2  \]
+
+
+\[ \to \frac{1}{2} \sum_{<ij>} J_{ij}' \left( \bar{M}_i -\bar{M}_j \right)^{2}  \]
+
+
+\[ \implies \Gamma = \Gamma^{0}+ \frac{1}{2} \sum_{<ij>} J' (\bar{M}_i -\bar{M}_j)^2  + \sum_i \left[ \left( \frac{1}{2\beta} - 2 J' \right) \bar{M}_i^{2} + \frac{k_{B}T}{12} \bar{M}_i^{4}+ \dotsb \right]  \]
+
+
+
+\[ 	\frac{1}{2} \sum_{<ij>} J_{ij}' \left( \bar{M}_i -\bar{M}_j \right)^{2} \to \sum_{i,\hat{r}} \frac{1}{2} J' \left( \bar{M}(\vb{r}_1) - \bar{M} \left( \vb{r}_i + \hat r d_0  \right)  \right)  \]
+
+\[ = \sum_i \frac{1}{2} J' \left[ \left(  \bar{M}(x,y,z) - \bar{M}(x+d_o ,y ,z)^{2}+ \right)^{2}+ \left( \bar{M}(x_i , y_i , z_i ) - \bar{M}(x_i - d_0 ,y_i z_i ) \right)^{2} + \text{permutations}  \right]  \]
+On passe au continuum avec \(d_0 \to 0\)
+
+
+\[ \sum_i \to \int \frac{\dd^3{}r}{v_0}  \]
+
+
+\underline{Ginzburg-Landau} 
+
+\[ \Gamma[M] = \Gamma^{0} + \int \frac{\dd^{3}r}{v_0} \left\{ C (\nabla \bar{M})^{2} + a(T) \bar{M}^2 (\vb{r}) + b(T_{c)} \bar{M}^4 (\vb{r}) \right\}  \]
+
+On passe maintenant dans l'espace de Fourrier
+
+\[ \bar M (\vb{r}) = \frac{1}{\sqrt{N}} \sum_{\vb{q}} \bar{M}(q) e^{-\vb{q} \cdot  \vb{r}} \]
+
+On sait que \(\bar{M}(r)\) est reel \(\implies \bar{M}(\vb{r}) = \bar{M}^{*}(\vb{r})\) 
+
+
+\[ \implies \bar{M}^{*}(\vb{q}) = \bar{M}(-\vb{q}) \]
+
+
+
+\end{document}
