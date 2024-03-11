@@ -1,0 +1,127 @@
+\input{../parameters}
+
+\begin{document}
+2024-03-11
+
+
+\begin{tcolorbox}[title=Rappels]
+	\(\mathfrak{sl}(3 \mathds{C}) = h \oplus \bigoplus_{\alpha\in \Phi} \mathfrak{g}_\alpha  \) 
+	osti, je suis deja done 
+\[ \dotsb \]
+
+On a montré que les poids diffèrent par une combinaison de racines:
+
+Si \(v \in V_{\alpha}, C \in g_{\beta}\) \(\beta\)-racine, \(\alpha\)-poids
+
+alors \( X \cdot v \in V_{\alpha+\beta} \)
+
+Le \textit{poids le plus haut} est une poids maximal pour l'ordre induit l'évaluation sur \(\begin{pmatrix} a_0 \\ & b_0 \\ & & c_0  \end{pmatrix} \in h\) t.q. \(a_0 > b_0 > C_0 \)
+
+Il existe un \underline{vecteur de plus haut poids} \(v\) qui satisfait 
+
+\begin{itemize}
+	\item \(v \in V_{\alpha} \) pour \(\alpha \in h^{*}\)
+	\item \(E_{23} v = E_{13} v = E_? v  = 0\)
+\end{itemize}
+
+\end{tcolorbox}
+
+\underline{Proposition}:
+
+\(V\) est engendré par \(v\) (vecteurs de plus haut poids) et toutes ses images par \underline{tout les mots possible} en \(E_{2,1}, E_{3,2}, E_{3,1} \) 
+
+\underline{Démonstration}
+
+\(W\) le sous-espace engendré par \(v\) et tout les motes possibles en \(E_{2,1}, E_{32}, E_{31}  \) appliqué à \(V\)
+
+
+\[ W = \expval{v, E_{21} v, e_{32} v, E_{31} v, E_{21} E_{32} v, \dotsb} \]
+
+On veur montrer que \(W\) est \(\mathfrak{sl}(3, \mathds{C})\)-invarient 
+
+Partie facile, \(W\) est invariant par \(h\) et par \(E_{21} , E_{31}, E_{32} \)
+
+Reste à montrer que \(W\) est invarient par \(E_{1,2} , E_{2,3} \)
+
+
+\(E_{1,3} = [E_{1,2}, E_{2,3}] \), il suffit donc de vérifier \(E_{1,2} W \subseteq W\) et \(E_{23} W \subseteq W\)
+
+Posons \(W_n\) le sous-espace engendré par \(v\)a et tout les mots en \(E_{21}, E_{32}  \) de la longeure \(\leq n \) appliqué à \(v\)
+
+
+Par récurence, on montre \(E_{12} \cdot W_n \subseteq W_{n-1} \), \(E_{2,3} \cdot W_{n\subseteq} W_{n-1} \)
+
+
+Soit \(w\in W_n \)
+
+\[ \implies w= E_{21}\cdot w' \qq{pour} w' \in W_n-1 \]
+ou
+\[ w = E_{32} \cdot w' \]
+
+\begin{enumerate}
+	\item \[ E_{1,2} \cdot w = E_{1,2}  \cdot E_{2,1} \cdot w' = \left( [E_{12}, E_{21}] + E_{21} \vdot E_{12}  \right) w'  \]
+		\begin{tcolorbox}[title=]
+			\[ E_{1,2} \in g_{L_1-L_2}  \]
+			\[ E_{21} \in G_{L_2-L_1}  \]
+			\[ \implies [E_{1,2}, E_{21} ] \in h = g_e   \] 
+		\end{tcolorbox}
+		\[ = \in W_{n-1} + \in W_{n-1}   \]
+
+
+		\[ E_{2,3} \cdot w = E_{2,3} \cdot E_{1,2} \cdot w '  \]
+		\[=\left( \underbrace{[E_{23}, E_{21} ]}_{0}  + E_{2,1} + E_{23}  \right) \cdot w' \]
+		\[ =\underbrace{E_{21} \cdot \underbrace{\left( E_{21} \cdot w' \right)}_{W_{n-2} }}_{W_{n-1} }    \]
+	\item même chose
+
+Puisque \(W = \bigcup_n W_n \), \(W\) est stable par \(\mathfrak{sl}(3 \mathds{C})\) \(\implies W = V \) \(\blacksquare\)
+\end{enumerate}
+
+
+De la preuve, on déduit: 
+
+Pour \(V\) une représentation (pas nécéssairement irréductible), si \(v\) est un vecteur de plus haut poidsm alors le sous espace engendré par \(v\) est ses images par \(E_{21} \) et \(E_{3,2} \) est une sous représentation irréductible
+
+
+Il existe un \(n\) pour lequel \(\left( E_{2,1}  \right) ^n \cdot v = 0\) mais \(\left( E_{2,1}  \right) ^{n-1} \cdot v \neq 0\)
+
+Observation: \(V_{\alpha+m(L_2-L_1)} \) est de dim 1 ou 0 (car il existe un seul \textit{chemin} entre \(\alpha \) et \(\alpha + m(L_2 - L_1 )\)
+
+\begin{align*}
+	\begin{matrix}
+		E_{21} & E_{12} & E_{11} - E_{22} \\
+		\begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 &0 \\ 0&0&0 \end{pmatrix} & \begin{pmatrix} 0 & 1&0\\0&0&0\\0&0&0 \end{pmatrix} & \begin{pmatrix} 1 &0 &0\\ 0 &-1&0\\0&0&0 \end{pmatrix} \\
+	Y & X & H
+	\end{matrix}
+\end{align*}
+
+engendrent une sous-algèbre de Lie de \(\mathfrak{sl}(3 \mathds{C}) \) isomorphe à \(\mathfrak{sl}(2 \mathds{C})\)
+
+En restreignant à cette sous-algèbre, on obtient une représentation de \(\mathfrak{sl}(2,\mathds{C}) \) sur \(V\) (par nécéssairement irréductible) 
+
+\underline{Rappel} 
+Les valeurs propres pour \(H\) dans un représentation de \(\mathfrak{sl}(2 \mathds{C})\) sont entière et symétriques par rapport à 0
+
+
+Les valeurs propres de \("H" = E_{11} - E_{22} \) sont \(\alpha (H) , \left( \alpha + L_2 - L_1  \right) (H), \dotsb, \left( \alpha +n(L_2 - L_1) \right) (H)\)
+
+on réécrit \(\alpha(H), \alpha(H) -2, \alpha(H) -4, \dotsb, \alpha(H) -2n \)
+
+\[ \implies \alpha(H) -2 n = -\alpha (H) \]
+\[ \implies n = \alpha(H)  \]
+
+L'arrête entre \(\alpha\) et \(\alpha + n(L_2 - L_1 ) \) est symétrique par rapport à la droite \(\beta(H_{12} ) = 0 \)
+
+Posons \(\alpha + \alpha \left( J_{1,2}  \right) \left( L_2 -L_1  \right) = \alpha_2  \) et \(v_2 = E_{2,1}^{???}\cdot v \in V_{\alpha_2} \)
+
+On a \( E_{21} \cdot v_2 = 0  \), \(E_{2,3} \cdot  v_2 = 0\) , \(E_{1,2} \cdot v_2 =0 \)
+
+\(v_2\) est une \textit{vecteur de plus haut poids} pour l'ordre définis par \(\begin{pmatrix} a\\&b \\ &&c \end{pmatrix} \), \(b>a>c\)
+
+Les espaces de poids sont contenus dans l'hexagone  des sommets \(\alpha \) et ses réflexions dans les 3 droites 
+
+Les espace de poids sur les arêtes sont de dimension 1
+
+On déduit que \(\alpha(H)_{i,j} \in \mathds{Z} \forall H \in h\) 
+\[ \implies \alpha = a L_1 + b L_2 + c L_3 \quad a,b,c\in \mathds{Z}\]
+
+\end{document}
