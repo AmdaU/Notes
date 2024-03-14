@@ -1,0 +1,97 @@
+\input{../parameters}
+
+\begin{document}
+2024-03-14
+
+
+\section*{2eme heure}
+
+
+\[ sym^{n}(\mathds{C}^{3} = \expval{e_1^{i}e_2^{j} e_3^{k} | i+j+k = n} \]
+
+les poids sonts \(H \cdot \left( e_1^{i} e_2^{j} e_3^{k} \right) = (iL_1 +j L_2 + k L_3 ) (H) e_1^{i} e_2^{j} e_3^{k} \)
+
+Chaque espace de poids est de dimension 1. Les plus haut est \(nL\)
+
+\[ L_1 + L_2 +L_3 = 0 \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{triangle}
+    \caption{triangle}
+    \label{fig:triangle}
+\end{figure}
+
+
+\( {\rm{}Sym^n}(\mathds{C}^{3})  \) par le même argument a pour plus haut poids \(nL_3\) est est irréductible 
+
+\[ {\rm{}Sym}^n (\mathds{C}^{3}) \otimes \mathds{C}^{3*} \]
+
+a un poids de \(2L_1 - L_3 \)
+
+\(V = e_1^{2} \otimes e_3 ^{*}\) est un vecteur de plus haut poids.
+
+Elle n'est \underline{pas irréductible} car on peut définir un morphisme 
+
+\[ \varphi: {\rm{}Sym}^2 \mathds{C}^3 \otimes \mathds{C}^{3} \to \mathds{C}^{3} \]
+\[ (uv) \otimes \alpha \mapsto \alpha(u)v + \alpha(v) u \]
+
+\[ \varphi(X \cdot  ((uv) \otimes \alpha)) = \varphi(X \cdot (uv) \otimes \alpha + uv \otimes\varphi(X \cdot \alpha)) \]
+
+\[ = \varphi((X u + Xv) \otimes\alpha -(uv) \otimes \alpha(x) \]
+
+\[ \alpha(xu)v +\alpha(v)Xu + \alpha(u) Xv + \alpha(xv)u - \alpha(xu)v -\alpha(xv) u = X(\alpha(v) u + \alpha(u)v + X \cdot \varphi (uv \otimes \alpha) \]
+
+\({\rm{}Her}(\varphi) \subseteq {\rm{}Sym^{2}}(\mathds{C}^{3}) \otimes \mathds{C}^{3*} \) est une sous-représentation de dimension 15. Montrons qu'elle est irréductible 
+
+
+\[ e_1^{2} \otimes e_3^{*} \in {\rm{}Ker} \varphi ( \varphi (e_2 \otimes e_3 ^{*}) = e_3 ^{*} (e)1 + e_3^{*} (e_{1)} e_1 \]
+
+\[ 2L_1 - L_3) + \left( L_2 - L_1 \right) = L_1 + L_2 - L_3 = -2 L_3  \]
+
+\[ (2L_1 -L_3 ) + (L_3 - L_{2)} = 2 L_1 - L-_2 = 3 L_1 + L_3  \]
+
+\[ (2L_1 - L_3) + L_3 - L_1 = L_1 \]
+
+Dans \( {\rm{}Sym^{2}}(\mathds{C}^{3}) \otimes (\mathds{C}^{3}) ^{*} \) 
+
+\[ {\rm{}dim}(V_{L_1} = 3) \]
+
+engendré par \(e_1^{2} \otimes e_1 ^{*}, e_1 e_2 \otimes e_2 ^{*}, e_1 e_3 \otimes e_3 ^{*} \)
+
+Dans \({\rm{}Ker}(\varphi), {\rm{}dim}(V_{L_{1})} = 2 \)
+
+engendré par \(e_1 ^2 \otimes e_1 ^{*} - 2 e_1 e_2 \otimes e_2 ^{*} \)
+
+\[ e_1 ^2 \otimes e_1 ^{*} - 2 e_1 e_3 \otimes e_3 ^{*} \]
+
+Montrons que \(V_{L_1} \) est engendré par \(E_{3,2} E_{2,1} (e_1^{2} \otimes e_3 ^{*}) \) et \(E_{2,1} E_{3,2} (e_1^{2} \otimes e_3 ^{*}\)
+
+\[ E_{32} E_{21} \left( e_1 ^2 \otimes e_3 ^{*}  \right) =E_{32} \left( (2e_1 e_3 ) \otimes e_3 ^{*} + e_1^{2} \otimes (-0) \right)  \]
+\[ = E_{32} \left( 2 e_1 e_2 \otimes e_3 ^{*} \right)  \]
+
+\[ = 2 (e_1 e_3 \otimes e_3 ^{*} + e_1 e_2 \otimes e_2 ^{*}) \]
+
+\[ E_{21} E_{32} \left( e_1^{2} \otimes e_3 ^{*}  \right)  \]
+
+\[ = E_{21} le	0 - e_1 ^2 \otimes e_2 ^{*} \]
+
+\[  = - e_{21} \left( e_1 ^ 2 \otimes e_2 ^{*} \right)  \]
+
+\[ = - 2 e_1 e_2 \otimes e_2 ^{*} - e-1 ^2 - e_1 ^2 \otimes e_1 ^{*} \]
+
+
+Plus généralement
+
+\[ {\rm{}Sym}^a (\mathds{C}^{3}) \otimes {\rm{}Sym}^b \mathds{C}^{3*} \]
+
+a une sous-représentation irréductible de plus haut poids \(a L_1 - b L_3\)
+On peut décrire la décrire comme le noyaux du morphimse
+
+\[ \varphi: {\rm{}Sym}^a \mathds{C}^{3} \otimes {\rm{}Sym}^b \to {\rm{}Sym}^{a-1} \mathds{C}^{3} \otimes {\rm{}Sym}^{b-1}\]
+
+
+\[ \left( u_1 \dotsb u_a  \right)  \otimes (\alpha_1 \dotsb \alpha_b) \mapsto \sum \alpha_i (u_j ) \left( u_1 \dotsb \hat u_j \dotsb u_a  \right)  \]
+
+
+\end{document}
