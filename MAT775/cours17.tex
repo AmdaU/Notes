@@ -1,0 +1,160 @@
+\input{../parameters}
+
+\begin{document}
+2024-03-18
+
+\begin{tcolorbox}[title=Rappels]
+	Les représentation irréductibles de \(\mathfrak{sl}(3 \mathds{C})\) sont en bijection avec \(\{ (a,b) > a,b \leq 0 \text{ entiers}  \} \)
+	\[ \to \Gamma_{a,b} \]
+	dont le plus haut poids et \(aL_1 - b L_3\)
+
+	\[ \Gamma_{a,b} \subseteq {\rm{}Sym}^a ( \mathds{C}^{3}) \otimes {\rm{}Sym}^b ( \mathds{C}^{3})  \]
+
+	\[ \Gamma_{a,b} = {\rm{}Ker}(\varphi) \]
+	\[ \varphi: {\rm{}Sym}^a ( \mathds{C}^{3}) \otimes {\rm{}Sym} \mathds{C}^{3*} \to {\rm{}Sym}^{a-1} \otimes {\rm{}Sym}^{b-1} \]
+\end{tcolorbox}
+
+\section*{\textit{Recette} pour analyser les représentation d'une algèbre de Lie \underline{semi-simple}}
+
+\begin{tcolorbox}[title=Rappel]
+	Simple: \( {\rm{}ad}_X \)  est irréductible \(\iff\) pas d'idéal non-trivial
+\end{tcolorbox}
+
+Semi-simple: Somme direct d'algèbre simple
+
+\begin{enumerate}[label=\textbf{Étape \arabic*:}] 
+	\item Identifier une sous algèbre \(h \subseteq g\) abélienne diagonalisable maximale. On appelle \(h\) une \underline{sous-algèbre de Cartan}
+
+
+\textit{On a vu que si un algèbre est diagonalisable dans une représentation, elle l'est dans toutes les représentations. Une algèbre diagonalisable est une algèbre qu'on peut montrer diagonalisable dans au moins une représentation.}
+
+
+\begin{tcolorbox}[title=Attention]
+	Ex: \[ \square (3, \mathds{C}) = \{ \begin{pmatrix} 0 & a  & b \\ -a &0 & c \\ -b & -c &0 \end{pmatrix}  | a,b,c \in \mathds{C} \}  \] 
+\(h\) n'est pas nécessairement diagonale
+
+truc: choisir une base jacobienne
+	Dans une base t.q. la forme bilinéaire est donnée par la matrice 
+	\(J = \begin{pmatrix} & & 1\\ & 1 \\ 1 \end{pmatrix}, \) \(\square(3 \mathds{C}) \) est donné par \( X^{t}J + JX = 0  \)
+	\[ \dotsb \]
+\[ \square(3 ,\mathds{C}) = \{ \begin{pmatrix} a & b &0\\ c &0 & -b \\ 0 & -c & -a \end{pmatrix} | a,b,c \in \mathds{C}  \}  \]
+	ici, on peut prendre \(h \in \{ \begin{pmatrix} a & &\\\\ && -a \end{pmatrix}  \} \)
+
+
+
+\end{tcolorbox}
+
+\item Décomposer \(\mathfrak{g}\) selon les poids (racines) de sa représentation adjointe
+
+
+	\[ g = h \oplus \left( \bigoplus_{\alpha\in R} g_{\alpha}   \right)  \]
+
+	où \(R \subseteq h^{*}\) est t.q. \(g_{\alpha} \neq \{ 0 \} \)
+
+	\[ g_{\alpha} = \{ X \in g | {\rm{}ad}(H) X = \alpha(H) X \forall H \in h\} = \{ X \in g | [H, X] = \alpha(H) X \forall H \in h \}   \]
+
+\underline{Faits}: 
+
+\begin{enumerate}[label=\roman*)]
+	\item \({\rm{}dim}(g_\alpha) =1 \forall \alpha \in R\)
+	\item R engendre un réseau \(\Lambda_R \subseteq h^{*} \) de rand égal à dim(\(h^{*}\))
+	\item \(R=-R\)(Si \(\alpha\) est une racine \(-\alpha\) l'est aussi)
+		Une représentation \(V\) va se décompose en \(V= \oplus V_\alpha, \alpha \in h^{*}\)
+
+Les vecteurs de racines, \(X \in g_x \) agissent par translation sur les \(V_{\beta} \)
+
+
+\[ X: V_{\beta} \to V_{\alpha+\beta } \]
+
+
+Si \(V\) est irréductible, tout les poids sont congrus modulo \(\Lambda_R\)
+\end{enumerate}
+
+\item Pour chaque raine, on va identifier une sous-algèbre \(\mathfrak{s}_\alpha \subseteq \mathfrak{g}\) isomorphe à \(\mathfrak{sl}(2 \mathds{C})\)
+
+on sait que \([g_{\alpha}, g_{-\alpha} ] \subseteq h \)
+
+en fait \( \mathfrak{s}_\alpha = g_{\alpha} \oplus g_{-\alpha} \oplus [g_{\alpha}, g_{-\alpha} ] \) est aussi un sous-algèbre de \(g\) isomorphe à \({\rm{}sl}(2 \mathds{C})\)
+
+On trouve \( X_{\alpha} \in g_{\alpha} , \, Y_{\alpha}  \in g_{-\alpha} \) t.q. \(H_{\alpha} = [X_{\alpha}, Y_{\alpha}] \)
+
+on a \([H_{\alpha}, X_{\alpha} ] = 2 X_{\alpha} \)
+on a \([H_{\alpha}, Y_{\alpha} ] = 2 Y_\alpha\)
+
+
+Toujours possible car 
+
+\begin{enumerate}[label=\roman*)]
+	\item \([g_{\alpha}, g_{-\alpha} ] \neq 0\)
+	\item \([[g_{\alpha}, g_{-\alpha} ], g_{\alpha} \neq 0\)
+\end{enumerate}
+
+\item Utiliser l'\underline{intégralité} des valeurs propres de \(H_{\alpha} \) 
+
+Pour tout poids \(\beta\) d'une représentation de \(g\)
+
+\[ \beta(H_\alpha) \in \mathds{Z} \]
+
+On définit une autre réseau, (le réseau des poids) \( \Lambda_W = \{ \beta \in h^{*} | \beta(H_{\alpha} ) \in \mathds{Z}, \forall \alpha \in R \} \)
+
+
+Si \(\beta_1 , \beta_2 \in \Lambda_W \) dans \((\beta_1 +\beta_2 ) (H_{\alpha} ) = \beta(H_{\alpha} ) + \beta_2 (H_{\alpha} ) \in \mathds{Z}\) \(\implies\) \(\beta_1 + \beta_2 \in \Lambda_W\)
+
+et \(-\beta_1 (H_\alpha) \in \mathds{Z} \to -? \in \Lambda_W\)
+
+En fait, \( \Lambda_R \subseteq \Lambda_W \)
+
+
+\item Usilser la symétrie par rapport à 0 des v.p. de \(H_{\alpha} \)
+
+On introduit une \underline{réflexion} pour chaque \(\alpha \in R\), noté \(W_{\alpha} \), \(W_{\alpha} : h^{*} \to h ^{*}\) 
+
+\[ W_{\alpha} (\beta) = \beta - \beta(H_{\alpha} )_\alpha  \]
+
+\[ \mathscr{W} = \expval{W_{\alpha} } \]
+
+groupe engendré par les \(W_{\alpha} \) qui s'appelle \underline{Groupe de Weyl} 
+
+Pour une representation \(V = \oplus V_{\beta} \) on peut regrouper les \(V_{\beta} \) en classes modulo \(\alpha\)
+
+
+\[ V = \oplus V_{[\beta]}  \]où \(V_{[\beta]} = \bigoplus_{n \in \mathds{Z}} V_{\alpha+n\beta} \)
+
+les poids dans \(V_{[\beta]} \) sont \(\beta , \beta + \alpha , \beta + 2 \alpha , \dotsb , \beta + n\alpha\) 
+où \(n = -\beta(H_{\alpha} )\)
+
+
+\begin{tcolorbox}[title=Conclusion]
+	l'ensemble des poids \( V\) est \(\mathscr{W}\)-invarient
+\end{tcolorbox}
+
+\item Faire un dessin
+
+Il existe un produit bilinéaire sur \(\mathfrak{g}\) appelé \underline{forme de Killing} qui est définit positif sur le sous-espace réel engendré par les \(H_{\alpha} \)
+
+donne un produit scalaire sur le sous-espace réel engendré par \(R\) dans \(h^{*}\). Pour ce produit , \(W_{\alpha} \) est une \underline{réflexion euclidienne } 
+
+\item Choisir une direction dans \(h^{*}\). C'est-à-dire une forme linéaire \(l\) sur \(h^{*}\) 
+
+	\[ l: h^{*} \to \mathds{R} t.q. L(\alpha) \neq 0 si \alpha \in R\]
+
+
+\end{enumerate}
+
+On décompose \(R = R^{+} \cup R^{-}\) en racine positives et négatives 
+
+On dit que \(v \in V\) est un \underline{vecteur de plus haut poids} pour \(g\) si \(Xv = 0 \forall X \in g_{\alpha}, \alpha \in R^{+}\) 
+
+\underline{Proposition}: 
+
+
+\begin{enumerate}[label=(\roman*)]
+	\item Toute représentation de \(g\) possède un vecteur de plus haut poids 
+	\item \(V\) et toutes ses images obtenus en itérants des applications de \(X_{\alpha} , \alpha \in R^{-}\) engendre une sous-représentation \(W \subseteq V\) irréductible 
+	\item Tout représentation irréductible admet un unique vecteur de plus haut poids (à scalaire près)
+\end{enumerate}
+
+\section*{Manque de Batterie!}
+
+
+\end{document}
