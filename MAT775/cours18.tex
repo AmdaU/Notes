@@ -1,0 +1,218 @@
+\input{../parameters}
+
+\begin{document}
+2024-03-21
+
+\begin{tcolorbox}[title=Rappels]
+
+	\[ h \subseteq g :\text{ sous algèbre de Cartan} \]
+
+	\[  g = h \bigoplus_{a\in R} g_{\alpha} \quad R \subseteq h^{*}  \]
+	\[ \mathfrak{s}_\alpha = \expval{\underbrace{X_{\alpha}}_{\in g_{\alpha} } , \underbrace{Y_{\alpha}}_{\in g_{-\alpha} } , \underbrace{H_{\alpha}}_{\in h}     } \cong \mathfrak{sl}(3, \mathds{C}) \]
+
+
+	\(V-\)représentation de \(\mathfrak{g}\)
+\[ V = \bigoplus V_{\alpha}  \]
+
+\[ \Lambda_W = \{ \beta \in h ^{*} | \beta(H_{\alpha} ) \in \mathds{Z} \forall \alpha \in R  \}  \]
+
+
+\[ \Lambda_R = \mathds{Z} R \subseteq \Lambda_W\]
+
+
+Réflexion dans une racine \(\alpha\)
+
+\[ W_{\alpha} (\beta) = \beta - \beta (H_{\alpha}) \alpha \]
+
+\[ \mathscr{W} = \expval{W_{\alpha}}_{\alpha\in R} \text{ groupe de Weyl}   \]
+
+les poids de \(V\) sont stalbes par \(\mathscr{W}\)
+
+On fixe \(\ell : h^{*} \to \mathds{R}\)
+
+\[ \dotsb \]
+	 
+\end{tcolorbox}
+
+\begin{figure}[ht]
+	\centering
+	\incfig{resaux}
+	\caption{Resaux}
+	\label{fig:resaux}
+\end{figure}
+
+\underline{Proposition}: 
+
+\begin{enumerate}[label=(\roman*)]
+	\item Toute représentation a un vecteur de plus haut poids
+	\item Les sous-espace \(W \subseteq V\) engendré par \(V\) et applications successive de \(\{ X_{\alpha}  \}_{\alpha \in R^{-}} \)  et une sous représentation irréductible
+	\item Toute représentation irréductible admet une unique vecteur de plus haut poids
+\end{enumerate}
+
+\underline{Démonstration}:
+
+\begin{enumerate}[label=(\roman*)]
+	\item Soit \(\alpha \) maximal parmis les \(V_{\alpha} \neq \{ 0 \} \) pour l'ordre partiel 
+
+		\[ \alpha > \beta  \] ssi \(\ell (\alpha ) > \ell (\alpha) \)
+		et soit \(v \in V_{\alpha} \)
+
+
+
+		S'il existe \(X \in \mathfrak{g}_\beta \) avec \(\beta \in R^{+}\) et \(X \cdot  v \neq 0\) alors \( X \cdot  \in V_{\alpha+\beta} \)
+		et \( \ell(\alpha +\beta ) = \ell (\alpha ) + \ell( \beta) > \ell (\alpha) \) considérant la maximalité 
+
+	 Parmis les racines de \(R^{+}\) on dit que \(\alpha \in R^{+}\) est une racine \underline{simple} s'il n'existe pas de \(\beta_1 , \beta _2 \in R^{+}\) t.q. \(\alpha = \beta_1 + \beta_2 \) 
+	
+\underline{Lemme:}: Si \(\alpha , \beta \) sont simples alors \( \alpha - \beta \)  et \(\beta -\alpha\) \underline{ne sont pas des racines } 
+
+\underline{Dém:} \[ \dotsb \] 
+
+\item \(W\) est aussi engendré par \(V\) et ses images successives par \(\{X_{-\alpha}\}_{\alpha \in S}, S \subseteq R^{+}: \text{ racins simples }  \) 
+
+- W est stable par \(\{ X_\alpha \}_{\alpha\in R^{-}} \)
+- W est stable par \(H \in h\)
+
+Reste à montrer que \( W\) est stable par \(\{ X_{\alpha}  \}_{\alpha \in S} \)
+
+\(W_n \subseteq W\) sous-espace où on applique des monts de longeure \(\leq n\)
+
+
+Par récurence on montre que \(X_{\alpha} W_n \subseteq W_n \) \(\alpha \in S\)
+
+
+Soit \(u \in W_n \) un générateur 
+
+
+\[ \implies u = X_{\beta} u' \qq{où} u' \in W_{n-1}  \]
+\[ -\beta \in S \]
+
+Soit \[ X_{\alpha} \qq{pour} \alpha \in S \]
+
+
+Alors \(X_{\alpha} u = X_{\alpha} X_{\beta} u' = \left( X_{\beta} X_{\alpha} + [X_{\alpha}, X_{\beta} ]  \right) u' \)
+
+\[ = X_{\beta} X_{\alpha} u' + [X_{\alpha}, X_{\beta} ] u' \]
+
+\end{enumerate}
+
+\underline{Étape 8}:
+
+Classifier les représentations irréductibles
+
+Dans le sous-espace réal de \(h^{*}\) engendré par \(R\), on note \(\mathcal{C}= \{ \beta |  \beta(H_{\alpha)} \geq 0 \forall \alpha \in R\} \)
+
+On appelle cela une \underline{chambre de Weyl} 
+
+
+\underline{Théorème}: 
+
+Pour tout poids \( \alpha in \mathcal{C} \cap \Lambda_W \) il existe une unique représentation irréductible de \(\mathfrak{g}\) ayant \(\alpha\) comme plus haut poids.
+
+On obtiens une bijections entre les représentations irréductible de \(\mathfrak{g}\) et \(\mathcal{C} \cap \Lambda_W\)
+
+
+\underline{Démonstration}: ON démontre l'unicité seulement 
+
+
+Soient \(U, V\) deux représentation irréductible ayant \(\alpha \) comme plus haut poids. Soient \(u \in U_{\alpha} \), \(v \in V_\alpha \) comme plus haut poids. Alors \((u,v) \in U \oplus V\) est une vecteur de plus haut poids \(\alpha \) dans \(U \oplus V\)
+
+\( \implies (u,v ) \) engendre une sous-espace 
+
+\[ W \subseteq U \otimes W \] irréductible 
+
+
+\[ \pi_{u} : W \to u \]
+\[ \pi_v : W \to v \]
+
+sont des isomorphismes de représentation (par le lemme de Shur) 
+
+
+\[ \implies U \cong V \]
+
+\section*{La forme de Killing}
+
+On définit \(B: \mathfrak{g} \times \mathfrak{g} \to \mathds{C}\)
+
+Par la formule \(B(x,y) = \tr( {\rm{}ad} X \circ {\rm{}ad}Y) \)
+
+\underline{Observation }:
+
+\(X \in \mathfrak{g}_\alpha , Y \in g_{\beta} \)
+
+avec \(\beta \neq \pm \alpha\)
+
+Alors, pour tout \(Z \in g_{\gamma} \)
+
+on a \( \left( {\rm{}ad} X \circ {\rm{}ad} Y  \right) (Z)  \)
+
+\[ = [X, [ Y, Z] \in g_{\gamma+\alpha+\beta} \neq g_{\gamma}  \]
+
+
+En particuleier \( [X, [Y, Z] ]\) n'as pas de composante en \(Z\)
+
+\[ \implies B(X,Y) =0 \]
+
+Autrement dit \(g_{\alpha} \perp g_{\beta} \) si \(\beta \neq - \alpha\)
+
+La décomposition \(g = h \oplus \left( \bigoplus_{\alpha\in{}R^{+}} \left( g_{\alpha} \oplus g_{-\alpha}   \right)  \right) \)
+
+est orthogonale pour \(B\)
+
+Si \(X,Y \in h\) alors \(Z \in \mathfrak{g}_\alpha \)
+
+
+\[ ({\rm{}ad} X \circ {\rm{}ad}Y)(Z) = [X, [ Y, Z]] = \alpha(Y) [X, Z] = \alpha (X) \alpha(Y) Z\]
+
+
+\[ \implies \tr( {\rm{}ad} X {\rm{}ad}Y ) = \sum_{\alpha\in R} \alpha(X) \alpha (Y)  \]
+
+sur le sous-esapce réel engendré par les \(H_\alpha\)
+
+\(B\) est définie positive 
+
+\[ B(H_{\alpha}, H_{\beta} ) = \underbrace{\sum_{\gamma\in R} \gamma(H_{\alpha}) \gamma ( H_{\beta} )}_{\in \mathds{Z}}     \]
+
+
+si \(H \in \mathds{R} \expval{H_{\alpha}}_{\alpha\in R} \)
+
+alors \(B(H, H) = \sum_{\alpha\in R} \alpha (H)^{2} \geq 0  \)
+
+
+si \(B(H,H) = 0\)
+
+\(\alpha(H) = 0 \forall \alpha \in R\)
+
+\[ H = 0 \] car \( R\) engendre \(h^{*}\)
+
+
+\underline{Porp}: \(B( [X, Y], Z) = B( X, [Y, Z] )\) 
+
+\underline{Démonstration}:
+
+\[ \dotsb \]
+
+\underline{Proposition}: si \(g\) est simple alors \(B\) est non dégénéré  
+
+(rappel: \(B\) est dégénérée si \(Ker (B) \neq \{ 0 \}  \)  \({\rm{}Ker} (B) = \{ X \in g | B(x,y) = 0 \forall y \in g \} \)
+
+\underline{Démonstration}: Supposons qu'il existe \(X \in {\rm{}B}, X \neq 0\)  
+
+Alorsm pour tout \(Y\) et tout \(Z\in g\)
+
+\(B( [X, Y] , Z )  =  B(X, [Y, Z] ) = 0\)
+
+\[ \implies [X, Y] \in {\rm{}ker} B  \]
+
+\[ \implies B \subseteq g \]
+
+est un ideal
+
+
+\(B\) non dégénéré sur \(h\) \[  \implies {\rm{}Ker} B = \{ 0 \}  \]
+
+
+
+
+
+\end{document}
