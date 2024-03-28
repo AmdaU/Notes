@@ -1,0 +1,195 @@
+\input{../parameters}
+
+\begin{document}
+2024-03-28
+
+
+\begin{tcolorbox}[title=Rappels]
+
+\[ B(X,Y) = \tr({\rm{}ad} X \cdot  {\rm{}ad}Y) \]
+
+\begin{itemize}
+	\item \(B\) est définit positive sur \(\mathds{R} \expval{H_{\alpha} }_{\alpha \in R} \subseteq h\)
+	\item \(B^{*}\) est définit positif sur \(\mathds{R} \expval{\alpha}_{\alpha\in R} \subseteq h^{*}\)
+\item Pour toute paires de racines \(\alpha, \beta \in \mathds{R}\)
+	\[ \beta(H_{\alpha}) = \frac{2 B(\alpha, \beta)}{\beta(\alpha,\alpha) }  \]
+\end{itemize}
+	 
+\end{tcolorbox}
+
+Un \underline{système de racine abstrait} est \(R \subseteq \mathds{E} \) satisfaisant :
+
+\begin{tcolorbox}[]
+	\(\mathds{E}\) est l'espace vectoriel sur \(\mathds{R}\) avec \((\ , \ )\) comme produit scalaire 
+\end{tcolorbox}
+
+\begin{enumerate}
+	\item \(R\) est fini est engendre \(\mathds{E}\)
+	\item \(\alpha \in R \implies -\alpha \in R\) et aucun autre \(n\alpha \) pour \(n\neq \pm 1\) n'est dans \(R\)
+	\item \(\forall \alpha \in R\), \(W_{\alpha} (R) = R\)
+		(si \(\alpha,\beta \in R\), \(W_{\alpha} (\beta) = \beta - \frac{2 (\alpha, \beta) }{(\alpha ,\alpha)} \alpha \in R \))
+	\item \(\forall \alpha, \beta \in R\) \(\frac{2 (\alpha,\beta)}{(\alpha,\alpha) } - n_{\beta\alpha} \in \mathds{Z} \)
+\end{enumerate}
+
+La propriété 4 implique que
+
+
+\[ \mathds{Z} \ni n_{\beta\alpha} n_{\beta\alpha} =\frac{4 (\alpha,\beta )^2}{(\alpha, \alpha) (\beta, \beta)} = 4 \frac{\cancel{\dotsb}\cos^{2}\theta}{\cancel{\dotsb}}   \]
+
+\[ \implies n_{\alpha,\beta} n_{\beta\alpha} \in \{ 0,1,2,3,4 \}  \]
+
+si \(n_{\alpha\beta} n_{\beta\alpha} = 4\)
+\[ \cos^2\theta =1 \implies \alpha =\pm \beta \]
+
+si \(n_{\alpha\beta} n_{\beta\alpha} = 3\)
+\[ n_{\alpha\beta} =3 \quad n_{\beta\alpha} = \pm 1 \quad \theta \in \left\{ \frac{\pi}{6}, \frac{5\pi}{6}  \right\}  \]
+
+si \(n_{\alpha\beta} n_{\beta\alpha} = 2\)
+\[ \cos^{2}\theta = \frac{1}{2} \implies \theta \in \left\{ \frac{\pi}{4} , \frac{3\pi}{4}  \right\} \quad \norm{\alpha} = \sqrt{2} \norm{\beta}   \]
+
+si \(n_{\alpha\beta} m_{\beta\alpha} = 1\)
+\[ \cos^2\theta = \frac{1}{4} \implies \theta \in \left\{ \frac{\pi}{3} , \frac{2\pi}{3} \quad \abs{\alpha} = \abs{\beta}   \right\}  \]
+
+si \(n_{\alpha\beta} n_{\beta\alpha} =0\)
+\[ \cos\theta = 0 \quad \alpha \perp \beta \quad \text{pas de condition sur la longueur}  \]
+
+
+\underline{Corollaire}: Si l'angle entre \(\alpha \)  et \(\beta\) est aigu, alors \(\alpha-\beta \) et \(\beta-\alpha\) sont des racines
+
+\underline{Démonstration}:
+
+\(W_{\beta} (\alpha) = \alpha -n_{\alpha\beta} \beta \), si \(\angle \alpha,\beta \) est aigu alors \( n_{\beta\alpha} =1\)
+
+Sans perte de généralité, \(W_{\beta} (\alpha) = \alpha - \beta \in R \implies \beta -\alpha \in R\)
+
+Fixons \(h \in \mathds{E}| (h,\alpha) \neq 0 \forall \alpha \in R\) et définissons \(R^{+} = \{ \alpha \in R | (h,\alpha) > 0 \} \)
+\(R^{-} = \{ \alpha \in R | (h,\alpha) < 0 \} = - R^{+} \)
+
+\underline{Définissons}: Une racine positive \(\alpha \in R^{+}\) est \underline{simples} si elle ne s'écrit pas comme une somme de racines positives.  
+
+\begin{figure}[ht]
+    \centering
+    \incfig{racines-simples}
+    \caption{Racines simples}
+    \label{fig:racines-simples}
+\end{figure}
+
+Par le corollaire, l'angle entre 3 racines simples est obtus. Di \(\alpha,\beta\) simples et \(\alpha-\beta, \beta-\alpha \in R \)
+\(\implies \alpha = \left( \alpha -\beta \right) + \beta, \ \beta = \beta-\alpha + \alpha  \) \lightning
+
+\underline{Définition}: Une \underline{configuration admissible } est une ensemble de vecteur unitaires dans \(\mathds{E}\) tels que 
+
+\begin{enumerate}
+	\item tous les vecteurs sont dans un demi-espace ouvert \(\{ v> (v,h) > 0 \} \)
+	\item L'angle entre 2 vecteurs est une de \(\frac{\pi}{2} , \frac{2\pi}{3} , \frac{3\pi}{4} , \frac{5\pi}{6}  \)
+
+\end{enumerate}
+
+Une configuration admissible est réductible si elle s'écrit comme une somme orthogonale de configurations admissibles. 
+
+
+Par ce qui précède, si \(R\) est un système de racines, 
+
+\[ \{ \frac{\alpha}{\norm{\alpha}} | \alpha \text{ racine simple}  \}  \] est une configuration admissible.
+
+
+\underline{Proposition}: Une configuration admissible est linéairement independente. 
+
+\underline{Démonstration}:
+
+Supposons que \(\sum a_i v_i =0\), \(a_i\) non tout nuls 
+
+\[ \implies \sum_{i\in I}a_i v_i = \sum_{j\in J} a_j v_j \quad a_i , a_j > 0   \]
+
+mais \(\norm{\sum a_i v_{i}}^{2}= \left( \sum a_i v_i , \sum a_j v_j \right)  = \sum \sum a_i a_j (v_i , v_j ) \leq 0\)
+
+\[ \implies \sum a_i v_i = 0 = \sum a_i v_i  \]
+
+mais \(a_i > 0 \) et \(v_i\) sont das un demi-espace \lightning
+
+\underline{Conséquence}:
+
+Comme \(R\) engendre \(\mathds{E}\) pour un système de racine (par axiome ) et toute paire s'écrit comme une combinaison linéaire de racines simples, les racines simples engendre \(\mathds{E}\)
+
+\(\implies \) Les racines simples forment une base 
+
+\(\implies \) \# de racines = \({\rm{}dim}(h)\) pour \(\mathfrak{h} \subseteq \mathfrak{g}\) sous algèbre de Cartan.
+
+\underline{Démonstration}: (du fait que toute racine s'écrit comme une combinaison linéaire de racine simples )
+
+si \(\alpha\) n'est pas simple, \(\implies =\beta + \gamma\) avec \(\beta, \gamma \in R^+\)  \(\implies (\alpha, h) = (\beta, h) + (\gamma ,h) \)
+
+\[ \implies (\beta ,h) < (\alpha, h) \quad (\gamma, h) < (\alpha, h)\]
+
+si \(\beta ,\gamma \) sont simples, fini.
+
+si \(\beta\) n'est pas simple \(\beta = \beta_2 + \beta_3 \), \(\beta_2, \beta_3 \in R^+\)
+
+Comme \(\# R^{+} < \infty\) cet algorithme se termine et donne \(\alpha = \sum n_i \alpha_i\), \(\alpha_i \) simples 
+
+
+\underline{Définition}: Le \underline{diagramme de Coxeter} d'une configuration admissible \(\{ V_i \} \) est le graph dont les sommets sont \(V_i\) et on a \(4\cos^{2}(\angle (v_i , v_j )\)  arêtes entre \(v_i , v_j \). 
+
+\[ v_i - v_j \text{ si } \angle v_i v_j = \frac{2\pi}{3}    \]
+\[ v_i = v_j \text{ si } \angle v_i v_j = \frac{3\pi}{4}    \]
+\[ v_i \equiv v_j \text{ si } \angle v_i v_j = \frac{5\pi}{6}    \]
+\[ v_i \ \ \  v_j \text{ si } \angle v_i v_j = \frac{\pi}{2}    \]
+
+\begin{figure}[ht]
+    \centering
+    \incfig{exemples-de-iagrammes-de-coxeters}
+    \caption{exemples de iagrammes de Coxeters}
+    \label{fig:exemples-de-iagrammes-de-coxeters}
+\end{figure}
+
+\underline{Lemme}: Le diagramme de Coxeter d<une configuration admissible est acyclique (sans compter la multiplicité des arrêtes)  
+
+
+\underline{Démonstration}:
+
+On prend le graph cyclique: 
+\(v_k - v_1 - v_2 - \dotsb -\)
+
+\(\implies (v_i, v_{i+1}) \leq \frac{-1}{2} \qq{pour} i = 1, \dotsb k-1\)
+
+\((v_i, v_k) \leq \frac{-1}{2} \)
+
+et \((v_i , v_j ) \leq 0 \forall i \neq j\)
+
+
+\[ \implies (\sum_{i}^{k} v_{i}, \sum_{i=1}^{k} v_i ) \]
+
+\[ = \sum (v_i , v_i ) + \sum_{i<j} 2 (v_i , v_j )  \]
+
+\[ = k + \sum_{i=1}^{k-1} 2(v_i , v_{i+1} ) +2 (v_k , v_1 ) + \sum_{J\neq i+1} 2 (v_i v_j )  \]
+
+\[ \leq k + (-k ) + 0  \]
+
+\[ \implies \sum_{i=1}^{k} v_i =0 \]
+C'est une \lightning a l'independence linéaire
+
+\underline{Lemme}: Le degré d'une sommet est au plus 3 (avec multiplicité)  
+
+
+\underline{Démonstration}: On considère le graph étoile avec \(v_0\) au centre et \(k\) branches 
+
+Du lemme precedent, \(v_i \perp v_j \forall 1 \leq j \neq j \leq k\)
+
+\(\implies v_1 , \dotsb , v_k\) sont orhonormés 
+
+\[ \sum_{i=1}^{k} \left( v_0 , v_i \right)^{2} < \abs{v_{0}}^{2} =1  \]
+(Inégalité de Bessel) 
+
+
+\[ \left( v_0 , v_i  \right)^{2} = \frac{m_i}{4}  \]
+où \(m_i\) est le nombre de d'arrêtes entre \( v_0 \) et \(v_i\)
+
+\[ \implies \sum_{i=1}^{k} m_i < 4 = \text{ degré de } v_0 \]
+
+
+
+
+
+
+
+\end{document}
