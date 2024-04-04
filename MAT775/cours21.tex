@@ -1,0 +1,136 @@
+\input{../parameters}
+
+\begin{document}
+2024-04-04
+
+\begin{tcolorbox}[title=Rappels]
+	\(B^{*}\) forme bilinéaire sur \(h^{*}\) non dégénéré 
+\(B^{*}\) est défini-positif sur \(\mathds{R} \expval{\alpha}_{\alpha\in R}  \)
+	\(\implies \mathds{R}\expval{\alpha}\) est une espace euclidien sous ensemble de \(R\) ensemble de racines
+
+
+	\[ R = R^{+} \cup R^{-} \] pour \(h \in \mathds{E}\) t.q. \((h,\alpha) \neq 0\)
+
+	\[ R^{+} = \{ \alpha | (h,\alpha) > 0 \} = -R^{-} \]
+
+
+Racines simples: \(S \in R\) racines qui ne se décompose pas en une somme de racines positives
+
+\[ \{ \frac{\alpha}{\norm{\alpha} }_{\alpha\in S}   \}  \]
+est configuration admissible; ensemble de vecteurs tel quel \(\angle (u,v \in \{ \frac{\pi}{2}, \frac{2\pi}{3} ,  \frac{3\pi}{4} \frac{5\pi}{6}  \} \)
+
+Diagramme de conxeter
+
+Nombre de lien entre les points est (0,1,2,3) et correpond à l'idince de la liste d'angles
+
+Est 
+\begin{enumerate}
+	\item Acylcique
+	\item degré de chaque sommet \(\leq 3\)
+\end{enumerate}
+
+\end{tcolorbox}
+
+On va essayer de reistreindre les Diagramme de Coxeter encore plus
+
+\underline{Lemme}: 
+
+Si \(v_{1}, \dotsb , v_n \) est une configuration admissible et \(V_i - V_j \) dans le Diagramme de Coxeter alors alors 
+
+\(V_1 , \dotsb \hat V _i , \dotsb \hat v_j , \dotsb v_j , v_i + v_j \)
+
+est une configuration admissible dont le Diagramme est identique sont que les sommets \(v_i \) et \(v_j \)
+
+\begin{figure}[h!]
+    \centering
+    \incfig{exemple-lemme}
+    \caption{exemple lemme}
+    \label{fig:exemple-lemme}
+\end{figure}
+
+\underline{Démonstration}: Si \(v_k\)  n'est pas relié à \(v_i, v_j\)
+\((v_k , v_j + v_i ) = 0   \)
+
+si \((v_k - v_i - v_j )\), \( (v_k, v_i + v_j ) = (v_k , v_i ) + (v_k + v_j ) = (v_k , v_i ) \)
+
+idem pour \( \left( v_k = v_i -v_j  \right)\)
+
+de plus \(\left(  v_i + v_j , v_i + v_j \right) = \dotsb = 1\)
+
+On déduit que que le Diagramme de Coxeter d'une configuration admissible irréductible fait partie de la liste 
+
+\[ A_n :1 - 2 -  \dotsb - n-1 - n\]
+\[ BCF_n  :1 - 2 -  \dotsb - i = i+1 - \dotsb- n-1 - n\]
+\[ DE_n  :. - . -  \dotsb - . \perp . - \dotsb-. - .\]
+\[ G_2: . \equiv . \]
+
+\underline{Lemme}: Le Diagramme d<une configuration admissible ne peut par contenir comme sous graphe 
+
+\begin{enumerate}
+	\item \( \circ  - \circ = \circ - \circ -\circ\)
+	\item \( \circ  - \circ \perp^{2} \circ - \circ \)
+	\item \( \underbrace{\circ  - \circ}_{2}  \perp^{1} \underbrace{\circ - \circ}_{5}  \)
+	\item \( \underbrace{\circ  - \circ}_{3}  \perp^{1} \underbrace{\circ - \circ}_{3}  \)
+\end{enumerate}
+
+\underline{Démonstration}: 
+
+2) On 7 vecteurs 
+
+la matrice \((v_i ,v_j ) \) est (voir figure) dégénéré
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig{matrice}
+    \caption{matrice}
+    \label{fig:matrice}
+\end{figure}
+
+Finalement, on a les cas
+\[ A_n :1 - 2 -  \dotsb - n-1 - n\]
+\[ BC_n  : 1 = 2 - \dotsb- n-1 - n\]
+\[ F_4 = . - . = . - . \]
+\[ D_n  : 1 \perp^{1}- . - \dotsb- . - .\]
+\[ E_6 : . - . -\perp^{2} -. - . \]
+\[ E_7 : . - . -\perp^{2} -. - . -. \]
+\[ E_8 : . - . -\perp^{2} -. - . -. -. \]
+\[ G_2: . \equiv . \]
+
+
+
+\begin{tcolorbox}[title=Rappel]
+	Dans un sytème de racine, si \(\angle \alpha, \beta = \frac{2\pi}{3} \) alors \(\norm{\alpha}  = \norm{\beta} \) 
+	si \(\angle \alpha, \beta = \frac{3}{\pi} 4 \) alors \(\norm{\alpha} = \sqrt{2} \norm{\beta}  \)
+	\[ \dotsb \]
+\end{tcolorbox}
+
+Conséquence de ce rappel:
+
+Dans les cas \(A_n, D_n , E_n \) toutes les racines sont de la même longeure 
+
+On garde une flèche sur \(=\) et\(\equiv\) qui pointe vers la racine la plus courte. On obtiens les \underline{Diagrammes de Dynkin} 
+
+
+\[ B_n  : 1 =<= 2 - \dotsb- n-1 - n\]
+\[ C_n  : 1 =>= 2 - \dotsb- n-1 - n\]
+\[ F_4 : . - . =>= . - . \]
+\[ G_2: . \equiv>\equiv . \]
+
+
+\underline{Exemples} 
+Les Diagrammes \(A_n \) est le Diagramme de \(\mathfrak{sl}(n+1 ,\mathds{C})\)
+
+\[ h = \{ \begin{pmatrix} \alpha_1 \\ & \ddots \\&&\alpha_{n+1}  \end{pmatrix} | \sum_{\alpha_i} =0 \}  \]
+
+\[ h^{*} = \expval{L_1 , \dotsb , L_{n+1} } \]
+\[ R = \{ L_i - L_j | i \neq j \}  \]
+\[ S = \{ L_1 - L_2 , L_2 - L_{3}, \dotsb , L_n - L_{n+1}  \}  \]
+
+Le diagramme de \(B_n \) est le diagramme de \(\mathfrak{so}(2n+1 , \mathds{C}) \). Les \(C_n \) c'est pour \(\mathfrak{sp}(2n \mathds{C})\)
+
+\[ B_2 = C_2 \implies \mathfrak{so(?)} = \mathfrak{sp}(4, \mathds{C})\]
+
+\section*{Construction de \(	\mathfrak{g}_2\)}
+\end{document}
+
